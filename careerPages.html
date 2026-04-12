@@ -18,7 +18,7 @@
     <div class="wrapper w-full pt-10 px-4 pb-5 bg-[#0F0F0F] flex flex-col">
       <!-- Nav -->
       <nav
-        class="w-full mx-auto p-4 flex justify-between items-center rounded-xl bg-[#1A1A1A] mb-5 lg:p-5 lg:pl-10"
+        class="w-full mx-auto p-4 flex justify-between items-center rounded-xl bg-[#1A1A1A] mb-5 lg:p-5 lg:pl-10 2xl:width-[1820px]"
       >
         <div
           class="w-22 h-4 bg-[url('assets/images/Logo.png')] bg-contain bg-no-repeat bg-center"
@@ -147,7 +147,7 @@
             <!-- Footer introInfo -->
             <div class="footerHeader flex gap-7 items-center sm:">
               <div
-                class="w-12 h-12 rounded-[99px] flex justify-center items-center bg-[#1F1F1F]"
+                class="w-12 h-12 rounded-full flex justify-center items-center bg-[#1F1F1F]"
               >
                 <div
                   class="w-5 h-5 bg-[url('assets/images/arrowDown.svg')] bg-contain bg-no-repeat bg-center"
@@ -172,7 +172,7 @@
             </h2>
           </div>
           <!-- Cards -->
-          <div class="p-6 rounded-3xl gap-6 bg-[#1A1A1A]">
+          <div class="flex flex-col p-6 rounded-3xl gap-6 bg-[#1A1A1A]">
             <!-- Header card -->
             <div class="flex items-center gap-2">
               <div
@@ -198,12 +198,214 @@
                 ></div>
               </div>
               <p
-                class="font-medium text-[14px] leading-[150%] text-[#B3B3B2] tracking-[0%] uppercase"
+                class="text-[#B3B3B2] font-medium text-[14px] leading-[150%] tracking-[0%] uppercase"
               >
                 View Details
               </p>
             </div>
             <!-- Card info -->
+            <div class="flex flex-col gap-3">
+              <div
+                class="flex items-center rounded-[48px] bg-[#1F1F1F] w-fit py-2 px-3"
+              >
+                <span
+                  class="text-[#B3B3B2] font-normal text-[14px] leading-[150%] tracking-[0%] uppercase"
+                  >Salary</span
+                >
+                <span
+                  class="inline-block w-1 h-1 rounded-full ml-1 mr-1 bg-[#CE7D63]"
+                ></span>
+                <span
+                  class="text-[#E6E6E6] font-medium text-[14px] leading-[150%] tracking-[0%] uppercase"
+                  >$45,000 - $60,000 per year</span
+                >
+              </div>
+              <div
+                class="flex items-center rounded-[48px] bg-[#1F1F1F] w-fit py-2 px-3"
+              >
+                <span
+                  class="text-[#B3B3B2] font-normal text-[14px] leading-[150%] tracking-[0%] uppercase"
+                  >Experience</span
+                >
+                <span
+                  class="inline-block w-1 h-1 rounded-full ml-1 mr-1 bg-[#CE7D63]"
+                ></span>
+                <span
+                  class="text-[#E6E6E6] font-medium text-[14px] leading-[150%] tracking-[0%] uppercase"
+                  >1+ year</span
+                >
+              </div>
+              <div
+                class="flex items-center rounded-[48px] bg-[#1F1F1F] w-fit py-2 px-3"
+              >
+                <span
+                  class="text-[#B3B3B2] font-normal text-[14px] leading-[150%] tracking-[0%] uppercase"
+                >
+                  Deadline</span
+                >
+                <span
+                  class="inline-block w-1 h-1 rounded-full ml-1 mr-1 bg-[#CE7D63]"
+                ></span>
+                <span
+                  class="text-[#E6E6E6] font-medium text-[14px] leading-[150%] tracking-[0%] uppercase"
+                  >30/09/2025</span
+                >
+              </div>
+            </div>
+            <!-- Description of card -->
+            <div>
+              <p
+                class="text-[#F9EFEC] font-medium text-[16px] leading-[150%] tracking-[0%] uppercase"
+              >
+                Skills
+              </p>
+              <p
+                class="text-[#B3B3B2] font-normal text-[14px] leading-[150%] tracking-[0%]"
+              >
+                Proficiency in Adobe Creative Suite (Photoshop, Illustrator,
+                etc.), strong understanding of UI/UX design principles,
+                responsive design expertise.
+              </p>
+            </div>
+            <!-- Button arrow right-top  -->
+            <div class="flex gap-2 items-center">
+              <div
+                class="flex justify-center items-center border-[1px] p-[14px] border-[#333333] bg-[#1F1F1F] rounded-full"
+              >
+                <div
+                  class="w-5 h-5 bg-[url('assets/images/arrowTopLeft.svg')] bg-contain bg-no-repeat bg-center"
+                ></div>
+              </div>
+              <p
+                class="text-[#B3B3B2] font-medium text-[14px] leading-[150%] tracking-[0%] uppercase"
+              >
+                View Details
+              </p>
+            </div>
+            <!-- Button Apply -->
+            <div
+              class="text-center py-[14px] px-5 rounded-[8px] bg-[#CE7D63] font-medium text-[14px] leading-[150%] tracking-[0%] uppercase"
+            >
+              Apply Now
+            </div>
+          </div>
+          <!-- Card 2 -->
+          <div class="flex flex-col p-6 rounded-3xl gap-6 bg-[#1A1A1A]">
+            <!-- Header card -->
+            <div class="flex items-center gap-2">
+              <div
+                class="p-4 border-[1px] border-[#333333] bg-[#1F1F1F] flex justify-center items-center"
+              >
+                <div
+                  class="w-6 h-6 bg-[url('assets/images/Pipette.svg')] bg-contain bg-no-repeat bg-center"
+                ></div>
+              </div>
+              <p
+                class="font-medium text-[20px] leading-[150%] text-[#F9EFEC] tracking-[0%] uppercase"
+              >
+                Web Designer
+              </p>
+            </div>
+            <!-- View details card hidden-->
+            <div class="hidden flex gap-2 items-center">
+              <div
+                class="flex justify-center items-center border-[1px] p-3 border-[#333333] bg-[#1F1F1F] rounded-full"
+              >
+                <div
+                  class="w-5 h-5 bg-[url('assets/images/arrowTopLeft.svg')] bg-contain bg-no-repeat bg-center"
+                ></div>
+              </div>
+              <p
+                class="text-[#B3B3B2] font-medium text-[14px] leading-[150%] tracking-[0%] uppercase"
+              >
+                View Details
+              </p>
+            </div>
+            <!-- Card info -->
+            <div class="flex flex-col gap-3">
+              <div
+                class="flex items-center rounded-[48px] bg-[#1F1F1F] w-fit py-2 px-3"
+              >
+                <span
+                  class="text-[#B3B3B2] font-normal text-[14px] leading-[150%] tracking-[0%] uppercase"
+                  >Salary</span
+                >
+                <span
+                  class="inline-block w-1 h-1 rounded-full ml-1 mr-1 bg-[#CE7D63]"
+                ></span>
+                <span
+                  class="text-[#E6E6E6] font-medium text-[14px] leading-[150%] tracking-[0%] uppercase"
+                  >$45,000 - $60,000 per year</span
+                >
+              </div>
+              <div
+                class="flex items-center rounded-[48px] bg-[#1F1F1F] w-fit py-2 px-3"
+              >
+                <span
+                  class="text-[#B3B3B2] font-normal text-[14px] leading-[150%] tracking-[0%] uppercase"
+                  >Experience</span
+                >
+                <span
+                  class="inline-block w-1 h-1 rounded-full ml-1 mr-1 bg-[#CE7D63]"
+                ></span>
+                <span
+                  class="text-[#E6E6E6] font-medium text-[14px] leading-[150%] tracking-[0%] uppercase"
+                  >1+ year</span
+                >
+              </div>
+              <div
+                class="flex items-center rounded-[48px] bg-[#1F1F1F] w-fit py-2 px-3"
+              >
+                <span
+                  class="text-[#B3B3B2] font-normal text-[14px] leading-[150%] tracking-[0%] uppercase"
+                >
+                  Deadline</span
+                >
+                <span
+                  class="inline-block w-1 h-1 rounded-full ml-1 mr-1 bg-[#CE7D63]"
+                ></span>
+                <span
+                  class="text-[#E6E6E6] font-medium text-[14px] leading-[150%] tracking-[0%] uppercase"
+                  >30/09/2025</span
+                >
+              </div>
+            </div>
+            <!-- Description of card -->
+            <div>
+              <p
+                class="text-[#F9EFEC] font-medium text-[16px] leading-[150%] tracking-[0%] uppercase"
+              >
+                Skills
+              </p>
+              <p
+                class="text-[#B3B3B2] font-normal text-[14px] leading-[150%] tracking-[0%]"
+              >
+                Proficiency in Adobe Creative Suite (Photoshop, Illustrator,
+                etc.), strong understanding of UI/UX design principles,
+                responsive design expertise.
+              </p>
+            </div>
+            <!-- Button arrow right-top  -->
+            <div class="flex gap-2 items-center">
+              <div
+                class="flex justify-center items-center border-[1px] p-[14px] border-[#333333] bg-[#1F1F1F] rounded-full"
+              >
+                <div
+                  class="w-5 h-5 bg-[url('assets/images/arrowTopLeft.svg')] bg-contain bg-no-repeat bg-center"
+                ></div>
+              </div>
+              <p
+                class="text-[#B3B3B2] font-medium text-[14px] leading-[150%] tracking-[0%] uppercase"
+              >
+                View Details
+              </p>
+            </div>
+            <!-- Button Apply -->
+            <div
+              class="text-center py-[14px] px-5 rounded-[8px] bg-[#CE7D63] font-medium text-[14px] leading-[150%] tracking-[0%] uppercase"
+            >
+              Apply Now
+            </div>
           </div>
         </section>
       </div>

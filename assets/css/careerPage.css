@@ -1,28 +1,12 @@
-* {
-  box-sizing: border-box;
-}
-nav {
-  font-family: "Roboto Mono", monospace;
-  font-weight: 500;
-  font-style: Medium;
-  font-size: 18px;
 
-  line-height: 150%;
-  letter-spacing: 0%;
-  text-align: center;
-  text-transform: uppercase;
-}
-.container2 {
-  font-family: Roboto Flex;
-  font-weight: 600;
-  font-style: SemiBold;
-  font-size: 68px;
 
-  line-height: 150%;
-  letter-spacing: 0%;
-  text-transform: uppercase;
-}
 .iconWrapper__icon2{
   /* filter: brightness(0) saturate(100%) invert(0%) sepia(3%) saturate(6039%) hue-rotate(43deg) brightness(90%) contrast(88%); */
   filter: brightness(0) saturate(100%) invert(100%) sepia(13%) saturate(7500%) hue-rotate(190deg) brightness(111%) contrast(114%);
+}
+.div{
+  font-semibold; text-2xl; leading-[150%]; tracking-[0%] uppercase;
+  font-family: Roboto Flex;
+  font-style: SemiBold;
+  leading-trim: NONE;
 }

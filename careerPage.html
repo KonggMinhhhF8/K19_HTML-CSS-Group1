@@ -19,7 +19,7 @@
     />
   </head>
 
-  <body class="bg-[#0F0F0F]">
+  <body class="bg-[#0F0F0F] font-family: Roboto;">
     <div class="pt-[30px] px-[50px] pb-[50px] min-h-screen w-[1920px]">
       <!-- nav container 1 -->
       <nav
@@ -75,29 +75,39 @@
       </nav>
       <!-- Container 2 -->
       <div class="container2 flex gap-4">
-        <div class="header">
-          <p class="text-[#F9EFEC]">Unlock Your Potential</p>
+        <div class="header flex gap-6">
+          <p
+            class="text-[#F9EFEC] text-[68px] leading-[150%] tracking-[0%] uppercase; font-style: SemiBold"
+          >
+            Unlock Your Potential
+          </p>
           <!-- Icon header -->
           <span class="header__iconWrapper flex items-center relative">
-            <img
-              src="assets/images/Shape.svg"
-              class="w-[77px] h-[77px]"
-              alt="shape"
-            />
             <div
-              class="absolute inset-0 flex items-center justify-center right-166"
+              class="w-[77px] h-[77px] bg-[url('assets/images/Shape.svg')] bg-contain bg-no-repeat bg-center"
+            ></div>
+            <div
+              class="absolute inset-0 flex items-center justify-center right-47"
             >
               <div
                 class="flex items-center justify-center h-[52px] w-[52px] rounded-full bg-[#CE7D63]"
               >
-                <img
-                  src="assets/images/Icon.svg"
-                  alt="arrowRight"
-                  class="w-[18px] h-[15px] object-contain"
-                />
+                <div
+                  class="w-[18px] h-[15px] bg-[url('assets/images/Icon.svg')] bg-contain bg-no-repeat bg-center"
+                ></div>
               </div>
             </div>
+            <p
+              class="font-medium text-2xl leading-[150%] tracking-[0%] uppercase; font-style: Medium; leading-trim: NONE; text-[#CE7D63]"
+            >
+              Start a project
+            </p>
           </span>
+          <p
+            class="text-[#F9EFEC] text-[68px] leading-[150%] tracking-[0%] uppercase; font-style: SemiBold"
+          >
+            IN The DIGITAl WORLD
+          </p>
         </div>
       </div>
     </div>

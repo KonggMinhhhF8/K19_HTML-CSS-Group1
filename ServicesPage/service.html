@@ -270,16 +270,18 @@
 <!--    MAIN CONTAINER -->
     <main>
         <!--    1.Hero section    -->
-        <section class="mb-12.5">
+        <section class="lg:flex lg:gap-4
+                        mb-12.5">
 <!--     1-1.Hero content -->
             <article class="
                             pt-7.5 pb-4 pr-4 pl-4.25
-                            mb-4
+                            mb-4 lg:mb-0
+                            lg:w-[64%] 2xl:w-[57%]
                             rounded-xl
                             bg-[#1A1A1A]
                            ">
-<!--                Hero title-->
-                    <h1 class=" flex flex-col
+                <!--                Hero title-->
+                <h1 class=" flex flex-col lg:hidden
                                 mx-2
                                 mb-3
                                 text-[#F9EFEC]
@@ -288,50 +290,85 @@
 
                                 uppercase
                               ">
-                        <span>Our Comprehensive</span> <br>
-                        <span>Digital Solutions</span>
-                    </h1>
+                    <span>Our Comprehensive</span> <br>
+                    <span>Digital Solutions</span>
+                </h1>
 
-<!--                 CTA button   -->
-<!--                        Icon wrapper-->
-                    <div class="flex items-center justify-start
+                <!--                 CTA button   -->
+                <!--                        Icon wrapper-->
+                <div class="flex items-center justify-start lg:hidden
                                 mb-3
                                 w-full
                                 uppercase
                                ">
-                       <div class="relative h-14 w-14">
+                    <div class="relative h-14 w-14">
 
-                           <img
-                                   src="assets/icons/icon-wrapper.svg"
-                                   alt="icon-wrapper"
-                                   class="absolute inset-0 w-full h-full"
-                           >
+                        <img
+                                src="assets/icons/icon-wrapper.svg"
+                                alt="icon-wrapper"
+                                class="absolute inset-0 w-full h-full"
+                        >
 
-                           <div class="absolute inset-0
+                        <div class="absolute inset-0
                                     flex items-center justify-center">
-                               <div class="
+                            <div class="
                                         flex items-center justify-center
                                         w-10 h-10
                                         rounded-full
                                         bg-[#CE7D63] ">
-                                   <img src="assets/icons/arrow-right.svg" alt="arrow-right">
-                               </div>
-                           </div>
-                       </div>
-
-
-                       <!-- Text button -->
-                       <div class="text-[#CE7D63] font-medium text-xl leading-[150%] uppercase  ">Start a Project</div>
+                                <img src="assets/icons/arrow-right.svg" alt="arrow-right">
+                            </div>
+                        </div>
                     </div>
 
 
+                    <!-- Text button -->
+                    <div class="text-[#CE7D63] font-medium text-xl leading-[150%] uppercase  ">Start a Project</div>
+                </div>
 
 
+
+                <div class="mx-2 mb-3 lg:mb-5 hidden lg:block lg:ml-5 lg:mt-4">
+                    <div class="lg:flex lg:items-center lg:gap-2 ">
+    <span
+            class="block text-[#F9EFEC] font-semibold text-[28px] lg:text-[38px] 2xl:text-[68px] whitespace-nowrap uppercase leading-[0.95]"
+    >
+      Our Comprehensive
+    </span>
+
+                        <div class="flex items-center justify-start
+
+                                    gap-3 lg:gap-0 uppercase shrink-0">
+                            <div class="relative h-14 w-14 2xl:h-[77px] 2xl:w-[77px] shrink-0">
+                                <img
+                                        src="assets/icons/icon-wrapper.svg"
+                                        alt="icon-wrapper"
+                                        class="absolute inset-0 w-full h-full"
+                                >
+                                <div class="absolute inset-0 flex items-center justify-center">
+                                    <div class="flex items-center justify-center w-10 h-10 2xl:w-12 2xl:h-12 rounded-full bg-[#CE7D63]">
+                                        <img src="assets/icons/arrow-right.svg" alt="arrow-right" class="w-4 h-4 2xl:w-5 2xl:h-5">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="text-[#CE7D63] font-medium text-xl lg:text-sm 2xl:text-3xl whitespace-nowrap">
+                                Start a Project
+                            </div>
+                        </div>
+                    </div>
+
+                    <h1
+                            class="mt-3 text-[#F9EFEC] font-semibold text-[28px] lg:text-[38px] 2xl:text-[68px] uppercase leading-[0.95]"
+                    >
+                        Digital Solutions
+                    </h1>
+                </div>
 
 <!--                Hero description -->
-                <p class=" mx-2 mb-7.75
+                <p class=" mx-2 mb-7.75 lg:mb-19.5 lg:ml-5
                            text-[#676665]
-                           text-[14px]
+                           text-sm lg:text-xs
                          ">
                     At NexGen, we offer a comprehensive suite of digital solutions designed to propel your business to new heights in the digital realm. With a team of skilled professionals, cutting-edge technologies, and a passion for innovation
                 </p>
@@ -339,14 +376,15 @@
                 <div class="flex items-center justify-center
                             overflow-hidden
                             flex-nowrap
-                            gap-2
-                            py-3.5 bg-[#0F0F0F] rounded-lg
+                            gap-2 lg:mr-2
+                            py-3.5 bg-[#0F0F0F]
+                            rounded-lg lg:rounded-[10px]
                            ">
                     <ul class="flex gap-2
                                list-disc marker:text-[#CE7D63]
                                font-['Roboto_Mono']
                                text-[#676665]
-                               text-sm
+                               text-sm lg:text-xs
                                whitespace-nowrap
                                uppercase
                               ">
@@ -373,8 +411,9 @@
             </article>
 
 <!--    1-2.Hero image        -->
-        <img src="assets/images/hero-image.png" alt="hero-image" class="w-full h-full object-cover">
-
+            <article class="lg:w-[34%] 2xl:w-[43%] lg:border lg:overflow-hidden lg:rounded-[10px]">
+            <img src="assets/images/hero-image.png" alt="hero-image" class="w-full h-full object-cover">
+            </article>
         </section>
 
 

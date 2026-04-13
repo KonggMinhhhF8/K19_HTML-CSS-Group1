@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" class="font-['Roboto_Mono'] font-sans">
+<html lang="en" class="font-['Roboto_Flex']">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
@@ -7,60 +7,149 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Services Page</title>
 
+<!--    Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght,XOPQ,XTRA,YOPQ,YTDE,YTFI,YTLC,YTUC@8..144,100..1000,96,468,79,-203,738,514,712&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+
 <!--    Tailwind CDN -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
 </head>
-<body class="bg-[#0F0F0F] ">
-<div class=" mx-auto w-full px-4 lg:px-8 2xl:max-w-455 2xl:px-12">
+<body>
+<div
+        class=" flex flex-col
+                mx-auto
+                pt-10 px-4 pb-5
+                lg:pt-7 lg:px-10 lg:pb-10
+                2xl:max-w-455
+                2xl:px-12 2xl:pb-12
+                bg-[#0F0F0F]
+                 ">
     <input type="checkbox" id="menu-toggle" class="peer hidden">
 
     <header
-            class="relative z-[9990] sticky top-0
-            mt-10 lg:mt-7
+            class=" sticky top-0 z-[1001]
             flex items-center justify-between
-             rounded-xl lg:rounded-2xl
+            rounded-lg   lg: rounded-xl   2xl: rounded-2xl
              border border-[#1C1C21] bg-[#1A1A1A]
+
               p-4
-              mb-5
               lg:pr-5 lg:pl-10 lg:py-5
-              2xl:pr-6 2xl:pl-12 2xl:py-6"
+              2xl:pr-6 2xl:pl-12 2xl:py-6
+              mb-5     lg:mb-12
+
+"
+
     >
         <img src="assets/icons/logo.svg" alt="NexGen"
              class="
-             h-4 w-21
+                     h-4 w-21
                      lg:h-5 lg:w-24
-                     2xl:h-6 2xl:w-32">
+                     2xl:h-6 2xl:w-32
+                    ">
 
-        <!-- Mobile icons -->
-        <label for="menu-toggle" class="cursor-pointer lg:hidden peer-checked:hidden  ">
+        <!-- Mobile menu toggle icons -->
+        <label for="menu-toggle" class="cursor-pointer lg:hidden ">
             <img src="assets/icons/menu.svg" alt="Open menu">
         </label>
 
         <!-- Desktop nav -->
-        <nav class="hidden lg:flex">
-            <ul class="flex items-center
-          text-[#81807E]  text-sm font-medium lg:gap-3 2xl:gap-4 2xl:text-base">
-                <li class="rounded-xl bg-[#0F0F0F] px-3 py-3 hover:text-[#E7BEB1] uppercase lg:px-5 lg:py-4 2xl:px-6">
-                    <a href="#">Home</a>
+        <nav class="hidden lg:flex ">
+            <ul class=" flex
+                        lg:gap-3    2xl:gap-4
+                        lg:text-sm  2xl:text-lg
+                        text-[#81807E]
+                        font-['Roboto_Mono']
+                        font-medium
+                        uppercase
+                      ">
+                <li class="
+                            flex items-center justify-center
+                            lg:rounded-lg   2xl:rounded-xl
+                            bg-[#0F0F0F]
+                          ">
+                    <a href="#" class="
+                                        lg:px-5 lg:py-3
+                                        2xl:px-6 2xl:py-4
+                                        hover:text-[#E7BEB1]
+                                      "
+                    >Home</a>
                 </li>
-                <li class="rounded-xl bg-[#0F0F0F] px-3 py-3 hover:text-[#E7BEB1] uppercase lg:px-5 lg:py-4 2xl:px-6">
-                    <a href="#">SERVICES</a>
+                <li class="
+                            flex items-center justify-center
+                            lg:rounded-lg   2xl:rounded-xl
+                            bg-[#0F0F0F]
+                          ">
+
+                    <a href="#" class="
+                                        lg:px-5 lg:py-3
+                                        2xl:px-6 2xl:py-4
+                                        hover:text-[#E7BEB1]
+                                      "
+                    >SERVICES</a>
                 </li>
-                <li class="rounded-xl bg-[#0F0F0F] px-3 py-3 hover:text-[#E7BEB1] uppercase lg:px-5 lg:py-4 2xl:px-6">
-                    <a href="#">Projects</a>
+                <li class="
+                            flex items-center justify-center
+                            lg:rounded-lg   2xl:rounded-xl
+                            bg-[#0F0F0F]
+                          ">
+                    <a href="#" class="
+                                        lg:px-5 lg:py-3
+                                        2xl:px-6 2xl:py-4
+                                        hover:text-[#E7BEB1]
+                                      "
+                    >Projects</a>
                 </li>
-                <li class="rounded-xl bg-[#0F0F0F] px-3 py-3 hover:text-[#E7BEB1] uppercase lg:px-5 lg:py-4 2xl:px-6">
-                    <a href="#">About</a>
+                <li class="
+                            flex items-center justify-center
+                            lg:rounded-lg   2xl:rounded-xl
+                            bg-[#0F0F0F]
+                          ">
+                    <a href="#" class="
+                                        lg:px-5 lg:py-3
+                                        2xl:px-6 2xl:py-4
+                                        hover:text-[#E7BEB1]
+                                      "
+                    >About</a>
                 </li>
-                <li class="rounded-xl bg-[#0F0F0F] px-3 py-3 hover:text-[#E7BEB1] uppercase lg:px-5 lg:py-4 2xl:px-6">
-                    <a href="#">Careers</a>
+                <li class="
+                            flex items-center justify-center
+                            lg:rounded-lg   2xl:rounded-xl
+                            bg-[#0F0F0F]
+                          ">
+                    <a href="#" class="
+                                        lg:px-5 lg:py-3
+                                        2xl:px-6 2xl:py-4
+                                        hover:text-[#E7BEB1]
+                                      "
+                    >Careers</a>
                 </li>
-                <li class="rounded-xl bg-[#0F0F0F] px-3 py-3 hover:text-[#E7BEB1] uppercase lg:px-5 lg:py-4 2xl:px-6">
-                    <a href="#">Blogs</a>
+                <li class="
+                            flex items-center justify-center
+                            lg:rounded-lg   2xl:rounded-xl
+                            bg-[#0F0F0F]
+                          ">
+                    <a href="#" class="
+                                        lg:px-5 lg:py-3
+                                        2xl:px-6 2xl:py-4
+                                        hover:text-[#E7BEB1]
+                                      "
+                    >Blogs</a>
                 </li>
-                <li class="rounded-xl bg-[#CE7D63] px-3 py-3 text-sm text-[#0F0F0F] lg:px-5 lg:py-4 2xl:px-6 2xl:text-base uppercase">
-                    Contact us
+                <li class="
+                            flex items-center justify-center
+                            lg:rounded-lg   2xl:rounded-xl
+                            bg-[#CE7D63]
+                            whitespace-nowrap">
+
+                    <a href="#" class="
+                                        lg:px-5 lg:py-3
+                                        2xl:px-6 2xl:py-4
+                                        text-[#0F0F0F]
+                                        hover:text-[#E7BEB1]
+                                      "
+                    >Contact us</a>
                 </li>
             </ul>
         </nav>
@@ -68,50 +157,97 @@
 
     <!-- Mobile nav -->
     <nav
-            class="fixed top-10 z-[1000]
-             right-[-280px] w-[280px] h-screen
-              px-6
-              bg-[#1A1A1A]
-             peer-checked:right-4 lg:hidden
-             transition-all duration-300  "
+            class="
+                    fixed top-10 z-[1000]
+                    w-[280px] h-screen right-[-280px]
+                    px-6
+                    font-['Roboto_Mono']
+                    bg-[#1A1A1A]
+                    peer-checked:right-4
+                    transition-[right] duration-300 ease-in-out
+                  "
     >
 
-        <ul class="flex flex-col
-         mt-30
-         gap-5
-         text-[#81807E] text-center  ">
-           <li class="rounded-xl bg-[#0F0F0F]">
-                <a href="#" class="block py-3 hover:text-[#E7BEB1] uppercase">
+        <ul class="
+                   flex flex-col
+                   mt-30
+                   gap-5
+                   text-[#81807E]
+                   uppercase
+                  ">
+           <li class="
+                       flex items-center justify-center
+                       bg-[#0F0F0F]
+                       rounded-xl
+                     ">
+                <a href="#" class="
+                                    py-3 hover:text-[#E7BEB1]
+                                  ">
                     Home
                 </a>
             </li>
-           <li class="rounded-xl bg-[#0F0F0F]">
-                <a href="#" class="block py-3 hover:text-[#E7BEB1] uppercase">
+            <li class="
+                       flex items-center justify-center
+                       bg-[#0F0F0F]
+                       rounded-xl
+                     ">
+                <a href="#" class="
+                                    py-3 hover:text-[#E7BEB1]
+                                  ">
                     Services
                 </a>
             </li>
-           <li class="rounded-xl bg-[#0F0F0F]">
-                <a href="#" class="block py-3 hover:text-[#E7BEB1] uppercase">
+            <li class="
+                       flex items-center justify-center
+                       bg-[#0F0F0F]
+                       rounded-xl
+                     ">
+                <a href="#" class="
+                                    py-3 hover:text-[#E7BEB1]
+                                  ">
                     Projects
                 </a>
             </li>
-           <li class="rounded-xl bg-[#0F0F0F]">
-                <a href="#" class="block py-3 hover:text-[#E7BEB1] uppercase">
+            <li class="
+                       flex items-center justify-center
+                       bg-[#0F0F0F]
+                       rounded-xl
+                     ">
+                <a href="#" class="
+                                    py-3 hover:text-[#E7BEB1]
+                                  ">
                     About
                 </a>
             </li>
-           <li class="rounded-xl bg-[#0F0F0F]">
-                <a href="#" class="block py-3 hover:text-[#E7BEB1] uppercase">
+            <li class="
+                       flex items-center justify-center
+                       bg-[#0F0F0F]
+                       rounded-xl
+                     ">
+                <a href="#" class="
+                                    py-3 hover:text-[#E7BEB1]
+                                  ">
                     Careers
                 </a>
             </li>
-           <li class="rounded-xl bg-[#0F0F0F]">
-                <a href="#" class="block py-3 hover:text-[#E7BEB1] uppercase">
+            <li class="
+                       flex items-center justify-center
+                       bg-[#0F0F0F]
+                       rounded-xl
+                     ">
+                <a href="#" class="
+                                    py-3 hover:text-[#E7BEB1]
+                                  ">
                     Blogs
                 </a>
             </li>
-           <li class="rounded-xl bg-[#0F0F0F]">
-                <a href="#" class="block rounded-xl bg-[#CE7D63] py-3 text-[#0F0F0F] uppercase">
+           <li class="
+                        flex items-center justify-center
+                        rounded-xl
+                        bg-[#CE7D63]
+                     ">
+                <a href="#" class="
+                                    py-3 text-[#0F0F0F] ">
                     Contact us
                 </a>
             </li>
@@ -122,7 +258,15 @@
     <!-- Overlay -->
     <label
             for="menu-toggle"
-            class="fixed inset-0 z-[998] cursor-pointer bg-black/80 opacity-0 invisible transition-all duration-300 peer-checked:visible peer-checked:opacity-100 lg:hidden"
+            class="
+                    fixed inset-0 z-[998]
+                    bg-[#1A1A1A]
+                    opacity-0 invisible
+                    peer-checked:visible
+                    peer-checked:opacity-60
+                    transition-all duration-300 ease-in-out
+                    cursor-pointer
+                  "
     ></label>
 
     <main>

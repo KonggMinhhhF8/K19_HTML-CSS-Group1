@@ -12,11 +12,11 @@
 
 </head>
 <body class="bg-[#0F0F0F] ">
-<div class=" mx-auto w-full px-4 lg:px-8 2xl:w-455 2xl:px-12">
+<div class=" mx-auto w-full px-4 lg:px-8 2xl:max-w-455 2xl:px-12">
     <input type="checkbox" id="menu-toggle" class="peer hidden">
 
     <header
-            class="sticky top-0
+            class="relative z-[9990] sticky top-0
             mt-10 lg:mt-7
             flex items-center justify-between
              rounded-xl lg:rounded-2xl
@@ -27,13 +27,14 @@
               2xl:pr-6 2xl:pl-12 2xl:py-6"
     >
         <img src="assets/icons/logo.svg" alt="NexGen"
-             class=" h-4 w-21
+             class="
+             h-4 w-21
                      lg:h-5 lg:w-24
                      2xl:h-6 2xl:w-32">
 
         <!-- Mobile icons -->
-        <label for="menu-toggle" class="cursor-pointer lg:hidden">
-            <img src="assets/icons/menu.svg" alt="Open menu" class="peer-checked:hidden">
+        <label for="menu-toggle" class="cursor-pointer lg:hidden peer-checked:hidden  ">
+            <img src="assets/icons/menu.svg" alt="Open menu">
         </label>
 
         <!-- Desktop nav -->
@@ -67,50 +68,49 @@
 
     <!-- Mobile nav -->
     <nav
-            class="fixed top-0 right-[-332px] z-[1000] flex h-screen w-[332px]
-             text-[#81807E]
-             rounded-tl-[50px] rounded-bl-[50px]
-             flex-col  gap-12 bg-[#1A1A1A] px-6 py-10 transition-all duration-300 peer-checked:right-0 lg:hidden"
+            class="fixed top-10 z-[1000]
+             right-[-280px] w-[280px] h-screen
+              px-6
+              bg-[#1A1A1A]
+             peer-checked:right-4 lg:hidden
+             transition-all duration-300  "
     >
-       <div class="flex items-center justify-between py-3">
-           <img src="assets/icons/logo.svg" alt="NexGen" class=" h-6 w-32 ">
-           <label for="menu-toggle" class="">
-               <img src="assets/icons/close.svg" alt="Close menu" class="h-8 w-8 invert">
-           </label>
-       </div>
 
-        <ul class="flex flex-col gap-5 text-center">
-            <li>
-                <a href="#" class="block rounded-xl bg-[#0F0F0F] py-3 hover:text-[#E7BEB1] uppercase">
+        <ul class="flex flex-col
+         mt-30
+         gap-5
+         text-[#81807E] text-center  ">
+           <li class="rounded-xl bg-[#0F0F0F]">
+                <a href="#" class="block py-3 hover:text-[#E7BEB1] uppercase">
                     Home
                 </a>
             </li>
-            <li>
-                <a href="#" class="block rounded-xl bg-[#0F0F0F] py-3 hover:text-[#E7BEB1] uppercase">
+           <li class="rounded-xl bg-[#0F0F0F]">
+                <a href="#" class="block py-3 hover:text-[#E7BEB1] uppercase">
                     Services
                 </a>
             </li>
-            <li>
-                <a href="#" class="block rounded-xl bg-[#0F0F0F] py-3 hover:text-[#E7BEB1] uppercase">
+           <li class="rounded-xl bg-[#0F0F0F]">
+                <a href="#" class="block py-3 hover:text-[#E7BEB1] uppercase">
                     Projects
                 </a>
             </li>
-            <li>
-                <a href="#" class="block rounded-xl bg-[#0F0F0F] py-3 hover:text-[#E7BEB1] uppercase">
+           <li class="rounded-xl bg-[#0F0F0F]">
+                <a href="#" class="block py-3 hover:text-[#E7BEB1] uppercase">
                     About
                 </a>
             </li>
-            <li>
-                <a href="#" class="block rounded-xl bg-[#0F0F0F] py-3 hover:text-[#E7BEB1] uppercase">
+           <li class="rounded-xl bg-[#0F0F0F]">
+                <a href="#" class="block py-3 hover:text-[#E7BEB1] uppercase">
                     Careers
                 </a>
             </li>
-            <li>
-                <a href="#" class="block rounded-xl bg-[#0F0F0F] py-3 hover:text-[#E7BEB1] uppercase">
+           <li class="rounded-xl bg-[#0F0F0F]">
+                <a href="#" class="block py-3 hover:text-[#E7BEB1] uppercase">
                     Blogs
                 </a>
             </li>
-            <li class="mt-4">
+           <li class="rounded-xl bg-[#0F0F0F]">
                 <a href="#" class="block rounded-xl bg-[#CE7D63] py-3 text-[#0F0F0F] uppercase">
                     Contact us
                 </a>

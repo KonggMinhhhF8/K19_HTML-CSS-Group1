@@ -16,3 +16,12 @@
     visibility: visible;
     transform: scale(1);
 }
+#btn-awards:checked ~ .relative label:first-child {
+    opacity: 0;
+    visibility: hidden;
+}
+#btn-awards:checked ~ .relative label:last-child {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1);
+}

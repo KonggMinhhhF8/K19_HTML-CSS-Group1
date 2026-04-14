@@ -12,6 +12,21 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <style>
+      @keyframes marquee {
+        0% {
+          transform: translateX(0);
+        }
+        100% {
+          transform: translateX(-50%);
+        } /* Chạy một nửa quãng đường để tạo hiệu ứng lặp vô tận */
+      }
+      .animate-marquee {
+        display: flex;
+        width: max-content;
+        animation: marquee 20s linear infinite;
+      }
+    </style>
   </head>
   <body>
     <!-- Wrapper  -->
@@ -1364,49 +1379,566 @@
               </p>
             </div>
           </div>
-          <!--Cards Section 4  -->
-          <div class="grid grid-cols-1 gap-10px">
-            <!-- Card1  -->
-            <div
-              class="group flex flex-col gap-5 bg-[#1A1A1A] rounded-[14px] p-[30px] lg:p-[40px] 2xl:p-[50px]"
-            >
-              <input type="checkbox" name="openCard" id="btn" class="hidden" />
-              <div class="flex justify-between">
-                <p
-                  class="text-[#F9EFEC] font-medium text-[18px] leading-[100%] tracking-[0%] uppercase self-center lg:text-[20px] 2xl:text-[22px]"
-                >
-                  How long does it take to complete a web development project?
-                </p>
-                <label
-                  for="btn"
-                  class="relative flex-shrink-0 w-10 h-10 border-[1px] border-[#333333] bg-[#1F1F1F] cursor-pointer flex justify-center items-center rounded-full 2xl:w-13 2xl:h-13"
-                >
-                  <div
-                    class="absolute w-5 h-5 bg-[url('assets/images/cong.svg')] bg-contain bg-center bg-no-repeat 2xl:w-6 2xl:h-6 transition-all duration-300 opacity-100 group-has-[:checked]:opacity-0 group-has-[:checked]:rotate-90"
-                  ></div>
-                  <div
-                    class="absolute w-5 h-5 bg-[url('assets/images/tru.svg')] bg-contain bg-center bg-no-repeat 2xl:w-6 2xl:h-6 transition-all duration-300 opacity-0 group-has-[:checked]:opacity-100 group-has-[:checked]:rotate-0"
-                  ></div>
-                </label>
-              </div>
-              <!-- Content card checkbox hacking -->
+          <!--Body of section 4  -->
+          <div class="grid grid-cols-1 gap-[10px] lg:grid-cols-10">
+            <!--Cards Section 4  -->
+            <div class="grid grid-cols-1 gap-[10px] h-auto lg:col-span-7">
+              <!-- Card1  -->
               <div
-                class="grid grid-rows-[0fr] border-t-[1px] border-[#262626] transition-all ease-in-out duration-500 group-has-[:checked]:grid-rows-[1fr] opacity-0 group-has-[:checked]:opacity-100"
+                class="group flex flex-col gap-5 bg-[#1A1A1A] rounded-[14px] p-[30px] lg:p-[40px] 2xl:p-[50px]"
               >
-                <div class="overflow-hidden">
+                <input
+                  type="checkbox"
+                  name="openCard"
+                  id="btn"
+                  class="hidden"
+                />
+                <div class="flex justify-between">
                   <p
-                    class="text-[#B3B3B2] font-normal text-[14px] leading-[150%] tracking-[0%] lg:text-[16px] 2xl:text-[18px]"
+                    class="text-[#F9EFEC] font-medium text-[18px] leading-[100%] tracking-[0%] uppercase self-center lg:text-[20px] 2xl:text-[22px]"
                   >
-                    The timeline varies depending on the project's complexity
-                    and requirements. Our team strives to deliver projects on
-                    time while maintaining the highest quality standards.
+                    How long does it take to complete a web development project?
+                  </p>
+                  <label
+                    for="btn"
+                    class="relative flex-shrink-0 w-10 h-10 border-[1px] border-[#333333] bg-[#1F1F1F] cursor-pointer flex justify-center items-center rounded-full 2xl:w-13 2xl:h-13"
+                  >
+                    <div
+                      class="absolute w-5 h-5 bg-[url('assets/images/cong.svg')] bg-contain bg-center bg-no-repeat 2xl:w-6 2xl:h-6 transition-all duration-300 opacity-100 group-has-[:checked]:opacity-0 group-has-[:checked]:rotate-90"
+                    ></div>
+                    <div
+                      class="absolute w-5 h-5 bg-[url('assets/images/tru.svg')] bg-contain bg-center bg-no-repeat 2xl:w-6 2xl:h-6 transition-all duration-300 opacity-0 group-has-[:checked]:opacity-100 group-has-[:checked]:rotate-0"
+                    ></div>
+                  </label>
+                </div>
+                <!-- Content card checkbox hacking -->
+                <div
+                  class="grid grid-rows-[0fr] border-t-[1px] border-[#262626] transition-all ease-in-out duration-500 group-has-[:checked]:grid-rows-[1fr] opacity-0 group-has-[:checked]:opacity-100"
+                >
+                  <div class="overflow-hidden">
+                    <p
+                      class="text-[#B3B3B2] font-normal text-[14px] leading-[150%] tracking-[0%] lg:text-[16px] 2xl:text-[18px]"
+                    >
+                      The timeline varies depending on the project's complexity
+                      and requirements. Our team strives to deliver projects on
+                      time while maintaining the highest quality standards.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- End card 1 -->
+              <!-- Card 2  -->
+              <div
+                class="group flex flex-col gap-5 bg-[#1A1A1A] rounded-[14px] p-[30px] lg:p-[40px] 2xl:p-[50px]"
+              >
+                <input
+                  type="checkbox"
+                  name="openCard"
+                  id="btn2"
+                  class="hidden"
+                />
+                <div class="flex justify-between">
+                  <p
+                    class="text-[#F9EFEC] font-medium text-[18px] leading-[100%] tracking-[0%] uppercase self-center lg:text-[20px] 2xl:text-[22px]"
+                  >
+                    Can you handle large-scale mobile app development projects?
+                  </p>
+                  <label
+                    for="btn2"
+                    class="relative flex-shrink-0 w-10 h-10 border-[1px] border-[#333333] bg-[#1F1F1F] cursor-pointer flex justify-center items-center rounded-full 2xl:w-13 2xl:h-13"
+                  >
+                    <div
+                      class="absolute w-5 h-5 bg-[url('assets/images/cong.svg')] bg-contain bg-center bg-no-repeat 2xl:w-6 2xl:h-6 transition-all duration-300 opacity-100 group-has-[:checked]:opacity-0 group-has-[:checked]:rotate-90"
+                    ></div>
+                    <div
+                      class="absolute w-5 h-5 bg-[url('assets/images/tru.svg')] bg-contain bg-center bg-no-repeat 2xl:w-6 2xl:h-6 transition-all duration-300 opacity-0 group-has-[:checked]:opacity-100 group-has-[:checked]:rotate-0"
+                    ></div>
+                  </label>
+                </div>
+                <!-- Content card checkbox hacking -->
+                <div
+                  class="grid grid-rows-[0fr] border-t-[1px] border-[#262626] transition-all ease-in-out duration-500 group-has-[:checked]:grid-rows-[1fr] opacity-0 group-has-[:checked]:opacity-100"
+                >
+                  <div class="overflow-hidden">
+                    <p
+                      class="text-[#B3B3B2] font-normal text-[14px] leading-[150%] tracking-[0%] lg:text-[16px] 2xl:text-[18px]"
+                    >
+                      2 The timeline varies depending on the project's
+                      complexity and requirements. Our team strives to deliver
+                      projects on time while maintaining the highest quality
+                      standards.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- End card 2 -->
+              <!-- Card 3  -->
+              <div
+                class="group flex flex-col gap-5 bg-[#1A1A1A] rounded-[14px] p-[30px] lg:p-[40px] 2xl:p-[50px]"
+              >
+                <input
+                  type="checkbox"
+                  name="openCard"
+                  id="btn3"
+                  class="hidden"
+                />
+                <div class="flex justify-between">
+                  <p
+                    class="text-[#F9EFEC] font-medium text-[18px] leading-[100%] tracking-[0%] uppercase self-center lg:text-[20px] 2xl:text-[22px]"
+                  >
+                    Can you integrate third-party APIs into our mobile app?
+                  </p>
+                  <label
+                    for="btn3"
+                    class="relative flex-shrink-0 w-10 h-10 border-[1px] border-[#333333] bg-[#1F1F1F] cursor-pointer flex justify-center items-center rounded-full 2xl:w-13 2xl:h-13"
+                  >
+                    <div
+                      class="absolute w-5 h-5 bg-[url('assets/images/cong.svg')] bg-contain bg-center bg-no-repeat 2xl:w-6 2xl:h-6 transition-all duration-300 opacity-100 group-has-[:checked]:opacity-0 group-has-[:checked]:rotate-90"
+                    ></div>
+                    <div
+                      class="absolute w-5 h-5 bg-[url('assets/images/tru.svg')] bg-contain bg-center bg-no-repeat 2xl:w-6 2xl:h-6 transition-all duration-300 opacity-0 group-has-[:checked]:opacity-100 group-has-[:checked]:rotate-0"
+                    ></div>
+                  </label>
+                </div>
+                <!-- Content card checkbox hacking -->
+                <div
+                  class="grid grid-rows-[0fr] border-t-[1px] border-[#262626] transition-all ease-in-out duration-500 group-has-[:checked]:grid-rows-[1fr] opacity-0 group-has-[:checked]:opacity-100"
+                >
+                  <div class="overflow-hidden">
+                    <p
+                      class="text-[#B3B3B2] font-normal text-[14px] leading-[150%] tracking-[0%] lg:text-[16px] 2xl:text-[18px]"
+                    >
+                      3 The timeline varies depending on the project's
+                      complexity and requirements. Our team strives to deliver
+                      projects on time while maintaining the highest quality
+                      standards.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- End card 3 -->
+              <!-- Card4  -->
+              <div
+                class="group flex flex-col gap-5 bg-[#1A1A1A] rounded-[14px] p-[30px] lg:p-[40px] 2xl:p-[50px]"
+              >
+                <input
+                  type="checkbox"
+                  name="openCard"
+                  id="btn5"
+                  class="hidden"
+                />
+                <div class="flex justify-between">
+                  <p
+                    class="text-[#F9EFEC] font-medium text-[18px] leading-[100%] tracking-[0%] uppercase self-center lg:text-[20px] 2xl:text-[22px]"
+                  >
+                    How do you ensure cross-platform compatibility for mobile
+                    apps?
+                  </p>
+                  <label
+                    for="btn5"
+                    class="relative flex-shrink-0 w-10 h-10 border-[1px] border-[#333333] bg-[#1F1F1F] cursor-pointer flex justify-center items-center rounded-full 2xl:w-13 2xl:h-13"
+                  >
+                    <div
+                      class="absolute w-5 h-5 bg-[url('assets/images/cong.svg')] bg-contain bg-center bg-no-repeat 2xl:w-6 2xl:h-6 transition-all duration-300 opacity-100 group-has-[:checked]:opacity-0 group-has-[:checked]:rotate-90"
+                    ></div>
+                    <div
+                      class="absolute w-5 h-5 bg-[url('assets/images/tru.svg')] bg-contain bg-center bg-no-repeat 2xl:w-6 2xl:h-6 transition-all duration-300 opacity-0 group-has-[:checked]:opacity-100 group-has-[:checked]:rotate-0"
+                    ></div>
+                  </label>
+                </div>
+                <!-- Content card checkbox hacking -->
+                <div
+                  class="grid grid-rows-[0fr] border-t-[1px] border-[#262626] transition-all ease-in-out duration-500 group-has-[:checked]:grid-rows-[1fr] opacity-0 group-has-[:checked]:opacity-100"
+                >
+                  <div class="overflow-hidden">
+                    <p
+                      class="text-[#B3B3B2] font-normal text-[14px] leading-[150%] tracking-[0%] lg:text-[16px] 2xl:text-[18px]"
+                    >
+                      5 The timeline varies depending on the project's
+                      complexity and requirements. Our team strives to deliver
+                      projects on time while maintaining the highest quality
+                      standards.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- End card  4-->
+              <!-- Card 5  -->
+              <div
+                class="group flex flex-col gap-5 bg-[#1A1A1A] rounded-[14px] p-[30px] lg:p-[40px] 2xl:p-[50px]"
+              >
+                <input
+                  type="checkbox"
+                  name="openCard"
+                  id="btn4"
+                  class="hidden"
+                />
+                <div class="flex justify-between">
+                  <p
+                    class="text-[#F9EFEC] font-medium text-[18px] leading-[100%] tracking-[0%] uppercase self-center lg:text-[20px] 2xl:text-[22px]"
+                  >
+                    What is your approach to user experience (UX) design?
+                  </p>
+                  <label
+                    for="btn4"
+                    class="relative flex-shrink-0 w-10 h-10 border-[1px] border-[#333333] bg-[#1F1F1F] cursor-pointer flex justify-center items-center rounded-full 2xl:w-13 2xl:h-13"
+                  >
+                    <div
+                      class="absolute w-5 h-5 bg-[url('assets/images/cong.svg')] bg-contain bg-center bg-no-repeat 2xl:w-6 2xl:h-6 transition-all duration-300 opacity-100 group-has-[:checked]:opacity-0 group-has-[:checked]:rotate-90"
+                    ></div>
+                    <div
+                      class="absolute w-5 h-5 bg-[url('assets/images/tru.svg')] bg-contain bg-center bg-no-repeat 2xl:w-6 2xl:h-6 transition-all duration-300 opacity-0 group-has-[:checked]:opacity-100 group-has-[:checked]:rotate-0"
+                    ></div>
+                  </label>
+                </div>
+                <!-- Content card checkbox hacking -->
+                <div
+                  class="grid grid-rows-[0fr] border-t-[1px] border-[#262626] transition-all ease-in-out duration-500 group-has-[:checked]:grid-rows-[1fr] opacity-0 group-has-[:checked]:opacity-100"
+                >
+                  <div class="overflow-hidden">
+                    <p
+                      class="text-[#B3B3B2] font-normal text-[14px] leading-[150%] tracking-[0%] lg:text-[16px] 2xl:text-[18px]"
+                    >
+                      4 The timeline varies depending on the project's
+                      complexity and requirements. Our team strives to deliver
+                      projects on time while maintaining the highest quality
+                      standards.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- End card  5-->
+            </div>
+            <!-- Form -->
+
+            <form
+              action=""
+              method="post"
+              class="flex flex-col lg:h-full p-[30px] gap-5 rounded-xl bg-[#1A1A1A] lg:col-span-3 lg:gap-[30px] 2xl:gap-[50px]"
+            >
+              <!-- Title form -->
+              <p
+                class="self-center text-[#F9EFEC] font-medium text-[18px] uppercase leading-[150%] tracking-[0%] border-b-[1px] border-[#262626] pb-[20px] lg:text-[20px] lg:pb-[10px] 2xl:pb-[20px] 2xl:text-[24px]"
+              >
+                Ask your question
+              </p>
+              <div class="grid grid-cols-1 gap-[10px]">
+                <label
+                  for="name"
+                  class="text-[#F3DFD8] font-medium text-[16px] uppercase leading-[150%] tracking-[0%] lg:text-[18px] 2xl:text-[20px]"
+                  >Name</label
+                >
+                <input
+                  type="text"
+                  id="name"
+                  class="rounded-lg p-4 bg-[#0F0F0F] placeholder-[#676665] font-normal text-[16px] uppercase leading-[150%] tracking-[0%] lg:text-[18px] 2xl:text-[20px]"
+                  placeholder="Enter your name"
+                />
+              </div>
+              <div class="grid grid-cols-1 gap-[10px]">
+                <label
+                  for="name"
+                  class="text-[#F3DFD8] font-medium text-[16px] uppercase leading-[150%] tracking-[0%] lg:text-[18px] 2xl:text-[20px]"
+                  >Email</label
+                >
+                <input
+                  type="text"
+                  id="name"
+                  class="rounded-lg p-4 bg-[#0F0F0F] placeholder-[#676665] font-normal text-[16px] uppercase leading-[150%] tracking-[0%] lg:text-[18px] 2xl:text-[20px]"
+                  placeholder="Enter your email"
+                />
+              </div>
+              <div class="grid grid-cols-1 gap-[10px]">
+                <label
+                  for="name"
+                  class="text-[#F3DFD8] font-medium text-[16px] uppercase leading-[150%] tracking-[0%] lg:text-[18px] 2xl:text-[20px]"
+                  >Your Question</label
+                >
+                <input
+                  type="text"
+                  id="name"
+                  class="rounded-lg min-h-[100px] p-4 bg-[#0F0F0F] placeholder-[#676665] font-normal text-[16px] uppercase leading-[150%] tracking-[0%] lg:text-[18px] 2xl:text-[20px]"
+                  placeholder="Enter your email"
+                />
+              </div>
+              <button
+                class="mt-auto text-[#0F0F0F] bg-[#CE7D63] rounded-lg px-5 py-[14px] font-medium text-[16px] uppercase leading-[150%] tracking-[0%] lg:px-6 lg:py-[18px] lg:text-[18px] 2xl:text-[20px]"
+              >
+                Send Your Message
+              </button>
+            </form>
+          </div>
+        </section>
+        <!-- Section 5 -->
+        <footer class="grid grid-cols-1 gap-2.5">
+          <div
+            class="flex flex-col p-[30px] rounded-2xl gap-4 bg-[#CE7D63] lg:p-[60px] lg:rounded-[20px] 2xl:p-[80px] lg:flex-row lg:justify-between"
+          >
+            <div>
+              <p
+                class="text-[#0F0F0F] font-medium text-[28px] leading-[150%] tracking-[0%] lg:text-[42px] 2xl:text-[58px]"
+              >
+                Ready to Transform Your Digital Presence?
+              </p>
+              <p
+                class="text-[#262626] font-normal text-[14px] leading-[150%] tracking-[0%] lg:text-[16px] 2xl:text-[18px]"
+              >
+                Take the first step towards digital success with NexGen by your
+                side. Our team of experts is eager to craft tailored solutions
+                that drive growth for your business.
+              </p>
+            </div>
+            <button
+              class="bg-[#0F0F0F] px-[24px] py-[14px] rounded-xl flex items-center gap-2 justify-center lg:self-end"
+            >
+              <p
+                class="flex-shrink-0 text-[#F3DFD8] uppercase font-medium text-[14px] leading-[150%] tracking-[0%] lg:text-[16px] 2xl:text-[18px]"
+              >
+                Get in touch
+              </p>
+              <div
+                class="w-5 h-5 bg-[url('assets/images/arrowTopLeft.svg')] bg-contain bg-center bg-no-repeat"
+              ></div>
+            </button>
+          </div>
+          <!-- animation -->
+          <div
+            class="w-full overflow-hidden bg-[#1A1A1A] py-4 border-y border-dashed border-[#262626]"
+          >
+            <div class="animate-marquee">
+              <div class="flex items-center space-x-10 px-5">
+                <span
+                  class="text-[#81807E] font-medium text-xl uppercase whitespace-nowrap"
+                  >Follow us on social media</span
+                >
+                <span class="w-2 h-2 rounded-full bg-[#CE7D63]"></span>
+                <span
+                  class="text-[#81807E] font-medium text-xl uppercase whitespace-nowrap"
+                  >Follow us on social media</span
+                >
+                <span class="w-2 h-2 rounded-full bg-[#CE7D63]"></span>
+                <span
+                  class="text-[#81807E] font-medium text-xl uppercase whitespace-nowrap"
+                  >Follow us on social media</span
+                >
+                <span class="w-2 h-2 rounded-full bg-[#CE7D63]"></span>
+              </div>
+
+              <div class="flex items-center space-x-10 px-5">
+                <span
+                  class="text-[#81807E] font-medium text-xl uppercase whitespace-nowrap"
+                  >Follow us on social media</span
+                >
+                <span class="w-2 h-2 rounded-full bg-[#CE7D63]"></span>
+                <span
+                  class="text-[#81807E] font-medium text-xl uppercase whitespace-nowrap"
+                  >Follow us on social media</span
+                >
+                <span class="w-2 h-2 rounded-full bg-[#CE7D63]"></span>
+                <span
+                  class="text-[#81807E] font-medium text-xl uppercase whitespace-nowrap"
+                  >Follow us on social media</span
+                >
+                <span class="w-2 h-2 rounded-full bg-[#CE7D63]"></span>
+              </div>
+            </div>
+          </div>
+          <!-- Footer -->
+          <div class="grid grid-cols-1 lg:grid-cols-[4fr_6fr]">
+            <!-- Brand hidden when latop -->
+            <div class="grid grid-cols-4 gap-2.5 lg:hidden">
+              <div
+                class="flex justify-center items-center p-[14px] bg-[#1F1F1F] border-[1px] border-[#333333] rounded-xl"
+              >
+                <div
+                  class="w-7 h-7 bg-[url('assets/images/insta.svg')] bg-contain bg-center bg-no-repeat"
+                ></div>
+              </div>
+              <div
+                class="flex justify-center items-center p-[14px] bg-[#1F1F1F] border-[1px] border-[#333333] rounded-xl"
+              >
+                <div
+                  class="w-7 h-7 bg-[url('assets/images/twit.svg')] bg-contain bg-center bg-no-repeat"
+                ></div>
+              </div>
+              <div
+                class="flex justify-center items-center p-[14px] bg-[#1F1F1F] border-[1px] border-[#333333] rounded-xl"
+              >
+                <div
+                  class="w-7 h-7 bg-[url('assets/images/ball.svg')] bg-contain bg-center bg-no-repeat"
+                ></div>
+              </div>
+              <div
+                class="flex justify-center items-center p-[14px] bg-[#1F1F1F] border-[1px] border-[#333333] rounded-xl"
+              >
+                <div
+                  class="w-7 h-7 bg-[url('assets/images/be.svg')] bg-contain bg-center bg-no-repeat"
+                ></div>
+              </div>
+            </div>
+            <!-- Brand with card lg show -->
+            <div class="hidden lg:grid grid-cols-2 grid-rows-2 gap-2.5">
+              <!-- Card 1 -->
+              <div
+                class="flex flex-col gap-[60px] p-[40px] rounded-[14px] bg-[#1A1A1A]"
+              >
+                <!-- Title card -->
+                <div class="flex justify-between">
+                  <!-- Icon brand -->
+                  <div
+                    class="flex justify-center items-center p-[14px] bg-[#1F1F1F] border-[1px] border-[#333333] rounded-xl 2xl:p-[18px]"
+                  >
+                    <div
+                      class="w-7 h-7 bg-[url('assets/images/insta.svg')] bg-contain bg-center bg-no-repeat 2xl:w-8 2xl:h-8"
+                    ></div>
+                  </div>
+                  <!-- TopLeft arrow -->
+                  <div
+                    class="flex flex-shrink-0 justify-center items-center w-13 h-13 bg-[#1F1F1F] border-[1px] border-[#262626] rounded-full"
+                  >
+                    <div
+                      class="w-6 h-6 bg-[url('assets/images/arrowTopLeft.svg')] bg-contain bg-center bg-no-repeat 2xl:w-7 2xl:h-7"
+                    ></div>
+                  </div>
+                </div>
+                <!-- Content card -->
+                <div class="mt-auto">
+                  <p
+                    class="text-[#F9EFEC] uppercase font-medium text-[22px] leading-[150%] tracking-[0%] 2xl:text-[30px]"
+                  >
+                    Instagram
+                  </p>
+                  <p
+                    class="text-[#B3B3B2] font-normal text-[14px] leading-[150%] tracking-[0%] 2xl:text-[16px]"
+                  >
+                    Share visually appealing snippets of our latest web
+                    projects.
                   </p>
                 </div>
               </div>
+              <!-- end Card1  -->
+              <!-- Card 2 -->
+              <div
+                class="flex flex-col gap-[60px] p-[40px] rounded-[14px] bg-[#1A1A1A]"
+              >
+                <!-- Title card -->
+                <div class="flex justify-between">
+                  <!-- Icon brand -->
+                  <div
+                    class="flex justify-center items-center p-[14px] bg-[#1F1F1F] border-[1px] border-[#333333] rounded-xl 2xl:p-[18px]"
+                  >
+                    <div
+                      class="w-7 h-7 bg-[url('assets/images/twit.svg')] bg-contain bg-center bg-no-repeat 2xl:w-8 2xl:h-8"
+                    ></div>
+                  </div>
+                  <!-- TopLeft arrow -->
+                  <div
+                    class="flex flex-shrink-0 justify-center items-center w-13 h-13 bg-[#1F1F1F] border-[1px] border-[#262626] rounded-full"
+                  >
+                    <div
+                      class="w-6 h-6 bg-[url('assets/images/arrowTopLeft.svg')] bg-contain bg-center bg-no-repeat 2xl:w-7 2xl:h-7"
+                    ></div>
+                  </div>
+                </div>
+                <!-- Content card -->
+                <div class="mt-auto">
+                  <p
+                    class="text-[#F9EFEC] uppercase font-medium text-[22px] leading-[150%] tracking-[0%] 2xl:text-[30px]"
+                  >
+                    Twitter
+                  </p>
+                  <p
+                    class="text-[#B3B3B2] font-normal text-[14px] leading-[150%] tracking-[0%] 2xl:text-[16px]"
+                  >
+                    Tweet about interesting coding challenges
+                  </p>
+                </div>
+              </div>
+              <!-- end Card2  -->
+              <!-- Card 3 -->
+              <div
+                class="flex flex-col gap-[60px] p-[40px] rounded-[14px] bg-[#1A1A1A]"
+              >
+                <!-- Title card -->
+                <div class="flex justify-between">
+                  <!-- Icon brand -->
+                  <div
+                    class="flex justify-center items-center p-[14px] bg-[#1F1F1F] border-[1px] border-[#333333] rounded-xl 2xl:p-[18px]"
+                  >
+                    <div
+                      class="w-7 h-7 bg-[url('assets/images/ball.svg')] bg-contain bg-center bg-no-repeat 2xl:w-8 2xl:h-8"
+                    ></div>
+                  </div>
+
+                  <!-- TopLeft arrow -->
+                  <div
+                    class="flex flex-shrink-0 justify-center items-center w-13 h-13 bg-[#1F1F1F] border-[1px] border-[#262626] rounded-full"
+                  >
+                    <div
+                      class="w-6 h-6 bg-[url('assets/images/arrowTopLeft.svg')] bg-contain bg-center bg-no-repeat 2xl:w-7 2xl:h-7"
+                    ></div>
+                  </div>
+                </div>
+                <!-- Content card -->
+                <div class="mt-auto">
+                  <p
+                    class="text-[#F9EFEC] uppercase font-medium text-[22px] leading-[150%] tracking-[0%] 2xl:text-[30px]"
+                  >
+                    Dribbble
+                  </p>
+                  <p
+                    class="text-[#B3B3B2] font-normal text-[14px] leading-[150%] tracking-[0%] 2xl:text-[16px]"
+                  >
+                    Showcase design elements of our web projects.
+                  </p>
+                </div>
+              </div>
+              <!-- end Card3  -->
+              <!-- Card 4 -->
+              <div
+                class="flex flex-col gap-[60px] p-[40px] rounded-[14px] bg-[#1A1A1A]"
+              >
+                <!-- Title card -->
+                <div class="flex justify-between">
+                  <!-- Icon brand -->
+                  <div
+                    class="flex justify-center items-center p-[14px] bg-[#1F1F1F] border-[1px] border-[#333333] rounded-xl 2xl:p-[18px]"
+                  >
+                    <div
+                      class="w-7 h-7 bg-[url('assets/images/be.svg')] bg-contain bg-center bg-no-repeat 2xl:w-8 2xl:h-8"
+                    ></div>
+                  </div>
+
+                  <!-- TopLeft arrow -->
+                  <div
+                    class="flex flex-shrink-0 justify-center items-center w-13 h-13 bg-[#1F1F1F] border-[1px] border-[#262626] rounded-full"
+                  >
+                    <div
+                      class="w-6 h-6 bg-[url('assets/images/arrowTopLeft.svg')] bg-contain bg-center bg-no-repeat 2xl:w-7 2xl:h-7"
+                    ></div>
+                  </div>
+                </div>
+                <!-- Content card -->
+                <div class="mt-auto">
+                  <p
+                    class="text-[#F9EFEC] uppercase font-medium text-[22px] leading-[150%] tracking-[0%] 2xl:text-[30px]"
+                  >
+                    Behance
+                  </p>
+                  <p
+                    class="text-[#B3B3B2] font-normal text-[14px] leading-[150%] tracking-[0%] 2xl:text-[16px]"
+                  >
+                    Create detailed presentations for our projects.
+                  </p>
+                </div>
+              </div>
+              <!-- end Card4  -->
             </div>
-            <!-- End card1 -->
+
+            <!-- Info -->
+            <div></div>
           </div>
-        </section>
+        </footer>
       </div>
     </div>
   </body>

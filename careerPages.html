@@ -1337,6 +1337,76 @@
             </div>
           </div>
         </section>
+        <!-- Section 4 Frequently Asked Questions -->
+        <section class="flex flex-col gap-[10px]">
+          <!-- Title of section -->
+          <div
+            class="flex justify-between p-[24px] rounded-[14px] bg-[#1A1A1A] lg:p-[40px] 2xl:p-[50px]"
+          >
+            <p
+              class="text-[#F9EFEC] font-semibold text-[28px] leading-[100%] tracking-[0%] uppercase lg:p-[38px] 2xl:p-[48px]"
+            >
+              Frequently Asked Questions
+            </p>
+            <!-- Icon hidden in mobile -->
+            <div class="hidden sm:flex gap-2.5 items-center">
+              <div
+                class="flex flex-shrink-0 justify-center items-center w-13 h-13 bg-[#1F1F1F] border-[1px] border-[#262626] rounded-full"
+              >
+                <div
+                  class="w-6 h-6 bg-[url('assets/images/arrowTopLeft.svg')] bg-contain bg-center bg-no-repeat 2xl:w-7 2xl:h-7"
+                ></div>
+              </div>
+              <p
+                class="text-[#B3B3B2] font-medium text-[16px] leading-[100%] tracking-[0%] uppercase self-center 2xl:text-[20px]"
+              >
+                ALL Testimonials
+              </p>
+            </div>
+          </div>
+          <!--Cards Section 4  -->
+          <div class="grid grid-cols-1 gap-10px">
+            <!-- Card1  -->
+            <div
+              class="group flex flex-col gap-5 bg-[#1A1A1A] rounded-[14px] p-[30px] lg:p-[40px] 2xl:p-[50px]"
+            >
+              <input type="checkbox" name="openCard" id="btn" class="hidden" />
+              <div class="flex justify-between">
+                <p
+                  class="text-[#F9EFEC] font-medium text-[18px] leading-[100%] tracking-[0%] uppercase self-center lg:text-[20px] 2xl:text-[22px]"
+                >
+                  How long does it take to complete a web development project?
+                </p>
+                <label
+                  for="btn"
+                  class="relative flex-shrink-0 w-10 h-10 border-[1px] border-[#333333] bg-[#1F1F1F] cursor-pointer flex justify-center items-center rounded-full 2xl:w-13 2xl:h-13"
+                >
+                  <div
+                    class="absolute w-5 h-5 bg-[url('assets/images/cong.svg')] bg-contain bg-center bg-no-repeat 2xl:w-6 2xl:h-6 transition-all duration-300 opacity-100 group-has-[:checked]:opacity-0 group-has-[:checked]:rotate-90"
+                  ></div>
+                  <div
+                    class="absolute w-5 h-5 bg-[url('assets/images/tru.svg')] bg-contain bg-center bg-no-repeat 2xl:w-6 2xl:h-6 transition-all duration-300 opacity-0 group-has-[:checked]:opacity-100 group-has-[:checked]:rotate-0"
+                  ></div>
+                </label>
+              </div>
+              <!-- Content card checkbox hacking -->
+              <div
+                class="grid grid-rows-[0fr] border-t-[1px] border-[#262626] transition-all ease-in-out duration-500 group-has-[:checked]:grid-rows-[1fr] opacity-0 group-has-[:checked]:opacity-100"
+              >
+                <div class="overflow-hidden">
+                  <p
+                    class="text-[#B3B3B2] font-normal text-[14px] leading-[150%] tracking-[0%] lg:text-[16px] 2xl:text-[18px]"
+                  >
+                    The timeline varies depending on the project's complexity
+                    and requirements. Our team strives to deliver projects on
+                    time while maintaining the highest quality standards.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- End card1 -->
+          </div>
+        </section>
       </div>
     </div>
   </body>

@@ -33,7 +33,7 @@
     <div class="wrapper w-full pt-10 px-4 pb-5 bg-[#0F0F0F] flex flex-col">
       <!-- Nav -->
       <nav
-        class="w-full mx-auto p-[14px] flex justify-between items-center rounded-xl bg-[#1A1A1A] mb-5 lg:p-5 lg:pl-10 2xl:w-[1820px] 2xl:p-6 2xl:pl-[50px]"
+        class="w-full mx-auto p-[14px] flex justify-between items-center rounded-xl bg-[#1A1A1A] mb-5 lg:p-5 lg:pl-10 2xl:p-6 2xl:pl-[50px]"
       >
         <div
           class="w-22 h-4 bg-[url('assets/images/Logo.png')] bg-contain bg-no-repeat bg-center lg:w-[97px] lg:h-[18px] 2xl:w-[130px] 2xl:h-[24px]"
@@ -1745,9 +1745,9 @@
           </div>
           <!-- Footer -->
           <div
-            class="grid gap-2.5 grid-cols-1 lg:grid-cols-7 lg:grid-rows-6 lg:gap-3"
+            class="grid gap-2.5 grid-cols-1 lg:grid-cols-10 lg:grid-rows-6 lg:gap-3"
           >
-            <!-- Brand hidden when latop -->
+            <!-- Brand hidden when latop 0 -->
             <div class="grid grid-cols-4 gap-2.5 lg:hidden">
               <div
                 class="flex justify-center items-center p-[14px] bg-[#1F1F1F] border-[1px] border-[#333333] rounded-xl"
@@ -1779,7 +1779,9 @@
               </div>
             </div>
             <!-- Brand with card lg show -->
-            <div class="hidden lg:grid grid-cols-2 grid-rows-2 gap-2.5">
+            <div
+              class="hidden lg:grid col-span-4 row-span-6 grid-rows-2 grid-cols-2 gap-2.5"
+            >
               <!-- Card 1 -->
               <div
                 class="flex flex-col gap-[60px] p-[40px] rounded-[14px] bg-[#1A1A1A]"
@@ -1938,10 +1940,12 @@
             </div>
 
             <!-- Info -->
-            <div class="grid grid-cols-1 gap-2.5 lg:gap-3">
+            <div
+              class="grid grid-cols-1 gap-2.5 lg:col-span-6 lg:row-span-6 lg:grid-cols-1 lg:grid-rows-6 lg:gap-3"
+            >
               <!-- Footer link -->
               <div
-                class="grid grid-cols-2 grid-rows-2 gap-4 rounded-2xl p-6 bg-[#1A1A1A] lg:row-span-3 lg:col-span-7 lg:gap-10 l:p-10"
+                class="grid grid-cols-2 grid-rows-2 gap-4 rounded-2xl p-6 bg-[#1A1A1A] lg:row-span-3 lg:grid-cols-4 lg:grid-rows-1 lg:place-items-center lg:gap-5 l:p-7"
               >
                 <!-- Home footer -->
                 <div class="grid grid-cols-1 gap-2">
@@ -2041,12 +2045,12 @@
                     >
                       <span>Design</span>
                       <span
-                        class="px-3 py-1 bg-[#262626] border-[#333333] border-[1px] rounded-md"
+                        class="px-3 flex-wrap py-1 bg-[#262626] border-[#333333] border-[1px] rounded-md"
                         >Soon</span
                       >
                     </li>
                     <li
-                      class="flex items-center gap-2 text-sm font-normal text-[#81807E] lg:text-base 2xl:text-lg"
+                      class="flex flex-wrap items-center gap-2 text-sm font-normal text-[#81807E] lg:text-base 2xl:text-lg"
                     >
                       <span>Development</span>
                       <span
@@ -2059,7 +2063,7 @@
               </div>
               <!-- Newsletter Section -->
               <div
-                class="grid grid-cols-1 gap-4 bg-[#1A1A1A] rounded-xl p-6 lg:p-10 lg:col-span-4 lg:flex lg:flex-row lg:items-center lg:justify-between lg:rounded-2xl 2xl:p-12"
+                class="grid grid-cols-1 gap-4 bg-[#1A1A1A] rounded-xl p-6 lg:p-10 lg:row-span-2 lg:flex lg:flex-row lg:items-center lg:justify-between lg:rounded-2xl 2xl:p-12"
               >
                 <!-- Title -->
                 <div>
@@ -2079,7 +2083,7 @@
                   <input
                     type="text"
                     placeholder="Enter your email"
-                    class="placeholder-[#676665] border-b border-[#333333] text-white lg:px-4 lg:py-5 lg:text-2xl"
+                    class="placeholder-[#676665] py-3 px-4 border-b border-[#333333] text-white lg:px-4 lg:py-5 lg:text-2xl"
                   />
                   <button
                     class="flex flex-shrink-0 justify-center items-center w-13 h-13 bg-[#1F1F1F] border-[1px] border-[#262626] rounded-full"
@@ -2091,7 +2095,21 @@
                 </div>
               </div>
               <!-- Bottom bar -->
-              <div></div>
+              <div
+                class="flex flex-col justify-center gap-2.5 p-6 rounded-xl bg-[#1A1A1A] lg:flex-row lg:justify-between items-center text-[#B3B3B2]"
+              >
+                <p class="text-sm lg:text-lg">
+                  © 2024 NextGen. All rights reserved.
+                </p>
+                <div class="flex flex-col gap-3 text-center lg:flex-row">
+                  <p class="text-sm lg:text-lg">Terms & Conditions</p>
+                  <p
+                    class="self-stretch text-sm border-t border-[#232329] lg:text-lg lg:border-t-0 lg:border-l"
+                  >
+                    Privacy Policy
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </footer>

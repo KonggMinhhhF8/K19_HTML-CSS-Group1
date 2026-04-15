@@ -34,3 +34,31 @@
   visibility: visible;
   transform: scale(1);
 }
+
+/* Chỉ áp dụng cho màn hình lớn (lg: 1024px trở lên) */
+@media (min-width: 1024px) {
+  /* 1. Mặc định ẩn nội dung FAQ khi chưa check */
+  #toggle-faq ~ div > .contents {
+    display: none;
+  }
+
+  /* 2. Khi checkbox được check (~), tìm div trực tiếp (>), rồi tìm div nội dung và hiển thị nó */
+  #toggle-faq:checked ~ div > .contents {
+    display: contents; /* Dùng contents để không phá vỡ Grid của bạn */
+  }
+}
+
+#toggle-nexgen ~ div img:first-of-type {
+  display: flex;
+}
+#toggle-nexgen ~ div img:nth-of-type(2) {
+  display: none;
+}
+
+/* Khi checkbox ĐÃ check: Đảo ngược trạng thái */
+#toggle-nexgen:checked ~ div img:first-of-type {
+  display: none;
+}
+#toggle-nexgen:checked ~ div img:nth-of-type(2) {
+  display: flex;
+}

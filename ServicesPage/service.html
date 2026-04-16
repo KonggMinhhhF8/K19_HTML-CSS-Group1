@@ -1525,180 +1525,295 @@
                         ">
 <!--            FAQs -->
                 <article class="flex flex-col gap-2.5 2xl:gap-5
-                            lg:w-[58%]">
+                            lg:w-[59%]">
 <!--                    FAQ 1-->
-                    <div class="flex justify-between
+                    <div class="group flex
                                 rounded-[14px] lg:rounded-2xl
-                                p-7.5 lg:p-10 2xl:p-15
+                                px-7.5 py-4 lg:px-10 lg:py-7.5 2xl:px-15 2xl:py-10
                                 bg-[#1A1A1A]
                                ">
+<!--                        CHeckbox hack -->
+                        <input id="faq1" name="faq1" type="checkbox" value="faq1" class="peer hidden " checked >
+
 <!--                        Question-->
                         <div class="flex flex-col gap-5 lg:gap-6 2xl:gap-7.5 ">
-                            <h3 class=" font-medium text-[#F9EFEC]
+
+                                <h3 class=" font-medium text-[#F9EFEC]
                                         text-lg lg:text-xl 2xl:text-[22px]
+                                        mt-5
                                       ">
-                                How long does it take to complete a web development project?
-                            </h3>
+                                    How long does it take to complete a web development project?
+                                </h3>
 
+<!--  Answer -->
+                                 <div class="max-h-0 overflow-hidden opacity-0
+                                        group-has-[:checked]:max-h-40
+                                        group-has-[:checked]:opacity-100
+                                        transition-height duration-600 ease in out ">
 
+                                <!--                        Boder -->
+                                    <div class="h-0 border border-[#1F1F1F]
+                                            mb-5 lg:mb-6 2xl:mb-7.5
+                                           "></div>
 
-<!--                        Boder -->
-                            <div class="h-0 border border-[#1F1F1F]"></div>
-
-<!--                        Description-->
-                             <p class="text-sm lg:text-base 2xl:text-lg text-[#B3B3B2]">
-                            The timeline varies depending on the project's complexity and requirements. Our team strives to deliver projects on time while maintaining the highest quality standards.
-                            </p>
+                                <!--                        Description-->
+                                    <p class="text-sm lg:text-base 2xl:text-lg text-[#B3B3B2]">
+                                    The timeline varies depending on the project's complexity and requirements. Our team strives to deliver projects on time while maintaining the highest quality standards.
+                                     </p>
+                                 </div>
                         </div>
 
-                        <!-- Icon -->
-                        <div class="bg-[#1F1F1F]
+                        <!-- Minus icon  -->
+                        <label for="faq1" class="hidden peer-checked:flex
+                                        bg-[#1F1F1F] mt-4
                                         w-10 h-10 2xl:w-13 2xl:h-13
                                         flex items-center justify-center shrink-0
                                         rounded-full border border-[#333333]
                                        ">
                             <img src="assets/icons/minus-icon.svg" alt="minus-icon" class="w-5 h-5 2xl:w-6 2xl:h-6 ">
-                        </div>
+                        </label>
+
+<!--                        Plus icon -->
+                        <label for="faq1" class=" peer-checked:hidden
+                                        bg-[#1F1F1F] mt-4
+                                        w-10 h-10 2xl:w-13 2xl:h-13
+                                        flex items-center justify-center shrink-0
+                                        rounded-full border border-[#333333]
+                                       ">
+                            <img src="assets/icons/plus-icon.svg" alt="plus-icon" class="w-5 h-5 2xl:w-6 2xl:h-6 ">
+                        </label>
                     </div>
 
                     <!--                    FAQ 2-->
-                    <div class="flex justify-between
+                    <div class="group flex
                                 rounded-[14px] lg:rounded-2xl
-                                p-7.5 lg:p-10 2xl:p-15
+                                px-7.5 py-4 lg:px-10 lg:py-7.5 2xl:px-15 2xl:py-10
                                 bg-[#1A1A1A]
                                ">
+                        <!--                        CHeckbox hack -->
+                        <input id="faq2" name="faq2" type="checkbox" value="faq2" class="peer hidden "  >
+
                         <!--                        Question-->
                         <div class="flex flex-col gap-5 lg:gap-6 2xl:gap-7.5 ">
+
                             <h3 class=" font-medium text-[#F9EFEC]
                                         text-lg lg:text-xl 2xl:text-[22px]
+                                        mt-5
                                       ">
                                 Can you handle large-scale mobile app development projects?
                             </h3>
 
+                            <!--  Answer -->
+                            <div class="max-h-0 overflow-hidden opacity-0
+                                        group-has-[:checked]:max-h-40
+                                        group-has-[:checked]:opacity-100
+                                        transition-height duration-600 ease in out ">
 
+                                <!--                        Boder -->
+                                <div class="h-0 border border-[#1F1F1F]
+                                            mb-5 lg:mb-6 2xl:mb-7.5
+                                           "></div>
 
-                            <!--                        Boder -->
-                            <div class="h-0 border border-[#1F1F1F]"></div>
-
-                            <!--                        Description-->
-                            <p class="text-sm lg:text-base 2xl:text-lg text-[#B3B3B2]">
-                                The timeline varies depending on the project's complexity and requirements. Our team strives to deliver projects on time while maintaining the highest quality standards.
-                            </p>
+                                <!--                        Description-->
+                                <p class="text-sm lg:text-base 2xl:text-lg text-[#B3B3B2]">
+                                    The timeline varies depending on the project's complexity and requirements. Our team strives to deliver projects on time while maintaining the highest quality standards.
+                                </p>
+                            </div>
                         </div>
 
-                        <!-- Icon -->
-                        <div class="bg-[#1F1F1F]
+                        <!-- Minus icon  -->
+                        <label for="faq2" class="hidden peer-checked:flex
+                                        bg-[#1F1F1F] mt-4
                                         w-10 h-10 2xl:w-13 2xl:h-13
                                         flex items-center justify-center shrink-0
                                         rounded-full border border-[#333333]
                                        ">
                             <img src="assets/icons/minus-icon.svg" alt="minus-icon" class="w-5 h-5 2xl:w-6 2xl:h-6 ">
-                        </div>
+                        </label>
+
+                        <!--                        Plus icon -->
+                        <label for="faq2" class=" peer-checked:hidden
+                                        bg-[#1F1F1F] mt-4
+                                        w-10 h-10 2xl:w-13 2xl:h-13
+                                        flex items-center justify-center shrink-0
+                                        rounded-full border border-[#333333]
+                                       ">
+                            <img src="assets/icons/plus-icon.svg" alt="plus-icon" class="w-5 h-5 2xl:w-6 2xl:h-6 ">
+                        </label>
                     </div>
 
                     <!--                    FAQ 3-->
-                    <div class="flex justify-between
+                    <div class="group flex
                                 rounded-[14px] lg:rounded-2xl
-                                p-7.5 lg:p-10 2xl:p-15
+                                px-7.5 py-4 lg:px-10 lg:py-7.5 2xl:px-15 2xl:py-10
                                 bg-[#1A1A1A]
                                ">
+                        <!--                        CHeckbox hack -->
+                        <input id="faq3" name="faq3" type="checkbox" value="faq3" class="peer hidden "  >
+
                         <!--                        Question-->
                         <div class="flex flex-col gap-5 lg:gap-6 2xl:gap-7.5 ">
+
                             <h3 class=" font-medium text-[#F9EFEC]
                                         text-lg lg:text-xl 2xl:text-[22px]
+                                        mt-5
                                       ">
                                 Can you integrate third-party APIs into our mobile app?
                             </h3>
 
+                            <!--  Answer -->
+                            <div class="max-h-0 overflow-hidden opacity-0
+                                        group-has-[:checked]:max-h-40
+                                        group-has-[:checked]:opacity-100
+                                        transition-height duration-600 ease in out ">
 
+                                <!--                        Boder -->
+                                <div class="h-0 border border-[#1F1F1F]
+                                            mb-5 lg:mb-6 2xl:mb-7.5
+                                           "></div>
 
-                            <!--                        Boder -->
-                            <div class="h-0 border border-[#1F1F1F]"></div>
-
-                            <!--                        Description-->
-                            <p class="text-sm lg:text-base 2xl:text-lg text-[#B3B3B2]">
-                                The timeline varies depending on the project's complexity and requirements. Our team strives to deliver projects on time while maintaining the highest quality standards.
-                            </p>
+                                <!--                        Description-->
+                                <p class="text-sm lg:text-base 2xl:text-lg text-[#B3B3B2]">
+                                    The timeline varies depending on the project's complexity and requirements. Our team strives to deliver projects on time while maintaining the highest quality standards.
+                                </p>
+                            </div>
                         </div>
 
-                        <!-- Icon -->
-                        <div class="bg-[#1F1F1F]
+                        <!-- Minus icon  -->
+                        <label for="faq3" class="hidden peer-checked:flex
+                                        bg-[#1F1F1F] mt-4
                                         w-10 h-10 2xl:w-13 2xl:h-13
                                         flex items-center justify-center shrink-0
                                         rounded-full border border-[#333333]
                                        ">
                             <img src="assets/icons/minus-icon.svg" alt="minus-icon" class="w-5 h-5 2xl:w-6 2xl:h-6 ">
-                        </div>
+                        </label>
+
+                        <!--                        Plus icon -->
+                        <label for="faq3" class=" peer-checked:hidden
+                                        bg-[#1F1F1F] mt-4
+                                        w-10 h-10 2xl:w-13 2xl:h-13
+                                        flex items-center justify-center shrink-0
+                                        rounded-full border border-[#333333]
+                                       ">
+                            <img src="assets/icons/plus-icon.svg" alt="plus-icon" class="w-5 h-5 2xl:w-6 2xl:h-6 ">
+                        </label>
                     </div>
 
                     <!--                    FAQ 4-->
-                    <div class="flex justify-between
+                    <div class="group flex
                                 rounded-[14px] lg:rounded-2xl
-                                p-7.5 lg:p-10 2xl:p-15
+                                px-7.5 py-4 lg:px-10 lg:py-7.5 2xl:px-15 2xl:py-10
                                 bg-[#1A1A1A]
                                ">
+                        <!--                        CHeckbox hack -->
+                        <input id="faq4" name="faq4" type="checkbox" value="faq4" class="peer hidden "  >
+
                         <!--                        Question-->
                         <div class="flex flex-col gap-5 lg:gap-6 2xl:gap-7.5 ">
+
                             <h3 class=" font-medium text-[#F9EFEC]
                                         text-lg lg:text-xl 2xl:text-[22px]
+                                        mt-5
                                       ">
                                 How do you ensure cross-platform compatibility for mobile apps?
                             </h3>
 
+                            <!--  Answer -->
+                            <div class="max-h-0 overflow-hidden opacity-0
+                                        group-has-[:checked]:max-h-40
+                                        group-has-[:checked]:opacity-100
+                                        transition-height duration-600 ease in out ">
 
+                                <!--                        Boder -->
+                                <div class="h-0 border border-[#1F1F1F]
+                                            mb-5 lg:mb-6 2xl:mb-7.5
+                                           "></div>
 
-                            <!--                        Boder -->
-                            <div class="h-0 border border-[#1F1F1F]"></div>
-
-                            <!--                        Description-->
-                            <p class="text-sm lg:text-base 2xl:text-lg text-[#B3B3B2]">
-                                The timeline varies depending on the project's complexity and requirements. Our team strives to deliver projects on time while maintaining the highest quality standards.
-                            </p>
+                                <!--                        Description-->
+                                <p class="text-sm lg:text-base 2xl:text-lg text-[#B3B3B2]">
+                                    The timeline varies depending on the project's complexity and requirements. Our team strives to deliver projects on time while maintaining the highest quality standards.
+                                </p>
+                            </div>
                         </div>
 
-                        <!-- Icon -->
-                        <div class="bg-[#1F1F1F]
+                        <!-- Minus icon  -->
+                        <label for="faq4" class="hidden peer-checked:flex
+                                        bg-[#1F1F1F] mt-4
                                         w-10 h-10 2xl:w-13 2xl:h-13
                                         flex items-center justify-center shrink-0
                                         rounded-full border border-[#333333]
                                        ">
                             <img src="assets/icons/minus-icon.svg" alt="minus-icon" class="w-5 h-5 2xl:w-6 2xl:h-6 ">
-                        </div>
+                        </label>
+
+                        <!--                        Plus icon -->
+                        <label for="faq4" class=" peer-checked:hidden
+                                        bg-[#1F1F1F] mt-4
+                                        w-10 h-10 2xl:w-13 2xl:h-13
+                                        flex items-center justify-center shrink-0
+                                        rounded-full border border-[#333333]
+                                       ">
+                            <img src="assets/icons/plus-icon.svg" alt="plus-icon" class="w-5 h-5 2xl:w-6 2xl:h-6 ">
+                        </label>
                     </div>
 
                     <!--                    FAQ 5-->
-                    <div class="flex justify-between
+                    <div class="group flex
                                 rounded-[14px] lg:rounded-2xl
-                                p-7.5 lg:p-10 2xl:p-15
+                                px-7.5 py-4 lg:px-10 lg:py-7.5 2xl:px-15 2xl:py-10
                                 bg-[#1A1A1A]
                                ">
+                        <!--                        CHeckbox hack -->
+                        <input id="faq5" name="faq5" type="checkbox" value="faq5" class="peer hidden "  >
+
                         <!--                        Question-->
                         <div class="flex flex-col gap-5 lg:gap-6 2xl:gap-7.5 ">
+
                             <h3 class=" font-medium text-[#F9EFEC]
                                         text-lg lg:text-xl 2xl:text-[22px]
+                                        mt-5
                                       ">
                                 What is your approach to user experience (UX) design?
                             </h3>
 
+                            <!--  Answer -->
+                            <div class="max-h-0 overflow-hidden opacity-0
+                                        group-has-[:checked]:max-h-40
+                                        group-has-[:checked]:opacity-100
+                                        transition-height duration-600 ease in out ">
 
+                                <!--                        Boder -->
+                                <div class="h-0 border border-[#1F1F1F]
+                                            mb-5 lg:mb-6 2xl:mb-7.5
+                                           "></div>
 
-                            <!--                        Boder -->
-                            <div class="h-0 border border-[#1F1F1F]"></div>
-
-                            <!--                        Description-->
-                            <p class="text-sm lg:text-base 2xl:text-lg text-[#B3B3B2]">
-                                The timeline varies depending on the project's complexity and requirements. Our team strives to deliver projects on time while maintaining the highest quality standards.
-                            </p>
+                                <!--                        Description-->
+                                <p class="text-sm lg:text-base 2xl:text-lg text-[#B3B3B2]">
+                                    The timeline varies depending on the project's complexity and requirements. Our team strives to deliver projects on time while maintaining the highest quality standards.
+                                </p>
+                            </div>
                         </div>
 
-                        <!-- Icon -->
-                        <div class="bg-[#1F1F1F]
+                        <!-- Minus icon  -->
+                        <label for="faq5" class="hidden peer-checked:flex
+                                        bg-[#1F1F1F] mt-4
                                         w-10 h-10 2xl:w-13 2xl:h-13
                                         flex items-center justify-center shrink-0
                                         rounded-full border border-[#333333]
                                        ">
                             <img src="assets/icons/minus-icon.svg" alt="minus-icon" class="w-5 h-5 2xl:w-6 2xl:h-6 ">
-                        </div>
+                        </label>
+
+                        <!--                        Plus icon -->
+                        <label for="faq5" class=" peer-checked:hidden
+                                        bg-[#1F1F1F] mt-4
+                                        w-10 h-10 2xl:w-13 2xl:h-13
+                                        flex items-center justify-center shrink-0
+                                        rounded-full border border-[#333333]
+                                       ">
+                            <img src="assets/icons/plus-icon.svg" alt="plus-icon" class="w-5 h-5 2xl:w-6 2xl:h-6 ">
+                        </label>
                     </div>
 
 
@@ -1782,6 +1897,7 @@
                 </article>
             </div>
         </section>
+
         <!--    6.Call To Action banner    -->
         <section></section>
 

@@ -16,6 +16,21 @@
     />
     <link rel="stylesheet" href="style.css" />
     <title>About Page</title>
+    <style>
+      @keyframes marquee {
+        0% {
+          transform: translateX(0);
+        }
+        100% {
+          transform: translateX(-50%);
+        } /* Chạy một nửa quãng đường để tạo hiệu ứng lặp vô tận */
+      }
+      .animate-marquee {
+        display: flex;
+        width: max-content;
+        animation: marquee 20s linear infinite;
+      }
+    </style>
   </head>
   <body class="bg-[#0F0F0F]">
     <header
@@ -26,39 +41,39 @@
       <nav class="hidden lg:flex">
         <ul class="lg:flex lg:gap-[14px]">
           <li
-            class="flex items-center justify-center flex-shrink-1 h-[49px] rounded-[10px] bg-[#0F0F0F] px-[20px] py-[14px] text-[#81807E] font-mono font-medium text-[14px] leading-[150%] tracking-normal text-center uppercase 2xl:text-[18px] 2xl:h-[63px]"
+            class="flex items-center justify-center flex-shrink-1 h-[49px] rounded-[10px] bg-[#0F0F0F] px-[20px] py-[14px] text-[#81807E] font-mono font-medium text-[14px] leading-[150%] tracking-normal text-center uppercase 2xl:text-[18px] 2xl:h-[63px] hover:text-[#E7BEB1]"
           >
-            Home
+            <a href="#!">Home</a>
           </li>
           <li
-            class="flex items-center justify-center flex-shrink-1 h-[49px] rounded-[10px] bg-[#0F0F0F] px-[20px] py-[14px] text-[#81807E] font-mono font-medium text-[14px] leading-[150%] tracking-normal text-center uppercase 2xl:text-[18px] 2xl:h-[63px]"
+            class="flex items-center justify-center flex-shrink-1 h-[49px] rounded-[10px] bg-[#0F0F0F] px-[20px] py-[14px] text-[#81807E] font-mono font-medium text-[14px] leading-[150%] tracking-normal text-center uppercase 2xl:text-[18px] 2xl:h-[63px] hover:text-[#E7BEB1]"
           >
-            Services
+           <a href="#!"> Services</a>
           </li>
           <li
-            class="flex items-center justify-center flex-shrink-1 h-[49px] rounded-[10px] bg-[#0F0F0F] px-[20px] py-[14px] text-[#81807E] font-mono font-medium text-[14px] leading-[150%] tracking-normal text-center uppercase 2xl:text-[18px] 2xl:h-[63px]"
+            class="flex items-center justify-center flex-shrink-1 h-[49px] rounded-[10px] bg-[#0F0F0F] px-[20px] py-[14px] text-[#81807E] font-mono font-medium text-[14px] leading-[150%] tracking-normal text-center uppercase 2xl:text-[18px] 2xl:h-[63px] hover:text-[#E7BEB1]"
           >
-            Projects
+            <a href="#!">Projects</a>
           </li>
           <li
             class="flex items-center justify-center flex-shrink-1 h-[49px] rounded-[10px] bg-[#0F0F0F] px-[20px] py-[14px] text-[#E7BEB1] font-mono font-medium text-[14px] leading-[150%] tracking-normal text-center uppercase 2xl:text-[18px] 2xl:h-[63px]"
           >
-            About
+            <a href="#!">About</a>
           </li>
           <li
-            class="flex items-center justify-center flex-shrink-1 h-[49px] rounded-[10px] bg-[#0F0F0F] px-[20px] py-[14px] text-[#81807E] font-mono font-medium text-[14px] leading-[150%] tracking-normal text-center uppercase 2xl:text-[18px] 2xl:h-[63px]"
+            class="flex items-center justify-center flex-shrink-1 h-[49px] rounded-[10px] bg-[#0F0F0F] px-[20px] py-[14px] text-[#81807E] font-mono font-medium text-[14px] leading-[150%] tracking-normal text-center uppercase 2xl:text-[18px] 2xl:h-[63px] hover:text-[#E7BEB1]"
           >
-            Careers
+            <a href="">Careers</a>
           </li>
           <li
-            class="flex items-center justify-center flex-shrink-1 h-[49px] rounded-[10px] bg-[#0F0F0F] px-[20px] py-[14px] text-[#81807E] font-mono font-medium text-[14px] leading-[150%] tracking-normal text-center uppercase 2xl:text-[18px] 2xl:h-[63px]"
+            class="flex items-center justify-center flex-shrink-1 h-[49px] rounded-[10px] bg-[#0F0F0F] px-[20px] py-[14px] text-[#81807E] font-mono font-medium text-[14px] leading-[150%] tracking-normal text-center uppercase 2xl:text-[18px] 2xl:h-[63px] hover:text-[#E7BEB1]"
           >
-            Blogs
+            <a href="">Blogs</a>
           </li>
           <li
-            class="flex items-center justify-center flex-shrink-1 h-[49px] rounded-[10px] bg-[#CE7D63] px-[20px] py-[14px] text-[#0F0F0F] font-mono font-medium text-[14px] leading-[150%] tracking-normal text-center uppercase 2xl:text-[18px] 2xl:h-[63px]"
+            class="flex items-center justify-center flex-shrink-1 h-[49px] rounded-[10px] bg-[#CE7D63] px-[20px] py-[14px] text-[#0F0F0F] font-mono font-medium text-[14px] leading-[150%] tracking-normal text-center uppercase 2xl:text-[18px] 2xl:h-[63px] hover:text-[#E7BEB1]"
           >
-            Contact Us
+          <a href="">Contact Us</a>
           </li>
         </ul>
       </nav>
@@ -856,7 +871,7 @@
     </section>
     <section  class="w-calc[100%-32px] mx-[16px] p-[10px] rounded-[14px] border-2 border-solid border-[#1F1F1F] flex flex-col gap-[10px] mb-[50px] mt-[50px] lg:w-calc[100%-80px] lg:mx-[40px] lg:mb-[80px] 2xl:w-calc[100%-100px] 2xl:mx-[50px] 2xl:p-[20px] 2xl:gap-[20px] 2xl:mb-[120px]">
       <div  class="flex flex-col gap-[10px] lg:flex lg:flex-row lg:grid lg:grid-cols-4 2xl:gap-[20px]">
-         <input type="checkbox" id="toggle-faq-testimonials" class="peer hidden " />
+         <input type="checkbox" id="toggle-faq-testimonials" class="peer hidden" checked />
         <div
           class="w-full  h-[81px] bg-[#1A1A1A] rounded-[14px] p-[24px] lg:h-[125px] lg:px-[40px] lg:py-[45px] lg:col-span-4 2xl:h-[156px] 2xl:p-[50px] lg:flex lg:justify-between"
         >
@@ -1073,9 +1088,9 @@
 
     
   <section
-          class="w-calc[100%-32px] mx-[16px]  rounded-[14px] flex flex-col gap-[10px] mb-[50px] mt-[50px] lg:w-calc[100%-80px] lg:mx-[40px] lg:mb-[80px] 2xl:w-calc[100%-100px] 2xl:mx-[50px] 2xl:p-[20px] 2xl:gap-[20px] 2xl:mb-[120px]"
+          class="w-calc[100%-32px] mx-[16px]  rounded-[14px] flex flex-col gap-[10px] mb-[50px] mt-[50px] lg:w-calc[100%-80px] lg:mx-[40px] lg:mb-[80px] 2xl:w-calc[100%-100px] 2xl:mx-[50px] 2xl:gap-[20px] 2xl:mb-[120px]"
         >
-        <input type="checkbox" id="toggle-faq" class="peer hidden " />
+        <input type="checkbox" id="toggle-faq" class="peer hidden "checked />
           <div
             class="flex flex-col gap-[10px] lg:flex lg:flex-row lg:grid lg:grid-cols-5 2xl:gap-[20px]"
           >
@@ -1226,5 +1241,251 @@
             </div>
             </div>
   </section>
+<footer class="grid grid-cols-1 gap-2.5 2xl:gap-[20px] ">
+          <div
+            class="flex flex-col p-[30px] mx-[16px] rounded-[14px] gap-4 bg-[#CE7D63] lg:p-[60px] lg:mx-[40px] lg:rounded-[26px] 2xl:p-[80px] lg:flex-row lg:justify-between 2xl:mx-[50px]"
+          >
+            <div>
+              <p
+                class="text-[#0F0F0F] font-medium text-[28px] leading-[150%] tracking-[0%] lg:text-[42px] 2xl:text-[58px]"
+              >
+                Ready to Transform Your Digital Presence?
+              </p>
+              <p
+                class="text-[#262626] font-normal text-[14px] leading-[150%] tracking-[0%] lg:text-[16px] 2xl:text-[18px]"
+              >
+                Take the first step towards digital success with NexGen by your
+                side. Our team of experts is eager to craft tailored solutions
+                that drive growth for your business.
+              </p>
+            </div>
+            <button
+              class="bg-[#0F0F0F] px-[24px] py-[14px] rounded-xl flex items-center gap-2 justify-center lg:self-end lg:gap-3"
+            >
+              <p
+                class="flex-shrink-0 text-[#F3DFD8] uppercase font-medium text-[14px] leading-[150%] tracking-[0%]  2xl:text-[18px]"
+              >
+                Get in touch
+              </p>
+              <div
+                class="w-[22px] h-[22px] lg:w-[28px] lg:h-[28px] flex items-center "
+              >
+               <img src="./img/icon/getin.png" alt="" >
+              </div>
+            </button>
+          </div>
+
+          <div
+            class=" overflow-hidden bg-[#1A1A1A] py-4 border-y border-dashed border-[#262626] rounded-[10px] mx-[16px] lg:mx-[40px] 2xl:mx-[50px]"
+          >
+            <div class="animate-marquee">
+              <div class="flex items-center space-x-10 px-5">
+                <span
+                  class="text-[#81807E] font-medium text-[14px] uppercase whitespace-nowrap lg:text-[16px] 2xl:text-[20px]"
+                  >Follow us on social media</span
+                >
+                <span class="w-2 h-2 rounded-full bg-[#CE7D63]"></span>
+                <span
+                  class="text-[#81807E] font-medium text-[14px] uppercase whitespace-nowrap lg:text-[16px] 2xl:text-[20px]"
+                  >Follow us on social media</span
+                >
+                <span class="w-2 h-2 rounded-full bg-[#CE7D63]"></span>
+                <span
+                  class="text-[#81807E] font-medium text-[14px] uppercase whitespace-nowrap lg:text-[16px] 2xl:text-[20px]"
+                  >Follow us on social media</span
+                >
+                <span class="w-2 h-2 rounded-full bg-[#CE7D63]"></span>
+              </div>
+
+              <div class="flex items-center space-x-10 px-5">
+                <span
+                  class="text-[#81807E] font-medium text-[14px] uppercase whitespace-nowrap lg:text-[16px] 2xl:text-[20px]"
+                  >Follow us on social media</span
+                >
+                <span class="w-2 h-2 rounded-full bg-[#CE7D63]"></span>
+                <span
+                  class="text-[#81807E] font-medium text-[14px] uppercase whitespace-nowrap lg:text-[16px] 2xl:text-[20px]"
+                  >Follow us on social media</span
+                >
+                <span class="w-2 h-2 rounded-full bg-[#CE7D63]"></span>
+                <span
+                  class="text-[#81807E] font-medium text-[14px] uppercase whitespace-nowrap lg:text-[16px] 2xl:text-[20px]"
+                  >Follow us on social media</span
+                >
+                <span class="w-2 h-2 rounded-full bg-[#CE7D63]"></span>
+              </div>
+
+              <div class="flex items-center space-x-10 px-5">
+                <span
+                  class="text-[#81807E] font-medium text-[14px] uppercase whitespace-nowrap lg:text-[16px] 2xl:text-[20px]"
+                  >Follow us on social media</span
+                >
+                <span class="w-2 h-2 rounded-full bg-[#CE7D63]"></span>
+                <span
+                  class="text-[#81807E] font-medium text-[14px] uppercase whitespace-nowrap lg:text-[16px] 2xl:text-[20px]"
+                  >Follow us on social media</span
+                >
+                <span class="w-2 h-2 rounded-full bg-[#CE7D63]"></span>
+                <span1437
+                  class="text-[#81807E] font-medium text-[14px] uppercase whitespace-nowrap lg:text-[16px] 2xl:text-[20px]"
+                  >Follow us on social media</span
+                >
+                <span class="w-2 h-2 rounded-full bg-[#CE7D63]"></span>
+              </div>
+            </div>
+          </div>
+        <div class="flex flex-col gap-2.5  lg:grid lg:grid-cols-10 lg:mx-[40px] lg:mb-[40px] items-stretch 2xl:mx-[50px]  2xl:gap-[20px]" >
+          <div class=" lg:col-span-4 font-['Roboto_Flex'] font-medium  leading-[1.5] tracking-normal ">
+              <div class="flex flex-row gap-[10px] items-center mx-[16px] lg:hidden">
+                <button class="flex items-center justify-center w-[82px] h-[56px] bg-[#333333] rounded-[12px] ">
+                    <img src="./img/ig.png" alt="Instagram" class="w-6 h-6 object-contain">
+                  </button>
+                    <button class="flex items-center justify-center w-[82px] h-[56px] bg-[#333333] rounded-[12px] ">
+                    <img src="./img/tw-icon.png" alt="">
+                  </button>
+                   <button class="flex items-center justify-center w-[82px] h-[56px] bg-[#333333] rounded-[12px] ">
+                    <img src="./img/Group 80.png" alt="">
+                  </button>
+                   <button class="flex items-center justify-center w-[82px] h-[56px] bg-[#333333] rounded-[12px] ">
+                    <img src="./img/Group.png" alt="">
+                  </button>
+              </div>
+              <div class="lg:grid lg:grid-cols-2 lg:gap-[10px] lg:h-full  2xl:gap-[20px]">
+                <div class="bg-[#1A1A1A] lg:p-[30px] rounded-[10px]">
+                  <div class="lg:flex lg:justify-between lg:mb-[60px]">
+                   <div class="w-[56px] h-[56px] bg-[#333333] rounded-[10px] flex items-center justify-center 2xl:w-[66px] 2xl:h-[66px] "> <img src="./img/ig.png" alt="" ></div>
+                    <img src="./img/icon/close.svg" alt="">
+                  </div>
+                  <div>
+                    <h3 class="text-[22px] uppercase text-[#F9EFEC] 2xl:text-[30px]">INstagram</h3>
+                    <p class="text-[16px]  text-[#B3B3B2] font-normal  2xl:text-[18px]">Share visually appealing snippets of our projects.</p>
+                  </div>
+                </div>
+                 <div class="bg-[#1A1A1A] lg:p-[30px] rounded-[10px]">
+                  <div class="lg:flex lg:justify-between lg:mb-[60px]">
+                   <div class="w-[56px] h-[56px] bg-[#333333] rounded-[10px] flex items-center justify-center 2xl:w-[66px] 2xl:h-[66px] "> <img src="./img/ig.png" alt="" ></div>
+                    <img src="./img/icon/close.svg" alt="">
+                  </div>
+                  <div>
+                    <h3 class="text-[22px] uppercase text-[#F9EFEC] 2xl:text-[30px]">INstagram</h3>
+                    <p class="text-[16px]  text-[#B3B3B2] font-normal  2xl:text-[18px]">Share visually appealing snippets of our projects.</p>
+                  </div>
+                </div>
+                 <div class="bg-[#1A1A1A] lg:p-[30px] rounded-[10px]">
+                  <div class="lg:flex lg:justify-between lg:mb-[60px]">
+                   <div class="w-[56px] h-[56px] bg-[#333333] rounded-[10px] flex items-center justify-center 2xl:w-[66px] 2xl:h-[66px] "> <img src="./img/ig.png" alt="" ></div>
+                    <img src="./img/icon/close.svg" alt="">
+                  </div>
+                  <div>
+                    <h3 class="text-[22px] uppercase text-[#F9EFEC] 2xl:text-[30px]">INstagram</h3>
+                    <p class="text-[16px]  text-[#B3B3B2] font-normal  2xl:text-[18px]">Share visually appealing snippets of our projects.</p>
+                  </div>
+                </div>
+                 <div class="bg-[#1A1A1A] lg:p-[30px] rounded-[10px]">
+                  <div class="lg:flex lg:justify-between lg:mb-[60px]">
+                   <div class="w-[56px] h-[56px] bg-[#333333] rounded-[10px] flex items-center justify-center 2xl:w-[66px] 2xl:h-[66px] "> <img src="./img/ig.png" alt="" ></div>
+                    <img src="./img/icon/close.svg" alt="">
+                  </div>
+                  <div>
+                    <h3 class="text-[22px] uppercase text-[#F9EFEC] 2xl:text-[30px]">INstagram</h3>
+                    <p class="text-[16px]  text-[#B3B3B2] font-normal  2xl:text-[18px]">Share visually appealing snippets of our projects.</p>
+                  </div>
+                </div>
+                
+              </div>  
+
+
+            </div>
+      <div class="flex flex-col gap-[10px] lg:col-span-6 lg:h-full 2xl:gap-[20px]">
+      <div class="bg-[#1c1c1c] p-[24px] mx-[14px] rounded-xl font-['Roboto_Mono'] leading-[1] tracking-normal lg:p-[40px]  lg:mx-0">
+          <div class="grid grid-cols-2 gap-y-12 gap-x-4 lg:flex lg:gap-[70px] 2xl:justify-around" >
+            <div class="flex flex-col">
+              <h3 class="font-bold text-[18px] text-[#F3DFD8] mb-5 tracking-wide 2xl:text-[22px ]">Home</h3>
+              <ul class="flex flex-col gap-3.5">
+                <li><a href="#" class="text-[#9ca3af] hover:text-white transition-colors duration-200 2xl:text-[18px]">Why Us</a></li>
+                <li><a href="#" class="text-[#9ca3af] hover:text-white transition-colors duration-200 2xl:text-[18px]">About Us</a></li>
+                <li><a href="#" class="text-[#9ca3af] hover:text-white transition-colors duration-200 2xl:text-[18px]">Testimonials</a></li>
+                <li><a href="#" class="text-[#9ca3af] hover:text-white transition-colors duration-200 2xl:text-[18px]">FAQ's</a></li>
+              </ul>
+            </div>
+
+            <div class="flex flex-col">
+              <h3 class="font-bold text-[18px] text-[#F3DFD8] mb-5 tracking-wide 2xl:text-[22px]">Services</h3>
+              <ul class="flex flex-col gap-3.5 ">
+                <li><a href="#" class="text-[#9ca3af] hover:text-white transition-colors duration-200 2xl:text-[18px]">Web Development</a></li>
+                <li><a href="#" class="text-[#9ca3af] hover:text-white transition-colors duration-200 2xl:text-[18px]">App Development</a></li>
+                <li><a href="#" class="text-[#9ca3af] hover:text-white transition-colors duration-200 2xl:text-[18px]">Web Design</a></li>
+                <li><a href="#" class="text-[#9ca3af] hover:text-white transition-colors duration-200 2xl:text-[18px]">Digital Marketing</a></li>
+              </ul>
+            </div>
+
+            <div class="flex flex-col">
+              <h3 class="font-bold text-[18px] text-[#F3DFD8] mb-5 tracking-wide 2xl:text-[22px]">Projects</h3>
+              <ul class="flex flex-col gap-3.5">
+                <li><a href="#" class="text-[#9ca3af] hover:text-white transition-colors duration-200 2xl:text-[18px]">Klothink</a></li>
+                <li><a href="#" class="text-[#9ca3af] hover:text-white transition-colors duration-200 2xl:text-[18px]">Zenith</a></li>
+                <li><a href="#" class="text-[#9ca3af] hover:text-white transition-colors duration-200 2xl:text-[18px]">Novus</a></li>
+                <li><a href="#" class="text-[#9ca3af] hover:text-white transition-colors duration-200 2xl:text-[18px]">Apex</a></li>
+              </ul>
+            </div>
+
+            <div class="flex flex-col">
+              <h3 class="font-bold text-[18px] text-[#F3DFD8] mb-5 tracking-wide 2xl:text-[22px]">Blogs</h3>
+              <ul class="flex flex-col gap-3.5">
+                <li><a href="#" class="text-[#9ca3af] hover:text-white transition-colors duration-200 2xl:text-[18px]">Business</a></li>
+                
+                <li class="flex items-center gap-2">
+                  <a href="#" class="text-[#9ca3af] hover:text-white transition-colors duration-200 2xl:text-[18px]">Design</a>
+                  <span class="px-2 py-0.5 bg-[#2a2a2a] border border-[#3f3f46] text-[#d4d4d8] text-[11px] rounded-md 2xl:text-[16px]">Soon</span>
+                </li>
+                
+                <li class="flex items-center gap-2">
+                  <a href="#" class="text-[#9ca3af] hover:text-white transition-colors duration-200 2xl:text-[18px]">Development</a>
+                  <span class="px-2 py-0.5 bg-[#2a2a2a] border border-[#3f3f46] text-[#d4d4d8] text-[11px] rounded-md 2xl:text-[16px]">Soon</span>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+                <div>
+                   <div class="bg-[#1c1c1c]   mx-[14px] p-[24px] rounded-xl font-['Roboto_Mono'] leading-none tracking-normal mb-[10px] lg:p-[40px] lg:mx-0 lg:flex lg:justify-between items-center 2xl:mb-[20px] 2xl:p-[50px] 2xl:gap-[20px]"> 
+                    <div class="lg:mr-[16px] ">
+                      <p class="text-[#676665] text-[14px] mb-3 uppercase tracking-wider font-medium lg:text-[16px] 2lx:text-[18px] ">NEWSLETTER</p>
+                    
+                    <h2 class="text-[#F9EFEC] text-[20px] font-['Roboto_Flex'] mb-10 uppercase tracking-tight leading-tight lg:text-[24px] lg:whitespace-nowrap lg:mb-0 lg:text-[30px]">SUBSCRIBE TO OUR NEWSLETTER</h2>
+                    </div>
+                    
+                    <div class="relative flex items-center w-full">
+                      <input 
+                        type="email" 
+                        placeholder="Enter your email" 
+                        class="flex-grow bg-transparent border-b border-[#3f3f46] text-[#676665] text-[14px] py-4   placeholder:text-[#9ca3af]  2xl:placeholder:text-[18px]"
+                      >
+                      
+                      <button 
+                        type="submit" 
+        
+                      >
+                        <img src="./img/icon/close.svg" alt="" class="w-[40px] h-[40px] 2xl:w-[52px] 2xl:h-[52px]">
+                      </button>
+                    </div>
+                  </div>
+
+                  <div class="bg-[#1c1c1c]   mx-[14px] p-[24px] rounded-xl font-['Roboto_Mono'] leading-none tracking-normal mb-[20px] lg:flex  lg:justify-between lg:px-[40px] lg:py-[55px]  lg:mx-0 lg:mb-0 2xl:py-[65px]"> 
+                    <p class="text-[#B3B3B2] text-[14px] mb-6 lg:mb-[0px] 2xl:text-[18px]">© 2024 NextGen. All rights reserved.</p>
+                    
+                    <div class="flex flex-col items-center gap-4 lg:flex-row">
+                      <a href="#" class="text-[#B3B3B2] text-[14px] font-medium 2xl:text-[18px]">Terms & Conditions</a>
+                      <a href="#" class="text-[#B3B3B2] text-[14px] font-medium 2xl:text-[18px]">Privacy Policy</a>
+                    </div>
+                  </div>
+              </div> 
+            </div>
+          
+        </div>
+ 
+       
+</footer> 
   </body>
 </html>

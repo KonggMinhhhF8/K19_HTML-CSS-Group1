@@ -27,17 +27,29 @@
 
         <title>Home Page</title>
     </head>
+
     <body class="bg-[#0F0F0F] text-[#676665]">
         <!-- HEADER -->
+
         <header
-            class="w-[calc(100%-32px)] h-[72px] mx-auto mt-[41px] sticky top-0 z-[1001] flex items-center justify-between rounded-[10px] p-[14px] bg-[#1A1A1A] lg:w-[calc(100%-80px)] lg:h-[89px] lg:mt-[30px] lg:mb-[50px] lg:mx-auto lg:pl-[40px] lg:pr-[20px] lg:py-[20px] 2xl:w-[calc(100%-100px)] 2xl:mx-auto 2xl:h-[111px] 2xl:mt-[30px] 2xl:pl-[50px] 2xl:pr-[24px] 2xl:pt-[24px]"
+            class="w-[calc(100%-32px)] h-[72px] mx-auto mt-[41px] sticky top-0 z-[1001] flex items-center justify-between rounded-[10px] p-[14px] bg-[#1A1A1A] lg:w-[calc(100%-80px)] lg:h-[89px] lg:mt-[30px] lg:mb-[42px] lg:mx-auto lg:pl-10 lg:pr-5 lg:py-5 2xl:w-[calc(100%-100px)] 2xl:mx-auto 2xl:h-[111px] 2xl:mt-[30px] 2xl:mb-5 2xl:pl-[50px] 2xl:pr-[24px] 2xl:py-6"
         >
-            <img src="assets/icon/Logo.png" alt="Nexgen logo" />
+            <!-- Logo -->
+            <a href="#" class="cursor-pointer">
+                <img
+                    src="assets/icon/Logo Nexgen.svg"
+                    alt="Nexgen logo"
+                    class="lg:w-[97px] 2xl:w-[129px]"
+                />
+            </a>
             <img
                 src="assets/icon/hamburger-icon.png"
                 alt="menu"
                 class="lg:hidden"
             />
+
+            <!-- Destop Navigation -->
+
             <nav class="hidden lg:flex lg:items-center">
                 <ul class="lg:flex lg:gap-[14px] 2xl:gap-4">
                     <li
@@ -80,1151 +92,1268 @@
         </header>
 
         <!-- ======== HERO =========== -->
-        <section
-            class="relative flex items-center justify-center mt-5 mb-4 mx-auto"
-        >
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 items-center">
-                <div class="bg-[#1A1A1A] w-[358px] h-[378px] rounded-xl">
-                    <h2
-                        class="mt-[30px] ml-6 mb-3 font-['Roboto_Flex'] font-semibold text-[#F9EFEC] text-[28px] leading-[150%] uppercase"
-                    >
-                        DIGITAL SOLUTIONS
-                        <br />
-                        THAT DRIVE SUCCESS
-                    </h2>
+        <section class="mt-5 mb-4">
+            <div
+                class="max-w-[calc(100%-32px)] mx-auto lg:max-w-[calc(100%-80px)]"
+            >
+                <div class="relative px-6 py-[30px] rounded-xl bg-[#1A1A1A]">
+                    <div class="flex items-center lg:px-0 lg:gap-4">
+                        <!-- HERO - LEFT CARD -->
+                        <div class="w-full lg:max-w-[66%] lg:relative lg:px-15">
+                            <div class="pt-[30px] mb-3 lg:pt-20 lg:mb-5">
+                                <h2
+                                    class="mb-[4px] font-['Roboto_Flex'] font-semibold text-[#F9EFEC] text-[28px] leading-[150%] uppercase lg:text-[58px]"
+                                >
+                                    DIGITAL SOLUTIONS
+                                </h2>
+                                <h2
+                                    class="font-['Roboto_Flex'] font-semibold text-[#F9EFEC] text-[28px] leading-[150%] uppercase lg:text-[58px]"
+                                >
+                                    THAT DRIVE SUCCESS
+                                </h2>
+                            </div>
 
-                    <div class="ml-[17px]">
-                        <img
-                            src="assets/img/cta button.png"
-                            alt="CTA Button"
-                            class="lg:w-[220px] lg:h-[56px] lg:mt-[-70px] 2xl:w-[266px] 2xl:h-[77px] 2xl:mt-[-95px]"
-                        />
-                    </div>
-                    <p
-                        class="font-['Roboto_Flex'] font-normal text-[#676665] text-[14px] mt-3 mx-6 leading-[150%]"
-                    >
-                        At NexGen, we believe in the transformative power of
-                        digital solutions. Our team of experts is dedicated to
-                        helping businesses like yours thrive in the fast-paced
-                        digital landscape.
-                    </p>
+                            <div>
+                                <img
+                                    src="assets/icon/CTA btn.svg"
+                                    alt="CTA Button"
+                                    class="ml-[-7px] lg:absolute lg:right-[-90px] lg:top-[165px] lg:w-[220px] lg:h-[56px] lg:mt-[-70px] 2xl:w-[266px] 2xl:h-[77px] 2xl:mt-[-95px]"
+                                />
+                            </div>
 
-                    <!-- ==== TAGS ===== -->
-                    <div
-                        class="flex items-center w-[325px] h-[49px] mt-[31px] bg-[#0F0F0F] rounded-lg mx-4 py-[14px] overflow-hidden"
-                    >
-                        <ul
-                            class="flex list-none p-0 m-0 whitespace-nowrap text-muted-foreground text-[14px] font-normal uppercase"
-                        >
-                            <li
-                                class="before:content-['•'] before:text-[#CE7D63] before:mx-1"
+                            <p
+                                class="mt-3 font-['Roboto_Flex'] font-normal text-[#676665] text-[14px] leading-[150%] lg:px-15"
                             >
-                                DIGITAL MARKETING
-                            </li>
-                            <li
-                                class="before:content-['•'] before:text-[#CE7D63] before:mx-1"
-                            >
-                                WEBSITE DESIGN
-                            </li>
-                            <li
-                                class="before:content-['•'] before:text-[#CE7D63] before:mx-1"
-                            >
-                                BRANDING
-                            </li>
-                            <li
-                                class="before:content-['•'] before:text-[#CE7D63] before:mx-1"
-                            >
-                                WEBSITE DEVELOPMENT
-                            </li>
-                            <li
-                                class="before:content-['•'] before:text-[#CE7D63] before:mx-1"
-                            >
-                                MOBILE APP DEVELOPMENT
-                            </li>
-                        </ul>
+                                At NexGen, we believe in the transformative
+                                power of digital solutions. Our team of experts
+                                is dedicated to helping businesses like yours
+                                thrive in the fast-paced digital landscape.
+                            </p>
+
+                            <!-- ==== TAGS ===== -->
+                            <div class="ml-[-7px] mt-[31px] mb-4">
+                                <div
+                                    class="flex items-center bg-[#0F0F0F] rounded-lg py-[14px] overflow-hidden lg:px-4 lg:mx-0"
+                                >
+                                    <ul
+                                        class="font-['Roboto_Mono'] flex list-none p-0 m-0 whitespace-nowrap text-muted-foreground text-[14px] font-normal uppercase"
+                                    >
+                                        <li
+                                            class="before:content-['•'] before:text-[#CE7D63] before:mx-1"
+                                        >
+                                            DIGITAL MARKETING
+                                        </li>
+                                        <li
+                                            class="before:content-['•'] before:text-[#CE7D63] before:mx-1"
+                                        >
+                                            WEBSITE DESIGN
+                                        </li>
+                                        <li
+                                            class="before:content-['•'] before:text-[#CE7D63] before:mx-1"
+                                        >
+                                            BRANDING
+                                        </li>
+                                        <li
+                                            class="before:content-['•'] before:text-[#CE7D63] before:mx-1"
+                                        >
+                                            WEBSITE DEVELOPMENT
+                                        </li>
+                                        <li
+                                            class="before:content-['•'] before:text-[#CE7D63] before:mx-1"
+                                        >
+                                            MOBILE APP DEVELOPMENT
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- HERO- RIGHT CARD -->
+
+                        <div class="hidden lg:block rounded-xl">
+                            <div class="relative w-full h-[368px]">
+                                <img
+                                    src="assets/img/Hero Right.png"
+                                    alt="Estatein Real Estate"
+                                    class="w-full h-full"
+                                />
+                            </div>
+
+                            <div>
+                                <p>Estatein Real Estate</p>
+                                <p>Web Development.</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
         <!-- ─── Stats Row ─── -->
-        <section
-            class="max-w-[358px] border-solid border-[2px] mx-auto mb-[50px] border-[#1F1F1F] rounded-2xl"
-        >
-            <div class="grid grid-cols-2 gap-[10px] p-[10px]">
+        <section class="mb-[50px]">
+            <div class="max-w-[calc(100%-32px)] mx-auto">
                 <div
-                    class="flex flex-col items-center justify-center rounded-xl px-[14px] py-4 text-center bg-[#1A1A1A]"
+                    class="border-solid border-[2px] border-[#1F1F1F] rounded-2xl"
                 >
-                    <div
-                        class="font-['Roboto_Mono'] font-medium text-sm text-[#B3B3B2] leading-[150%] uppercase"
-                    >
-                        CLIENTS
+                    <div class="grid grid-cols-2 gap-[10px] p-[10px]">
+                        <!-- Clients -->
+                        <div
+                            class="flex flex-col items-center justify-center rounded-xl px-[14px] py-4 text-center bg-[#1A1A1A]"
+                        >
+                            <div
+                                class="font-['Roboto_Mono'] font-medium text-sm text-[#B3B3B2] leading-[150%] uppercase"
+                            >
+                                CLIENTS
+                            </div>
+                            <div
+                                class="font-['Roboto_Flex'] font-semibold text-[40px] text-[#DA9E8B] leading-[150%] uppercase"
+                            >
+                                200+
+                            </div>
+                        </div>
+
+                        <!-- Projects -->
+                        <div
+                            class="flex flex-col items-center justify-center rounded-xl px-[14px] py-4 text-center bg-[#1A1A1A]"
+                        >
+                            <div
+                                class="font-['Roboto_Mono'] font-medium text-sm text-[#B3B3B2] leading-[150%] uppercase"
+                            >
+                                PROJECTS
+                            </div>
+                            <div
+                                class="font-['Roboto_Flex'] font-semibold text-[40px] text-[#DA9E8B] leading-[150%] uppercase"
+                            >
+                                280+
+                            </div>
+                        </div>
+
+                        <!-- Happy Clients -->
+                        <div
+                            class="flex flex-col items-center justify-center rounded-xl px-[14px] py-4 text-center bg-[#1A1A1A]"
+                        >
+                            <div
+                                class="font-['Roboto_Mono'] font-medium text-sm text-[#B3B3B2] leading-[150%] uppercase"
+                            >
+                                HAPPY CLIENTS
+                            </div>
+                            <div
+                                class="font-['Roboto_Flex'] font-semibold text-[40px] text-[#DA9E8B] leading-[150%] uppercase"
+                            >
+                                100%
+                            </div>
+                        </div>
+
+                        <!-- Followers -->
+                        <div
+                            class="flex flex-col items-center justify-center rounded-xl px-[14px] py-4 text-center bg-[#1A1A1A]"
+                        >
+                            <div
+                                class="font-['Roboto_Mono'] font-medium text-sm text-[#B3B3B2] leading-[150%] uppercase"
+                            >
+                                FOLLOWERS
+                            </div>
+                            <div
+                                class="font-['Roboto_Flex'] font-semibold text-[40px] text-[#DA9E8B] leading-[150%] uppercase"
+                            >
+                                420K
+                            </div>
+                        </div>
                     </div>
-                    <div
-                        class="font-['Roboto_Flex'] font-semibold text-[40px] text-[#DA9E8B] leading-[150%] uppercase"
-                    >
-                        200+
+
+                    <div class="grid grid-rows-2 gap-[10px] mx-[10px]">
+                        <!-- Experience -->
+                        <div
+                            class="col-span-2 flex flex-col items-center justify-center rounded-xl px-[14px] py-4 text-center bg-[#1A1A1A]"
+                        >
+                            <div
+                                class="font-['Roboto_Mono'] font-medium text-sm text-[#B3B3B2] leading-[150%]"
+                            >
+                                Years Of Experience
+                            </div>
+                            <div
+                                class="font-['Roboto_Flex'] font-semibold text-[40px] text-[#DA9E8B] leading-[150%] uppercase"
+                            >
+                                10+
+                            </div>
+                        </div>
+
+                        <!-- Btn Know More -->
+                        <a
+                            href="#!"
+                            class="col-span-2 flex items-center justify-center gap-[6px] rounded-xl px-[14px] py-4 mb-[10px] bg-[#1A1A1A] group transition-all hover:bg-[#252525]"
+                        >
+                            <img
+                                src="assets/icon/Icon Container.png"
+                                alt=""
+                                aria-hidden="true"
+                                class="shrink-0"
+                            />
+
+                            <span
+                                class="font-['Roboto_Mono'] font-medium text-sm text-[#B3B3B2] leading-[150%] uppercase"
+                            >
+                                KNOW MORE
+                            </span>
+                        </a>
                     </div>
                 </div>
-
-                <div
-                    class="flex flex-col items-center justify-center rounded-xl px-[14px] py-4 text-center bg-[#1A1A1A]"
-                >
-                    <div
-                        class="font-['Roboto_Mono'] font-medium text-sm text-[#B3B3B2] leading-[150%] uppercase"
-                    >
-                        PROJECTS
-                    </div>
-                    <div
-                        class="font-['Roboto_Flex'] font-semibold text-[40px] text-[#DA9E8B] leading-[150%] uppercase"
-                    >
-                        280+
-                    </div>
-                </div>
-
-                <div
-                    class="flex flex-col items-center justify-center rounded-xl px-[14px] py-4 text-center bg-[#1A1A1A]"
-                >
-                    <div
-                        class="font-['Roboto_Mono'] font-medium text-sm text-[#B3B3B2] leading-[150%] uppercase"
-                    >
-                        HAPPY CLIENTS
-                    </div>
-                    <div
-                        class="font-['Roboto_Flex'] font-semibold text-[40px] text-[#DA9E8B] leading-[150%] uppercase"
-                    >
-                        100%
-                    </div>
-                </div>
-
-                <div
-                    class="flex flex-col items-center justify-center rounded-xl px-[14px] py-4 text-center bg-[#1A1A1A]"
-                >
-                    <div
-                        class="font-['Roboto_Mono'] font-medium text-sm text-[#B3B3B2] leading-[150%] uppercase"
-                    >
-                        FOLLOWERS
-                    </div>
-                    <div
-                        class="font-['Roboto_Flex'] font-semibold text-[40px] text-[#DA9E8B] leading-[150%] uppercase"
-                    >
-                        420K
-                    </div>
-                </div>
-            </div>
-
-            <div class="grid grid-rows-2 gap-[10px] mx-[10px]">
-                <div
-                    class="col-span-2 flex flex-col items-center justify-center rounded-xl px-[14px] py-4 text-center bg-[#1A1A1A]"
-                >
-                    <div
-                        class="font-['Roboto_Mono'] font-medium text-sm text-[#B3B3B2] leading-[150%]"
-                    >
-                        Years Of Experience
-                    </div>
-                    <div
-                        class="font-['Roboto_Flex'] font-semibold text-[40px] text-[#DA9E8B] leading-[150%] uppercase"
-                    >
-                        10+
-                    </div>
-                </div>
-
-                <a
-                    href="#!"
-                    class="col-span-2 flex items-center justify-center gap-[6px] rounded-xl px-[14px] py-4 mb-[10px] bg-[#1A1A1A] group transition-all hover:bg-[#252525]"
-                >
-                    <img
-                        src="assets/icon/Icon Container.png"
-                        alt=""
-                        aria-hidden="true"
-                        class="shrink-0"
-                    />
-
-                    <span
-                        class="font-['Roboto_Mono'] font-medium text-sm text-[#B3B3B2] leading-[150%] uppercase"
-                    >
-                        KNOW MORE
-                    </span>
-                </a>
             </div>
         </section>
 
         <!-- ─── Reasons ─── -->
 
-        <section
-            class="max-w-[358px] border-solid border-[2px] mx-auto mb-[50px] border-[#1F1F1F] rounded-2xl"
-        >
-            <div class="grid grid-cols-1 gap-[10px] p-[10px]">
-                <!-- CARD 1 -->
+        <section class="mb-[50px]">
+            <div class="max-w-[calc(100%-32px)] mx-auto">
                 <div
-                    class="flex flex-col items-start justify-center rounded-[14px] p-6 bg-[#1A1A1A]"
+                    class="border-solid border-[2px] border-[#1F1F1F] rounded-2xl"
                 >
-                    <h2
-                        class="font-['Roboto_Flex'] font-semibold text-[28px] text-[#F9EFEC] leading-[100%] uppercase"
-                    >
-                        Reasons to Choose NexGen for Your Digital Journey
-                    </h2>
-                </div>
-
-                <!-- CARD 2 -->
-                <div
-                    class="flex flex-col items-start justify-center rounded-[14px] p-6 bg-[#1A1A1A]"
-                >
-                    <h3
-                        class="font-['Roboto_Flex'] font-medium text-xl text-[#F9EFEC] mb-2 leading-[150%] uppercase"
-                    >
-                        Expertise in Cutting-Edge Technologies
-                    </h3>
-                    <p
-                        class="font-['Roboto_Flex'] font-normal text-sm text-[#B3B3B2] leading-[150%]"
-                    >
-                        NexGen ensures your projects are powered by
-                        state-of-the-art technologies, guaranteeing...
-                    </p>
-                    <button
-                        class="flex flex-row items-center mt-6 gap-2 group cursor-pointer transition-opacity hover:opacity-80"
-                    >
-                        <div class="flex-shrink-0" aria-hidden="true">
-                            <img src="assets/icon/Arrow button.png" alt="" />
+                    <div class="grid grid-cols-1 gap-[10px] p-[10px]">
+                        <!-- CARD 1 -->
+                        <div
+                            class="flex flex-col items-start justify-center rounded-[14px] p-6 bg-[#1A1A1A]"
+                        >
+                            <h2
+                                class="font-['Roboto_Flex'] font-semibold text-[28px] text-[#F9EFEC] leading-[100%] uppercase"
+                            >
+                                Reasons to Choose NexGen for Your Digital
+                                Journey
+                            </h2>
                         </div>
 
-                        <span
-                            class="font-['Roboto_Flex'] font-normal text-base text-[#B3B3B2] leading-[150%]"
+                        <!-- CARD 2 -->
+                        <div
+                            class="flex flex-col items-start justify-center rounded-[14px] p-6 bg-[#1A1A1A]"
                         >
-                            Learn More
-                        </span>
-                    </button>
-                </div>
+                            <h3
+                                class="font-['Roboto_Flex'] font-medium text-xl text-[#F9EFEC] mb-2 leading-[150%] uppercase"
+                            >
+                                Expertise in Cutting-Edge Technologies
+                            </h3>
+                            <p
+                                class="font-['Roboto_Flex'] font-normal text-sm text-[#B3B3B2] leading-[150%]"
+                            >
+                                NexGen ensures your projects are powered by
+                                state-of-the-art technologies, guaranteeing...
+                            </p>
+                            <button
+                                class="flex flex-row items-center mt-6 gap-2 group cursor-pointer transition-opacity hover:opacity-80"
+                            >
+                                <div class="flex-shrink-0" aria-hidden="true">
+                                    <img
+                                        src="assets/icon/Arrow button.png"
+                                        alt=""
+                                    />
+                                </div>
 
-                <!-- CARD 3 -->
-                <div
-                    class="flex flex-col items-start justify-center rounded-[14px] p-6 bg-[#1A1A1A]"
-                >
-                    <h3
-                        class="font-['Roboto_Flex'] font-medium text-xl text-[#F9EFEC] mb-2 leading-[150%] uppercase"
-                    >
-                        Proven Track Record of Success
-                    </h3>
-                    <p
-                        class="font-['Roboto_Flex'] font-normal text-sm text-[#B3B3B2] leading-[150%]"
-                    >
-                        NexGen demonstrates a consistent ability to meet and
-                        exceed client expectations, providing reliable...
-                    </p>
-                    <button
-                        class="flex flex-row items-center mt-6 gap-2 group cursor-pointer transition-opacity hover:opacity-80"
-                    >
-                        <div class="flex-shrink-0" aria-hidden="true">
-                            <img src="assets/icon/Arrow button.png" alt="" />
+                                <span
+                                    class="font-['Roboto_Flex'] font-normal text-base text-[#B3B3B2] leading-[150%]"
+                                >
+                                    Learn More
+                                </span>
+                            </button>
                         </div>
 
-                        <span
-                            class="font-['Roboto_Flex'] font-normal text-base text-[#B3B3B2] leading-[150%]"
+                        <!-- CARD 3 -->
+                        <div
+                            class="flex flex-col items-start justify-center rounded-[14px] p-6 bg-[#1A1A1A]"
                         >
-                            Learn More
-                        </span>
-                    </button>
-                </div>
+                            <h3
+                                class="font-['Roboto_Flex'] font-medium text-xl text-[#F9EFEC] mb-2 leading-[150%] uppercase"
+                            >
+                                Proven Track Record of Success
+                            </h3>
+                            <p
+                                class="font-['Roboto_Flex'] font-normal text-sm text-[#B3B3B2] leading-[150%]"
+                            >
+                                NexGen demonstrates a consistent ability to meet
+                                and exceed client expectations, providing
+                                reliable...
+                            </p>
+                            <button
+                                class="flex flex-row items-center mt-6 gap-2 group cursor-pointer transition-opacity hover:opacity-80"
+                            >
+                                <div class="flex-shrink-0" aria-hidden="true">
+                                    <img
+                                        src="assets/icon/Arrow button.png"
+                                        alt=""
+                                    />
+                                </div>
 
-                <!-- CARD 4 -->
-                <div
-                    class="flex flex-col items-start justify-center rounded-[14px] p-6 bg-[#1A1A1A]"
-                >
-                    <h3
-                        class="font-['Roboto_Flex'] font-medium text-xl text-[#F9EFEC] mb-2 leading-[150%] uppercase"
-                    >
-                        Client-Centric Approach
-                    </h3>
-                    <p
-                        class="font-['Roboto_Flex'] font-normal text-sm text-[#B3B3B2] leading-[150%]"
-                    >
-                        At NexGen, we prioritize understanding our clients'
-                        unique requirements, fostering ...
-                    </p>
-                    <button
-                        class="flex flex-row items-center mt-6 gap-2 group cursor-pointer transition-opacity hover:opacity-80"
-                    >
-                        <div class="flex-shrink-0" aria-hidden="true">
-                            <img src="assets/icon/Arrow button.png" alt="" />
+                                <span
+                                    class="font-['Roboto_Flex'] font-normal text-base text-[#B3B3B2] leading-[150%]"
+                                >
+                                    Learn More
+                                </span>
+                            </button>
                         </div>
 
-                        <span
-                            class="font-['Roboto_Flex'] font-normal text-base text-[#B3B3B2] leading-[150%]"
+                        <!-- CARD 4 -->
+                        <div
+                            class="flex flex-col items-start justify-center rounded-[14px] p-6 bg-[#1A1A1A]"
                         >
-                            Learn More
-                        </span>
-                    </button>
-                </div>
+                            <h3
+                                class="font-['Roboto_Flex'] font-medium text-xl text-[#F9EFEC] mb-2 leading-[150%] uppercase"
+                            >
+                                Client-Centric Approach
+                            </h3>
+                            <p
+                                class="font-['Roboto_Flex'] font-normal text-sm text-[#B3B3B2] leading-[150%]"
+                            >
+                                At NexGen, we prioritize understanding our
+                                clients' unique requirements, fostering ...
+                            </p>
+                            <button
+                                class="flex flex-row items-center mt-6 gap-2 group cursor-pointer transition-opacity hover:opacity-80"
+                            >
+                                <div class="flex-shrink-0" aria-hidden="true">
+                                    <img
+                                        src="assets/icon/Arrow button.png"
+                                        alt=""
+                                    />
+                                </div>
 
-                <!-- CARD 5 -->
-                <div
-                    class="flex flex-col items-start justify-center rounded-[14px] p-6 bg-[#1A1A1A]"
-                >
-                    <h3
-                        class="font-['Roboto_Flex'] font-medium text-xl text-[#F9EFEC] mb-2 leading-[150%] uppercase"
-                    >
-                        Dedicated Team of Professionals
-                    </h3>
-                    <p
-                        class="font-['Roboto_Flex'] font-normal text-sm text-[#B3B3B2] leading-[150%]"
-                    >
-                        Our professionals bring a wealth of expertise to the
-                        table, ensuring the delivery of top-notch, scalable...
-                    </p>
-                    <button
-                        class="flex flex-row items-center mt-6 gap-2 group cursor-pointer transition-opacity hover:opacity-80"
-                    >
-                        <div class="flex-shrink-0" aria-hidden="true">
-                            <img src="assets/icon/Arrow button.png" alt="" />
+                                <span
+                                    class="font-['Roboto_Flex'] font-normal text-base text-[#B3B3B2] leading-[150%]"
+                                >
+                                    Learn More
+                                </span>
+                            </button>
                         </div>
 
-                        <span
-                            class="font-['Roboto_Flex'] font-normal text-base text-[#B3B3B2] leading-[150%]"
+                        <!-- CARD 5 -->
+                        <div
+                            class="flex flex-col items-start justify-center rounded-[14px] p-6 bg-[#1A1A1A]"
                         >
-                            Learn More
-                        </span>
-                    </button>
+                            <h3
+                                class="font-['Roboto_Flex'] font-medium text-xl text-[#F9EFEC] mb-2 leading-[150%] uppercase"
+                            >
+                                Dedicated Team of Professionals
+                            </h3>
+                            <p
+                                class="font-['Roboto_Flex'] font-normal text-sm text-[#B3B3B2] leading-[150%]"
+                            >
+                                Our professionals bring a wealth of expertise to
+                                the table, ensuring the delivery of top-notch,
+                                scalable...
+                            </p>
+                            <button
+                                class="flex flex-row items-center mt-6 gap-2 group cursor-pointer transition-opacity hover:opacity-80"
+                            >
+                                <div class="flex-shrink-0" aria-hidden="true">
+                                    <img
+                                        src="assets/icon/Arrow button.png"
+                                        alt=""
+                                    />
+                                </div>
+
+                                <span
+                                    class="font-['Roboto_Flex'] font-normal text-base text-[#B3B3B2] leading-[150%]"
+                                >
+                                    Learn More
+                                </span>
+                            </button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
         <!-- ─── Services ─── -->
-        <section
-            class="max-w-[358px] border-solid border-[2px] mx-auto mb-[50px] border-[#1F1F1F] rounded-2xl"
-        >
-            <div class="grid grid-cols-1 gap-[10px] p-[10px]">
+        <section class="mb-[50px]">
+            <div class="max-w-[calc(100%-32px)] mx-auto">
                 <div
-                    class="flex flex-col items-start justify-center rounded-[14px] p-6 bg-[#1A1A1A]"
+                    class="border-solid border-[2px] border-[#1F1F1F] rounded-2xl"
                 >
-                    <h2
-                        class="font-['Roboto_Flex'] font-semibold text-[28px] text-[#F9EFEC] leading-[100%] uppercase"
-                    >
-                        Our Services
-                    </h2>
-                </div>
-
-                <!-- CARD 1 -->
-                <div
-                    class="flex flex-col items-start justify-center gap-5 rounded-[14px] p-6 bg-[#1A1A1A]"
-                >
-                    <div class="flex flex-row gap-[14px] items-center">
-                        <img
-                            src="assets/icon/web-design icon.png"
-                            alt="Web Design Icon"
-                        />
-                        <h3
-                            class="font-['Roboto_Flex'] font-medium text-xl text-[#F9EFEC] leading-[150%] uppercase"
-                        >
-                            Web Design
-                        </h3>
-                    </div>
-                    <div>
+                    <div class="grid grid-cols-1 gap-[10px] p-[10px]">
                         <div
-                            class="font-['Roboto_Flex'] font-medium text-lg text-[#F9EFEC] leading-[150%] mb-[6px] uppercase"
+                            class="flex flex-col items-start justify-center rounded-[14px] p-6 bg-[#1A1A1A]"
                         >
-                            Starts From $1,500
+                            <h2
+                                class="font-['Roboto_Flex'] font-semibold text-[28px] text-[#F9EFEC] leading-[100%] uppercase"
+                            >
+                                Our Services
+                            </h2>
                         </div>
-                        <p
-                            class="font-['Roboto_Flex'] font-normal text-sm text-[#B3B3B2] leading-[150%] mb-[6px]"
-                        >
-                            Our Web Design service is all about creating
-                            visually stunning and user-friendly websites that
-                            leave a lasting.
-                        </p>
-                    </div>
-                    <button
-                        class="min-w-[290px] bg-[#CE7D63] rounded-lg px-5 py-[14px] transition-all duration-300 hover:opacity-90 active:scale-[0.98] cursor-pointer group"
-                    >
-                        <span
-                            class="font-['Roboto_Flex'] font-medium text-sm text-[#0F0F0F] leading-[150%] uppercase tracking-wide transition-colors"
-                        >
-                            BOOK A CALL
-                        </span>
-                    </button>
-                </div>
 
-                <!-- CARD 2 -->
-                <div
-                    class="flex flex-col items-start justify-center gap-5 rounded-[14px] p-6 bg-[#1A1A1A]"
-                >
-                    <div class="flex flex-row gap-[14px] items-center">
-                        <img
-                            src="assets/icon/Mobile-App Icon.png"
-                            alt="Mobile App Development Icon"
-                        />
-                        <h3
-                            class="font-['Roboto_Flex'] font-medium text-xl text-[#F9EFEC] leading-[150%] uppercase"
-                        >
-                            Mobile App Development
-                        </h3>
-                    </div>
-                    <div>
+                        <!-- CARD 1 -->
                         <div
-                            class="font-['Roboto_Flex'] font-medium text-lg text-[#F9EFEC] leading-[150%] mb-[6px] uppercase"
+                            class="flex flex-col gap-5 rounded-[14px] p-6 bg-[#1A1A1A]"
                         >
-                            Starts From $2,500
-                        </div>
-                        <p
-                            class="font-['Roboto_Flex'] font-normal text-sm text-[#B3B3B2] leading-[150%] mb-[6px]"
-                        >
-                            With our Mobile App Development service, we harness
-                            the power of mobile technology to create
-                            cutting-edge applications .
-                        </p>
-                    </div>
-                    <button
-                        class="min-w-[290px] bg-[#CE7D63] rounded-lg px-5 py-[14px] transition-all duration-300 hover:opacity-90 active:scale-[0.98] cursor-pointer group"
-                    >
-                        <span
-                            class="font-['Roboto_Flex'] font-medium text-sm text-[#0F0F0F] leading-[150%] uppercase tracking-wide transition-colors"
-                        >
-                            BOOK A CALL
-                        </span>
-                    </button>
-                </div>
+                            <div class="flex flex-row gap-[14px] items-center">
+                                <img
+                                    src="assets/icon/web-design icon.png"
+                                    alt="Web Design Icon"
+                                />
+                                <h3
+                                    class="font-['Roboto_Flex'] font-medium text-xl text-[#F9EFEC] leading-[150%] uppercase"
+                                >
+                                    Web Design
+                                </h3>
+                            </div>
+                            <div>
+                                <div
+                                    class="font-['Roboto_Flex'] font-medium text-lg text-[#F9EFEC] leading-[150%] mb-[6px] uppercase"
+                                >
+                                    Starts From $1,500
+                                </div>
+                                <p
+                                    class="font-['Roboto_Flex'] font-normal text-sm text-[#B3B3B2] leading-[150%] mb-[6px]"
+                                >
+                                    Our Web Design service is all about creating
+                                    visually stunning and user-friendly websites
+                                    that leave a lasting.
+                                </p>
+                            </div>
 
-                <!-- CARD 3 -->
-                <div
-                    class="flex flex-col items-start justify-center gap-5 rounded-[14px] p-6 bg-[#1A1A1A]"
-                >
-                    <div class="flex flex-row gap-[14px] items-center">
-                        <img
-                            src="assets/icon/Web-Dev Icon.png"
-                            alt="Web Development Icon"
-                        />
-                        <h3
-                            class="font-['Roboto_Flex'] font-medium text-xl text-[#F9EFEC] leading-[150%] uppercase"
-                        >
-                            Web Development
-                        </h3>
-                    </div>
-                    <div>
-                        <div
-                            class="font-['Roboto_Flex'] font-medium text-lg text-[#F9EFEC] leading-[150%] mb-[6px] uppercase"
-                        >
-                            Starts From $1,800
+                            <div class="flex justify-center">
+                                <button
+                                    class="min-w-[290px] bg-[#CE7D63] rounded-lg px-5 py-[14px] transition-all duration-300 hover:opacity-90 active:scale-[0.98] cursor-pointer group"
+                                >
+                                    <span
+                                        class="font-['Roboto_Flex'] font-medium text-sm text-[#0F0F0F] leading-[150%] uppercase tracking-wide transition-colors"
+                                    >
+                                        BOOK A CALL
+                                    </span>
+                                </button>
+                            </div>
                         </div>
-                        <p
-                            class="font-['Roboto_Flex'] font-normal text-sm text-[#B3B3B2] leading-[150%] mb-[6px]"
-                        >
-                            Our Web Development service is focused on turning
-                            your website into a powerful digital asset. We
-                            utilize the latest technologies and industry best
-                            practices to build websites.
-                        </p>
-                    </div>
-                    <button
-                        class="min-w-[290px] bg-[#CE7D63] rounded-lg px-5 py-[14px] transition-all duration-300 hover:opacity-90 active:scale-[0.98] cursor-pointer group"
-                    >
-                        <span
-                            class="font-['Roboto_Flex'] font-medium text-sm text-[#0F0F0F] leading-[150%] uppercase tracking-wide transition-colors"
-                        >
-                            BOOK A CALL
-                        </span>
-                    </button>
-                </div>
 
-                <!-- CARD 4 -->
-                <div
-                    class="flex flex-col items-start justify-center gap-5 rounded-[14px] p-6 bg-[#1A1A1A]"
-                >
-                    <div class="flex flex-row gap-[14px] items-center">
-                        <img
-                            src="assets/icon/Digital-Marketing Icon.png"
-                            alt="Digital Marketing Icon"
-                        />
-                        <h3
-                            class="font-['Roboto_Flex'] font-medium text-xl text-[#F9EFEC] leading-[150%] uppercase"
-                        >
-                            Digital Marketing
-                        </h3>
-                    </div>
-                    <div>
+                        <!-- CARD 2 -->
                         <div
-                            class="font-['Roboto_Flex'] font-medium text-lg text-[#F9EFEC] leading-[150%] mb-[6px] uppercase"
+                            class="flex flex-col gap-5 rounded-[14px] p-6 bg-[#1A1A1A]"
                         >
-                            Starts From $1,200
+                            <div class="flex flex-row gap-[14px] items-center">
+                                <img
+                                    src="assets/icon/Mobile-App Icon.png"
+                                    alt="Mobile App Development Icon"
+                                />
+                                <h3
+                                    class="font-['Roboto_Flex'] font-medium text-xl text-[#F9EFEC] leading-[150%] uppercase"
+                                >
+                                    Mobile App Development
+                                </h3>
+                            </div>
+                            <div>
+                                <div
+                                    class="font-['Roboto_Flex'] font-medium text-lg text-[#F9EFEC] leading-[150%] mb-[6px] uppercase"
+                                >
+                                    Starts From $2,500
+                                </div>
+                                <p
+                                    class="font-['Roboto_Flex'] font-normal text-sm text-[#B3B3B2] leading-[150%] mb-[6px]"
+                                >
+                                    With our Mobile App Development service, we
+                                    harness the power of mobile technology to
+                                    create cutting-edge applications .
+                                </p>
+                            </div>
+
+                            <div class="flex justify-center">
+                                <button
+                                    class="min-w-[290px] bg-[#CE7D63] rounded-lg px-5 py-[14px] transition-all duration-300 hover:opacity-90 active:scale-[0.98] cursor-pointer group"
+                                >
+                                    <span
+                                        class="font-['Roboto_Flex'] font-medium text-sm text-[#0F0F0F] leading-[150%] uppercase tracking-wide transition-colors"
+                                    >
+                                        BOOK A CALL
+                                    </span>
+                                </button>
+                            </div>
                         </div>
-                        <p
-                            class="font-['Roboto_Flex'] font-normal text-sm text-[#B3B3B2] leading-[150%] mb-[6px]"
+
+                        <!-- CARD 3 -->
+                        <div
+                            class="flex flex-col gap-5 rounded-[14px] p-6 bg-[#1A1A1A]"
                         >
-                            In the digital age, marketing is a critical aspect
-                            of your business's success. Our Digital Marketing
-                            service employs data-driven strategies to enhance
-                            your brand's visibility
-                        </p>
+                            <div class="flex flex-row gap-[14px] items-center">
+                                <img
+                                    src="assets/icon/Web-Dev Icon.png"
+                                    alt="Web Development Icon"
+                                />
+                                <h3
+                                    class="font-['Roboto_Flex'] font-medium text-xl text-[#F9EFEC] leading-[150%] uppercase"
+                                >
+                                    Web Development
+                                </h3>
+                            </div>
+                            <div>
+                                <div
+                                    class="font-['Roboto_Flex'] font-medium text-lg text-[#F9EFEC] leading-[150%] mb-[6px] uppercase"
+                                >
+                                    Starts From $1,800
+                                </div>
+                                <p
+                                    class="font-['Roboto_Flex'] font-normal text-sm text-[#B3B3B2] leading-[150%] mb-[6px]"
+                                >
+                                    Our Web Development service is focused on
+                                    turning your website into a powerful digital
+                                    asset. We utilize the latest technologies
+                                    and industry best practices to build
+                                    websites.
+                                </p>
+                            </div>
+                            <div class="flex justify-center">
+                                <button
+                                    class="min-w-[290px] bg-[#CE7D63] rounded-lg px-5 py-[14px] transition-all duration-300 hover:opacity-90 active:scale-[0.98] cursor-pointer group"
+                                >
+                                    <span
+                                        class="font-['Roboto_Flex'] font-medium text-sm text-[#0F0F0F] leading-[150%] uppercase tracking-wide transition-colors"
+                                    >
+                                        BOOK A CALL
+                                    </span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- CARD 4 -->
+                        <div
+                            class="flex flex-col gap-5 rounded-[14px] p-6 bg-[#1A1A1A]"
+                        >
+                            <div class="flex flex-row gap-[14px] items-center">
+                                <img
+                                    src="assets/icon/Digital-Marketing Icon.png"
+                                    alt="Digital Marketing Icon"
+                                />
+                                <h3
+                                    class="font-['Roboto_Flex'] font-medium text-xl text-[#F9EFEC] leading-[150%] uppercase"
+                                >
+                                    Digital Marketing
+                                </h3>
+                            </div>
+                            <div>
+                                <div
+                                    class="font-['Roboto_Flex'] font-medium text-lg text-[#F9EFEC] leading-[150%] mb-[6px] uppercase"
+                                >
+                                    Starts From $1,200
+                                </div>
+                                <p
+                                    class="font-['Roboto_Flex'] font-normal text-sm text-[#B3B3B2] leading-[150%] mb-[6px]"
+                                >
+                                    In the digital age, marketing is a critical
+                                    aspect of your business's success. Our
+                                    Digital Marketing service employs
+                                    data-driven strategies to enhance your
+                                    brand's visibility
+                                </p>
+                            </div>
+                            <div class="flex justify-center">
+                                <button
+                                    class="min-w-[290px] bg-[#CE7D63] rounded-lg px-5 py-[14px] transition-all duration-300 hover:opacity-90 active:scale-[0.98] cursor-pointer group"
+                                >
+                                    <span
+                                        class="font-['Roboto_Flex'] font-medium text-sm text-[#0F0F0F] leading-[150%] uppercase tracking-wide transition-colors"
+                                    >
+                                        BOOK A CALL
+                                    </span>
+                                </button>
+                            </div>
+                        </div>
                     </div>
-                    <button
-                        class="min-w-[290px] bg-[#CE7D63] rounded-lg px-5 py-[14px] transition-all duration-300 hover:opacity-90 active:scale-[0.98] cursor-pointer group"
-                    >
-                        <span
-                            class="font-['Roboto_Flex'] font-medium text-sm text-[#0F0F0F] leading-[150%] uppercase tracking-wide transition-colors"
-                        >
-                            BOOK A CALL
-                        </span>
-                    </button>
                 </div>
             </div>
         </section>
 
         <!-- ─── Our Works ─── -->
 
-        <section
-            class="max-w-[358px] border-solid border-[2px] mx-auto mb-[50px] border-[#1F1F1F] rounded-2xl"
-        >
-            <div
-                class="flex flex-col items-start justify-center p-[10px] mx-auto gap-[10px]"
-            >
-                <div class="w-full rounded-[14px] p-6 bg-[#1A1A1A]">
-                    <h2
-                        class="font-['Roboto_Flex'] font-semibold text-[28px] text-[#F9EFEC] leading-[100%] uppercase"
-                    >
-                        Our Works
-                    </h2>
-                </div>
-
-                <!-- CARD 1 -->
+        <section class="mb-[50px]">
+            <div class="max-w-[calc(100%-32px)] mx-auto">
                 <div
-                    class="max-w-[338px] border-solid border-[2px] p-[10px] mx-auto mb-[10px] border-[#1F1F1F] rounded-2xl"
+                    class="border-solid border-[2px] border-[#1F1F1F] rounded-2xl"
                 >
-                    <div>
-                        <img
-                            src="assets/img/Works.png"
-                            alt="Zen Fitness"
-                            class="w-full object-cover mb-[10px]"
-                        />
-                    </div>
-
                     <div
-                        class="flex flex-col items-start justify-center gap-5 rounded-[10px] p-6 bg-[#1A1A1A]"
+                        class="flex flex-col items-start justify-center p-[10px] mx-auto gap-[10px]"
                     >
-                        <div class="flex flex-row gap-2 items-center">
-                            <div
-                                class="w-[52px] h-[52px] border border-[#333333] rounded-[10px] flex items-center justify-center"
+                        <div class="w-full rounded-[14px] p-6 bg-[#1A1A1A]">
+                            <h2
+                                class="font-['Roboto_Flex'] font-semibold text-[28px] text-[#F9EFEC] leading-[100%] uppercase"
                             >
-                                <svg
-                                    width="20"
-                                    height="20"
-                                    viewBox="0 0 20 20"
-                                    fill="none"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                >
-                                    <path
-                                        d="M11.0356 1.6516L10.4625 1.99097C9.83309 2.36373 9.51837 2.55011 9.17167 2.59353C8.82496 2.63696 8.48553 2.53251 7.80666 2.3236L7.18861 2.13342C4.79965 1.39828 3.60517 1.03072 2.88716 1.68788C2.16916 2.34505 2.40313 3.59173 2.87109 6.08509L2.99216 6.73015C3.12513 7.43868 3.19162 7.79295 3.11275 8.13904C3.03388 8.48513 2.81858 8.78387 2.38797 9.38133L1.99594 9.92527C0.480625 12.0278 -0.277034 13.079 0.0925984 13.9505C0.46223 14.8221 1.71435 14.9367 4.2186 15.1659L4.8665 15.2252C5.57812 15.2903 5.93394 15.3229 6.2319 15.4934C6.52986 15.6638 6.73623 15.9529 7.14897 16.5311L7.52473 17.0574C8.97717 19.092 9.70339 20.1092 10.6498 19.9907C11.5963 19.8722 12.1362 18.6963 13.2159 16.3446L13.4953 15.7362C13.6521 15.3947 13.7688 15.1404 13.8806 14.9413L18.4697 19.5303C18.7626 19.8232 19.2374 19.8232 19.5303 19.5303C19.8232 19.2374 19.8232 18.7626 19.5303 18.4697L15.0986 14.0379C15.2206 13.9935 15.3568 13.9458 15.5101 13.8921L16.1344 13.6735C18.5474 12.8284 19.7538 12.4059 19.9691 11.4611C20.1845 10.5163 19.266 9.67498 17.4291 7.99234L16.9538 7.55701C16.4318 7.07887 16.1708 6.83978 16.0354 6.52053C15.9 6.20128 15.9055 5.838 15.9166 5.11145L15.9266 4.44993C15.9655 1.8931 15.9849 0.614678 15.1715 0.149312C14.3582 -0.316052 13.2506 0.339834 11.0356 1.6516Z"
-                                        fill="#CE7D63"
-                                    />
-                                </svg>
-                            </div>
-                            <h3
-                                class="font-['Roboto_Flex'] font-medium text-base text-[#F9EFEC] leading-[150%] uppercase"
-                            >
-                                Zenith Fitness App
-                            </h3>
+                                Our Works
+                            </h2>
                         </div>
 
-                        <div class="flex flex-col gap-2 items-start">
-                            <div
-                                class="bg-[#1F1F1F] rounded-[45px] px-[10px] py-[6] font-['Roboto_Flex'] font-normal text-xs text-[#B3B3B2] leading-[150%]"
-                            >
-                                Category
-                                <span class="text-[#CE7D63]">•</span>
-                                <span class="text-[#E6E6E6]"
-                                    >Web Design & Development</span
-                                >
-                            </div>
-
-                            <div
-                                class="bg-[#1F1F1F] inline-block rounded-[45px] px-[10px] py-[6] font-['Roboto_Flex'] font-normal text-xs text-[#B3B3B2] leading-[150%]"
-                            >
-                                Time Taken
-                                <span class="text-[#CE7D63]">•</span>
-                                <span class="text-[#E6E6E6]">3 months</span>
-                            </div>
-                        </div>
-                        <p
-                            class="font-['Roboto_Flex'] font-normal text-sm text-[#B3B3B2] leading-[150%]"
+                        <!-- CARD 1 -->
+                        <div
+                            class="max-w-full border-solid border-[2px] p-[10px] mx-auto mb-[10px] border-[#1F1F1F] rounded-2xl"
                         >
-                            An all-in-one health and wellness app that offers
-                            personalized fitness plans, nutrition guidance
-                        </p>
+                            <div>
+                                <img
+                                    src="assets/img/Works.png"
+                                    alt="Zen Fitness"
+                                    class="w-full object-cover mb-[10px]"
+                                />
+                            </div>
 
+                            <div
+                                class="flex flex-col items-start justify-center gap-5 rounded-[10px] p-6 bg-[#1A1A1A]"
+                            >
+                                <div class="flex flex-row gap-2 items-center">
+                                    <div
+                                        class="w-[52px] h-[52px] border border-[#333333] rounded-[10px] flex items-center justify-center"
+                                    >
+                                        <svg
+                                            width="20"
+                                            height="20"
+                                            viewBox="0 0 20 20"
+                                            fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                            <path
+                                                d="M11.0356 1.6516L10.4625 1.99097C9.83309 2.36373 9.51837 2.55011 9.17167 2.59353C8.82496 2.63696 8.48553 2.53251 7.80666 2.3236L7.18861 2.13342C4.79965 1.39828 3.60517 1.03072 2.88716 1.68788C2.16916 2.34505 2.40313 3.59173 2.87109 6.08509L2.99216 6.73015C3.12513 7.43868 3.19162 7.79295 3.11275 8.13904C3.03388 8.48513 2.81858 8.78387 2.38797 9.38133L1.99594 9.92527C0.480625 12.0278 -0.277034 13.079 0.0925984 13.9505C0.46223 14.8221 1.71435 14.9367 4.2186 15.1659L4.8665 15.2252C5.57812 15.2903 5.93394 15.3229 6.2319 15.4934C6.52986 15.6638 6.73623 15.9529 7.14897 16.5311L7.52473 17.0574C8.97717 19.092 9.70339 20.1092 10.6498 19.9907C11.5963 19.8722 12.1362 18.6963 13.2159 16.3446L13.4953 15.7362C13.6521 15.3947 13.7688 15.1404 13.8806 14.9413L18.4697 19.5303C18.7626 19.8232 19.2374 19.8232 19.5303 19.5303C19.8232 19.2374 19.8232 18.7626 19.5303 18.4697L15.0986 14.0379C15.2206 13.9935 15.3568 13.9458 15.5101 13.8921L16.1344 13.6735C18.5474 12.8284 19.7538 12.4059 19.9691 11.4611C20.1845 10.5163 19.266 9.67498 17.4291 7.99234L16.9538 7.55701C16.4318 7.07887 16.1708 6.83978 16.0354 6.52053C15.9 6.20128 15.9055 5.838 15.9166 5.11145L15.9266 4.44993C15.9655 1.8931 15.9849 0.614678 15.1715 0.149312C14.3582 -0.316052 13.2506 0.339834 11.0356 1.6516Z"
+                                                fill="#CE7D63"
+                                            />
+                                        </svg>
+                                    </div>
+                                    <h3
+                                        class="font-['Roboto_Flex'] font-medium text-base text-[#F9EFEC] leading-[150%] uppercase"
+                                    >
+                                        Zenith Fitness App
+                                    </h3>
+                                </div>
+
+                                <div class="flex flex-col gap-2 items-start">
+                                    <div
+                                        class="bg-[#1F1F1F] rounded-[45px] px-[10px] py-[6] font-['Roboto_Flex'] font-normal text-xs text-[#B3B3B2] leading-[150%]"
+                                    >
+                                        Category
+                                        <span class="text-[#CE7D63]">•</span>
+                                        <span class="text-[#E6E6E6]"
+                                            >Web Design & Development</span
+                                        >
+                                    </div>
+
+                                    <div
+                                        class="bg-[#1F1F1F] inline-block rounded-[45px] px-[10px] py-[6] font-['Roboto_Flex'] font-normal text-xs text-[#B3B3B2] leading-[150%]"
+                                    >
+                                        Time Taken
+                                        <span class="text-[#CE7D63]">•</span>
+                                        <span class="text-[#E6E6E6]"
+                                            >3 months</span
+                                        >
+                                    </div>
+                                </div>
+                                <p
+                                    class="font-['Roboto_Flex'] font-normal text-sm text-[#B3B3B2] leading-[150%]"
+                                >
+                                    An all-in-one health and wellness app that
+                                    offers personalized fitness plans, nutrition
+                                    guidance
+                                </p>
+
+                                <button
+                                    class="flex flex-row items-center gap-2 group cursor-pointer transition-opacity hover:opacity-80"
+                                >
+                                    <div
+                                        class="w-10 h-10 border border-[#333333] rounded-full flex items-center justify-center shrink-0"
+                                    >
+                                        <img
+                                            src="assets/icon/arrow icon.svg"
+                                            alt=""
+                                            aria-hidden="true"
+                                            class="object-contain"
+                                        />
+                                    </div>
+                                    <span
+                                        class="font-['Roboto_Flex'] font-medium text-base text-[#B3B3B2] leading-[150%] uppercase"
+                                    >
+                                        Details
+                                    </span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- CARD 2 -->
+                        <div
+                            class="max-w-full border-solid border-[2px] p-[10px] mx-auto mb-[10px] border-[#1F1F1F] rounded-2xl"
+                        >
+                            <div>
+                                <img
+                                    src="assets/img/A-Aura Ecommerce.png"
+                                    alt="A-Aura Ecommerce"
+                                    class="w-full h-full object-cover mb-[10px]"
+                                />
+                            </div>
+
+                            <div
+                                class="flex flex-col items-start justify-center gap-5 rounded-[10px] p-6 bg-[#1A1A1A]"
+                            >
+                                <div class="flex flex-row gap-2 items-center">
+                                    <div
+                                        class="w-[52px] h-[52px] border-[1px] border-[#333333] rounded-[10px] flex items-center justify-center"
+                                    >
+                                        <svg
+                                            width="24"
+                                            height="24"
+                                            viewBox="0 0 24 24"
+                                            fill="none"
+                                            xmlns="http://www.w3.org/2000/svg"
+                                        >
+                                            <path
+                                                fill-rule="evenodd"
+                                                clip-rule="evenodd"
+                                                d="M19.4998 9.56052C19.5332 13.7025 16.0815 17.5334 11.9395 17.5C7.79748 17.4666 4.53367 13.5815 4.50025 9.43948C4.46683 5.29748 7.79748 1.96682 11.9395 2.00025C16.0815 2.03367 19.4663 5.41852 19.4998 9.56052ZM12.5061 5.25003C12.0919 5.24668 11.7534 5.57975 11.75 5.99395C11.7467 6.40815 12.0797 6.74663 12.4939 6.74998C13.7281 6.75993 14.7401 7.77194 14.75 9.00605C14.7534 9.42025 15.0919 9.75332 15.5061 9.74998C15.9203 9.74663 16.2533 9.40815 16.25 8.99395C16.2334 6.94088 14.5591 5.26659 12.5061 5.25003Z"
+                                                fill="#CE7D63"
+                                            />
+                                            <path
+                                                d="M14.167 18.2144C14.4992 19.2767 13.8108 20.3461 12.7501 20.5616V21.9998C12.7501 22.414 12.4143 22.7498 12.0001 22.7498C11.5859 22.7498 11.2501 22.414 11.2501 21.9998V20.5616C10.1894 20.3461 9.50094 19.2767 9.83316 18.2144L9.84005 18.193C10.5044 18.3867 11.2043 18.4939 11.9315 18.4998C12.7025 18.506 13.4493 18.3973 14.1595 18.1909C14.1622 18.1988 14.1646 18.2066 14.167 18.2144Z"
+                                                fill="#CE7D63"
+                                            />
+                                        </svg>
+                                    </div>
+                                    <h3
+                                        class="font-['Roboto_Flex'] font-medium text-base text-[#F9EFEC] leading-[150%] uppercase"
+                                    >
+                                        A-Aura Ecommerce
+                                    </h3>
+                                </div>
+
+                                <div class="flex flex-col gap-2">
+                                    <div
+                                        class="bg-[#1F1F1F] rounded-[45px] px-[10px] py-[6px] font-['Roboto_Flex'] font-normal text-xs text-[#B3B3B2] leading-[150%]"
+                                    >
+                                        Category
+                                        <span class="text-[#CE7D63]">•</span>
+                                        <span class="text-[#E6E6E6]"
+                                            >Web Design & Development</span
+                                        >
+                                    </div>
+
+                                    <div
+                                        class="self-start bg-[#1F1F1F] rounded-[45px] px-[10px] py-[6px] font-['Roboto_Flex'] font-normal text-xs text-[#B3B3B2] leading-[150%]"
+                                    >
+                                        Time Taken
+                                        <span class="text-[#CE7D63]">•</span>
+                                        <span class="text-[#E6E6E6]"
+                                            >3 months</span
+                                        >
+                                    </div>
+                                </div>
+                                <p
+                                    class="font-['Roboto_Flex'] font-normal text-sm text-[#B3B3B2] leading-[150%]"
+                                >
+                                    A complete overhaul of a corporate website
+                                    to enhance its brand identity and user
+                                    experience.
+                                </p>
+
+                                <button
+                                    class="flex flex-row items-center gap-2 group cursor-pointer transition-opacity hover:opacity-80"
+                                >
+                                    <div
+                                        class="w-10 h-10 border border-[#333333] rounded-full flex items-center justify-center shrink-0"
+                                    >
+                                        <img
+                                            src="assets/icon/arrow icon.svg"
+                                            alt=""
+                                            aria-hidden="true"
+                                            class="object-contain"
+                                        />
+                                    </div>
+                                    <span
+                                        class="font-['Roboto_Flex'] font-medium text-base text-[#B3B3B2] leading-[150%] uppercase"
+                                    >
+                                        Details
+                                    </span>
+                                </button>
+                            </div>
+                        </div>
                         <button
-                            class="flex flex-row items-center gap-2 group cursor-pointer transition-opacity hover:opacity-80"
+                            class="w-full flex flex-row gap-[6px] items-center justify-center rounded-xl px-[14px] py-4 mb-[10px] bg-[#1A1A1A] group cursor-pointer transition-opacity hover:opacity-80"
                         >
                             <div
                                 class="w-10 h-10 border border-[#333333] rounded-full flex items-center justify-center shrink-0"
                             >
                                 <img
-                                    src="assets/icon/arrow icon.svg"
+                                    src="assets/icon/arrow down.png"
                                     alt=""
                                     aria-hidden="true"
                                     class="object-contain"
                                 />
                             </div>
+
                             <span
                                 class="font-['Roboto_Flex'] font-medium text-base text-[#B3B3B2] leading-[150%] uppercase"
                             >
-                                Details
+                                ALL Works
                             </span>
                         </button>
                     </div>
                 </div>
-
-                <!-- CARD 2 -->
-                <div
-                    class="max-w-[338px] border-solid border-[2px] p-[10px] mx-auto mb-[10px] border-[#1F1F1F] rounded-2xl"
-                >
-                    <div>
-                        <img
-                            src="assets/img/A-Aura Ecommerce.png"
-                            alt="A-Aura Ecommerce"
-                            class="w-full h-full object-cover mb-[10px]"
-                        />
-                    </div>
-
-                    <div
-                        class="flex flex-col items-start justify-center gap-5 rounded-[10px] p-6 bg-[#1A1A1A]"
-                    >
-                        <div class="flex flex-row gap-2 items-center">
-                            <div
-                                class="w-[52px] h-[52px] border-[1px] border-[#333333] rounded-[10px] flex items-center justify-center"
-                            >
-                                <svg
-                                    width="24"
-                                    height="24"
-                                    viewBox="0 0 24 24"
-                                    fill="none"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                >
-                                    <path
-                                        fill-rule="evenodd"
-                                        clip-rule="evenodd"
-                                        d="M19.4998 9.56052C19.5332 13.7025 16.0815 17.5334 11.9395 17.5C7.79748 17.4666 4.53367 13.5815 4.50025 9.43948C4.46683 5.29748 7.79748 1.96682 11.9395 2.00025C16.0815 2.03367 19.4663 5.41852 19.4998 9.56052ZM12.5061 5.25003C12.0919 5.24668 11.7534 5.57975 11.75 5.99395C11.7467 6.40815 12.0797 6.74663 12.4939 6.74998C13.7281 6.75993 14.7401 7.77194 14.75 9.00605C14.7534 9.42025 15.0919 9.75332 15.5061 9.74998C15.9203 9.74663 16.2533 9.40815 16.25 8.99395C16.2334 6.94088 14.5591 5.26659 12.5061 5.25003Z"
-                                        fill="#CE7D63"
-                                    />
-                                    <path
-                                        d="M14.167 18.2144C14.4992 19.2767 13.8108 20.3461 12.7501 20.5616V21.9998C12.7501 22.414 12.4143 22.7498 12.0001 22.7498C11.5859 22.7498 11.2501 22.414 11.2501 21.9998V20.5616C10.1894 20.3461 9.50094 19.2767 9.83316 18.2144L9.84005 18.193C10.5044 18.3867 11.2043 18.4939 11.9315 18.4998C12.7025 18.506 13.4493 18.3973 14.1595 18.1909C14.1622 18.1988 14.1646 18.2066 14.167 18.2144Z"
-                                        fill="#CE7D63"
-                                    />
-                                </svg>
-                            </div>
-                            <h3
-                                class="font-['Roboto_Flex'] font-medium text-base text-[#F9EFEC] leading-[150%] uppercase"
-                            >
-                                A-Aura Ecommerce
-                            </h3>
-                        </div>
-
-                        <div class="flex flex-col gap-2">
-                            <div
-                                class="bg-[#1F1F1F] rounded-[45px] px-[10px] py-[6px] font-['Roboto_Flex'] font-normal text-xs text-[#B3B3B2] leading-[150%]"
-                            >
-                                Category
-                                <span class="text-[#CE7D63]">•</span>
-                                <span class="text-[#E6E6E6]"
-                                    >Web Design & Development</span
-                                >
-                            </div>
-
-                            <div
-                                class="self-start bg-[#1F1F1F] rounded-[45px] px-[10px] py-[6px] font-['Roboto_Flex'] font-normal text-xs text-[#B3B3B2] leading-[150%]"
-                            >
-                                Time Taken
-                                <span class="text-[#CE7D63]">•</span>
-                                <span class="text-[#E6E6E6]">3 months</span>
-                            </div>
-                        </div>
-                        <p
-                            class="font-['Roboto_Flex'] font-normal text-sm text-[#B3B3B2] leading-[150%]"
-                        >
-                            A complete overhaul of a corporate website to
-                            enhance its brand identity and user experience.
-                        </p>
-
-                        <button
-                            class="flex flex-row items-center gap-2 group cursor-pointer transition-opacity hover:opacity-80"
-                        >
-                            <div
-                                class="w-10 h-10 border border-[#333333] rounded-full flex items-center justify-center shrink-0"
-                            >
-                                <img
-                                    src="assets/icon/arrow icon.svg"
-                                    alt=""
-                                    aria-hidden="true"
-                                    class="object-contain"
-                                />
-                            </div>
-                            <span
-                                class="font-['Roboto_Flex'] font-medium text-base text-[#B3B3B2] leading-[150%] uppercase"
-                            >
-                                Details
-                            </span>
-                        </button>
-                    </div>
-                </div>
-
-                <button
-                    class="w-full flex flex-row gap-[6px] items-center justify-center rounded-xl px-[14px] py-4 mb-[10px] bg-[#1A1A1A] group cursor-pointer transition-opacity hover:opacity-80"
-                >
-                    <div
-                        class="w-10 h-10 border border-[#333333] rounded-full flex items-center justify-center shrink-0"
-                    >
-                        <img
-                            src="assets/icon/arrow down.png"
-                            alt=""
-                            aria-hidden="true"
-                            class="object-contain"
-                        />
-                    </div>
-
-                    <span
-                        class="font-['Roboto_Flex'] font-medium text-base text-[#B3B3B2] leading-[150%] uppercase"
-                    >
-                        ALL Works
-                    </span>
-                </button>
             </div>
         </section>
 
         <!-- Testimonials -->
 
-        <section
-            class="max-w-[358px] border-solid border-[2px] mx-auto mb-[50px] border-[#1F1F1F] rounded-2xl"
-        >
-            <div class="grid grid-cols-1 gap-[10px] p-[10px]">
-                <!-- CARD 1 -->
+        <section class="mb-[50px]">
+            <div class="max-w-[calc(100%-32px)] mx-auto">
                 <div
-                    class="flex flex-col items-start justify-center rounded-[14px] p-6 bg-[#1A1A1A]"
+                    class="border-solid border-[2px] border-[#1F1F1F] rounded-2xl"
                 >
-                    <h2
-                        class="font-['Roboto_Flex'] font-semibold text-[28px] text-[#F9EFEC] leading-[100%] uppercase"
-                    >
-                        Testimonials
-                    </h2>
-                </div>
-
-                <!-- CARD 2 -->
-                <div class="rounded-[14px] bg-[#1A1A1A] overflow-hidden">
-                    <div class="flex flex-col items-start justify-center p-6">
-                        <h3
-                            class="font-['Roboto_Flex'] font-medium text-lg text-[#F9EFEC] pb-2 leading-[150%] uppercase"
+                    <div class="grid grid-cols-1 gap-[10px] p-[10px]">
+                        <!-- CARD 1 -->
+                        <div
+                            class="flex flex-col items-start justify-center rounded-[14px] p-6 bg-[#1A1A1A]"
                         >
-                            NexGen turned our business around!
-                        </h3>
-                        <p
-                            class="font-['Roboto_Flex'] font-normal text-sm text-[#B3B3B2] leading-[150%]"
+                            <h2
+                                class="font-['Roboto_Flex'] font-semibold text-[28px] text-[#F9EFEC] leading-[100%] uppercase"
+                            >
+                                Testimonials
+                            </h2>
+                        </div>
+
+                        <!-- CARD 2 -->
+                        <div
+                            class="rounded-[14px] bg-[#1A1A1A] overflow-hidden"
                         >
-                            Their digital marketing strategies helped us reach
-                            new customers and increase our revenue by 30% within
-                            just a few months. Highly recommended!
-                        </p>
-                    </div>
-                    <!-- Card Footer -->
-                    <div
-                        class="flex items-center justify-between px-5 py-4 bg-[#1F1F1F]"
-                    >
-                        <!-- Left: Avatar + Info -->
-
-                        <div class="flex items-center gap-2">
-                            <img
-                                src="assets/img/Ava 1.png"
-                                alt="Avatar"
-                                class="w-10 h-10 rounded-full object-contain"
-                            />
-
-                            <div>
-                                <p
-                                    class="font-['Roboto_Flex'] text-base font-medium text-[#F3DFD8] leading-[150%]"
+                            <div
+                                class="flex flex-col items-start justify-center p-6"
+                            >
+                                <h3
+                                    class="font-['Roboto_Flex'] font-medium text-lg text-[#F9EFEC] pb-2 leading-[150%] uppercase"
                                 >
-                                    Sarah Thompson
-                                </p>
+                                    NexGen turned our business around!
+                                </h3>
                                 <p
-                                    class="font-['Roboto_Flex'] text-sm font-normal text-[#81807E] leading-[150%]"
+                                    class="font-['Roboto_Flex'] font-normal text-sm text-[#B3B3B2] leading-[150%]"
                                 >
-                                    CEO of BlueBloom
+                                    Their digital marketing strategies helped us
+                                    reach new customers and increase our revenue
+                                    by 30% within just a few months. Highly
+                                    recommended!
                                 </p>
+                            </div>
+                            <!-- Card Footer -->
+                            <div
+                                class="flex items-center justify-between px-5 py-4 bg-[#1F1F1F]"
+                            >
+                                <!-- Left: Avatar + Info -->
+
+                                <div class="flex items-center gap-2">
+                                    <img
+                                        src="assets/img/Ava 1.png"
+                                        alt="Avatar"
+                                        class="w-10 h-10 rounded-full object-contain"
+                                    />
+
+                                    <div>
+                                        <p
+                                            class="font-['Roboto_Flex'] text-base font-medium text-[#F3DFD8] leading-[150%]"
+                                        >
+                                            Sarah Thompson
+                                        </p>
+                                        <p
+                                            class="font-['Roboto_Flex'] text-sm font-normal text-[#81807E] leading-[150%]"
+                                        >
+                                            CEO of BlueBloom
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <!-- Right: Arrow button -->
+
+                                <button
+                                    type="button"
+                                    aria-label="View testimonial"
+                                    class="w-10 h-10 border border-[#333333] rounded-full flex items-center justify-center cursor-pointer hover:bg-[#333333] transition-colors"
+                                >
+                                    <img
+                                        src="assets/icon/arrow right.svg"
+                                        alt=""
+                                        class="object-contain"
+                                        aria-hidden="true"
+                                    />
+                                </button>
                             </div>
                         </div>
 
-                        <!-- Right: Arrow button -->
-
-                        <button
-                            type="button"
-                            aria-label="View testimonial"
-                            class="w-10 h-10 border border-[#333333] rounded-full flex items-center justify-center cursor-pointer hover:bg-[#333333] transition-colors"
+                        <!-- CARD 3 -->
+                        <div
+                            class="rounded-[14px] bg-[#1A1A1A] overflow-hidden"
                         >
-                            <img
-                                src="assets/icon/arrow right.svg"
-                                alt=""
-                                class="object-contain"
-                                aria-hidden="true"
-                            />
-                        </button>
-                    </div>
-                </div>
-
-                <!-- CARD 3 -->
-                <div class="rounded-[14px] bg-[#1A1A1A] overflow-hidden">
-                    <div class="flex flex-col items-start justify-center p-6">
-                        <h3
-                            class="font-['Roboto_Flex'] font-medium text-lg text-[#F9EFEC] pb-2 leading-[150%] uppercase"
-                        >
-                            NexGen turned our business around!
-                        </h3>
-                        <p
-                            class="font-['Roboto_Flex'] font-normal text-sm text-[#B3B3B2] leading-[150%]"
-                        >
-                            Their digital marketing strategies helped us reach
-                            new customers and increase our revenue by 30% within
-                            just a few months. Highly recommended!
-                        </p>
-                    </div>
-                    <!-- Card Footer -->
-                    <div
-                        class="flex items-center justify-between px-5 py-4 bg-[#1F1F1F]"
-                    >
-                        <!-- Left: Avatar + Info -->
-
-                        <div class="flex items-center gap-2">
-                            <img
-                                src="assets/img/Ava 2.png"
-                                alt="Avatar"
-                                class="w-10 h-10 rounded-full object-contain"
-                            />
-
-                            <div>
-                                <p
-                                    class="font-['Roboto_Flex'] text-base font-medium text-[#F3DFD8] leading-[150%]"
+                            <div
+                                class="flex flex-col items-start justify-center p-6"
+                            >
+                                <h3
+                                    class="font-['Roboto_Flex'] font-medium text-lg text-[#F9EFEC] pb-2 leading-[150%] uppercase"
                                 >
-                                    Wade Warren
-                                </p>
+                                    NexGen turned our business around!
+                                </h3>
                                 <p
-                                    class="font-['Roboto_Flex'] text-sm font-normal text-[#81807E] leading-[150%]"
+                                    class="font-['Roboto_Flex'] font-normal text-sm text-[#B3B3B2] leading-[150%]"
                                 >
-                                    Art Director
+                                    Their digital marketing strategies helped us
+                                    reach new customers and increase our revenue
+                                    by 30% within just a few months. Highly
+                                    recommended!
                                 </p>
+                            </div>
+                            <!-- Card Footer -->
+                            <div
+                                class="flex items-center justify-between px-5 py-4 bg-[#1F1F1F]"
+                            >
+                                <!-- Left: Avatar + Info -->
+
+                                <div class="flex items-center gap-2">
+                                    <img
+                                        src="assets/img/Ava 2.png"
+                                        alt="Avatar"
+                                        class="w-10 h-10 rounded-full object-contain"
+                                    />
+
+                                    <div>
+                                        <p
+                                            class="font-['Roboto_Flex'] text-base font-medium text-[#F3DFD8] leading-[150%]"
+                                        >
+                                            Wade Warren
+                                        </p>
+                                        <p
+                                            class="font-['Roboto_Flex'] text-sm font-normal text-[#81807E] leading-[150%]"
+                                        >
+                                            Art Director
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <!-- Right: Arrow button -->
+
+                                <button
+                                    type="button"
+                                    aria-label="View testimonial"
+                                    class="w-10 h-10 border border-[#333333] rounded-full flex items-center justify-center cursor-pointer hover:bg-[#333333] transition-colors"
+                                >
+                                    <img
+                                        src="assets/icon/arrow right.svg"
+                                        alt=""
+                                        class="object-contain"
+                                        aria-hidden="true"
+                                    />
+                                </button>
                             </div>
                         </div>
 
-                        <!-- Right: Arrow button -->
-
-                        <button
-                            type="button"
-                            aria-label="View testimonial"
-                            class="w-10 h-10 border border-[#333333] rounded-full flex items-center justify-center cursor-pointer hover:bg-[#333333] transition-colors"
+                        <!-- CARD 4 -->
+                        <div
+                            class="rounded-[14px] bg-[#1A1A1A] overflow-hidden"
                         >
-                            <img
-                                src="assets/icon/arrow right.svg"
-                                alt=""
-                                class="object-contain"
-                                aria-hidden="true"
-                            />
-                        </button>
-                    </div>
-                </div>
-
-                <!-- CARD 4 -->
-                <div class="rounded-[14px] bg-[#1A1A1A] overflow-hidden">
-                    <div class="flex flex-col items-start justify-center p-6">
-                        <h3
-                            class="font-['Roboto_Flex'] font-medium text-lg text-[#F9EFEC] pb-2 leading-[150%] uppercase"
-                        >
-                            Working with NexGen was a pleasure.
-                        </h3>
-                        <p
-                            class="font-['Roboto_Flex'] font-normal text-sm text-[#B3B3B2] leading-[150%]"
-                        >
-                            Their web design team created a stunning website
-                            that perfectly captured our brand's essence. The
-                            feedback from our customers has been overwhelmingly
-                            positive.
-                        </p>
-                    </div>
-                    <!-- Card Footer -->
-                    <div
-                        class="flex items-center justify-between px-5 py-4 bg-[#1F1F1F]"
-                    >
-                        <!-- Left: Avatar + Info -->
-
-                        <div class="flex items-center gap-2">
-                            <img
-                                src="assets/img/Ava 3.png"
-                                alt="Avatar"
-                                class="w-10 h-10 rounded-full object-contain"
-                            />
-
-                            <div>
-                                <p
-                                    class="font-['Roboto_Flex'] text-base font-medium text-[#F3DFD8] leading-[150%]"
+                            <div
+                                class="flex flex-col items-start justify-center p-6"
+                            >
+                                <h3
+                                    class="font-['Roboto_Flex'] font-medium text-lg text-[#F9EFEC] pb-2 leading-[150%] uppercase"
                                 >
-                                    Lisa Williams
-                                </p>
+                                    Working with NexGen was a pleasure.
+                                </h3>
                                 <p
-                                    class="font-['Roboto_Flex'] text-sm font-normal text-[#81807E] leading-[150%]"
+                                    class="font-['Roboto_Flex'] font-normal text-sm text-[#B3B3B2] leading-[150%]"
                                 >
-                                    CEO Of HealthTech
+                                    Their web design team created a stunning
+                                    website that perfectly captured our brand's
+                                    essence. The feedback from our customers has
+                                    been overwhelmingly positive.
                                 </p>
+                            </div>
+                            <!-- Card Footer -->
+                            <div
+                                class="flex items-center justify-between px-5 py-4 bg-[#1F1F1F]"
+                            >
+                                <!-- Left: Avatar + Info -->
+
+                                <div class="flex items-center gap-2">
+                                    <img
+                                        src="assets/img/Ava 3.png"
+                                        alt="Avatar"
+                                        class="w-10 h-10 rounded-full object-contain"
+                                    />
+
+                                    <div>
+                                        <p
+                                            class="font-['Roboto_Flex'] text-base font-medium text-[#F3DFD8] leading-[150%]"
+                                        >
+                                            Lisa Williams
+                                        </p>
+                                        <p
+                                            class="font-['Roboto_Flex'] text-sm font-normal text-[#81807E] leading-[150%]"
+                                        >
+                                            CEO Of HealthTech
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <!-- Right: Arrow button -->
+
+                                <button
+                                    type="button"
+                                    aria-label="View testimonial"
+                                    class="w-10 h-10 border border-[#333333] rounded-full flex items-center justify-center cursor-pointer hover:bg-[#333333] transition-colors"
+                                >
+                                    <img
+                                        src="assets/icon/arrow right.svg"
+                                        alt=""
+                                        class="object-contain"
+                                        aria-hidden="true"
+                                    />
+                                </button>
                             </div>
                         </div>
 
-                        <!-- Right: Arrow button -->
-
+                        <!-- CARD 5 -->
                         <button
                             type="button"
-                            aria-label="View testimonial"
-                            class="w-10 h-10 border border-[#333333] rounded-full flex items-center justify-center cursor-pointer hover:bg-[#333333] transition-colors"
+                            class="w-full flex flex-row gap-[6px] items-center justify-center rounded-xl px-[14px] py-4 bg-[#1A1A1A] cursor-pointer hover:bg-[#252525] transition-colors active:scale-[0.98]"
                         >
-                            <img
-                                src="assets/icon/arrow right.svg"
-                                alt=""
-                                class="object-contain"
-                                aria-hidden="true"
-                            />
+                            <div
+                                class="w-10 h-10 border border-[#333333] rounded-full flex items-center justify-center"
+                            >
+                                <img
+                                    src="assets/icon/arrow down.png"
+                                    alt=""
+                                    aria-hidden="true"
+                                    class="object-contain"
+                                />
+                            </div>
+
+                            <span
+                                class="font-['Roboto_Flex'] font-medium text-base text-[#B3B3B2] leading-[150%] uppercase"
+                            >
+                                ALL Testimonials
+                            </span>
                         </button>
                     </div>
                 </div>
-
-                <!-- CARD 5 -->
-                <button
-                    type="button"
-                    class="w-full flex flex-row gap-[6px] items-center justify-center rounded-xl px-[14px] py-4 bg-[#1A1A1A] cursor-pointer hover:bg-[#252525] transition-colors active:scale-[0.98]"
-                >
-                    <div
-                        class="w-10 h-10 border border-[#333333] rounded-full flex items-center justify-center"
-                    >
-                        <img
-                            src="assets/icon/arrow down.png"
-                            alt=""
-                            aria-hidden="true"
-                            class="object-contain"
-                        />
-                    </div>
-
-                    <span
-                        class="font-['Roboto_Flex'] font-medium text-base text-[#B3B3B2] leading-[150%] uppercase"
-                    >
-                        ALL Testimonials
-                    </span>
-                </button>
             </div>
         </section>
 
         <!-- ─── FAQ ─── -->
 
-        <section class="max-w-[358px] mx-auto mb-[50px] rounded-2xl">
-            <div class="grid grid-cols-1 gap-[10px] py-[10px]">
-                <!-- CARD 1 -->
-                <div
-                    class="flex flex-col items-start justify-center rounded-[14px] p-6 bg-[#1A1A1A]"
-                >
-                    <h2
-                        class="font-['Roboto_Flex'] font-semibold text-[28px] text-[#F9EFEC] leading-[100%] uppercase"
-                    >
-                        Frequently Asked Questions
-                    </h2>
-                </div>
-
-                <!-- FAQ ITEM 1 (OPEN) -->
-                <div class="rounded-[14px] p-[30px] bg-[#1A1A1A]">
-                    <button
-                        type="button"
-                        class="w-full flex items-start justify-center gap-5 cursor-pointer text-left group"
-                    >
-                        <h3
-                            class="font-medium text-lg text-[#F9EFEC] mb-2 leading-[150%] flex-1"
-                        >
-                            How long does it take to complete a web development
-                            project?
-                        </h3>
+        <section class="mb-[10px]">
+            <div class="max-w-[calc(100%-32px)] mx-auto">
+                <div class="rounded-2xl">
+                    <div class="grid grid-cols-1 gap-[10px] pt-[10px]">
+                        <!-- CARD 1 -->
                         <div
-                            class="w-10 h-10 border border-[#333333] rounded-full flex items-center justify-center shrink-0 group-hover:bg-[#333333] transition-colors"
+                            class="flex flex-col items-start justify-center rounded-[14px] p-6 bg-[#1A1A1A]"
                         >
-                            <img
-                                src="assets/icon/Close Btn.svg"
-                                alt=""
-                                aria-hidden="true"
-                                class="object-contain"
-                            />
+                            <h2
+                                class="font-['Roboto_Flex'] font-semibold text-[28px] text-[#F9EFEC] leading-[100%] uppercase"
+                            >
+                                Frequently Asked Questions
+                            </h2>
                         </div>
-                    </button>
 
-                    <!-- Divider -->
-                    <div class="border-t border-[#262626] my-5"></div>
+                        <!-- FAQ ITEM 1 (OPEN) -->
+                        <div class="rounded-[14px] p-[30px] bg-[#1A1A1A]">
+                            <button
+                                type="button"
+                                class="w-full flex items-center justify-between gap-5 cursor-pointer text-left group"
+                            >
+                                <h3
+                                    class="font-medium text-lg text-[#F9EFEC] mb-2 leading-[150%] flex-1"
+                                >
+                                    How long does it take to complete a web
+                                    development project?
+                                </h3>
+                                <div
+                                    class="w-10 h-10 border border-[#333333] rounded-full flex items-center justify-center shrink-0 group-hover:bg-[#333333] transition-colors"
+                                >
+                                    <img
+                                        src="assets/icon/Close Btn.svg"
+                                        alt=""
+                                        aria-hidden="true"
+                                        class="object-contain"
+                                    />
+                                </div>
+                            </button>
 
-                    <p
-                        class="font-['Roboto_Flex'] font-normal text-sm text-[#B3B3B2] leading-[150%]"
-                    >
-                        The timeline varies depending on the project's
-                        complexity and requirements. Our team strives to deliver
-                        projects on time while maintaining the highest quality
-                        standards.
-                    </p>
-                </div>
+                            <!-- Divider -->
+                            <div class="border-t border-[#262626] my-5"></div>
 
-                <!-- FAQ ITEM 2 (CLOSED) -->
-                <div class="rounded-[14px] p-[30px] bg-[#1A1A1A]">
-                    <button
-                        type="button"
-                        class="w-full flex items-start justify-center gap-5 cursor-pointer text-left group"
-                    >
-                        <h3
-                            class="font-medium text-lg text-[#F9EFEC] mb-2 leading-[150%] flex-1"
-                        >
-                            Can you handle large-scale mobile app development
-                            projects?
-                        </h3>
-                        <div
-                            class="w-10 h-10 border border-[#333333] rounded-full flex items-center justify-center shrink-0 group-hover:bg-[#333333] transition-colors"
-                        >
-                            <img
-                                src="assets/icon/Open Btn.svg"
-                                alt=""
-                                aria-hidden="true"
-                                class="object-contain"
-                            />
+                            <p
+                                class="font-['Roboto_Flex'] font-normal text-sm text-[#B3B3B2] leading-[150%]"
+                            >
+                                The timeline varies depending on the project's
+                                complexity and requirements. Our team strives to
+                                deliver projects on time while maintaining the
+                                highest quality standards.
+                            </p>
                         </div>
-                    </button>
-                </div>
 
-                <!-- FAQ ITEM 3 (CLOSED) -->
-                <div class="rounded-[14px] p-[30px] bg-[#1A1A1A]">
-                    <div class="flex items-start justify-center gap-5">
-                        <h3
-                            class="font-['Roboto_Flex'] font-medium text-lg text-[#F9EFEC] mb-2 leading-[150%]"
-                        >
-                            Can you integrate third-party APIs into our mobile
-                            app?
-                        </h3>
+                        <!-- FAQ ITEM 2 (CLOSED) -->
+                        <div class="rounded-[14px] p-[30px] bg-[#1A1A1A]">
+                            <button
+                                type="button"
+                                class="w-full flex items-center justify-between gap-5 cursor-pointer text-left group"
+                            >
+                                <h3
+                                    class="font-medium text-lg text-[#F9EFEC] mb-2 leading-[150%] flex-1"
+                                >
+                                    Can you handle large-scale mobile app
+                                    development projects?
+                                </h3>
+                                <div
+                                    class="w-10 h-10 border border-[#333333] rounded-full flex items-center justify-center shrink-0 group-hover:bg-[#333333] transition-colors"
+                                >
+                                    <img
+                                        src="assets/icon/Open Btn.svg"
+                                        alt=""
+                                        aria-hidden="true"
+                                        class="object-contain"
+                                    />
+                                </div>
+                            </button>
+                        </div>
 
-                        <div
-                            class="w-10 h-10 border-[1px] border-[#333333] rounded-full flex items-center justify-center shrink-0"
-                        >
-                            <img
-                                src="assets/icon/Open Btn.svg"
-                                alt="Open Btn"
-                                class="object-contain"
-                            />
+                        <!-- FAQ ITEM 3 (CLOSED) -->
+                        <div class="rounded-[14px] p-[30px] bg-[#1A1A1A]">
+                            <div
+                                class="flex items-center justify-between gap-5"
+                            >
+                                <h3
+                                    class="font-['Roboto_Flex'] font-medium text-lg text-[#F9EFEC] mb-2 leading-[150%]"
+                                >
+                                    Can you integrate third-party APIs into our
+                                    mobile app?
+                                </h3>
+
+                                <div
+                                    class="w-10 h-10 border-[1px] border-[#333333] rounded-full flex items-center justify-center shrink-0"
+                                >
+                                    <img
+                                        src="assets/icon/Open Btn.svg"
+                                        alt="Open Btn"
+                                        class="object-contain"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ ITEM 4 (CLOSED) -->
+                        <div class="rounded-[14px] p-[30px] bg-[#1A1A1A]">
+                            <div
+                                class="flex items-center justify-between gap-5"
+                            >
+                                <h3
+                                    class="font-['Roboto_Flex'] font-medium text-lg text-[#F9EFEC] mb-2 leading-[150%]"
+                                >
+                                    How do you ensure cross-platform
+                                    compatibility for mobile apps?
+                                </h3>
+
+                                <div
+                                    class="w-10 h-10 border-[1px] border-[#333333] rounded-full flex items-center justify-center shrink-0"
+                                >
+                                    <img
+                                        src="assets/icon/Open Btn.svg"
+                                        alt="Open Btn"
+                                        class="object-contain"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ ITEM 5 (CLOSED) -->
+                        <div class="rounded-[14px] p-[30px] bg-[#1A1A1A]">
+                            <button
+                                type="button"
+                                class="w-full flex items-center justify-between gap-5 cursor-pointer text-left group"
+                            >
+                                <h3
+                                    class="font-['Roboto_Flex'] font-medium text-lg text-[#F9EFEC] mb-2 leading-[150%]"
+                                >
+                                    How do you ensure cross-platform
+                                    compatibility for mobile apps?
+                                </h3>
+
+                                <div
+                                    class="w-10 h-10 border border-[#333333] rounded-full flex items-center justify-center shrink-0 group-hover:bg-[#333333] transition-colors"
+                                >
+                                    <img
+                                        src="assets/icon/Open Btn.svg"
+                                        alt=""
+                                        aria-hidden="true"
+                                        class="object-contain"
+                                    />
+                                </div>
+                            </button>
                         </div>
                     </div>
                 </div>
+            </div>
+        </section>
 
-                <!-- FAQ ITEM 4 (CLOSED) -->
-                <div class="rounded-[14px] p-[30px] bg-[#1A1A1A]">
-                    <div class="flex items-start justify-center gap-5">
-                        <h3
-                            class="font-['Roboto_Flex'] font-medium text-lg text-[#F9EFEC] mb-2 leading-[150%]"
-                        >
-                            How do you ensure cross-platform compatibility for
-                            mobile apps?
-                        </h3>
-
+        <!-- FORM -->
+        <section class="mb-[50px]">
+            <div class="max-w-[calc(100%-32px)] mx-auto">
+                <div class="rounded-2xl">
+                    <div class="grid grid-cols-1 gap-[10px] pb-[10px]">
                         <div
-                            class="w-10 h-10 border-[1px] border-[#333333] rounded-full flex items-center justify-center shrink-0"
+                            class="w-full rounded-xl bg-[#1A1A1A] p-[30px] font-['Roboto_Flex']"
                         >
-                            <img
-                                src="assets/icon/Open Btn.svg"
-                                alt="Open Btn"
-                                class="object-contain"
-                            />
+                            <h2
+                                class="text-[#F9EFEC] text-lg font-medium mb-[20px] leading-[150%] uppercase"
+                            >
+                                Ask Your Question
+                            </h2>
+
+                            <div class="h-px bg-[#262626] mb-[20px]"></div>
+
+                            <form class="space-y-[14px]">
+                                <div class="space-y-2">
+                                    <label
+                                        for="name"
+                                        class="block text-[#F3DFD8] text-base font-medium uppercase tracking-normal cursor-pointer"
+                                    >
+                                        Name
+                                    </label>
+                                    <input
+                                        id="name"
+                                        type="text"
+                                        placeholder="Enter your name"
+                                        class="w-full bg-[#0F0F0F] border-none rounded-lg p-4 text-[#F9EFEC] placeholder:text-[#676665] focus:ring-2 focus:ring-[#CE7D63] outline-none transition-shadow"
+                                        required
+                                    />
+                                </div>
+
+                                <div class="space-y-2">
+                                    <label
+                                        for="email"
+                                        class="block text-[#F3DFD8] text-base font-medium uppercase tracking-normal cursor-pointer"
+                                    >
+                                        Email
+                                    </label>
+                                    <input
+                                        id="email"
+                                        type="email"
+                                        placeholder="Enter your email"
+                                        class="w-full bg-[#0F0F0F] border-none rounded-lg p-4 text-[#F9EFEC] placeholder:text-[#676665] focus:ring-2 focus:ring-[#CE7D63] outline-none transition-shadow"
+                                        required
+                                    />
+                                </div>
+
+                                <div class="space-y-2">
+                                    <label
+                                        for="question"
+                                        class="block text-[#F3DFD8] text-base font-medium uppercase tracking-normal cursor-pointer"
+                                    >
+                                        Your Question
+                                    </label>
+                                    <textarea
+                                        id="question"
+                                        rows="4"
+                                        placeholder="Enter Your Question Here ....."
+                                        class="w-full bg-[#0F0F0F] border-none rounded-lg p-4 text-[#F9EFEC] placeholder:text-[#676665] focus:ring-2 focus:ring-[#CE7D63] outline-none resize-none transition-shadow"
+                                        required
+                                    ></textarea>
+                                </div>
+
+                                <button
+                                    type="submit"
+                                    class="w-full bg-[#CE7D63] text-[#0F0F0F] font-semibold py-[14px] rounded-lg uppercase cursor-pointer hover:bg-[#b86d54] active:scale-[0.99] transition-all"
+                                >
+                                    Send Your Message
+                                </button>
+                            </form>
                         </div>
                     </div>
-                </div>
-
-                <!-- FAQ ITEM 5 (CLOSED) -->
-                <div class="rounded-[14px] p-[30px] bg-[#1A1A1A]">
-                    <button
-                        type="button"
-                        class="w-full flex items-start justify-between gap-5 cursor-pointer text-left group"
-                    >
-                        <h3
-                            class="font-['Roboto_Flex'] font-medium text-lg text-[#F9EFEC] mb-2 leading-[150%]"
-                        >
-                            How do you ensure cross-platform compatibility for
-                            mobile apps?
-                        </h3>
-
-                        <div
-                            class="w-10 h-10 border border-[#333333] rounded-full flex items-center justify-center shrink-0 group-hover:bg-[#333333] transition-colors"
-                        >
-                            <img
-                                src="assets/icon/Open Btn.svg"
-                                alt=""
-                                aria-hidden="true"
-                                class="object-contain"
-                            />
-                        </div>
-                    </button>
-                </div>
-
-                <!-- FORM -->
-
-                <div
-                    class="w-full rounded-xl bg-[#1A1A1A] p-[30px] font-['Roboto_Flex']"
-                >
-                    <h2
-                        class="text-[#F9EFEC] text-lg font-medium mb-[20px] leading-[150%] uppercase"
-                    >
-                        Ask Your Question
-                    </h2>
-
-                    <div class="h-px bg-[#262626] mb-[20px]"></div>
-
-                    <form class="space-y-[14px]">
-                        <div class="space-y-2">
-                            <label
-                                for="name"
-                                class="block text-[#F3DFD8] text-base font-medium uppercase tracking-normal cursor-pointer"
-                            >
-                                Name
-                            </label>
-                            <input
-                                id="name"
-                                type="text"
-                                placeholder="Enter your name"
-                                class="w-full bg-[#0F0F0F] border-none rounded-lg p-4 text-[#F9EFEC] placeholder:text-[#676665] focus:ring-2 focus:ring-[#CE7D63] outline-none transition-shadow"
-                                required
-                            />
-                        </div>
-
-                        <div class="space-y-2">
-                            <label
-                                for="email"
-                                class="block text-[#F3DFD8] text-base font-medium uppercase tracking-normal cursor-pointer"
-                            >
-                                Email
-                            </label>
-                            <input
-                                id="email"
-                                type="email"
-                                placeholder="Enter your email"
-                                class="w-full bg-[#0F0F0F] border-none rounded-lg p-4 text-[#F9EFEC] placeholder:text-[#676665] focus:ring-2 focus:ring-[#CE7D63] outline-none transition-shadow"
-                                required
-                            />
-                        </div>
-
-                        <div class="space-y-2">
-                            <label
-                                for="question"
-                                class="block text-[#F3DFD8] text-base font-medium uppercase tracking-normal cursor-pointer"
-                            >
-                                Your Question
-                            </label>
-                            <textarea
-                                id="question"
-                                rows="4"
-                                placeholder="Enter Your Question Here ....."
-                                class="w-full bg-[#0F0F0F] border-none rounded-lg p-4 text-[#F9EFEC] placeholder:text-[#676665] focus:ring-2 focus:ring-[#CE7D63] outline-none resize-none transition-shadow"
-                                required
-                            ></textarea>
-                        </div>
-
-                        <button
-                            type="submit"
-                            class="w-full bg-[#CE7D63] text-[#0F0F0F] font-semibold py-[14px] rounded-lg uppercase cursor-pointer hover:bg-[#b86d54] active:scale-[0.99] transition-all"
-                        >
-                            Send Your Message
-                        </button>
-                    </form>
                 </div>
             </div>
         </section>

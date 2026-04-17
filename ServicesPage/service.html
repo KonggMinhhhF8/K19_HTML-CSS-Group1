@@ -160,6 +160,7 @@
                                         lg:px-5 lg:py-3.5
                                         2xl:px-6 2xl:py-4.5
                                         text-[#0F0F0F]
+                                        hover:text-[#E7BEB1]
                                       "
                     >Contact us</a>
                 </li>
@@ -246,7 +247,7 @@
                         bg-[#CE7D63]
                         whitespace-nowrap
                      ">
-                <a href="#" class="px-20 py-3 text-[#0F0F0F]  ">
+                <a href="#" class="px-20 py-3 text-[#0F0F0F] hover:text-[#E7BEB1] ">
                     Contact us
                 </a>
             </li>
@@ -1937,7 +1938,7 @@
             </div>
 
             <!--                CTA button -->
-            <button
+            <a href="#!"
                     class="flex items-center justify-center lg:self-end shrink-0
                            gap-2 2xl:gap-2.5
                            bg-[#0F0F0F]
@@ -1945,12 +1946,13 @@
                            rounded-xl
                            text-[#F3DFD8] uppercase font-medium
                            text-sm lg:text-base 2xl:text-lg
-                           leading-[150%] tracking-[0%] ">
+                           leading-[150%] tracking-[0%]
+                           cursor-pointer hover:bg-[#1A1A1A]">
 
                     Get in touch
 
                 <img src="assets/icons/arrow-topRight.svg" alt="arrow top right">
-            </button>
+            </a>
         </div>
 
         <!-- CTA text -->
@@ -2028,29 +2030,40 @@
         >
             <!-- Social icon on mobile -->
             <div class="grid grid-cols-4 gap-2.5 lg:hidden">
-                <div
-                        class="flex justify-center items-center p-3.5 bg-[#1F1F1F] border border-[#333333] rounded-[10px]"
+                <a href="#!"
+                        class="flex justify-center items-center p-3.5 bg-[#1F1F1F]
+                               border border-[#333333] rounded-[10px]
+                               cursor-pointer hover:bg-black"
                 >
                     <img src="assets/icons/instagram.svg" alt="instagram icon">
-                </div>
+                </a>
 
-                <div
-                        class="flex justify-center items-center p-3.5 bg-[#1F1F1F] border border-[#333333] rounded-[10px]"
+                <a href="#!"
+                        class="flex justify-center items-center
+                               p-3.5 bg-[#1F1F1F]
+                               border border-[#333333] rounded-[10px]
+                               cursor-pointer hover:bg-black"
                 >
                     <img src="assets/icons/twitter.svg" alt="twitter icon">
-                </div>
+                </a>
 
-                <div
-                        class="flex justify-center items-center p-3.5 bg-[#1F1F1F] border border-[#333333] rounded-[10px]"
+                <a href="#!"
+                        class="flex justify-center items-center
+                               p-3.5 bg-[#1F1F1F]
+                               border border-[#333333] rounded-[10px]
+                               cursor-pointer hover:bg-black"
                 >
                     <img src="assets/icons/dribbble.svg" alt="dribble icon">
-                </div>
+                </a>
 
-                <div
-                        class="flex justify-center items-center p-3.5 bg-[#1F1F1F] border border-[#333333] rounded-[10px]"
+                <a href="#!"
+                        class="flex justify-center items-center
+                               p-3.5 bg-[#1F1F1F]
+                               border border-[#333333] rounded-[10px]
+                               cursor-pointer hover:bg-black"
                 >
                     <img src="assets/icons/behance.svg" alt="behance icon">
-                </div>
+                </a>
                 
 
             </div>
@@ -2061,75 +2074,98 @@
             >
                 <!-- Card 1 -->
                 <div
-                        class="flex flex-col gap-[60px] p-[40px] rounded-[14px] bg-[#1A1A1A]"
+                        class="flex flex-col lg:p-7.5 2xl:p-10 justify-between
+                               lg:gap-15 2xl:gap-20
+                               lg:rounded-[10px] 2xl:rounded-[14px] bg-[#1A1A1A]"
                 >
-                    <!-- Title card -->
+                    <!--   Icon card -->
                     <div class="flex justify-between">
                         <!-- Icon brand -->
-                        <div
-                                class="flex justify-center items-center p-[14px] bg-[#1F1F1F] border-[1px] border-[#333333] rounded-xl 2xl:p-[18px]"
+                        <a href="#!"
+                                class="bg-[#1F1F1F]
+                                       w-14 h-14 2xl:w-16.5 2xl:h-16.5
+                                       rounded-[10px] 2xl:rounded-xl
+                                       p-3.5 2xl:p-4
+                                       border border-[#333333]
+                                       cursor-pointer hover:bg-black
+                                      "
                         >
-                            <div
-                                    class="w-7 h-7 bg-[url('assets/images/insta.svg')] bg-contain bg-center bg-no-repeat 2xl:w-8 2xl:h-8"
-                            ></div>
-                        </div>
+                            <img src="assets/icons/instagram.svg" alt="instagram icon" class="w-6 h-6 2xl:w-8.5 2xl:h-8.5">
+                        </a>
                         <!-- -topRight arrow -->
-                        <button
-                                class="flex flex-shrink-0 justify-center items-center w-13 h-13 bg-[#1F1F1F] border-[1px] border-[#262626] rounded-full"
+                        <a href="#!"
+                                class="
+                                       w-10 h-10 2xl:w-13 2xl:h-13
+                                       p-2.5 2xl:p-3.5 cursor-pointer hover:bg-black
+                                       bg-[#1F1F1F] border border-[#333333] rounded-full"
                         >
-                            <div
-                                    class="w-6 h-6 bg-[url('assets/images/arrow-topRight.svg')] bg-contain bg-center bg-no-repeat 2xl:w-7 2xl:h-7"
-                            ></div>
-                        </button>
+                            <img src="assets/icons/arrow-topRight.svg" alt="arrow-topRight" class="w-5 h-5 2xl:w-6 2xl:h-6" />
+
+                        </a>
                     </div>
+
                     <!-- Content card -->
-                    <div class="mt-auto">
-                        <p
-                                class="text-[#F9EFEC] uppercase font-medium text-[22px] leading-[150%] tracking-[0%] 2xl:text-[30px]"
+                    <div >
+                        <h3
+                                class="text-[#F9EFEC] uppercase font-medium text-[22px]
+                                mb-2.5 2xl:mb-3
+                                leading-[150%] tracking-[0%] 2xl:text-3xl"
                         >
                             Instagram
-                        </p>
+                        </h3>
                         <p
-                                class="text-[#B3B3B2] font-normal text-[14px] leading-[150%] tracking-[0%] 2xl:text-[16px]"
+                                class="text-[#B3B3B2]  leading-[150%] tracking-[0%] 2xl:text-lg"
                         >
                             Share visually appealing snippets of our latest web
                             projects.
                         </p>
                     </div>
                 </div>
-                <!-- end Card1  -->
+
+
+
                 <!-- Card 2 -->
                 <div
-                        class="flex flex-col gap-[60px] p-[40px] rounded-[14px] bg-[#1A1A1A]"
+                        class="flex flex-col lg:p-7.5 2xl:p-10 justify-between
+                               lg:gap-15 2xl:gap-20
+                               lg:rounded-[10px] 2xl:rounded-[14px] bg-[#1A1A1A]"
                 >
                     <!-- Title card -->
                     <div class="flex justify-between">
                         <!-- Icon brand -->
-                        <div
-                                class="flex justify-center items-center p-[14px] bg-[#1F1F1F] border-[1px] border-[#333333] rounded-xl 2xl:p-[18px]"
+                        <a href="#!"
+                           class="bg-[#1F1F1F]
+                                       w-14 h-14 2xl:w-16.5 2xl:h-16.5
+                                       rounded-[10px] 2xl:rounded-xl
+                                       p-3.5 2xl:p-4
+                                       border border-[#333333]
+                                       cursor-pointer hover:bg-black
+                                      "
                         >
-                            <div
-                                    class="w-7 h-7 bg-[url('assets/images/twit.svg')] bg-contain bg-center bg-no-repeat 2xl:w-8 2xl:h-8"
-                            ></div>
-                        </div>
+                            <img src="assets/icons/twitter.svg" alt="twitter icon" class="w-6 h-6 2xl:w-8.5 2xl:h-8.5">
+                        </a>
                         <!-- -topRight arrow -->
-                        <button
-                                class="flex flex-shrink-0 justify-center items-center w-13 h-13 bg-[#1F1F1F] border-[1px] border-[#262626] rounded-full"
+                        <a href="#!"
+                           class="
+                                       w-10 h-10 2xl:w-13 2xl:h-13
+                                       p-2.5 2xl:p-3.5 cursor-pointer hover:bg-black
+                                       bg-[#1F1F1F] border border-[#333333] rounded-full"
                         >
-                            <div
-                                    class="w-6 h-6 bg-[url('assets/images/arrow-topRight.svg')] bg-contain bg-center bg-no-repeat 2xl:w-7 2xl:h-7"
-                            ></div>
-                        </button>
+                            <img src="assets/icons/arrow-topRight.svg" alt="arrow-topRight" class="w-5 h-5 2xl:w-6 2xl:h-6" />
+
+                        </a>
                     </div>
                     <!-- Content card -->
-                    <div class="mt-auto">
-                        <p
-                                class="text-[#F9EFEC] uppercase font-medium text-[22px] leading-[150%] tracking-[0%] 2xl:text-[30px]"
+                    <div >
+                        <h3
+                                class="text-[#F9EFEC] uppercase font-medium text-[22px]
+                                mb-2.5 2xl:mb-3
+                                leading-[150%] tracking-[0%] 2xl:text-3xl"
                         >
                             Twitter
-                        </p>
+                        </h3>
                         <p
-                                class="text-[#B3B3B2] font-normal text-[14px] leading-[150%] tracking-[0%] 2xl:text-[16px]"
+                                class="text-[#B3B3B2]  leading-[150%] tracking-[0%] 2xl:text-lg"
                         >
                             Tweet about interesting coding challenges
                         </p>
@@ -2138,87 +2174,105 @@
                 <!-- end Card2  -->
                 <!-- Card 3 -->
                 <div
-                        class="flex flex-col gap-[60px] p-[40px] rounded-[14px] bg-[#1A1A1A]"
+                        class="flex flex-col lg:p-7.5 2xl:p-10 justify-between
+                               lg:gap-15 2xl:gap-20
+                               lg:rounded-[10px] 2xl:rounded-[14px] bg-[#1A1A1A]"
                 >
                     <!-- Title card -->
                     <div class="flex justify-between">
                         <!-- Icon brand -->
-                        <div
-                                class="flex justify-center items-center p-[14px] bg-[#1F1F1F] border-[1px] border-[#333333] rounded-xl 2xl:p-[18px]"
+                        <a href="#!"
+                           class="bg-[#1F1F1F]
+                                       w-14 h-14 2xl:w-16.5 2xl:h-16.5
+                                       rounded-[10px] 2xl:rounded-xl
+                                       p-3.5 2xl:p-4
+                                       border border-[#333333]
+                                       cursor-pointer hover:bg-black
+                                      "
                         >
-                            <div
-                                    class="w-7 h-7 bg-[url('assets/images/ball.svg')] bg-contain bg-center bg-no-repeat 2xl:w-8 2xl:h-8"
-                            ></div>
-                        </div>
-
+                            <img src="assets/icons/dribbble.svg" alt="dribbble icon" class="w-6 h-6 2xl:w-8.5 2xl:h-8.5">
+                        </a>
                         <!-- -topRight arrow -->
-                        <button
-                                class="flex flex-shrink-0 justify-center items-center w-13 h-13 bg-[#1F1F1F] border-[1px] border-[#262626] rounded-full"
+                        <a href="#!"
+                           class="
+                                       w-10 h-10 2xl:w-13 2xl:h-13
+                                       p-2.5 2xl:p-3.5 cursor-pointer hover:bg-black
+                                       bg-[#1F1F1F] border border-[#333333] rounded-full"
                         >
-                            <div
-                                    class="w-6 h-6 bg-[url('assets/images/arrow-topRight.svg')] bg-contain bg-center bg-no-repeat 2xl:w-7 2xl:h-7"
-                            ></div>
-                        </button>
+                            <img src="assets/icons/arrow-topRight.svg" alt="arrow-topRight" class="w-5 h-5 2xl:w-6 2xl:h-6" />
+
+                        </a>
                     </div>
                     <!-- Content card -->
-                    <div class="mt-auto">
-                        <p
-                                class="text-[#F9EFEC] uppercase font-medium text-[22px] leading-[150%] tracking-[0%] 2xl:text-[30px]"
+                    <div >
+                        <h3
+                                class="text-[#F9EFEC] uppercase font-medium text-[22px]
+                                mb-2.5 2xl:mb-3
+                                leading-[150%] tracking-[0%] 2xl:text-3xl"
                         >
                             Dribbble
-                        </p>
+                        </h3>
                         <p
-                                class="text-[#B3B3B2] font-normal text-[14px] leading-[150%] tracking-[0%] 2xl:text-[16px]"
+                                class="text-[#B3B3B2]  leading-[150%] tracking-[0%] 2xl:text-lg"
                         >
                             Showcase design elements of our web projects.
                         </p>
                     </div>
                 </div>
-                <!-- end Card3  -->
+
                 <!-- Card 4 -->
                 <div
-                        class="flex flex-col gap-[60px] p-[40px] rounded-[14px] bg-[#1A1A1A]"
+                        class="flex flex-col lg:p-7.5 2xl:p-10 justify-between
+                               lg:gap-15 2xl:gap-20
+                               lg:rounded-[10px] 2xl:rounded-[14px] bg-[#1A1A1A]"
                 >
                     <!-- Title card -->
                     <div class="flex justify-between">
                         <!-- Icon brand -->
-                        <div
-                                class="flex justify-center items-center p-[14px] bg-[#1F1F1F] border-[1px] border-[#333333] rounded-xl 2xl:p-[18px]"
+                        <a href="#!"
+                           class="bg-[#1F1F1F]
+                                       w-14 h-14 2xl:w-16.5 2xl:h-16.5
+                                       rounded-[10px] 2xl:rounded-xl
+                                       p-3.5 2xl:p-4
+                                       border border-[#333333]
+                                       cursor-pointer hover:bg-black
+                                      "
                         >
-                            <div
-                                    class="w-7 h-7 bg-[url('assets/images/be.svg')] bg-contain bg-center bg-no-repeat 2xl:w-8 2xl:h-8"
-                            ></div>
-                        </div>
-
+                            <img src="assets/icons/behance.svg" alt="behance icon" class="w-6 h-6 2xl:w-8.5 2xl:h-8.5">
+                        </a>
                         <!-- -topRight arrow -->
-                        <button
-                                class="flex flex-shrink-0 justify-center items-center w-13 h-13 bg-[#1F1F1F] border-[1px] border-[#262626] rounded-full"
+                        <a href="#!"
+                           class="
+                                       w-10 h-10 2xl:w-13 2xl:h-13
+                                       p-2.5 2xl:p-3.5 cursor-pointer hover:bg-black
+                                       bg-[#1F1F1F] border border-[#333333] rounded-full"
                         >
-                            <div
-                                    class="w-6 h-6 bg-[url('assets/images/arrow-topRight.svg')] bg-contain bg-center bg-no-repeat 2xl:w-7 2xl:h-7"
-                            ></div>
-                        </button>
+                            <img src="assets/icons/arrow-topRight.svg" alt="arrow-topRight" class="w-5 h-5 2xl:w-6 2xl:h-6" />
+
+                        </a>
                     </div>
                     <!-- Content card -->
-                    <div class="mt-auto">
-                        <p
-                                class="text-[#F9EFEC] uppercase font-medium text-[22px] leading-[150%] tracking-[0%] 2xl:text-[30px]"
+                    <div>
+                        <h3
+                                class="text-[#F9EFEC] uppercase font-medium text-[22px]
+                                mb-2.5 2xl:mb-3
+                                leading-[150%] tracking-[0%] 2xl:text-3xl"
                         >
                             Behance
-                        </p>
+                        </h3>
                         <p
-                                class="text-[#B3B3B2] font-normal text-[14px] leading-[150%] tracking-[0%] 2xl:text-[16px]"
+                                class="text-[#B3B3B2]  leading-[150%] tracking-[0%] 2xl:text-lg"
                         >
                             Create detailed presentations for our projects.
                         </p>
                     </div>
                 </div>
-                <!-- end Card4  -->
+
             </div>
 
             <!-- Footer content -->
             <div
-                    class="grid grid-cols-1 gap-2.5 2xl:gap-5 lg:col-span-6 lg:row-span-6  lg:grid-rows-6 lg:gap-3"
+                    class="grid grid-cols-1 gap-2.5 2xl:gap-5 lg:col-span-6 lg:row-span-6   lg:gap-3  "
             >
                 <!-- Footer link -->
                 <div
@@ -2434,7 +2488,7 @@
                         >
                             <img src="assets/icons/arrow-topRight.svg" alt="arrow-topRight" class="w-5 h-5 2xl:w-6 2xl:h-6" />
 
-                            >
+
                         </button>
 
                     </form>
@@ -2455,7 +2509,7 @@
                         © 2024 NextGen. All rights reserved.
                     </p>
 
-                    <div class="flex flex-col gap-5 text-center lg:flex-row lg:gap-2.5 2xl:gap-2.75">
+                    <div class="flex flex-col gap-5 text-center lg:flex-row lg:gap-4 2xl:gap-5.5">
                         <p class="text-sm 2xl:text-lg font-['Roboto_Mono'] leading-[150%] tracking-[0%]">Terms & Conditions</p>
 
                         <div class=" w-full border border-[#232329] lg:hidden  "></div>

@@ -22,7 +22,7 @@
             }
             100% {
                 transform: translateX(-50%);
-            } /* Chạy một nửa quãng đường để tạo hiệu ứng lặp vô tận */
+            }
         }
         .animate-marquee {
             display: flex;
@@ -35,16 +35,7 @@
 <body>
 
 <!-- Page Wrapper -->
-<div
-        class=" flex flex-col
-                mx-auto
-                pt-10.25 px-4 pb-5
-                lg:pt-7.5 lg:px-10 lg:pb-10
-
-                2xl:max-w-480
-                2xl:px-12.5 2xl:pb-12.5
-                bg-[#0F0F0F]
-                leading-[150%] tracking-[0%]
+<div class=" flex flex-col mx-auto pt-10.25 px-4 pb-5 lg:pt-7.5 lg:px-10 lg:pb-10  2xl:max-w-480 2xl:px-12.5 2xl:pb-12.5 bg-[#0F0F0F] leading-[150%] tracking-[0%]
               ">
 
 <!--   HEADER SECTION -->
@@ -407,46 +398,9 @@
                     At NexGen, we offer a comprehensive suite of digital solutions designed to propel your business to new heights in the digital realm. With a team of skilled professionals, cutting-edge technologies, and a passion for innovation
                 </p>
 
-<!--                Hero tag list animation  -->
-<!--                <div class="flex items-center justify-center-->
-<!--                            overflow-hidden-->
-<!--                            flex-nowrap-->
-<!--                            lg:mr-6.25 lg:ml-4 lg:mb-4-->
-<!--                            2xl:mx-5 2xl:mb-5-->
-<!--                            gap-2-->
-<!--                            py-3.5  lg:py-4 2xl:py-5-->
-<!--                            bg-[#0F0F0F]-->
-<!--                            rounded-lg lg:rounded-[10px]-->
-<!--                           ">-->
-<!--                    <ul class="flex gap-2 lg:gap-2.5 2xl:gap-5.75-->
-<!--                               font-['Roboto_Mono']-->
-<!--                               text-[#676665]-->
-<!--                               text-sm lg:text-base 2xl:text-xl-->
-<!--                               whitespace-nowrap-->
-<!--                               uppercase-->
-<!--                              ">-->
-<!--                        <li class="flex items-center gap-2 lg:gap-2.5 2xl:gap-2.25">-->
-<!--                            <span class="w-1.75 h-1.75 rounded-full bg-[#CE7D63]"></span>-->
-<!--                            Digital Marketing</li>-->
-<!--                        <li class="flex items-center gap-2 lg:gap-2.5 2xl:gap-5">-->
-<!--                            <span class="w-1.75 h-1.75 rounded-full bg-[#CE7D63]"></span>-->
-<!--                            Website Design</li>-->
-<!--                        <li class="flex items-center gap-2 lg:gap-2.5 2xl:gap-5">-->
-<!--                            <span class="w-1.75 h-1.75 rounded-full bg-[#CE7D63]"></span>-->
-<!--                            Branding</li>-->
-<!--                        <li class="flex items-center gap-2 lg:gap-2.5 2xl:gap-5">-->
-<!--                            <span class="w-1.75 h-1.75 rounded-full bg-[#CE7D63]"></span>-->
-<!--                            Website Development</li>-->
-<!--                        <li class="flex items-center gap-2 lg:gap-2.5 2xl:gap-5">-->
-<!--                            <span class="w-1.75 h-1.75 rounded-full bg-[#CE7D63]"></span>-->
-<!--                            Mobile App Development</li>-->
-<!--                        <li class="flex items-center gap-2 lg:gap-2.5 2xl:gap-5">-->
-<!--                            <span class="w-1.75 h-1.75 rounded-full bg-[#CE7D63]"></span>-->
-<!--                            Digital Marketing</li>-->
-<!--                    </ul>-->
-<!--                </div>-->
+
                 <div
-                        class="overflow-hidden bg-[#1A1A1A] py-4 border-y border-dashed border-[#262626] rounded-[10px] mx-[16px] lg:mx-[40px] 2xl:mx-[50px]"
+                        class="overflow-hidden bg-[#1A1A1A] py-4 border-y border-dashed border-[#262626] rounded-[10px] "
                 >
                     <div class="animate-marquee">
                         <div class="flex items-center space-x-10 px-5">
@@ -537,7 +491,7 @@
             </h2>
 
 <!--         Grid Cards -->
-            <article class="lg:grid lg:grid-cols-2  lg:gap-2.5 2xl:gap-5">
+            <article class=" flex flex-col gap-2.5 lg:grid lg:grid-cols-2  lg:gap-2.5 2xl:gap-5">
 <!--                Card row 1 -->
 <!--                Card left-->
                 <div class="flex flex-col gap-5 lg:gap-10 2xl:gap-12.5
@@ -577,7 +531,7 @@
                     </div>
 
                     <!--                Card footer-->
-                    <a href="#!" class="lg:hidden py-3.5 px-19.5 font-medium text-sm uppercase text-[#0F0F0F] bg-[#CE7D63] rounded-lg cursor-pointer">View all Projects</a>
+                    <a href="#!" class="lg:hidden py-3.5 px-19.5 font-medium text-center text-sm uppercase text-[#0F0F0F] bg-[#CE7D63] rounded-lg cursor-pointer">View all Projects</a>
                     <h4 class="hidden lg:block  font-medium text-[22px] 2xl:text-3xl text-[#F9EFEC] text-end uppercase">Starts From $1,500</h4>
                 </div>
 
@@ -646,7 +600,7 @@
                     </div>
 
                     <!--                Card footer-->
-                    <a href="#!" class="lg:hidden py-3.5 px-19.5 font-medium text-sm uppercase text-[#0F0F0F] bg-[#CE7D63] rounded-lg cursor-pointer">View all Projects</a>
+                    <a href="#!" class="lg:hidden py-3.5 px-19.5 font-medium text-sm text-center uppercase text-[#0F0F0F] bg-[#CE7D63] rounded-lg cursor-pointer">View all Projects</a>
                     <h4 class="hidden lg:block  font-medium text-[22px] 2xl:text-3xl text-[#F9EFEC] text-end uppercase">Starts From $2,500</h4>
                 </div>
 
@@ -715,7 +669,7 @@
                     </div>
 
                     <!--                Card footer-->
-                    <a href="#!" class=" lg:hidden py-3.5 px-19.5 font-medium text-sm uppercase text-[#0F0F0F] bg-[#CE7D63] rounded-lg cursor-pointer">View all Projects</a>
+                    <a href="#!" class=" lg:hidden py-3.5 px-19.5 font-medium text-sm uppercase text-center text-[#0F0F0F] bg-[#CE7D63] rounded-lg cursor-pointer">View all Projects</a>
                     <h4 class="hidden lg:block  font-medium text-[22px] 2xl:text-3xl text-[#F9EFEC] text-end uppercase">Starts From $1,800</h4>
                 </div>
 
@@ -785,7 +739,7 @@
                     </div>
 
                     <!--                Card footer-->
-                    <a href="#!" class="lg:hidden py-3.5 px-19.5 font-medium text-sm uppercase text-[#0F0F0F] bg-[#CE7D63] rounded-lg cursor-pointer">View all Projects</a>
+                    <a href="#!" class="lg:hidden py-3.5 px-19.5 font-medium text-sm uppercase text-center text-[#0F0F0F] bg-[#CE7D63] rounded-lg cursor-pointer">View all Projects</a>
                     <h4 class="hidden lg:block  font-medium text-[22px] 2xl:text-3xl text-[#F9EFEC] text-end uppercase">Starts From $1,200</h4>
                 </div>
 
@@ -2038,7 +1992,7 @@
 
         <!-- CTA text animation  -->
         <div
-                class="overflow-hidden bg-[#1A1A1A] py-4 border-y border-dashed border-[#262626] rounded-[10px] mx-[16px] lg:mx-[40px] 2xl:mx-[50px] mb-2.5 2xl:mb-5"
+                class="overflow-hidden bg-[#1A1A1A] py-4 border-y border-dashed border-[#262626] rounded-[10px]  mb-2.5 2xl:mb-5"
         >
             <div class="animate-marquee">
                 <div class="flex items-center space-x-10 px-5">
@@ -2144,7 +2098,7 @@
 
             <!-- Social icon on desktop -->
             <div
-                    class="hidden lg:grid col-span-4 row-span-6 grid-rows-2 grid-cols-2 gap-2.5"
+                    class="hidden lg:grid col-span-4 row-span-6 grid-rows-2 grid-cols-2 gap-2.5 2xl:gap-5"
             >
                 <!-- Card 1 -->
                 <div
@@ -2354,7 +2308,7 @@
                                lg:grid-cols-4 lg:grid-rows-1
                                gap-7.5 lg:gap-10 2xl:gap-15
                                rounded-[14px] lg:rounded-2xl 2xl:rounded-[20px]
-                               p-6 lg:p-10 2xl:p-15
+                               p-6 lg:p-10 2xl:p-12.5
                                bg-[#1A1A1A]
                                "
                 >
@@ -2600,7 +2554,6 @@
 
         </div>
     </footer>
-
 
 
 </div>

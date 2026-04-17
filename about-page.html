@@ -174,7 +174,7 @@
     </header>
 
     <section
-      class="w-[calc(100%-32px)] h-[526px] mx-auto mb-[50px] lg:w-[calc(100%-80px)] lg:h-[362px] lg:flex lg:gap-[16px] lg:mb-[80px] lg:mb-[120px] 2xl:w-[calc(100%-100px)] 2xl:h-[492px] 2xl:gap-[20px]"
+      class="w-[calc(100%-32px)] h-[526px] mx-auto mb-[50px] lg:w-[calc(100%-80px)] lg:h-[362px] lg:flex lg:gap-[16px] lg:mb-[80px] lg:mb-[80px] 2xl:w-[calc(100%-100px)] 2xl:h-[492px] 2xl:gap-[20px]"
     >
       <div
         class="w-full h-[208px] bg-[#1A1A1A] flex flex-col items-center justify-center rounded-[12px] mb-[16px] lg:w-[70%] lg:h-[360px] lg:flex lg:flex-row lg:justify-start lg:px-[60px] lg:py-[92px] 2xl:w-[70%] 2xl:h-[492px] 2xl:px-[80px] 2xl:py-[126px]"
@@ -288,7 +288,7 @@
     <section
       class="w-calc[100%-32px] mx-[16px] p-[10px] rounded-[14px] border-2 border-solid border-[#1F1F1F] flex flex-col gap-[10px] mb-[50px] lg:w-calc[100%-80px] lg:mx-[40px] lg:mb-[80px] 2xl:w-calc[100%-100px] 2xl:mx-[50px] 2xl:p-[20px] 2xl:gap-[20px] 2xl:mb-[120px]"
     >
-      <input type="checkbox" id="toggle-nexgen" class="peer hidden" />
+      <input type="checkbox" id="toggle-nexgen" class="peer hidden" checked />
 
       <div
         class="h-[147px] p-[24px] bg-[#1A1A1A] rounded-[14px] lg:flex items-center lg:px-[40px] lg:h-[136px] lg:justify-between 2xl:px-[50px] 2xl:h-[168px]"
@@ -353,7 +353,7 @@
           <img
             src="./img/John.png"
             alt="John Smith - Co-Founder & CEO"
-            class="w-full h-auto mb-[24px] lg:mb-[24px] 2xl:mb-[30px]"
+            class="w-full max-w-[300px] h-auto mb-[24px] lg:mb-[24px] 2xl:mb-[30px]"
           />
           <ul class="flex gap-2 mb-[30px]">
             <li>
@@ -393,7 +393,7 @@
           <img
             src="./img/Sarah.png"
             alt="Sarah Adams - Head of Design"
-            class="w-full mb-[24px] lg:mb-[24px] 2xl:mb-[30px]"
+            class="w-full max-w-[300px] h-auto mb-[24px] lg:mb-[24px] 2xl:mb-[30px]"
           />
           <ul class="flex gap-2 mb-[30px]">
             <li>
@@ -401,7 +401,7 @@
                 ><img
                   src="./img/icon/facebook.svg"
                   alt=""
-                  class="2xl:w-[52px] 2xl:h-[52px]"
+                  class="w-full max-w-[300px] h-auto mb-[24px] lg:mb-[24px] 2xl:mb-[30px]"
               /></a>
             </li>
             <li>
@@ -433,7 +433,7 @@
           <img
             src="./img/Emily.png"
             alt="Emily Johnson - Lead Web Developer"
-            class="w-full mb-[24px] lg:mb-[24px] 2xl:mb-[30px]"
+            class="w-full max-w-[300px] h-auto mb-[24px] lg:mb-[24px] 2xl:mb-[30px]"
           />
           <ul class="flex gap-2 mb-[30px]">
             <li>
@@ -473,7 +473,7 @@
           <img
             src="./img/William.png"
             alt="William Lee - Lead Backend Developer"
-            class="w-full mb-[24px] lg:mb-[24px] 2xl:mb-[30px]"
+            class="w-full max-w-[300px] h-auto mb-[24px] lg:mb-[24px] 2xl:mb-[30px]"
           />
           <ul class="flex gap-2 mb-[30px]">
             <li>
@@ -514,7 +514,7 @@
           <img
             src="./img/William.png"
             alt="William Lee"
-            class="px-[24px] mb-[24px]"
+            class="w-full max-w-[300px] h-auto mb-[24px] lg:mb-[24px] 2xl:mb-[30px]"
           />
           <ul class="flex gap-2 mb-[30px]">
             <li>
@@ -535,7 +535,7 @@
           </ul>
         </article>
 
-        <div class="relative h-[88px] w-full max-w-[338px] mx-auto">
+        <div class="relative h-[88px] w-full mx-auto">
           <label
             class="absolute inset-0 cursor-pointer bg-[#1A1A1A] flex items-center justify-center rounded-[12px] transition-all duration-500 ease-in-out z-20 peer-checked:opacity-0 peer-checked:invisible peer-checked:scale-95"
             for="btn-member"
@@ -745,7 +745,7 @@
             </div>
           </article>
 
-          <div class="relative h-[88px] w-full max-w-[338px] mx-auto">
+          <div class="relative h-[88px] w-full mx-auto">
             <label
               class="absolute inset-0 cursor-pointer bg-[#1A1A1A] border border-[#262626] flex items-center justify-center rounded-[12px] transition-all duration-500 ease-in-out z-20 peer-checked:opacity-0 peer-checked:invisible"
               for="btn-achievements"
@@ -1008,7 +1008,7 @@
             </article>
           </div>
 
-          <div class="relative h-[88px] w-full max-w-[338px] mx-auto">
+          <div class="relative h-[88px] w-full mx-auto">
             <label
               class="absolute inset-0 cursor-pointer bg-[#1A1A1A] border border-[#262626] flex items-center justify-center rounded-[12px] transition-all duration-500 ease-in-out z-20 peer-checked:opacity-0 peer-checked:invisible"
               for="btn-awards"
@@ -1337,30 +1337,38 @@
                 class="h-auto bg-[#1F1F1F] px-[20px] py-[16px] -mx-[24px]"
               >
                 <div class="flex items-center justify-between">
-                  <div class="flex items-center px-4">
+                  <div class="flex items-center">
                     <img
                       src="./img/Image (3).png"
                       alt="Jennifer Lee"
-                      class="mr-[8px] w-[40px] h-[40px]"
+                      class="mr-[8px] lg:mr-[10px] w-[40px] h-[40px] lg:w-[50px] lg:h-[50px] 2xl:w-[60px] 2xl:h-[60px]"
                     />
-                    <div class="flex flex-col">
+                    <div class="flex flex-col justify-center">
                       <p
-                        class="font-['Roboto_Flex'] font-medium text-[16px] text-[#F3DFD8]"
+                        class="font-['Roboto_Flex'] font-medium text-[16px] leading-tight text-[#F3DFD8] lg:text-[18px] 2xl:text-[20px]"
                       >
                         Jennifer Lee
                       </p>
                       <cite
-                        class="font-['Roboto_Flex'] font-normal text-[14px] text-[#81807E] not-italic"
+                        class="font-['Roboto_Flex'] font-normal text-[14px] leading-tight text-[#81807E] not-italic lg:text-[16px] 2xl:text-[18px]"
                         >COO of Foodie Haven</cite
                       >
                     </div>
                   </div>
+                  <button aria-label="View more details">
+                    <img
+                      src="./img/icon/right-arrow.svg"
+                      alt=""
+                      class="2xl:w-[52px] 2xl:h-[52px]"
+                      aria-hidden="true"
+                    />
+                  </button>
                 </div>
               </footer>
             </article>
           </div>
 
-          <div class="relative h-[88px] w-full max-w-[338px] mx-auto">
+          <div class="relative h-[88px] w-full mx-auto">
             <label
               class="absolute inset-0 cursor-pointer bg-[#1A1A1A] border border-[#262626] flex items-center justify-center rounded-[12px] transition-all duration-500 ease-in-out z-20 peer-checked:opacity-0 peer-checked:invisible"
               for="btn-testimonials"
@@ -1828,10 +1836,10 @@
           class="lg:col-span-4 font-['Roboto_Flex'] font-medium leading-[1.5] tracking-normal"
         >
           <div
-            class="flex flex-row gap-[10px] items-center mx-[16px] lg:hidden"
+            class="flex flex-row gap-[10px] items-center mx-[16px] items-center justify-center lg:hidden"
           >
             <button
-              class="flex items-center justify-center w-[82px] h-[56px] bg-[#333333] rounded-[12px]"
+              class="flex items-center justify-center w-full h-[56px] bg-[#333333] rounded-[12px]"
             >
               <img
                 src="./img/ig.png"
@@ -1840,17 +1848,17 @@
               />
             </button>
             <button
-              class="flex items-center justify-center w-[82px] h-[56px] bg-[#333333] rounded-[12px]"
+              class="flex items-center justify-center w-full h-[56px] bg-[#333333] rounded-[12px]"
             >
               <img src="./img/tw-icon.png" alt="" />
             </button>
             <button
-              class="flex items-center justify-center w-[82px] h-[56px] bg-[#333333] rounded-[12px]"
+              class="flex items-center justify-center w-full h-[56px] bg-[#333333] rounded-[12px]"
             >
               <img src="./img/Group 80.png" alt="" />
             </button>
             <button
-              class="flex items-center justify-center w-[82px] h-[56px] bg-[#333333] rounded-[12px]"
+              class="flex items-center justify-center w-full h-[56px] bg-[#333333] rounded-[12px]"
             >
               <img src="./img/Group.png" alt="" />
             </button>

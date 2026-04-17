@@ -48,17 +48,79 @@
   }
 }
 
-#toggle-nexgen ~ div img:first-of-type {
-  display: flex;
-}
-#toggle-nexgen ~ div img:nth-of-type(2) {
-  display: none;
+@media (min-width: 1024px) {
+  /* Thiết lập mặc định cho cả 2 label */
+  #close-nexgen,
+  #open-nexgen {
+    transition: all 0.3s ease-in-out;
+  }
+
+  /* 1. Trạng thái bình thường */
+  #close-nexgen {
+    display: none;
+    opacity: 0;
+    transform: translateY(5px);
+  }
+
+  /* 2. Khi Checked: Hiện Close, Ẩn Open */
+  #toggle-nexgen:checked ~ div #close-nexgen {
+    display: flex !important;
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  #toggle-nexgen:checked ~ div #open-nexgen {
+    display: none !important;
+  }
 }
 
-/* Khi checkbox ĐÃ check: Đảo ngược trạng thái */
-#toggle-nexgen:checked ~ div img:first-of-type {
-  display: none;
+@media (min-width: 1024px) {
+  /* Thiết lập mặc định cho cả 2 label */
+  #close-testi,
+  #open-testi {
+    transition: all 0.3s ease-in-out;
+  }
+
+  /* 1. Trạng thái bình thường */
+  #close-testi {
+    display: none;
+    opacity: 0;
+    transform: translateY(5px);
+  }
+
+  /* 2. Khi Checked: Hiện Close, Ẩn Open */
+  #toggle-faq-testimonials:checked ~ div #close-testi {
+    display: flex !important;
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  #toggle-faq-testimonials:checked ~ div #open-testi {
+    display: none !important;
+  }
 }
-#toggle-nexgen:checked ~ div img:nth-of-type(2) {
-  display: flex;
+@media (min-width: 1024px) {
+  /* Thiết lập mặc định cho cả 2 label */
+  #close-faq,
+  #open-faq {
+    transition: all 0.3s ease-in-out;
+  }
+
+  /* 1. Trạng thái bình thường */
+  #close-faq {
+    display: none;
+    opacity: 0;
+    transform: translateY(5px);
+  }
+
+  /* 2. Khi Checked: Hiện Close, Ẩn Open */
+  #toggle-faq:checked ~ div #close-faq {
+    display: flex !important;
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  #toggle-faq:checked ~ div #open-faq {
+    display: none !important;
+  }
 }

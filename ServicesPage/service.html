@@ -15,6 +15,22 @@
 <!--    Tailwind CDN -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
+    <style>
+        @keyframes marquee {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(-50%);
+            } /* Chạy một nửa quãng đường để tạo hiệu ứng lặp vô tận */
+        }
+        .animate-marquee {
+            display: flex;
+            width: max-content;
+            animation: marquee 20s linear infinite;
+        }
+    </style>
+
 </head>
 <body>
 
@@ -32,6 +48,7 @@
               ">
 
 <!--   HEADER SECTION -->
+
 
 <!--    Checkbox hack ẩn hiện navigation -->
     <input type="checkbox" id="menu-toggle" class="peer hidden">
@@ -390,44 +407,105 @@
                     At NexGen, we offer a comprehensive suite of digital solutions designed to propel your business to new heights in the digital realm. With a team of skilled professionals, cutting-edge technologies, and a passion for innovation
                 </p>
 
-<!--                Hero tag list -->
-                <div class="flex items-center justify-center
-                            overflow-hidden
-                            flex-nowrap
-                            lg:mr-6.25 lg:ml-4 lg:mb-4
-                            2xl:mx-5 2xl:mb-5
-                            gap-2
-                            py-3.5  lg:py-4 2xl:py-5
-                            bg-[#0F0F0F]
-                            rounded-lg lg:rounded-[10px]
-                           ">
-                    <ul class="flex gap-2 lg:gap-2.5 2xl:gap-5.75
-                               font-['Roboto_Mono']
-                               text-[#676665]
-                               text-sm lg:text-base 2xl:text-xl
-                               whitespace-nowrap
-                               uppercase
-                              ">
-                        <li class="flex items-center gap-2 lg:gap-2.5 2xl:gap-2.25">
-                            <span class="w-1.75 h-1.75 rounded-full bg-[#CE7D63]"></span>
-                            Digital Marketing</li>
-                        <li class="flex items-center gap-2 lg:gap-2.5 2xl:gap-5">
-                            <span class="w-1.75 h-1.75 rounded-full bg-[#CE7D63]"></span>
-                            Website Design</li>
-                        <li class="flex items-center gap-2 lg:gap-2.5 2xl:gap-5">
-                            <span class="w-1.75 h-1.75 rounded-full bg-[#CE7D63]"></span>
-                            Branding</li>
-                        <li class="flex items-center gap-2 lg:gap-2.5 2xl:gap-5">
-                            <span class="w-1.75 h-1.75 rounded-full bg-[#CE7D63]"></span>
-                            Website Development</li>
-                        <li class="flex items-center gap-2 lg:gap-2.5 2xl:gap-5">
-                            <span class="w-1.75 h-1.75 rounded-full bg-[#CE7D63]"></span>
-                            Mobile App Development</li>
-                        <li class="flex items-center gap-2 lg:gap-2.5 2xl:gap-5">
-                            <span class="w-1.75 h-1.75 rounded-full bg-[#CE7D63]"></span>
-                            Digital Marketing</li>
-                    </ul>
+<!--                Hero tag list animation  -->
+<!--                <div class="flex items-center justify-center-->
+<!--                            overflow-hidden-->
+<!--                            flex-nowrap-->
+<!--                            lg:mr-6.25 lg:ml-4 lg:mb-4-->
+<!--                            2xl:mx-5 2xl:mb-5-->
+<!--                            gap-2-->
+<!--                            py-3.5  lg:py-4 2xl:py-5-->
+<!--                            bg-[#0F0F0F]-->
+<!--                            rounded-lg lg:rounded-[10px]-->
+<!--                           ">-->
+<!--                    <ul class="flex gap-2 lg:gap-2.5 2xl:gap-5.75-->
+<!--                               font-['Roboto_Mono']-->
+<!--                               text-[#676665]-->
+<!--                               text-sm lg:text-base 2xl:text-xl-->
+<!--                               whitespace-nowrap-->
+<!--                               uppercase-->
+<!--                              ">-->
+<!--                        <li class="flex items-center gap-2 lg:gap-2.5 2xl:gap-2.25">-->
+<!--                            <span class="w-1.75 h-1.75 rounded-full bg-[#CE7D63]"></span>-->
+<!--                            Digital Marketing</li>-->
+<!--                        <li class="flex items-center gap-2 lg:gap-2.5 2xl:gap-5">-->
+<!--                            <span class="w-1.75 h-1.75 rounded-full bg-[#CE7D63]"></span>-->
+<!--                            Website Design</li>-->
+<!--                        <li class="flex items-center gap-2 lg:gap-2.5 2xl:gap-5">-->
+<!--                            <span class="w-1.75 h-1.75 rounded-full bg-[#CE7D63]"></span>-->
+<!--                            Branding</li>-->
+<!--                        <li class="flex items-center gap-2 lg:gap-2.5 2xl:gap-5">-->
+<!--                            <span class="w-1.75 h-1.75 rounded-full bg-[#CE7D63]"></span>-->
+<!--                            Website Development</li>-->
+<!--                        <li class="flex items-center gap-2 lg:gap-2.5 2xl:gap-5">-->
+<!--                            <span class="w-1.75 h-1.75 rounded-full bg-[#CE7D63]"></span>-->
+<!--                            Mobile App Development</li>-->
+<!--                        <li class="flex items-center gap-2 lg:gap-2.5 2xl:gap-5">-->
+<!--                            <span class="w-1.75 h-1.75 rounded-full bg-[#CE7D63]"></span>-->
+<!--                            Digital Marketing</li>-->
+<!--                    </ul>-->
+<!--                </div>-->
+                <div
+                        class="overflow-hidden bg-[#1A1A1A] py-4 border-y border-dashed border-[#262626] rounded-[10px] mx-[16px] lg:mx-[40px] 2xl:mx-[50px]"
+                >
+                    <div class="animate-marquee">
+                        <div class="flex items-center space-x-10 px-5">
+            <span
+                    class="text-[#81807E] font-medium text-[14px] uppercase whitespace-nowrap lg:text-[16px] 2xl:text-[20px]"
+            >Digital Marketing</span
+            >
+                            <span class="w-2 h-2 rounded-full bg-[#CE7D63]"></span>
+                            <span
+                                    class="text-[#81807E] font-medium text-[14px] uppercase whitespace-nowrap lg:text-[16px] 2xl:text-[20px]"
+                            >Website Design</span
+                            >
+                            <span class="w-2 h-2 rounded-full bg-[#CE7D63]"></span>
+                            <span
+                                    class="text-[#81807E] font-medium text-[14px] uppercase whitespace-nowrap lg:text-[16px] 2xl:text-[20px]"
+                            > Branding</span
+                            >
+                            <span class="w-2 h-2 rounded-full bg-[#CE7D63]"></span>
+                        </div>
+
+                        <div class="flex items-center space-x-10 px-5">
+            <span
+                    class="text-[#81807E] font-medium text-[14px] uppercase whitespace-nowrap lg:text-[16px] 2xl:text-[20px]"
+            >Website Development</span
+            >
+                            <span class="w-2 h-2 rounded-full bg-[#CE7D63]"></span>
+                            <span
+                                    class="text-[#81807E] font-medium text-[14px] uppercase whitespace-nowrap lg:text-[16px] 2xl:text-[20px]"
+                            >Mobile App Development</span
+                            >
+                            <span class="w-2 h-2 rounded-full bg-[#CE7D63]"></span>
+                            <span
+                                    class="text-[#81807E] font-medium text-[14px] uppercase whitespace-nowrap lg:text-[16px] 2xl:text-[20px]"
+                            >Digital Marketinga</span
+                            >
+                            <span class="w-2 h-2 rounded-full bg-[#CE7D63]"></span>
+                        </div>
+
+                        <div class="flex items-center space-x-10 px-5">
+            <span
+                    class="text-[#81807E] font-medium text-[14px] uppercase whitespace-nowrap lg:text-[16px] 2xl:text-[20px]"
+            >Website Design</span
+            >
+                            <span class="w-2 h-2 rounded-full bg-[#CE7D63]"></span>
+                            <span
+                                    class="text-[#81807E] font-medium text-[14px] uppercase whitespace-nowrap lg:text-[16px] 2xl:text-[20px]"
+                            >Branding</span
+                            >
+                            <span class="w-2 h-2 rounded-full bg-[#CE7D63]"></span>
+                            <span
+                                    class="text-[#81807E] font-medium text-[14px] uppercase whitespace-nowrap lg:text-[16px] 2xl:text-[20px]"
+                            >Website Development</span
+                            >
+                            <span class="w-2 h-2 rounded-full bg-[#CE7D63]"></span>
+                        </div>
+                    </div>
                 </div>
+
+
             </article>
 
 <!--    1-2.Hero image        -->
@@ -481,13 +559,13 @@
                             <h3 class="font-medium text-xl lg:text-[22px] 2xl:text-3xl text-[#F9EFEC] uppercase">Web Design</h3>
                         </div>
                             <!--                  Card header right-->
-                            <div class="hidden lg:flex items-center justify-between gap-2 2xl:gap-2.5">
+                            <a href="#!" class="hidden lg:flex items-center justify-between gap-2 2xl:gap-2.5 cursor-pointer">
                                 <div class="w-10 h-10 2xl:w-13 2xl:h-13
                                             rounded-[100px] border border-[#333333] bg-[#1F1F1F] p-2.5 2xl:p-3.5">
                                     <img src="assets/icons/arrow-topRight.svg" alt="arrow-top-right" class="w-5 h-5 2xl:w-6 2xl:h-6">
                                 </div>
                                 <span class="font-medium 2xl:text-xl font-['Roboto_Mono'] uppercase text-[#B3B3B2]">Book A Call</span>
-                            </div>
+                            </a>
                     </div>
 
                     <!--                Card body-->
@@ -499,7 +577,7 @@
                     </div>
 
                     <!--                Card footer-->
-                    <button class="lg:hidden py-3.5 px-19.5 font-medium text-sm uppercase text-[#0F0F0F] bg-[#CE7D63] rounded-lg">View all Projects</button>
+                    <a href="#!" class="lg:hidden py-3.5 px-19.5 font-medium text-sm uppercase text-[#0F0F0F] bg-[#CE7D63] rounded-lg cursor-pointer">View all Projects</a>
                     <h4 class="hidden lg:block  font-medium text-[22px] 2xl:text-3xl text-[#F9EFEC] text-end uppercase">Starts From $1,500</h4>
                 </div>
 
@@ -512,12 +590,12 @@
                     <div class="flex items-center justify-between ">
                         <h4 class="font-medium text-xl 2xl:text-2xl uppercase text-[#F9EFEC]">Web Design Projects</h4>
                         <!--            Desktop icon view all -->
-                        <div class=" hidden lg:flex items-center  gap-2">
+                        <a href="#!" class=" hidden lg:flex items-center  gap-2 cursor-pointer">
                             <div class="w-14 h-14 2xl:w-17 2xl:h-17 rounded-[100px] border border-[#262626] bg-[#1A1A1A] p-4 2xl:p-5">
                                 <img src="assets/icons/arrow-topRight.svg" alt="arrow-top-right" class="w-6 h-6 2xl:w-7 2xl:h-7 ">
                             </div>
                             <span class="font-medium 2xl:text-xl font-['Roboto_Mono'] uppercase text-[#B3B3B2]">View All</span>
-                        </div>
+                        </a>
                     </div>
 
 <!--                    Card image-->
@@ -550,13 +628,13 @@
                             <h3 class="font-medium text-xl lg:text-[22px] 2xl:text-3xl text-[#F9EFEC] uppercase">Mobile App Development</h3>
                         </div>
                         <!--                  Card header right-->
-                        <div class="hidden lg:flex items-center justify-between gap-2 2xl:gap-2.5">
+                        <a href="#!" class="hidden lg:flex items-center justify-between gap-2 2xl:gap-2.5 cursor-pointer">
                             <div class="w-10 h-10 2xl:w-13 2xl:h-13
                                             rounded-[100px] border border-[#333333] bg-[#1F1F1F] p-2.5 2xl:p-3.5">
                                 <img src="assets/icons/arrow-topRight.svg" alt="arrow-top-right" class="w-5 h-5 2xl:w-6 2xl:h-6">
                             </div>
                             <span class="font-medium 2xl:text-xl font-['Roboto_Mono'] uppercase text-[#B3B3B2]">Book A Call</span>
-                        </div>
+                        </a>
                     </div>
 
                     <!--                Card body-->
@@ -568,7 +646,7 @@
                     </div>
 
                     <!--                Card footer-->
-                    <button class="lg:hidden py-3.5 px-19.5 font-medium text-sm uppercase text-[#0F0F0F] bg-[#CE7D63] rounded-lg">View all Projects</button>
+                    <a href="#!" class="lg:hidden py-3.5 px-19.5 font-medium text-sm uppercase text-[#0F0F0F] bg-[#CE7D63] rounded-lg cursor-pointer">View all Projects</a>
                     <h4 class="hidden lg:block  font-medium text-[22px] 2xl:text-3xl text-[#F9EFEC] text-end uppercase">Starts From $2,500</h4>
                 </div>
 
@@ -581,12 +659,12 @@
                     <div class="flex items-center justify-between ">
                         <h4 class="font-medium text-xl 2xl:text-2xl uppercase text-[#F9EFEC]">Mobile App Development Projects</h4>
                         <!--            Desktop icon view all -->
-                        <div class=" hidden lg:flex items-center  gap-2">
+                        <a href="#!" class=" hidden lg:flex items-center  gap-2 cursor-pointer">
                             <div class="w-14 h-14 2xl:w-17 2xl:h-17 rounded-[100px] border border-[#262626] bg-[#1A1A1A] p-4 2xl:p-5">
                                 <img src="assets/icons/arrow-topRight.svg" alt="arrow-top-right" class="w-6 h-6 2xl:w-7 2xl:h-7 ">
                             </div>
                             <span class="font-medium 2xl:text-xl font-['Roboto_Mono'] uppercase text-[#B3B3B2]">View All</span>
-                        </div>
+                        </a>
                     </div>
 
                     <!--                    Card image-->
@@ -619,13 +697,13 @@
                             <h3 class="font-medium text-xl lg:text-[22px] 2xl:text-3xl text-[#F9EFEC] uppercase">Web Development</h3>
                         </div>
                         <!--                  Card header right-->
-                        <div class="hidden lg:flex items-center justify-between gap-2 2xl:gap-2.5">
+                        <a href="#!" class="hidden lg:flex items-center justify-between gap-2 2xl:gap-2.5 cursor-pointer">
                             <div class="w-10 h-10 2xl:w-13 2xl:h-13
                                             rounded-[100px] border border-[#333333] bg-[#1F1F1F] p-2.5 2xl:p-3.5">
                                 <img src="assets/icons/arrow-topRight.svg" alt="arrow-top-right" class="w-5 h-5 2xl:w-6 2xl:h-6">
                             </div>
                             <span class="font-medium 2xl:text-xl font-['Roboto_Mono'] uppercase text-[#B3B3B2]">Book A Call</span>
-                        </div>
+                        </a>
                     </div>
 
                     <!--                Card body-->
@@ -637,7 +715,7 @@
                     </div>
 
                     <!--                Card footer-->
-                    <button class="lg:hidden py-3.5 px-19.5 font-medium text-sm uppercase text-[#0F0F0F] bg-[#CE7D63] rounded-lg">View all Projects</button>
+                    <a href="#!" class=" lg:hidden py-3.5 px-19.5 font-medium text-sm uppercase text-[#0F0F0F] bg-[#CE7D63] rounded-lg cursor-pointer">View all Projects</a>
                     <h4 class="hidden lg:block  font-medium text-[22px] 2xl:text-3xl text-[#F9EFEC] text-end uppercase">Starts From $1,800</h4>
                 </div>
 
@@ -650,12 +728,13 @@
                     <div class="flex items-center justify-between ">
                         <h4 class="font-medium text-xl 2xl:text-2xl uppercase text-[#F9EFEC]">Web Development Projects</h4>
                         <!--            Desktop icon view all -->
-                        <div class=" hidden lg:flex items-center  gap-2">
+                        <a href="#!" class=" hidden lg:flex items-center  gap-2 c
+">
                             <div class="w-14 h-14 2xl:w-17 2xl:h-17 rounded-[100px] border border-[#262626] bg-[#1A1A1A] p-4 2xl:p-5">
                                 <img src="assets/icons/arrow-topRight.svg" alt="arrow-top-right" class="w-6 h-6 2xl:w-7 2xl:h-7 ">
                             </div>
                             <span class="font-medium 2xl:text-xl font-['Roboto_Mono'] uppercase text-[#B3B3B2]">View All</span>
-                        </div>
+                        </a>
                     </div>
 
                     <!--                    Card image-->
@@ -688,13 +767,13 @@
                             <h3 class="font-medium text-xl lg:text-[22px] 2xl:text-3xl text-[#F9EFEC] uppercase">Digital Marketing</h3>
                         </div>
                         <!--                  Card header right-->
-                        <div class="hidden lg:flex items-center justify-between gap-2 2xl:gap-2.5">
+                        <a href="#!" class="hidden lg:flex items-center justify-between gap-2 2xl:gap-2.5 cursor-pointer">
                             <div class="w-10 h-10 2xl:w-13 2xl:h-13
                                             rounded-[100px] border border-[#333333] bg-[#1F1F1F] p-2.5 2xl:p-3.5">
                                 <img src="assets/icons/arrow-topRight.svg" alt="arrow-top-right" class="w-5 h-5 2xl:w-6 2xl:h-6">
                             </div>
                             <span class="font-medium 2xl:text-xl font-['Roboto_Mono'] uppercase text-[#B3B3B2]">Book A Call</span>
-                        </div>
+                        </a>
                     </div>
 
                     <!--                Card body-->
@@ -706,7 +785,7 @@
                     </div>
 
                     <!--                Card footer-->
-                    <button class="lg:hidden py-3.5 px-19.5 font-medium text-sm uppercase text-[#0F0F0F] bg-[#CE7D63] rounded-lg">View all Projects</button>
+                    <a href="#!" class="lg:hidden py-3.5 px-19.5 font-medium text-sm uppercase text-[#0F0F0F] bg-[#CE7D63] rounded-lg cursor-pointer">View all Projects</a>
                     <h4 class="hidden lg:block  font-medium text-[22px] 2xl:text-3xl text-[#F9EFEC] text-end uppercase">Starts From $1,200</h4>
                 </div>
 
@@ -719,12 +798,12 @@
                     <div class="flex items-center justify-between ">
                         <h4 class="font-medium text-xl 2xl:text-2xl uppercase text-[#F9EFEC]">Digital Marketing Projects</h4>
                         <!--            Desktop icon view all -->
-                        <div class=" hidden lg:flex items-center  gap-2">
+                        <a href="#!" class=" hidden lg:flex items-center  gap-2 cursor-pointer">
                             <div class="w-14 h-14 2xl:w-17 2xl:h-17 rounded-[100px] border border-[#262626] bg-[#1A1A1A] p-4 2xl:p-5">
                                 <img src="assets/icons/arrow-topRight.svg" alt="arrow-top-right" class="w-6 h-6 2xl:w-7 2xl:h-7 ">
                             </div>
                             <span class="font-medium 2xl:text-xl font-['Roboto_Mono'] uppercase text-[#B3B3B2]">View All</span>
-                        </div>
+                        </a>
                     </div>
 
                     <!--                    Card image-->
@@ -738,97 +817,6 @@
 
 
             </article>
-
-<!--&lt;!&ndash;          Card 2  &ndash;&gt;-->
-<!--            <article class="flex flex-col gap-5-->
-<!--                            p-6-->
-<!--                            rounded-[14px]-->
-<!--                            bg-[#1A1A1A]-->
-<!--                           ">-->
-<!--                &lt;!&ndash;                Card header &ndash;&gt;-->
-<!--                <div class="flex items-center justify-start gap-3.5">-->
-<!--                    &lt;!&ndash;                   Card header icon&ndash;&gt;-->
-<!--                    <div class="w-13 h-13 p-3.5 rounded-[10px] border border-[#333333]">-->
-<!--                        <img src="assets/icons/mobile-app-icon.svg" alt="mobile-app-icon">-->
-<!--                    </div>-->
-
-<!--                    &lt;!&ndash;                    Card header name&ndash;&gt;-->
-<!--                    <h3 class="mb-1.5 font-medium text-xl text-[#F9EFEC] uppercase">Mobile App Development</h3>-->
-<!--                </div>-->
-
-<!--                &lt;!&ndash;                Card body&ndash;&gt;-->
-<!--                <div>-->
-<!--                    &lt;!&ndash;                    Card body title&ndash;&gt;-->
-<!--                    <h4 class="font-medium text-lg text-[#F9EFEC] uppercase">Starts From $2,500</h4>-->
-<!--                    &lt;!&ndash;                    Card body description&ndash;&gt;-->
-<!--                    <p class="text-sm text-[#B3B3B2]">With our Mobile App Development service, we harness the power of mobile technology to create cutting-edge applications .</p>-->
-<!--                </div>-->
-
-<!--                &lt;!&ndash;                Card footer&ndash;&gt;-->
-<!--                <button class="py-3.5 px-19.5 font-medium text-sm uppercase text-[#0F0F0F] bg-[#CE7D63] rounded-lg">View all Projects</button>-->
-
-<!--            </article>-->
-
-<!--&lt;!&ndash;            Card 3&ndash;&gt;-->
-<!--            <article class="flex flex-col gap-5-->
-<!--                            p-6-->
-<!--                            rounded-[14px]-->
-<!--                            bg-[#1A1A1A]-->
-<!--                           ">-->
-<!--                &lt;!&ndash;                Card header &ndash;&gt;-->
-<!--                <div class="flex items-center justify-start gap-3.5">-->
-<!--                    &lt;!&ndash;                   Card header icon&ndash;&gt;-->
-<!--                    <div class="w-13 h-13 p-3.5 rounded-[10px] border border-[#333333]">-->
-<!--                        <img src="assets/icons/web-dev-icon.svg" alt="web-dev-icon">-->
-<!--                    </div>-->
-
-<!--                    &lt;!&ndash;                    Card header name&ndash;&gt;-->
-<!--                    <h3 class="font-medium text-xl text-[#F9EFEC] uppercase">Web Development</h3>-->
-<!--                </div>-->
-
-<!--                &lt;!&ndash;                Card body&ndash;&gt;-->
-<!--                <div>-->
-<!--                    &lt;!&ndash;                    Card body title&ndash;&gt;-->
-<!--                    <h4 class="mb-1.5 font-medium text-lg text-[#F9EFEC] uppercase">Starts From $1,800</h4>-->
-<!--                    &lt;!&ndash;                    Card body description&ndash;&gt;-->
-<!--                    <p class="text-sm text-[#B3B3B2]">Our Web Development service is focused on turning your website into a powerful digital asset. We utilize the latest technologies and industry best practices to build websites.</p>-->
-<!--                </div>-->
-
-<!--                &lt;!&ndash;                Card footer&ndash;&gt;-->
-<!--                <button class="py-3.5 px-19.5 font-medium text-sm uppercase text-[#0F0F0F] bg-[#CE7D63] rounded-lg">View all Projects</button>-->
-
-<!--            </article>-->
-
-<!--&lt;!&ndash;            Card 4 &ndash;&gt;-->
-<!--            <article class="flex flex-col gap-5-->
-<!--                            p-6-->
-<!--                            rounded-[14px]-->
-<!--                            bg-[#1A1A1A]-->
-<!--                           ">-->
-<!--                &lt;!&ndash;                Card header &ndash;&gt;-->
-<!--                <div class="flex items-center justify-start gap-3.5">-->
-<!--                    &lt;!&ndash;                   Card header icon&ndash;&gt;-->
-<!--                    <div class="w-13 h-13 p-3.5 rounded-[10px] border border-[#333333]">-->
-<!--                        <img src="assets/icons/digital-marketing-icon.svg" alt="digital-marketing-icon">-->
-<!--                    </div>-->
-
-<!--                    &lt;!&ndash;                    Card header name&ndash;&gt;-->
-<!--                    <h3 class="font-medium text-xl text-[#F9EFEC] uppercase">Digital Marketing</h3>-->
-<!--                </div>-->
-
-<!--                &lt;!&ndash;                Card body&ndash;&gt;-->
-<!--                <div>-->
-<!--                    &lt;!&ndash;                    Card body title&ndash;&gt;-->
-<!--                    <h4 class="mb-1.5 font-medium text-lg text-[#F9EFEC] uppercase">Starts From $1,200</h4>-->
-<!--                    &lt;!&ndash;                    Card body description&ndash;&gt;-->
-<!--                    <p class="text-sm text-[#B3B3B2]">In the digital age, marketing is a critical aspect of your business's success. Our Digital Marketing service employs data-driven strategies to enhance your brand's visibility</p>-->
-<!--                </div>-->
-
-<!--                &lt;!&ndash;                Card footer&ndash;&gt;-->
-<!--                <button class="py-3.5 px-19.5 font-medium text-sm uppercase text-[#0F0F0F] bg-[#CE7D63] rounded-lg">View all Projects</button>-->
-
-<!--            </article>-->
-
 
         </section>
 
@@ -862,12 +850,12 @@
                </h2>
 
                <!--            Desktop icon view all -->
-               <div class=" hidden lg:flex items-center  gap-2">
+               <a href="#!" class=" hidden lg:flex items-center  gap-2 cursor-pointer">
                    <div class="w-14 h-14 2xl:w-17 2xl:h-17 rounded-[100px] border border-[#262626] bg-[#1A1A1A] p-4 2xl:p-5">
                        <img src="assets/icons/arrow-topRight.svg" alt="arrow-top-right" class="w-6 h-6 2xl:w-7 2xl:h-7 ">
                    </div>
                    <span class="font-medium 2xl:text-xl font-['Roboto_Mono'] uppercase text-[#B3B3B2]">View All</span>
-               </div>
+               </a>
            </div>
 
 <!--            Content -->
@@ -953,10 +941,16 @@
                 </div>
 
 <!--                Col 2-->
-                <div class="flex flex-col gap-2.5 2xl:gap-5">
+                <div class="group  flex flex-col gap-2.5 2xl:gap-5">
+                <!-- RADIO (ẩn) -->
+                <input type="radio" name="tab" id="challenge" class="peer/challenge hidden" >
+                <input type="radio" name="tab" id="solution" class="peer/solution hidden" checked>
+                <input type="radio" name="tab" id="results" class="peer/results hidden">
+
+
 <!--                    Button list-->
                     <div class="flex  gap-2.5 2xl:gap-3 ">
-                        <button class="
+                        <label for="challenge" class="
                                         rounded-lg 2xl:rounded-xl
                                         px-5 py-3.5 2xl:px-6 py-4.5
                                         bg-[#1F1F1F]
@@ -964,37 +958,41 @@
                                         text-sm 2xl:text-lg
                                         hover:bg-[#CE7D63] hover:text-[#0F0F0F]
                                         transition-colors duration-300 ease-in-out
+                                        group-has-[#challenge:checked]:bg-[#CE7D63]
+                                        group-has-[#challenge:checked]:text-[#0F0F0F]
                                       ">
                                         Challenge
-                        </button>
+                        </label>
 
-                        <button class="
+                        <label for="solution" class="
                                         rounded-lg 2xl:rounded-xl
                                         px-5 py-3.5 2xl:px-6 py-4.5
                                         bg-[#1F1F1F]
                                         font-medium uppercase text-[#B3B3B2]
                                         text-sm 2xl:text-lg
                                         hover:bg-[#CE7D63] hover:text-[#0F0F0F]
-                                        transition-colors duration-300 ease-in-out
+                                        transition-colors duration-300 ease-in-out group-has-[#solution:checked]:bg-[#CE7D63]  group-has-[#solution:checked]:text-[#0F0F0F]
+
+
                                       ">
                             Solution
-                        </button>
+                        </label>
 
-                        <button class="
+                        <label for="results" class="
                                         rounded-lg 2xl:rounded-xl
                                         px-5 py-3.5 2xl:px-6 py-4.5
                                         bg-[#1F1F1F]
                                         font-medium uppercase text-[#B3B3B2]
                                         text-sm 2xl:text-lg
                                         hover:bg-[#CE7D63] hover:text-[#0F0F0F]
-                                        transition-colors duration-300 ease-in-out
+                                        transition-colors duration-300 ease-in-out group-has-[#results:checked]:bg-[#CE7D63]  group-has-[#results:checked]:text-[#0F0F0F]
                                       ">
                             Results
-                        </button>
+                        </label>
                     </div>
 
 <!--                    Description-->
-                    <div class="bg-[#1A1A1A]
+                    <div class="bg-[#1A1A1A] hidden group-has-[#challenge:checked]:block
                                 rounded-xl 2xl:rounded-[14px]
                                 p-6 lg:p-7.5 2xl:p-10
                                 ">
@@ -1002,6 +1000,25 @@
                                    font-['Roboto_Mono'] uppercase text-[#F9EFEC]
                                    text-2xl lg:text-[32px] 2xl:text-5xl
                                    mb-2 lg:mb-2.5 2xl:mb-3.5
+                                  ">
+                            Challenge
+                        </h4>
+
+                        <p class="text-sm lg:text-base 2xl:text-lg text-[#B3B3B2]">
+                            Leveraging our expertise in app development, we built an interactive mobile app with user-friendly features. The app allowed users to set personalized fitness goals, track their progress, and share achievements on social media platforms. Real-time data synchronization enabled users to access their data on multiple devices.
+                        </p>
+
+                    </div>
+
+                    <div class="bg-[#1A1A1A] hidden group-has-[#solution:checked]:block
+                                rounded-xl 2xl:rounded-[14px]
+                                p-6 lg:p-7.5 2xl:p-10
+                                ">
+                        <h4 class="
+                                   font-['Roboto_Mono'] uppercase text-[#F9EFEC]
+                                   text-2xl lg:text-[32px] 2xl:text-5xl
+                                   mb-2 lg:mb-2.5 2xl:mb-3.5
+
                                   ">
                             Solution
                         </h4>
@@ -1011,7 +1028,28 @@
                         </p>
 
                     </div>
+
+                    <div class="bg-[#1A1A1A] hidden group-has-[#results:checked]:block
+                                rounded-xl 2xl:rounded-[14px]
+                                p-6 lg:p-7.5 2xl:p-10
+                                ">
+                        <h4 class="
+                                   font-['Roboto_Mono'] uppercase text-[#F9EFEC]
+                                   text-2xl lg:text-[32px] 2xl:text-5xl
+                                   mb-2 lg:mb-2.5 2xl:mb-3.5
+                                  ">
+                            Results
+                        </h4>
+
+                        <p class="text-sm lg:text-base 2xl:text-lg text-[#B3B3B2]">
+                            Leveraging our expertise in app development, we built an interactive mobile app with user-friendly features. The app allowed users to set personalized fitness goals, track their progress, and share achievements on social media platforms. Real-time data synchronization enabled users to access their data on multiple devices.
+                        </p>
+
+                    </div>
                 </div>
+
+
+
             </article>
 
 <!--            Fitness Desc-->
@@ -1096,48 +1134,72 @@
                 </div>
 
                 <!--                Col 2-->
-                <div class="flex flex-col gap-2.5 2xl:gap-5">
+                <div class=" group flex flex-col gap-2.5 2xl:gap-5">
+                    <!-- RADIO (ẩn) -->
+                    <input type="radio" name="tab2" id="challenge2" class="peer/challenge hidden" >
+                    <input type="radio" name="tab2" id="solution2" class="peer/solution hidden" checked>
+                    <input type="radio" name="tab2" id="results2" class="peer/results hidden">
                     <!--                    Button list-->
                     <div class="flex  gap-2.5 2xl:gap-3 ">
-                        <button class="
+                        <label for="challenge2" class="
                                         rounded-lg 2xl:rounded-xl
                                         px-5 py-3.5 2xl:px-6 py-4.5
                                         bg-[#1F1F1F]
                                         font-medium uppercase text-[#B3B3B2]
                                         text-sm 2xl:text-lg
                                         hover:bg-[#CE7D63] hover:text-[#0F0F0F]
-                                        transition-colors duration-300 ease-in-out
+                                        transition-colors duration-300 ease-in-out group-has-[#challenge2:checked]:bg-[#CE7D63]
+                                        group-has-[#challenge2:checked]:text-[#0F0F0F]
                                       ">
                             Challenge
-                        </button>
+                        </label>
 
-                        <button class="
+                        <label for="solution2" class="
                                         rounded-lg 2xl:rounded-xl
                                         px-5 py-3.5 2xl:px-6 py-4.5
                                         bg-[#1F1F1F]
                                         font-medium uppercase text-[#B3B3B2]
                                         text-sm 2xl:text-lg
                                         hover:bg-[#CE7D63] hover:text-[#0F0F0F]
-                                        transition-colors duration-300 ease-in-out
+                                        transition-colors duration-300 ease-in-out group-has-[#solution2:checked]:bg-[#CE7D63]  group-has-[#solution2:checked]:text-[#0F0F0F]
                                       ">
                             Solution
-                        </button>
+                        </label>
 
-                        <button class="
+                        <label for="results2" class="
                                         rounded-lg 2xl:rounded-xl
                                         px-5 py-3.5 2xl:px-6 py-4.5
                                         bg-[#1F1F1F]
                                         font-medium uppercase text-[#B3B3B2]
                                         text-sm 2xl:text-lg
                                         hover:bg-[#CE7D63] hover:text-[#0F0F0F]
-                                        transition-colors duration-300 ease-in-out
+                                        transition-colors duration-300 ease-in-out group-has-[#results2:checked]:bg-[#CE7D63]  group-has-[#results2:checked]:text-[#0F0F0F]
                                       ">
                             Results
-                        </button>
+                        </label>
                     </div>
 
-                    <!--                    Description-->
-                    <div class="bg-[#1A1A1A]
+                    <!--                Challenge description-->
+                    <div class="bg-[#1A1A1A] hidden group-has-[#challenge2:checked]:block
+                                rounded-xl 2xl:rounded-[14px]
+                                p-6 lg:p-7.5 2xl:p-10
+                                ">
+                        <h4 class="
+                                   font-['Roboto_Mono'] uppercase text-[#F9EFEC]
+                                   text-2xl lg:text-[32px] 2xl:text-5xl
+                                   mb-2 lg:mb-2.5 2xl:mb-3.5
+                                  ">
+                            Challenge
+                        </h4>
+
+                        <p class="text-sm lg:text-base 2xl:text-lg text-[#B3B3B2]">
+                            Our team conducted a thorough analysis of their target audience and business objectives. We designed a modern and intuitive website with seamless navigation and a mobile-responsive layout. Additionally, we integrated an efficient checkout process and optimized the site for search engines.
+                        </p>
+
+                    </div>
+
+                    <!--               Solution description-->
+                    <div class="bg-[#1A1A1A] hidden group-has-[#solution2:checked]:block
                                 rounded-xl 2xl:rounded-[14px]
                                 p-6 lg:p-7.5 2xl:p-10
                                 ">
@@ -1154,13 +1216,32 @@
                         </p>
 
                     </div>
+
+                    <!--                 Results description-->
+                    <div class="bg-[#1A1A1A] hidden group-has-[#results2:checked]:block
+                                rounded-xl 2xl:rounded-[14px]
+                                p-6 lg:p-7.5 2xl:p-10
+                                ">
+                        <h4 class="
+                                   font-['Roboto_Mono'] uppercase text-[#F9EFEC]
+                                   text-2xl lg:text-[32px] 2xl:text-5xl
+                                   mb-2 lg:mb-2.5 2xl:mb-3.5
+                                  ">
+                            Results
+                        </h4>
+
+                        <p class="text-sm lg:text-base 2xl:text-lg text-[#B3B3B2]">
+                            Our team conducted a thorough analysis of their target audience and business objectives. We designed a modern and intuitive website with seamless navigation and a mobile-responsive layout. Additionally, we integrated an efficient checkout process and optimized the site for search engines.
+                        </p>
+
+                    </div>
                 </div>
             </article>
 
 <!--            Mobile icon view all-->
-            <div class="lg:hidden rounded-xl px-4 py-5
+            <a href="#!" class="lg:hidden rounded-xl px-4 py-5
                         flex items-center justify-center gap-1.5
-                        bg-[#1A1A1A]
+                        bg-[#1A1A1A]  cursor-pointer
                         ">
 <!--                Icon -->
                 <div class="w-12 h-12 rounded-full
@@ -1178,7 +1259,7 @@
                     View All
                 </span>
 
-            </div>
+            </a>
         </section>
 
         <!--    4.Testimonials    -->
@@ -1221,12 +1302,12 @@
                </h2>
 
                <!--            Desktop icon view all -->
-               <div class=" hidden lg:flex items-center  gap-2">
+               <a href="#!" class=" hidden lg:flex items-center  gap-2 cursor-pointer">
                    <div class="w-14 h-14 2xl:w-17 2xl:h-17 rounded-[100px] border border-[#262626] bg-[#1A1A1A] p-4 2xl:p-5">
                        <img src="assets/icons/arrow-topRight.svg" alt="arrow-top-right" class="w-6 h-6 2xl:w-7 2xl:h-7 ">
                    </div>
                    <span class="font-medium 2xl:text-xl font-['Roboto_Mono'] uppercase text-[#B3B3B2]">View All</span>
-               </div>
+               </a>
 
            </div>
 
@@ -1453,9 +1534,9 @@
             </div>
 
             <!--            Mobile icon view all-->
-            <div class="lg:hidden rounded-xl px-4 py-5 mt-2.5
+            <a href="#!" class="lg:hidden rounded-xl px-4 py-5 mt-2.5
                         flex items-center justify-center gap-1.5
-                        bg-[#1A1A1A]
+                        bg-[#1A1A1A] cursor-pointer
                         ">
                 <!--                Icon -->
                 <div class="w-12 h-12 rounded-full
@@ -1473,7 +1554,7 @@
                     ALL Testimonials
                 </span>
 
-            </div>
+            </a>
 
         </section>
 
@@ -1511,12 +1592,12 @@
                 </h2>
 
                 <!--            Desktop icon view all -->
-                <div class=" hidden lg:flex items-center  gap-2">
+                <a href="#!" class=" hidden lg:flex items-center  gap-2 cursor-pointer">
                     <div class="w-14 h-14 2xl:w-17 2xl:h-17 rounded-[100px] border border-[#262626] bg-[#1A1A1A] p-4 2xl:p-5">
                         <img src="assets/icons/arrow-topRight.svg" alt="arrow-top-right" class="w-6 h-6 2xl:w-7 2xl:h-7 ">
                     </div>
                     <span class="font-medium 2xl:text-xl font-['Roboto_Mono'] uppercase text-[#B3B3B2]">View All</span>
-                </div>
+                </a>
 
             </div>
 
@@ -1955,74 +2036,67 @@
             </a>
         </div>
 
-        <!-- CTA text -->
-        <div class="flex items-center justify-center
-                            overflow-hidden
-                            flex-nowrap
-                            mb-2.5 2xl:mb-5
-                            gap-2 2xl:gap-2.5
-                            py-3.5  lg:py-4 2xl:py-5
-                            bg-[#1A1A1A]
-                            rounded-lg lg:rounded-[10px] 2xl:rounded-xl
-                           ">
-            <ul class="flex gap-2.5 lg:gap-4 2xl:gap-5">
-                <li class="flex items-center gap-2.5 lg:gap-4 2xl:gap-5
-                           leading-[150%] tracking-[0%]
-                           font-['Roboto_Mono']
-                           text-[#676665]
-                           text-sm lg:text-base 2xl:text-xl
-                           whitespace-nowrap
-                           uppercase
-                          ">
-                    <span class="w-1.75 h-1.75 rounded-full bg-[#CE7D63]"></span>
-                    Follow Us on Social Media</li>
+        <!-- CTA text animation  -->
+        <div
+                class="overflow-hidden bg-[#1A1A1A] py-4 border-y border-dashed border-[#262626] rounded-[10px] mx-[16px] lg:mx-[40px] 2xl:mx-[50px] mb-2.5 2xl:mb-5"
+        >
+            <div class="animate-marquee">
+                <div class="flex items-center space-x-10 px-5">
+            <span
+                    class="text-[#81807E] font-medium text-[14px] uppercase whitespace-nowrap lg:text-[16px] 2xl:text-[20px]"
+            >Follow us on social media</span
+            >
+                    <span class="w-2 h-2 rounded-full bg-[#CE7D63]"></span>
+                    <span
+                            class="text-[#81807E] font-medium text-[14px] uppercase whitespace-nowrap lg:text-[16px] 2xl:text-[20px]"
+                    >Follow us on social media</span
+                    >
+                    <span class="w-2 h-2 rounded-full bg-[#CE7D63]"></span>
+                    <span
+                            class="text-[#81807E] font-medium text-[14px] uppercase whitespace-nowrap lg:text-[16px] 2xl:text-[20px]"
+                    >Follow us on social media</span
+                    >
+                    <span class="w-2 h-2 rounded-full bg-[#CE7D63]"></span>
+                </div>
 
-                <li class="flex items-center gap-2.5 lg:gap-4 2xl:gap-5
-                           leading-[150%] tracking-[0%]
-                           font-['Roboto_Mono']
-                           text-[#676665]
-                           text-sm lg:text-base 2xl:text-xl
-                           whitespace-nowrap
-                           uppercase
-                          ">
-                    <span class="w-1.75 h-1.75 rounded-full bg-[#CE7D63]"></span>
-                    Follow Us on Social Media</li>
+                <div class="flex items-center space-x-10 px-5">
+            <span
+                    class="text-[#81807E] font-medium text-[14px] uppercase whitespace-nowrap lg:text-[16px] 2xl:text-[20px]"
+            >Follow us on social media</span
+            >
+                    <span class="w-2 h-2 rounded-full bg-[#CE7D63]"></span>
+                    <span
+                            class="text-[#81807E] font-medium text-[14px] uppercase whitespace-nowrap lg:text-[16px] 2xl:text-[20px]"
+                    >Follow us on social media</span
+                    >
+                    <span class="w-2 h-2 rounded-full bg-[#CE7D63]"></span>
+                    <span
+                            class="text-[#81807E] font-medium text-[14px] uppercase whitespace-nowrap lg:text-[16px] 2xl:text-[20px]"
+                    >Follow us on social media</span
+                    >
+                    <span class="w-2 h-2 rounded-full bg-[#CE7D63]"></span>
+                </div>
 
-                <li class="flex items-center gap-2.5 lg:gap-4 2xl:gap-5
-                           leading-[150%] tracking-[0%]
-                           font-['Roboto_Mono']
-                           text-[#676665]
-                           text-sm lg:text-base 2xl:text-xl
-                           whitespace-nowrap
-                           uppercase
-                          ">
-                    <span class="w-1.75 h-1.75 rounded-full bg-[#CE7D63]"></span>
-                    Follow Us on Social Media</li>
-
-                <li class="flex items-center gap-2.5 lg:gap-4 2xl:gap-5
-                           leading-[150%] tracking-[0%]
-                           font-['Roboto_Mono']
-                           text-[#676665]
-                           text-sm lg:text-base 2xl:text-xl
-                           whitespace-nowrap
-                           uppercase
-                          ">
-                    <span class="w-1.75 h-1.75 rounded-full bg-[#CE7D63]"></span>
-                    Follow Us on Social Media</li>
-
-                <li class="flex items-center gap-2.5 lg:gap-4 2xl:gap-5
-                           leading-[150%] tracking-[0%]
-                           font-['Roboto_Mono']
-                           text-[#676665]
-                           text-sm lg:text-base 2xl:text-xl
-                           whitespace-nowrap
-                           uppercase
-                          ">
-                    <span class="w-1.75 h-1.75 rounded-full bg-[#CE7D63]"></span>
-                    Follow Us on Social Media</li>
-
-            </ul>
+                <div class="flex items-center space-x-10 px-5">
+            <span
+                    class="text-[#81807E] font-medium text-[14px] uppercase whitespace-nowrap lg:text-[16px] 2xl:text-[20px]"
+            >Follow us on social media</span
+            >
+                    <span class="w-2 h-2 rounded-full bg-[#CE7D63]"></span>
+                    <span
+                            class="text-[#81807E] font-medium text-[14px] uppercase whitespace-nowrap lg:text-[16px] 2xl:text-[20px]"
+                    >Follow us on social media</span
+                    >
+                    <span class="w-2 h-2 rounded-full bg-[#CE7D63]"></span>
+                    <span
+                            class="text-[#81807E] font-medium text-[14px] uppercase whitespace-nowrap lg:text-[16px] 2xl:text-[20px]"
+                    >Follow us on social media</span
+                    >
+                    <span class="w-2 h-2 rounded-full bg-[#CE7D63]"></span>
+                </div>
+            </div>
         </div>
+
 
         <!-- Footer -->
         <div
@@ -2526,6 +2600,8 @@
 
         </div>
     </footer>
+
+
 
 </div>
 

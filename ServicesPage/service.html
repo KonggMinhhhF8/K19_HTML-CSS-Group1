@@ -1,0 +1,2533 @@
+<!doctype html>
+<html lang="en" class="font-['Roboto_Flex']">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Services Page</title>
+
+<!--    Google font (Roboto Flex + Roboto Mono) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght,XOPQ,XTRA,YOPQ,YTDE,YTFI,YTLC,YTUC@8..144,100..1000,96,468,79,-203,738,514,712&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+
+<!--    Tailwind CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+</head>
+<body>
+
+<!-- Page Wrapper -->
+<div
+        class=" flex flex-col
+                mx-auto
+                pt-10.25 px-4 pb-5
+                lg:pt-7.5 lg:px-10 lg:pb-10
+
+                2xl:max-w-480
+                2xl:px-12.5 2xl:pb-12.5
+                bg-[#0F0F0F]
+                leading-[150%] tracking-[0%]
+              ">
+
+<!--   HEADER SECTION -->
+
+<!--    Checkbox hack ẩn hiện navigation -->
+    <input type="checkbox" id="menu-toggle" class="peer hidden">
+
+<!--    Header dính khi cuộn trang -->
+    <header
+            class="
+                    sticky top-0 z-[1001]
+                    flex items-center justify-between
+
+                    mb-5 lg:mb-12.5
+                    p-3.5
+                    lg:pr-5 lg:pl-10 lg:py-5
+                    2xl:pr-6 2xl:pl-12.5 2xl:py-6
+
+                    border border-[#1C1C21]
+                    rounded-[10px]  lg:rounded-[14px]  2xl:rounded-2xl
+                    bg-[#1A1A1A]
+                  ">
+
+<!--        Logo -->
+        <a href="#" class="cursor-pointer">
+            <img src="assets/icons/logo.svg" alt="NexGen"
+                        class="
+                                h-4 w-[86.47px]
+                                lg:h-4.5 lg:w-[97.28px]
+                                2xl:h-6 2xl:w-[129.71px]
+                              ">
+        </a>
+
+        <!-- Mobile menu toggle icons -->
+        <label for="menu-toggle" class="cursor-pointer lg:hidden ">
+            <img src="assets/icons/menu.svg" alt="Open menu">
+        </label>
+
+        <!-- Desktop navigation -->
+        <nav class="hidden lg:flex ">
+            <ul class=" flex
+                        lg:gap-3.5    2xl:gap-4
+                        lg:text-sm  2xl:text-lg
+                        text-[#81807E]
+                        font-['Roboto_Mono']
+                        font-medium
+                        uppercase
+                      ">
+                <li class="
+                            flex items-center justify-center
+                            lg:rounded-[10px]   2xl:rounded-xl
+                            bg-[#0F0F0F]
+                          ">
+                    <a href="#" class="
+                                        lg:px-5 lg:py-3.5
+                                        2xl:px-6 2xl:py-4.5
+                                        hover:text-[#E7BEB1]
+                                      "
+                    >Home</a>
+                </li>
+                <li class="
+                            flex items-center justify-center
+                            lg:rounded-[10px]   2xl:rounded-xl
+                            bg-[#0F0F0F]
+                          ">
+
+                    <a href="#" class="
+                                        lg:px-5 lg:py-3.5
+                                        2xl:px-6 2xl:py-4.5
+                                        hover:text-[#E7BEB1]
+                                      "
+                    >SERVICES</a>
+                </li>
+                <li class="
+                            flex items-center justify-center
+                            lg:rounded-[10px]   2xl:rounded-xl
+                            bg-[#0F0F0F]
+                          ">
+                    <a href="#" class="
+                                        lg:px-5 lg:py-3.5
+                                        2xl:px-6 2xl:py-4.5
+                                        hover:text-[#E7BEB1]
+                                      "
+                    >Projects</a>
+                </li>
+                <li class="
+                            flex items-center justify-center
+                            lg:rounded-[10px]   2xl:rounded-xl
+                            bg-[#0F0F0F]
+                          ">
+                    <a href="#" class="
+                                        lg:px-5 lg:py-3.5
+                                        2xl:px-6 2xl:py-4.5
+                                        hover:text-[#E7BEB1]
+                                      "
+                    >About</a>
+                </li>
+                <li class="
+                            flex items-center justify-center
+                            lg:rounded-[10px]   2xl:rounded-xl
+                            bg-[#0F0F0F]
+                          ">
+                    <a href="#" class="
+                                        lg:px-5 lg:py-3.5
+                                        2xl:px-6 2xl:py-4.5
+                                        hover:text-[#E7BEB1]
+                                      "
+                    >Careers</a>
+                </li>
+                <li class="
+                            flex items-center justify-center
+                            lg:rounded-[10px]   2xl:rounded-xl
+                            bg-[#0F0F0F]
+                          ">
+                    <a href="#" class="
+                                        lg:px-5 lg:py-3.5
+                                        2xl:px-6 2xl:py-4.5
+                                        hover:text-[#E7BEB1]
+                                      "
+                    >Blogs</a>
+                </li>
+                <li class="
+                            flex items-center justify-center
+                            lg:rounded-[10px]   2xl:rounded-xl
+                            bg-[#CE7D63]
+                            whitespace-nowrap">
+
+                    <a href="#" class="
+                                        lg:px-5 lg:py-3.5
+                                        2xl:px-6 2xl:py-4.5
+                                        text-[#0F0F0F]
+                                        hover:text-[#E7BEB1]
+                                      "
+                    >Contact us</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Mobile navigation -->
+    <nav
+            class="
+                    fixed top-10.25 z-[1000]
+                    w-[280px] h-screen right-[-280px]
+                    px-6
+                    font-['Roboto_Mono']
+                    bg-[#1A1A1A]
+                    peer-checked:right-4
+                    transition-[right] duration-300 ease-in-out
+                  ">
+
+        <ul class="
+                   flex flex-col
+                   mt-30
+                   gap-5
+                   text-[#81807E]
+                   uppercase
+                  ">
+           <li class="
+                       flex items-center justify-center
+                       bg-[#0F0F0F]
+                       rounded-xl
+                     ">
+                <a href="#" class="px-20 py-3 hover:text-[#E7BEB1]">
+                    Home
+                </a>
+            </li>
+            <li class="
+                       flex items-center justify-center
+                       bg-[#0F0F0F]
+                       rounded-xl
+                     ">
+                <a href="#" class="px-20 py-3 hover:text-[#E7BEB1]">
+                    Services
+                </a>
+            </li>
+            <li class="
+                       flex items-center justify-center
+                       bg-[#0F0F0F]
+                       rounded-xl
+                     ">
+                <a href="#" class="px-20 py-3 hover:text-[#E7BEB1]">
+                    Projects
+                </a>
+            </li>
+            <li class="
+                       flex items-center justify-center
+                       bg-[#0F0F0F]
+                       rounded-xl
+                     ">
+                <a href="#" class="px-20 py-3 hover:text-[#E7BEB1]">
+                    About
+                </a>
+            </li>
+            <li class="
+                       flex items-center justify-center
+                       bg-[#0F0F0F]
+                       rounded-xl
+                     ">
+                <a href="#" class="px-20 py-3 hover:text-[#E7BEB1]">
+                    Careers
+                </a>
+            </li>
+            <li class="
+                       flex items-center justify-center
+                       bg-[#0F0F0F]
+                       rounded-xl
+                     ">
+                <a href="#" class="px-20 py-3 hover:text-[#E7BEB1]">
+                    Blogs
+                </a>
+            </li>
+           <li class="
+                        flex items-center justify-center
+                        rounded-xl
+                        bg-[#CE7D63]
+                        whitespace-nowrap
+                     ">
+                <a href="#" class="px-20 py-3 text-[#0F0F0F] hover:text-[#E7BEB1] ">
+                    Contact us
+                </a>
+            </li>
+        </ul>
+
+    </nav>
+
+    <!-- Overlay -->
+    <label
+            for="menu-toggle"
+            class="
+                    fixed inset-0 z-[998]
+                    bg-[#1A1A1A]
+                    opacity-0 invisible
+                    peer-checked:visible
+                    peer-checked:opacity-60
+                    transition-all duration-300 ease-in-out
+                    cursor-pointer
+                  ">
+
+    </label>
+
+<!--    MAIN CONTAINER -->
+    <main>
+        <!--    1.Hero section    -->
+        <section class="lg:flex
+                        lg:h-124.5   lg:gap-4
+                        2xl:h-148  2xl:gap-5
+                        mb-12.5  lg:mb-20 2xl:mb-30">
+<!--     1-1.Hero content -->
+            <article class="
+                            pt-7.5 pb-4 pr-4 pl-4.25
+                            lg:px-0 lg:py-0
+                            mb-4 lg:mb-0
+                            lg:w-[66%]  lg:h-full
+                            rounded-xl lg:rounded-2xl 2xl:rounded-[20px]
+                            bg-[#1A1A1A]
+                           ">
+                <!--            Mobile    Hero title-->
+                <h1 class=" flex flex-col lg:hidden
+                                mx-2
+                                mb-3
+                                text-[#F9EFEC]
+                                font-semibold
+                                text-[28px]
+
+                                uppercase
+                              ">
+                    <span>Our Comprehensive</span> <br>
+                    <span>Digital Solutions</span>
+                </h1>
+
+                <!--        Mobile         CTA button   -->
+                <!--        Mobile                Icon wrapper-->
+                <div class="flex items-center justify-start lg:hidden
+                                mb-3
+                                w-full
+                                uppercase
+                               ">
+                    <div class="relative h-14 w-14">
+
+                        <img
+                                src="assets/icons/icon-wrapper.svg"
+                                alt="icon-wrapper"
+                                class="absolute inset-0 w-full h-full"
+                        >
+
+                        <div class="absolute inset-0
+                                    flex items-center justify-center">
+                            <div class="
+                                        flex items-center justify-center
+                                        w-10 h-10
+                                        rounded-full
+                                        bg-[#CE7D63] ">
+                                <img src="assets/icons/arrow-right.svg" alt="arrow-right">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Text button -->
+                    <div class="text-[#CE7D63] font-medium text-xl uppercase  ">Start a Project</div>
+                </div>
+
+
+                <!--  Desktop Hero title-->
+                <div class=" hidden lg:block lg:mb-8
+
+                            lg:mx-15 lg:mt-20 lg:mb-15
+                            2xl:mx-20 2xl:mt-25 2xl:mt-30 2xl:mb-18
+                            ">
+                    <div class="lg:flex lg:items-center
+                                 lg:gap-3.25 2xl:gap-4.5
+                                lg:mb-15 2xl:mb-18
+                                ">
+                         <span
+                                 class="block text-[#F9EFEC] font-semibold
+                                         lg:text-[58px] 2xl:text-[78px]
+                                        whitespace-nowrap uppercase "
+                                >
+                                 Our Comprehensive
+                         </span>
+<!--                 Desktop icon wrapper -->
+                         <div class="flex items-center justify-start
+
+                                   lg:gap-0 uppercase shrink-0">
+                            <div class="relative h-14 w-14 2xl:h-[77px] 2xl:w-[77px] shrink-0">
+                                <img
+                                        src="assets/icons/icon-wrapper.svg"
+                                        alt="icon-wrapper"
+                                        class="absolute inset-0 w-full h-full"
+                                >
+                                <div class="absolute inset-0 flex items-center justify-center">
+                                    <div class="flex items-center justify-center w-10 h-10 2xl:w-13 2xl:h-13 rounded-full bg-[#CE7D63]">
+                                        <img src="assets/icons/arrow-right.svg" alt="arrow-right" class="w-5 h-5 2xl:w-6 2xl:h-6">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="text-[#CE7D63] font-medium text-xl  2xl:text-2xl whitespace-nowrap">
+                                Start a Project
+                            </div>
+                         </div>
+                    </div>
+
+                    <h1
+                            class="mt-3 text-[#F9EFEC] font-semibold lg:text-[58px] 2xl:text-[78px] whitespace-nowrap uppercase "
+                    >
+                        Digital Solutions
+                    </h1>
+                </div>
+
+<!--                Hero description -->
+                <p class=" mx-2 mb-7.75
+
+                           lg:mx-15 lg:mb-19.5
+                           2xl:mx-20  2xl:mb-22.5
+                           text-[#676665]
+                           text-sm lg:text-base 2xl:text-lg
+                         ">
+                    At NexGen, we offer a comprehensive suite of digital solutions designed to propel your business to new heights in the digital realm. With a team of skilled professionals, cutting-edge technologies, and a passion for innovation
+                </p>
+
+<!--                Hero tag list -->
+                <div class="flex items-center justify-center
+                            overflow-hidden
+                            flex-nowrap
+                            lg:mr-6.25 lg:ml-4 lg:mb-4
+                            2xl:mx-5 2xl:mb-5
+                            gap-2
+                            py-3.5  lg:py-4 2xl:py-5
+                            bg-[#0F0F0F]
+                            rounded-lg lg:rounded-[10px]
+                           ">
+                    <ul class="flex gap-2 lg:gap-2.5 2xl:gap-5.75
+                               font-['Roboto_Mono']
+                               text-[#676665]
+                               text-sm lg:text-base 2xl:text-xl
+                               whitespace-nowrap
+                               uppercase
+                              ">
+                        <li class="flex items-center gap-2 lg:gap-2.5 2xl:gap-2.25">
+                            <span class="w-1.75 h-1.75 rounded-full bg-[#CE7D63]"></span>
+                            Digital Marketing</li>
+                        <li class="flex items-center gap-2 lg:gap-2.5 2xl:gap-5">
+                            <span class="w-1.75 h-1.75 rounded-full bg-[#CE7D63]"></span>
+                            Website Design</li>
+                        <li class="flex items-center gap-2 lg:gap-2.5 2xl:gap-5">
+                            <span class="w-1.75 h-1.75 rounded-full bg-[#CE7D63]"></span>
+                            Branding</li>
+                        <li class="flex items-center gap-2 lg:gap-2.5 2xl:gap-5">
+                            <span class="w-1.75 h-1.75 rounded-full bg-[#CE7D63]"></span>
+                            Website Development</li>
+                        <li class="flex items-center gap-2 lg:gap-2.5 2xl:gap-5">
+                            <span class="w-1.75 h-1.75 rounded-full bg-[#CE7D63]"></span>
+                            Mobile App Development</li>
+                        <li class="flex items-center gap-2 lg:gap-2.5 2xl:gap-5">
+                            <span class="w-1.75 h-1.75 rounded-full bg-[#CE7D63]"></span>
+                            Digital Marketing</li>
+                    </ul>
+                </div>
+            </article>
+
+<!--    1-2.Hero image        -->
+            <article class="lg:w-[33%] lg:border lg:overflow-hidden lg:rounded-[10px]">
+            <img src="assets/images/hero-image.png" alt="hero-image" class="w-full h-full object-cover">
+            </article>
+        </section>
+
+
+        <!--   2.Our Services   -->
+        <section class="flex flex-col gap-2.5 2xl:gap-5
+                        mb-12.5 lg:mb-20 2xl:mb-30
+                        p-2.5 2xl:p-5
+                        bg-[#0F0F0F]
+                        border-[2px] border-[#1F1F1F]
+                        rounded-2xl lg:rounded-[20px] 2xl:rounded-3xl">
+<!--           Title -->
+            <h2 class="
+                       p-6 lg:p-10 2xl:p-12.5
+                       text-[28px] lg:text-[38px] 2xl:text-5xl
+                       text-[#F9EFEC]
+                       font-semibold
+                       rounded-[14px] lg:rounded-2xl
+                       bg-[#1A1A1A]
+                       leading-[100%]
+                       uppercase
+                      ">
+                Our Services
+            </h2>
+
+<!--         Grid Cards -->
+            <article class="lg:grid lg:grid-cols-2  lg:gap-2.5 2xl:gap-5">
+<!--                Card row 1 -->
+<!--                Card left-->
+                <div class="flex flex-col gap-5 lg:gap-10 2xl:gap-12.5
+                            p-6 lg:px-15 lg:py-[81.5px] 2xl:px-15 2xl:py-23.5
+                            rounded-[14px] lg:rounded-xl 2xl: rounded-[14px]
+                            bg-[#1A1A1A]
+                           ">
+                    <!--                Card header -->
+                    <div class="flex items-start justify-between ">
+                        <!--                   Card header left-->
+                        <div class="flex items-center justify-start gap-3.5 lg:gap-2.5 2xl:gap-3.5">
+                            <div class="w-13 h-13 lg:w-14 lg:h-14 2xl:w-16.5 2xl:h-16.5
+                                        p-3.5 2xl:p-4
+                                        rounded-[10px] 2xl:rounded-xl
+                                        border border-[#333333]">
+                                <img src="assets/icons/web-design-icon.svg" alt="web-design-icon">
+                            </div>
+
+                            <h3 class="font-medium text-xl lg:text-[22px] 2xl:text-3xl text-[#F9EFEC] uppercase">Web Design</h3>
+                        </div>
+                            <!--                  Card header right-->
+                            <div class="hidden lg:flex items-center justify-between gap-2 2xl:gap-2.5">
+                                <div class="w-10 h-10 2xl:w-13 2xl:h-13
+                                            rounded-[100px] border border-[#333333] bg-[#1F1F1F] p-2.5 2xl:p-3.5">
+                                    <img src="assets/icons/arrow-topRight.svg" alt="arrow-top-right" class="w-5 h-5 2xl:w-6 2xl:h-6">
+                                </div>
+                                <span class="font-medium 2xl:text-xl font-['Roboto_Mono'] uppercase text-[#B3B3B2]">Book A Call</span>
+                            </div>
+                    </div>
+
+                    <!--                Card body-->
+                    <div>
+                        <!--                    Card body title-->
+                        <h4 class=" lg:hidden mb-1.5 font-medium text-lg text-[#F9EFEC] uppercase">Starts From $1,500</h4>
+                        <!--                    Card body description-->
+                        <p class="text-sm lg:text-base 2xl:text-lg text-[#B3B3B2]">Our Web Design service is all about creating visually stunning and user-friendly websites that leave a lasting.</p>
+                    </div>
+
+                    <!--                Card footer-->
+                    <button class="lg:hidden py-3.5 px-19.5 font-medium text-sm uppercase text-[#0F0F0F] bg-[#CE7D63] rounded-lg">View all Projects</button>
+                    <h4 class="hidden lg:block  font-medium text-[22px] 2xl:text-3xl text-[#F9EFEC] text-end uppercase">Starts From $1,500</h4>
+                </div>
+
+<!--                Card right -->
+                <div class="hidden lg:flex flex-col gap-5 2xl:gap-6
+                            rounded-xl 2xl:rounded-[14px]
+                            p-7.5 2xl:p-10
+                            bg-[#1A1A1A]">
+<!--                    Card title-->
+                    <div class="flex items-center justify-between ">
+                        <h4 class="font-medium text-xl 2xl:text-2xl uppercase text-[#F9EFEC]">Web Design Projects</h4>
+                        <!--            Desktop icon view all -->
+                        <div class=" hidden lg:flex items-center  gap-2">
+                            <div class="w-14 h-14 2xl:w-17 2xl:h-17 rounded-[100px] border border-[#262626] bg-[#1A1A1A] p-4 2xl:p-5">
+                                <img src="assets/icons/arrow-topRight.svg" alt="arrow-top-right" class="w-6 h-6 2xl:w-7 2xl:h-7 ">
+                            </div>
+                            <span class="font-medium 2xl:text-xl font-['Roboto_Mono'] uppercase text-[#B3B3B2]">View All</span>
+                        </div>
+                    </div>
+
+<!--                    Card image-->
+                    <div class="grid grid-cols-2 gap-2.5 2xl:gap-5">
+                            <img src="assets/images/web-design-1.png" alt="web-design-1">
+                            <img src="assets/images/web-design-2.png" alt="web-design-2">
+                    </div>
+
+
+                </div>
+
+                <!--                Card row 2 -->
+                <!--                Card left -->
+                <div class="flex flex-col gap-5 lg:gap-10 2xl:gap-12.5
+                            p-6 lg:px-15 lg:py-[81.5px] 2xl:px-15 2xl:py-23.5
+                            rounded-[14px] lg:rounded-xl 2xl: rounded-[14px]
+                            bg-[#1A1A1A]
+                           ">
+                    <!--                Card header -->
+                    <div class="flex items-start justify-between ">
+                        <!--                   Card header left-->
+                        <div class="flex items-center justify-start gap-3.5 lg:gap-2.5 2xl:gap-3.5">
+                            <div class="w-13 h-13 lg:w-14 lg:h-14 2xl:w-16.5 2xl:h-16.5
+                                        p-3.5 2xl:p-4
+                                        rounded-[10px] 2xl:rounded-xl
+                                        border border-[#333333]">
+                                <img src="assets/icons/mobile-app-icon.svg" alt="mobile-app-icon">
+                            </div>
+
+                            <h3 class="font-medium text-xl lg:text-[22px] 2xl:text-3xl text-[#F9EFEC] uppercase">Mobile App Development</h3>
+                        </div>
+                        <!--                  Card header right-->
+                        <div class="hidden lg:flex items-center justify-between gap-2 2xl:gap-2.5">
+                            <div class="w-10 h-10 2xl:w-13 2xl:h-13
+                                            rounded-[100px] border border-[#333333] bg-[#1F1F1F] p-2.5 2xl:p-3.5">
+                                <img src="assets/icons/arrow-topRight.svg" alt="arrow-top-right" class="w-5 h-5 2xl:w-6 2xl:h-6">
+                            </div>
+                            <span class="font-medium 2xl:text-xl font-['Roboto_Mono'] uppercase text-[#B3B3B2]">Book A Call</span>
+                        </div>
+                    </div>
+
+                    <!--                Card body-->
+                    <div>
+                        <!--                    Card body title-->
+                        <h4 class=" lg:hidden mb-1.5 font-medium text-lg text-[#F9EFEC] uppercase">Starts From $2,500</h4>
+                        <!--                    Card body description-->
+                        <p class="text-sm lg:text-base 2xl:text-lg text-[#B3B3B2]">With our Mobile App Development service, we harness the power of mobile technology to create cutting-edge applications that engage your customers on-the-go.</p>
+                    </div>
+
+                    <!--                Card footer-->
+                    <button class="lg:hidden py-3.5 px-19.5 font-medium text-sm uppercase text-[#0F0F0F] bg-[#CE7D63] rounded-lg">View all Projects</button>
+                    <h4 class="hidden lg:block  font-medium text-[22px] 2xl:text-3xl text-[#F9EFEC] text-end uppercase">Starts From $2,500</h4>
+                </div>
+
+                <!--                Card right -->
+                <div class="hidden lg:flex flex-col gap-5 2xl:gap-6
+                            rounded-xl 2xl:rounded-[14px]
+                            p-7.5 2xl:p-10
+                            bg-[#1A1A1A]">
+                    <!--                    Card title-->
+                    <div class="flex items-center justify-between ">
+                        <h4 class="font-medium text-xl 2xl:text-2xl uppercase text-[#F9EFEC]">Mobile App Development Projects</h4>
+                        <!--            Desktop icon view all -->
+                        <div class=" hidden lg:flex items-center  gap-2">
+                            <div class="w-14 h-14 2xl:w-17 2xl:h-17 rounded-[100px] border border-[#262626] bg-[#1A1A1A] p-4 2xl:p-5">
+                                <img src="assets/icons/arrow-topRight.svg" alt="arrow-top-right" class="w-6 h-6 2xl:w-7 2xl:h-7 ">
+                            </div>
+                            <span class="font-medium 2xl:text-xl font-['Roboto_Mono'] uppercase text-[#B3B3B2]">View All</span>
+                        </div>
+                    </div>
+
+                    <!--                    Card image-->
+                    <div class="grid grid-cols-2 gap-2.5 2xl:gap-5">
+                        <img src="assets/images/mobile-app-1.png" alt="mobile-app-1">
+                        <img src="assets/images/mobile-app-2.png" alt="mobile-app-2">
+                    </div>
+
+
+                </div>
+
+                <!--                Card row 3 -->
+                <!--                Card left -->
+                <div class="flex flex-col gap-5 lg:gap-10 2xl:gap-12.5
+                            p-6 lg:px-15 lg:py-[81.5px] 2xl:px-15 2xl:py-23.5
+                            rounded-[14px] lg:rounded-xl 2xl: rounded-[14px]
+                            bg-[#1A1A1A]
+                           ">
+                    <!--                Card header -->
+                    <div class="flex items-start justify-between ">
+                        <!--                   Card header left-->
+                        <div class="flex items-center justify-start gap-3.5 lg:gap-2.5 2xl:gap-3.5">
+                            <div class="w-13 h-13 lg:w-14 lg:h-14 2xl:w-16.5 2xl:h-16.5
+                                        p-3.5 2xl:p-4
+                                        rounded-[10px] 2xl:rounded-xl
+                                        border border-[#333333]">
+                                <img src="assets/icons/web-dev-icon.svg" alt="web-dev-icon">
+                            </div>
+
+                            <h3 class="font-medium text-xl lg:text-[22px] 2xl:text-3xl text-[#F9EFEC] uppercase">Web Development</h3>
+                        </div>
+                        <!--                  Card header right-->
+                        <div class="hidden lg:flex items-center justify-between gap-2 2xl:gap-2.5">
+                            <div class="w-10 h-10 2xl:w-13 2xl:h-13
+                                            rounded-[100px] border border-[#333333] bg-[#1F1F1F] p-2.5 2xl:p-3.5">
+                                <img src="assets/icons/arrow-topRight.svg" alt="arrow-top-right" class="w-5 h-5 2xl:w-6 2xl:h-6">
+                            </div>
+                            <span class="font-medium 2xl:text-xl font-['Roboto_Mono'] uppercase text-[#B3B3B2]">Book A Call</span>
+                        </div>
+                    </div>
+
+                    <!--                Card body-->
+                    <div>
+                        <!--                    Card body title-->
+                        <h4 class=" lg:hidden mb-1.5 font-medium text-lg text-[#F9EFEC] uppercase">Starts From $1,800</h4>
+                        <!--                    Card body description-->
+                        <p class="text-sm lg:text-base 2xl:text-lg text-[#B3B3B2]">Our Web Development service is focused on turning your website into a powerful digital asset. We utilize the latest technologies and industry best practices to build websites.</p>
+                    </div>
+
+                    <!--                Card footer-->
+                    <button class="lg:hidden py-3.5 px-19.5 font-medium text-sm uppercase text-[#0F0F0F] bg-[#CE7D63] rounded-lg">View all Projects</button>
+                    <h4 class="hidden lg:block  font-medium text-[22px] 2xl:text-3xl text-[#F9EFEC] text-end uppercase">Starts From $1,800</h4>
+                </div>
+
+                <!--                Card right -->
+                <div class="hidden lg:flex flex-col gap-5 2xl:gap-6
+                            rounded-xl 2xl:rounded-[14px]
+                            p-7.5 2xl:p-10
+                            bg-[#1A1A1A]">
+                    <!--                    Card title-->
+                    <div class="flex items-center justify-between ">
+                        <h4 class="font-medium text-xl 2xl:text-2xl uppercase text-[#F9EFEC]">Web Development Projects</h4>
+                        <!--            Desktop icon view all -->
+                        <div class=" hidden lg:flex items-center  gap-2">
+                            <div class="w-14 h-14 2xl:w-17 2xl:h-17 rounded-[100px] border border-[#262626] bg-[#1A1A1A] p-4 2xl:p-5">
+                                <img src="assets/icons/arrow-topRight.svg" alt="arrow-top-right" class="w-6 h-6 2xl:w-7 2xl:h-7 ">
+                            </div>
+                            <span class="font-medium 2xl:text-xl font-['Roboto_Mono'] uppercase text-[#B3B3B2]">View All</span>
+                        </div>
+                    </div>
+
+                    <!--                    Card image-->
+                    <div class="grid grid-cols-2 gap-2.5 2xl:gap-5">
+                        <img src="assets/images/web-dev-1.png" alt="web-dev-1">
+                        <img src="assets/images/web-dev-2.png" alt="web-dev-2">
+                    </div>
+
+
+                </div>
+
+                <!--                Card row 4 -->
+                <!--                Card left -->
+                <div class="flex flex-col gap-5 lg:gap-10 2xl:gap-12.5
+                            p-6 lg:px-15 lg:py-[81.5px] 2xl:px-15 2xl:py-23.5
+                            rounded-[14px] lg:rounded-xl 2xl: rounded-[14px]
+                            bg-[#1A1A1A]
+                           ">
+                    <!--                Card header -->
+                    <div class="flex items-start justify-between ">
+                        <!--                   Card header left-->
+                        <div class="flex items-center justify-start gap-3.5 lg:gap-2.5 2xl:gap-3.5">
+                            <div class="w-13 h-13 lg:w-14 lg:h-14 2xl:w-16.5 2xl:h-16.5
+                                        p-3.5 2xl:p-4
+                                        rounded-[10px] 2xl:rounded-xl
+                                        border border-[#333333]">
+                                <img src="assets/icons/digital-marketing-icon.svg" alt="digital-marketing-icon" class="w-6 h-6">
+                            </div>
+
+                            <h3 class="font-medium text-xl lg:text-[22px] 2xl:text-3xl text-[#F9EFEC] uppercase">Digital Marketing</h3>
+                        </div>
+                        <!--                  Card header right-->
+                        <div class="hidden lg:flex items-center justify-between gap-2 2xl:gap-2.5">
+                            <div class="w-10 h-10 2xl:w-13 2xl:h-13
+                                            rounded-[100px] border border-[#333333] bg-[#1F1F1F] p-2.5 2xl:p-3.5">
+                                <img src="assets/icons/arrow-topRight.svg" alt="arrow-top-right" class="w-5 h-5 2xl:w-6 2xl:h-6">
+                            </div>
+                            <span class="font-medium 2xl:text-xl font-['Roboto_Mono'] uppercase text-[#B3B3B2]">Book A Call</span>
+                        </div>
+                    </div>
+
+                    <!--                Card body-->
+                    <div>
+                        <!--                    Card body title-->
+                        <h4 class=" lg:hidden mb-1.5 font-medium text-lg text-[#F9EFEC] uppercase">Starts From $1,200</h4>
+                        <!--                    Card body description-->
+                        <p class="text-sm lg:text-base 2xl:text-lg text-[#B3B3B2]">In the digital age, marketing is a critical aspect of your business's success. Our Digital Marketing service employs data-driven strategies to enhance your brand's visibility</p>
+                    </div>
+
+                    <!--                Card footer-->
+                    <button class="lg:hidden py-3.5 px-19.5 font-medium text-sm uppercase text-[#0F0F0F] bg-[#CE7D63] rounded-lg">View all Projects</button>
+                    <h4 class="hidden lg:block  font-medium text-[22px] 2xl:text-3xl text-[#F9EFEC] text-end uppercase">Starts From $1,200</h4>
+                </div>
+
+                <!--                Card right -->
+                <div class="hidden lg:flex flex-col gap-5 2xl:gap-6
+                            rounded-xl 2xl:rounded-[14px]
+                            p-7.5 2xl:p-10
+                            bg-[#1A1A1A]">
+                    <!--                    Card title-->
+                    <div class="flex items-center justify-between ">
+                        <h4 class="font-medium text-xl 2xl:text-2xl uppercase text-[#F9EFEC]">Digital Marketing Projects</h4>
+                        <!--            Desktop icon view all -->
+                        <div class=" hidden lg:flex items-center  gap-2">
+                            <div class="w-14 h-14 2xl:w-17 2xl:h-17 rounded-[100px] border border-[#262626] bg-[#1A1A1A] p-4 2xl:p-5">
+                                <img src="assets/icons/arrow-topRight.svg" alt="arrow-top-right" class="w-6 h-6 2xl:w-7 2xl:h-7 ">
+                            </div>
+                            <span class="font-medium 2xl:text-xl font-['Roboto_Mono'] uppercase text-[#B3B3B2]">View All</span>
+                        </div>
+                    </div>
+
+                    <!--                    Card image-->
+                    <div class="grid grid-cols-2 gap-2.5 2xl:gap-5">
+                        <img src="assets/images/digital-marketing-1.png" alt="digital-marketing-1">
+                        <img src="assets/images/digital-marketing-2.png" alt="digital-marketing-2">
+                    </div>
+
+
+                </div>
+
+
+            </article>
+
+<!--&lt;!&ndash;          Card 2  &ndash;&gt;-->
+<!--            <article class="flex flex-col gap-5-->
+<!--                            p-6-->
+<!--                            rounded-[14px]-->
+<!--                            bg-[#1A1A1A]-->
+<!--                           ">-->
+<!--                &lt;!&ndash;                Card header &ndash;&gt;-->
+<!--                <div class="flex items-center justify-start gap-3.5">-->
+<!--                    &lt;!&ndash;                   Card header icon&ndash;&gt;-->
+<!--                    <div class="w-13 h-13 p-3.5 rounded-[10px] border border-[#333333]">-->
+<!--                        <img src="assets/icons/mobile-app-icon.svg" alt="mobile-app-icon">-->
+<!--                    </div>-->
+
+<!--                    &lt;!&ndash;                    Card header name&ndash;&gt;-->
+<!--                    <h3 class="mb-1.5 font-medium text-xl text-[#F9EFEC] uppercase">Mobile App Development</h3>-->
+<!--                </div>-->
+
+<!--                &lt;!&ndash;                Card body&ndash;&gt;-->
+<!--                <div>-->
+<!--                    &lt;!&ndash;                    Card body title&ndash;&gt;-->
+<!--                    <h4 class="font-medium text-lg text-[#F9EFEC] uppercase">Starts From $2,500</h4>-->
+<!--                    &lt;!&ndash;                    Card body description&ndash;&gt;-->
+<!--                    <p class="text-sm text-[#B3B3B2]">With our Mobile App Development service, we harness the power of mobile technology to create cutting-edge applications .</p>-->
+<!--                </div>-->
+
+<!--                &lt;!&ndash;                Card footer&ndash;&gt;-->
+<!--                <button class="py-3.5 px-19.5 font-medium text-sm uppercase text-[#0F0F0F] bg-[#CE7D63] rounded-lg">View all Projects</button>-->
+
+<!--            </article>-->
+
+<!--&lt;!&ndash;            Card 3&ndash;&gt;-->
+<!--            <article class="flex flex-col gap-5-->
+<!--                            p-6-->
+<!--                            rounded-[14px]-->
+<!--                            bg-[#1A1A1A]-->
+<!--                           ">-->
+<!--                &lt;!&ndash;                Card header &ndash;&gt;-->
+<!--                <div class="flex items-center justify-start gap-3.5">-->
+<!--                    &lt;!&ndash;                   Card header icon&ndash;&gt;-->
+<!--                    <div class="w-13 h-13 p-3.5 rounded-[10px] border border-[#333333]">-->
+<!--                        <img src="assets/icons/web-dev-icon.svg" alt="web-dev-icon">-->
+<!--                    </div>-->
+
+<!--                    &lt;!&ndash;                    Card header name&ndash;&gt;-->
+<!--                    <h3 class="font-medium text-xl text-[#F9EFEC] uppercase">Web Development</h3>-->
+<!--                </div>-->
+
+<!--                &lt;!&ndash;                Card body&ndash;&gt;-->
+<!--                <div>-->
+<!--                    &lt;!&ndash;                    Card body title&ndash;&gt;-->
+<!--                    <h4 class="mb-1.5 font-medium text-lg text-[#F9EFEC] uppercase">Starts From $1,800</h4>-->
+<!--                    &lt;!&ndash;                    Card body description&ndash;&gt;-->
+<!--                    <p class="text-sm text-[#B3B3B2]">Our Web Development service is focused on turning your website into a powerful digital asset. We utilize the latest technologies and industry best practices to build websites.</p>-->
+<!--                </div>-->
+
+<!--                &lt;!&ndash;                Card footer&ndash;&gt;-->
+<!--                <button class="py-3.5 px-19.5 font-medium text-sm uppercase text-[#0F0F0F] bg-[#CE7D63] rounded-lg">View all Projects</button>-->
+
+<!--            </article>-->
+
+<!--&lt;!&ndash;            Card 4 &ndash;&gt;-->
+<!--            <article class="flex flex-col gap-5-->
+<!--                            p-6-->
+<!--                            rounded-[14px]-->
+<!--                            bg-[#1A1A1A]-->
+<!--                           ">-->
+<!--                &lt;!&ndash;                Card header &ndash;&gt;-->
+<!--                <div class="flex items-center justify-start gap-3.5">-->
+<!--                    &lt;!&ndash;                   Card header icon&ndash;&gt;-->
+<!--                    <div class="w-13 h-13 p-3.5 rounded-[10px] border border-[#333333]">-->
+<!--                        <img src="assets/icons/digital-marketing-icon.svg" alt="digital-marketing-icon">-->
+<!--                    </div>-->
+
+<!--                    &lt;!&ndash;                    Card header name&ndash;&gt;-->
+<!--                    <h3 class="font-medium text-xl text-[#F9EFEC] uppercase">Digital Marketing</h3>-->
+<!--                </div>-->
+
+<!--                &lt;!&ndash;                Card body&ndash;&gt;-->
+<!--                <div>-->
+<!--                    &lt;!&ndash;                    Card body title&ndash;&gt;-->
+<!--                    <h4 class="mb-1.5 font-medium text-lg text-[#F9EFEC] uppercase">Starts From $1,200</h4>-->
+<!--                    &lt;!&ndash;                    Card body description&ndash;&gt;-->
+<!--                    <p class="text-sm text-[#B3B3B2]">In the digital age, marketing is a critical aspect of your business's success. Our Digital Marketing service employs data-driven strategies to enhance your brand's visibility</p>-->
+<!--                </div>-->
+
+<!--                &lt;!&ndash;                Card footer&ndash;&gt;-->
+<!--                <button class="py-3.5 px-19.5 font-medium text-sm uppercase text-[#0F0F0F] bg-[#CE7D63] rounded-lg">View all Projects</button>-->
+
+<!--            </article>-->
+
+
+        </section>
+
+        <!--    3.Success Stories    -->
+        <section class="flex flex-col gap-2.5 2xl:gap-5
+                        mb-12.5 lg:mb-20 2xl:mb-30
+                        ">
+<!--       Mobile     Title -->
+            <h2 class=" lg:hidden rounded-[14px] 2xl:rounded-2xl
+                        p-6 lg:p-10 2xl:p-12.5
+                        bg-[#1A1A1A]
+                        font-semibold
+                        text-[28px] lg:text-[38px] 2xl:text-5xl
+                        leading-[100%] uppercase text-[#F9EFEC]
+                      ">
+                Success Stories
+            </h2>
+
+<!--            Desktop title-->
+           <div class="rounded-[14px] 2xl:rounded-2xl
+                        hidden lg:flex items-center justify-between
+                        p-6 lg:p-10 2xl:p-12.5
+                        bg-[#1A1A1A]
+                        ">
+               <h2 class="
+                        font-semibold
+                        text-[28px] lg:text-[38px] 2xl:text-5xl
+                        leading-[100%] uppercase text-[#F9EFEC]
+                      ">
+                   Success Stories
+               </h2>
+
+               <!--            Desktop icon view all -->
+               <div class=" hidden lg:flex items-center  gap-2">
+                   <div class="w-14 h-14 2xl:w-17 2xl:h-17 rounded-[100px] border border-[#262626] bg-[#1A1A1A] p-4 2xl:p-5">
+                       <img src="assets/icons/arrow-topRight.svg" alt="arrow-top-right" class="w-6 h-6 2xl:w-7 2xl:h-7 ">
+                   </div>
+                   <span class="font-medium 2xl:text-xl font-['Roboto_Mono'] uppercase text-[#B3B3B2]">View All</span>
+               </div>
+           </div>
+
+<!--            Content -->
+<!--            Klothink Desc-->
+            <article class=" grid grid-cols-1 lg:grid-cols-2 gap-2.5 2xl:gap-5
+                         rounded-2xl 2xl:rounded-[20px]
+                         border-[2px] border-[#1F1F1F]
+                         bg-[#0F0F0F]
+                         p-2.5 lg:p-7.5 2xl:p-12.5
+                       ">
+<!--                Row 1 -->
+<!--                Col 1-->
+                <div class="flex flex-col gap-5 lg:gap-10 2xl:gap-12.5
+                            rounded-[10px] lg:rounded-xl 2xl:rounded-[14px]
+                            p-5 lg:p-10 2xl:p-15
+                            bg-[#1A1A1A]
+                            ">
+<!--                    Group 1-->
+                    <div class="flex flex-col gap-5 lg:flex-row justify-between">
+
+                        <div class="flex items-center gap-2 lg:gap-2.5 2xl:gap-3.5">
+                            <div class="w-13 h-13 lg:w-14 lg:h-14 2xl:w-16.5 2xl:h-16.5
+                                        rounded-[10px] 2xl:rounded-xl
+                                        border border-[#333333]
+                                        p-3.5 2xl:p-4
+                                        bg-[#1F1F1F]
+
+                                        ">
+                                <img src="assets/icons/klothink-icon.svg" alt="klothink-icon"
+                                     class="w-5 h-[19.42px] lg:w-7 lg:h-7 2xl:w-8.5 2xl:h-8.5">
+                            </div>
+
+                            <h3 class="font-medium text-xl lg:text-2xl 2xl:text-3xl
+                                       uppercase text-[#F9EFEC]
+                                      ">
+                                        Klothink
+                            </h3>
+                        </div>
+
+
+                        <div class="flex items-center gap-2 2xl:gap-2.5 ">
+                            <div class="w-10 h-10 2xl:w-13 2xl:h-13
+                                        rounded-full
+                                        border border-[#333333] bg-[#1F1F1F]
+                                        p-2.5 2xl:p-3.5
+                                       ">
+                                <img src="assets/icons/arrow-topRight.svg" alt="arrow-top-right" class="w-5 h-5 2xl:w-6 2xl:h-6">
+                            </div>
+
+                            <span class="font-['Roboto_Mono'] font-medium uppercase
+                                         text-[#B3B3B2] text-sm lg:text-base 2xl:text-xl
+                                        ">
+                                        Visit Website</span>
+                        </div>
+                    </div>
+
+<!--                    Group 2 -->
+<!--                    <div class="flex flex-col gap-2  lg:gap-2.5 2xl:flex-row 2xl:gap-3">-->
+                    <div >
+                        <div class="inline-flex items-center  gap-1.5 2xl:gap-2
+                                    rounded-[45px] bg-[#1F1F1F]
+                                    px-3.5 py-2 2xl:px-4 2xl:py-2.5
+                                    ">
+                            <span class="text-sm lg:text-base 2xl:text-lg text-[#B3B3B2] ">Industry</span>
+                            <img src="assets/icons/dot-icon.svg" alt="dot-icon" class="w-1 h-1">
+                            <span class="font-medium text-sm lg:text-base 2xl:text-lg text-[#E6E6E6]">E-commerce</span>
+
+                        </div>
+                        <br class="2xl:hidden ">
+
+                        <div class="inline-flex items-center  gap-1.5 2xl:gap-2
+                                    rounded-[45px] bg-[#1F1F1F]
+                                    px-3.5 py-2 2xl:px-4 2xl:py-2.5
+                                    ">
+                            <span class="text-sm lg:text-base 2xl:text-lg text-[#B3B3B2] ">Service Utilized</span>
+                            <img src="assets/icons/dot-icon.svg" alt="dot-icon" class="w-1 h-1">
+                            <span class="font-medium text-sm lg:text-base 2xl:text-lg text-[#E6E6E6]">Design & Development</span>
+
+                        </div>
+                    </div>
+
+
+                </div>
+
+<!--                Col 2-->
+                <div class="flex flex-col gap-2.5 2xl:gap-5">
+<!--                    Button list-->
+                    <div class="flex  gap-2.5 2xl:gap-3 ">
+                        <button class="
+                                        rounded-lg 2xl:rounded-xl
+                                        px-5 py-3.5 2xl:px-6 py-4.5
+                                        bg-[#1F1F1F]
+                                        font-medium uppercase text-[#B3B3B2]
+                                        text-sm 2xl:text-lg
+                                        hover:bg-[#CE7D63] hover:text-[#0F0F0F]
+                                        transition-colors duration-300 ease-in-out
+                                      ">
+                                        Challenge
+                        </button>
+
+                        <button class="
+                                        rounded-lg 2xl:rounded-xl
+                                        px-5 py-3.5 2xl:px-6 py-4.5
+                                        bg-[#1F1F1F]
+                                        font-medium uppercase text-[#B3B3B2]
+                                        text-sm 2xl:text-lg
+                                        hover:bg-[#CE7D63] hover:text-[#0F0F0F]
+                                        transition-colors duration-300 ease-in-out
+                                      ">
+                            Solution
+                        </button>
+
+                        <button class="
+                                        rounded-lg 2xl:rounded-xl
+                                        px-5 py-3.5 2xl:px-6 py-4.5
+                                        bg-[#1F1F1F]
+                                        font-medium uppercase text-[#B3B3B2]
+                                        text-sm 2xl:text-lg
+                                        hover:bg-[#CE7D63] hover:text-[#0F0F0F]
+                                        transition-colors duration-300 ease-in-out
+                                      ">
+                            Results
+                        </button>
+                    </div>
+
+<!--                    Description-->
+                    <div class="bg-[#1A1A1A]
+                                rounded-xl 2xl:rounded-[14px]
+                                p-6 lg:p-7.5 2xl:p-10
+                                ">
+                        <h4 class="
+                                   font-['Roboto_Mono'] uppercase text-[#F9EFEC]
+                                   text-2xl lg:text-[32px] 2xl:text-5xl
+                                   mb-2 lg:mb-2.5 2xl:mb-3.5
+                                  ">
+                            Solution
+                        </h4>
+
+                        <p class="text-sm lg:text-base 2xl:text-lg text-[#B3B3B2]">
+                            Our team conducted a thorough analysis of their target audience and business objectives. We designed a modern and intuitive website with seamless navigation and a mobile-responsive layout. Additionally, we integrated an efficient checkout process and optimized the site for search engines.
+                        </p>
+
+                    </div>
+                </div>
+            </article>
+
+<!--            Fitness Desc-->
+            <article class=" grid grid-cols-1 lg:grid-cols-2 gap-2.5 2xl:gap-5
+                         rounded-2xl 2xl:rounded-[20px]
+                         border-[2px] border-[#1F1F1F]
+                         bg-[#0F0F0F]
+                         p-2.5 lg:p-7.5 2xl:p-12.5
+                       ">
+                <!--                Row 1 -->
+                <!--                Col 1-->
+                <div class="flex flex-col gap-5 lg:gap-10 2xl:gap-12.5
+                            rounded-[10px] lg:rounded-xl 2xl:rounded-[14px]
+                            p-5 lg:p-10 2xl:p-15
+                            bg-[#1A1A1A]
+                            ">
+                    <!--                    Group 1-->
+                    <div class="flex flex-col gap-5 lg:flex-row justify-between">
+
+                        <div class="flex items-center gap-2 lg:gap-2.5 2xl:gap-3.5">
+                            <div class="w-13 h-13 lg:w-14 lg:h-14 2xl:w-16.5 2xl:h-16.5
+                                        rounded-[10px] 2xl:rounded-xl
+                                        border border-[#333333]
+                                        p-3.5 2xl:p-4
+                                        bg-[#1F1F1F]
+
+                                        ">
+                                <img src="assets/icons/fitness-icon.svg" alt="fitness-icon"
+                                     class="w-5 h-[19.42px] lg:w-7 lg:h-7 2xl:w-8.5 2xl:h-8.5">
+                            </div>
+
+                            <h3 class="font-medium text-xl lg:text-2xl 2xl:text-3xl
+                                       uppercase text-[#F9EFEC]
+                                      ">
+                                Fitness Tracker App
+                            </h3>
+                        </div>
+
+
+                        <div class="flex items-center gap-2 2xl:gap-2.5 ">
+                            <div class="w-10 h-10 2xl:w-13 2xl:h-13
+                                        rounded-full
+                                        border border-[#333333] bg-[#1F1F1F]
+                                        p-2.5 2xl:p-3.5
+                                       ">
+                                <img src="assets/icons/arrow-topRight.svg" alt="arrow-top-right" class="w-5 h-5 2xl:w-6 2xl:h-6">
+                            </div>
+
+                            <span class="font-['Roboto_Mono'] font-medium uppercase
+                                         text-[#B3B3B2] text-sm lg:text-base 2xl:text-xl
+                                        ">
+                                        Visit Website</span>
+                        </div>
+                    </div>
+
+                    <!--                    Group 2 -->
+                    <!--                    <div class="flex flex-col gap-2  lg:gap-2.5 2xl:flex-row 2xl:gap-3">-->
+                    <div >
+                        <div class="inline-flex items-center  gap-1.5 2xl:gap-2
+                                    rounded-[45px] bg-[#1F1F1F]
+                                    px-3.5 py-2 2xl:px-4 2xl:py-2.5
+                                    ">
+                            <span class="text-sm lg:text-base 2xl:text-lg text-[#B3B3B2] ">Industry</span>
+                            <img src="assets/icons/dot-icon.svg" alt="dot-icon" class="w-1 h-1">
+                            <span class="font-medium text-sm lg:text-base 2xl:text-lg text-[#E6E6E6]">Health & Fitness</span>
+
+                        </div>
+                        <br class="2xl:hidden ">
+
+                        <div class="inline-flex items-center  gap-1.5 2xl:gap-2
+                                    rounded-[45px] bg-[#1F1F1F]
+                                    px-3.5 py-2 2xl:px-4 2xl:py-2.5
+                                    ">
+                            <span class="text-sm lg:text-base 2xl:text-lg text-[#B3B3B2] ">Service Utilized</span>
+                            <img src="assets/icons/dot-icon.svg" alt="dot-icon" class="w-1 h-1">
+                            <span class="font-medium text-sm lg:text-base 2xl:text-lg text-[#E6E6E6]">Mobile App Development</span>
+
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <!--                Col 2-->
+                <div class="flex flex-col gap-2.5 2xl:gap-5">
+                    <!--                    Button list-->
+                    <div class="flex  gap-2.5 2xl:gap-3 ">
+                        <button class="
+                                        rounded-lg 2xl:rounded-xl
+                                        px-5 py-3.5 2xl:px-6 py-4.5
+                                        bg-[#1F1F1F]
+                                        font-medium uppercase text-[#B3B3B2]
+                                        text-sm 2xl:text-lg
+                                        hover:bg-[#CE7D63] hover:text-[#0F0F0F]
+                                        transition-colors duration-300 ease-in-out
+                                      ">
+                            Challenge
+                        </button>
+
+                        <button class="
+                                        rounded-lg 2xl:rounded-xl
+                                        px-5 py-3.5 2xl:px-6 py-4.5
+                                        bg-[#1F1F1F]
+                                        font-medium uppercase text-[#B3B3B2]
+                                        text-sm 2xl:text-lg
+                                        hover:bg-[#CE7D63] hover:text-[#0F0F0F]
+                                        transition-colors duration-300 ease-in-out
+                                      ">
+                            Solution
+                        </button>
+
+                        <button class="
+                                        rounded-lg 2xl:rounded-xl
+                                        px-5 py-3.5 2xl:px-6 py-4.5
+                                        bg-[#1F1F1F]
+                                        font-medium uppercase text-[#B3B3B2]
+                                        text-sm 2xl:text-lg
+                                        hover:bg-[#CE7D63] hover:text-[#0F0F0F]
+                                        transition-colors duration-300 ease-in-out
+                                      ">
+                            Results
+                        </button>
+                    </div>
+
+                    <!--                    Description-->
+                    <div class="bg-[#1A1A1A]
+                                rounded-xl 2xl:rounded-[14px]
+                                p-6 lg:p-7.5 2xl:p-10
+                                ">
+                        <h4 class="
+                                   font-['Roboto_Mono'] uppercase text-[#F9EFEC]
+                                   text-2xl lg:text-[32px] 2xl:text-5xl
+                                   mb-2 lg:mb-2.5 2xl:mb-3.5
+                                  ">
+                            Solution
+                        </h4>
+
+                        <p class="text-sm lg:text-base 2xl:text-lg text-[#B3B3B2]">
+                            Leveraging our expertise in app development, we built an interactive mobile app with user-friendly features. The app allowed users to set personalized fitness goals, track their progress, and share achievements on social media platforms. Real-time data synchronization enabled users to access their data on multiple devices.
+                        </p>
+
+                    </div>
+                </div>
+            </article>
+
+<!--            Mobile icon view all-->
+            <div class="lg:hidden rounded-xl px-4 py-5
+                        flex items-center justify-center gap-1.5
+                        bg-[#1A1A1A]
+                        ">
+<!--                Icon -->
+                <div class="w-12 h-12 rounded-full
+                            border border-[#262626] bg-[#0F0F0F]
+                            p-3.5
+                            ">
+                    <img src="assets/icons/arrow-down.svg" alt="arrow-down" class="w-5 h-5 ">
+                </div>
+
+<!--                Icon name -->
+                <span class="font-['Roboto_Mono'] font-medium
+                             text-sm text-[#B3B3B2]
+                             uppercase
+                            ">
+                    View All
+                </span>
+
+            </div>
+        </section>
+
+        <!--    4.Testimonials    -->
+        <section class="
+                        rounded-[14px] lg:rounded-[20px] 2xl:rounded-3xl
+                        p-2.5 2xl:p-5
+                        mb-12.5 lg:mb-20 2xl:mb-30
+                        border-[2px] border-[#1F1F1F]
+                        ">
+<!--            Mobile title -->
+            <h2 class=" lg:hidden
+                        rounded-[14px] 2xl:rounded-2xl
+                        p-6 lg:p-10 2xl:p-12.5
+                        bg-[#1A1A1A]
+                        font-semibold
+                        text-[28px] lg:text-[38px] 2xl:text-5xl
+                        uppercase text-[#F9EFEC]
+                        mb-2.5 2xl:mb-5
+                      ">
+                Testimonials
+            </h2>
+
+<!--            Desktop title -->
+           <div class=" hidden lg:flex items-center justify-between
+                        rounded-[14px] 2xl:rounded-2xl
+                        p-6 lg:p-10 2xl:p-12.5
+                         mb-2.5 2xl:mb-5
+                         bg-[#1A1A1A]
+                      ">
+
+               <h2 class="
+
+
+                        font-semibold
+                        text-[28px] lg:text-[38px] 2xl:text-5xl
+                        uppercase text-[#F9EFEC]
+
+                      ">
+                   Testimonials
+               </h2>
+
+               <!--            Desktop icon view all -->
+               <div class=" hidden lg:flex items-center  gap-2">
+                   <div class="w-14 h-14 2xl:w-17 2xl:h-17 rounded-[100px] border border-[#262626] bg-[#1A1A1A] p-4 2xl:p-5">
+                       <img src="assets/icons/arrow-topRight.svg" alt="arrow-top-right" class="w-6 h-6 2xl:w-7 2xl:h-7 ">
+                   </div>
+                   <span class="font-medium 2xl:text-xl font-['Roboto_Mono'] uppercase text-[#B3B3B2]">View All</span>
+               </div>
+
+           </div>
+
+<!--            Content -->
+            <div class="grid grid-cols-1 lg:grid-cols-4
+                        gap-2.5 2xl:gap-5">
+<!--                item 1-->
+                <div class="overflow-hidden flex flex-col justify-between
+                            rounded-[10px] lg:rounded-[14px] 2xl:rounded-2xl bg-[#1A1A1A]
+                           " >
+<!--                    Review content-->
+                    <div class="
+                                p-6 lg:p-7.5 2xl:p-10
+                                ">
+                        <h3 class="font-medium uppercase text-[#F9EFEC]
+                                   text-lg lg:text-[22px] 2xl:text-2xl
+                                   mb-4 lg:mb-5 2xl:mb-6
+                                  ">
+                            NexGen turned our business around!
+                        </h3>
+
+                        <p class="text-sm lg:text-base 2xl:text-lg text-[#B3B3B2]">
+                            Their digital marketing strategies helped us reach new customers and increase our revenue by 30% within just a few months. Highly recommended!
+                        </p>
+                    </div>
+
+<!--                    User info -->
+                    <div class="bg-[#1F1F1F]
+                                flex justify-between items-center
+                                px-5 py-4 lg:px-7.5 lg:py-5 2xl:px-10 2xl:py-7.5
+                               ">
+                        <div class="flex gap-2 lg:gap-2.5 2xl:gap-3.75">
+<!--                            User image -->
+                            <div class="w-10 h-10 lg:w-12.5 lg:h-12.5 2xl:w-15 2xl:h-15
+                                        rounded-full">
+                                <img src="assets/images/user-1.png" alt="user-1">
+                            </div>
+<!--                            User name-->
+                            <div class="flex flex-col justify-between ">
+                                <span class="
+                                            font-medium lg:text-lg 2xl:text-xl text-[#F3DFD8]
+                                            ">
+                                    Sarah Thompson
+                                </span>
+                                <span class="text-sm lg:text-base 2xl:text-lg text-[#81807E] ">CEO of BlueBloom</span>
+                            </div>
+                        </div>
+
+<!--                        Icon -->
+                        <div class="w-10 h-10 2xl:w-13 2xl:h-13
+                                    rounded-full border border-[#333333]
+                                    p-2.5 2xl:p-3.5
+                                    bg-[#1F1F1F]
+                                   ">
+                            <img src="assets/icons/arrow-right-light.svg" alt="arrow-right-light" class="w-5 h-5 2xl:w-6 2xl:h-6 ">
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!--                item 2 -->
+                <div class="overflow-hidden flex flex-col justify-between
+                            rounded-[10px] lg:rounded-[14px] 2xl:rounded-2xl bg-[#1A1A1A]
+                           " >
+                    <!--                    Review content-->
+                    <div class="
+                                p-6 lg:p-7.5 2xl:p-10
+                                ">
+                        <h3 class="font-medium uppercase text-[#F9EFEC]
+                                   text-lg lg:text-[22px] 2xl:text-2xl
+                                   mb-4 lg:mb-5 2xl:mb-6
+                                  ">
+                            NexGen turned our business around!
+                        </h3>
+
+                        <p class="text-sm lg:text-base 2xl:text-lg text-[#B3B3B2]">
+                            Their digital marketing strategies helped us reach new customers and increase our revenue by 30% within just a few months. Highly recommended!
+                        </p>
+                    </div>
+
+                    <!--                    User info -->
+                    <div class="bg-[#1F1F1F]
+                                flex justify-between items-center
+                                px-5 py-4 lg:px-7.5 lg:py-5 2xl:px-10 2xl:py-7.5
+                               ">
+                        <div class="flex gap-2 lg:gap-2.5 2xl:gap-3.75">
+                            <!--                            User image -->
+                            <div class="w-10 h-10 lg:w-12.5 lg:h-12.5 2xl:w-15 2xl:h-15
+                                        rounded-full">
+                                <img src="assets/images/user-2.png" alt="user-2">
+                            </div>
+                            <!--                            User name-->
+                            <div class="flex flex-col justify-between ">
+                                <span class="
+                                            font-medium lg:text-lg 2xl:text-xl text-[#F3DFD8]
+                                            ">
+                                    Wade Warren
+                                </span>
+                                <span class="text-sm lg:text-base 2xl:text-lg text-[#81807E] ">Art Director</span>
+                            </div>
+                        </div>
+
+                        <!--                        Icon -->
+                        <div class="w-10 h-10 2xl:w-13 2xl:h-13
+                                    rounded-full border border-[#333333]
+                                    p-2.5 2xl:p-3.5
+                                    bg-[#1F1F1F]
+                                   ">
+                            <img src="assets/icons/arrow-right-light.svg" alt="arrow-right-light" class="w-5 h-5 2xl:w-6 2xl:h-6 ">
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!--                item 3 -->
+                <div class="overflow-hidden flex flex-col justify-between
+                            rounded-[10px] lg:rounded-[14px] 2xl:rounded-2xl bg-[#1A1A1A]
+                           " >
+                    <!--                    Review content-->
+                    <div class="
+                                p-6 lg:p-7.5 2xl:p-10
+                                ">
+                        <h3 class="font-medium uppercase text-[#F9EFEC]
+                                   text-lg lg:text-[22px] 2xl:text-2xl
+                                   mb-4 lg:mb-5 2xl:mb-6
+                                  ">
+                            Working with NexGen was a pleasure.
+                        </h3>
+
+                        <p class="text-sm lg:text-base 2xl:text-lg text-[#B3B3B2]">
+                            Their web design team created a stunning website that perfectly captured our brand's essence. The feedback from our customers has been overwhelmingly positive. </p>
+                    </div>
+
+                    <!--                    User info -->
+                    <div class="bg-[#1F1F1F]
+                                flex justify-between items-center
+                                px-5 py-4 lg:px-7.5 lg:py-5 2xl:px-10 2xl:py-7.5
+                               ">
+                        <div class="flex gap-2 lg:gap-2.5 2xl:gap-3.75">
+                            <!--                            User image -->
+                            <div class="w-10 h-10 lg:w-12.5 lg:h-12.5 2xl:w-15 2xl:h-15
+                                        rounded-full">
+                                <img src="assets/images/user-3.png" alt="user-3">
+                            </div>
+                            <!--                            User name-->
+                            <div class="flex flex-col justify-between ">
+                                <span class="
+                                            font-medium lg:text-lg 2xl:text-xl text-[#F3DFD8]
+                                            ">
+                                    Lisa Williams
+                                </span>
+                                <span class="text-sm lg:text-base 2xl:text-lg text-[#81807E] ">CEO Of HealthTech</span>
+                            </div>
+                        </div>
+
+                        <!--                        Icon -->
+                        <div class="w-10 h-10 2xl:w-13 2xl:h-13
+                                    rounded-full border border-[#333333]
+                                    p-2.5 2xl:p-3.5
+                                    bg-[#1F1F1F]
+                                   ">
+                            <img src="assets/icons/arrow-right-light.svg" alt="arrow-right-light" class="w-5 h-5 2xl:w-6 2xl:h-6 ">
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!--                item 4 -->
+                <div class="overflow-hidden hidden lg:flex flex-col justify-between
+                            rounded-[10px] lg:rounded-[14px] 2xl:rounded-2xl bg-[#1A1A1A]
+                           " >
+                    <!--                    Review content-->
+                    <div class="
+                                p-6 lg:p-7.5 2xl:p-10
+                                ">
+                        <h3 class="font-medium uppercase text-[#F9EFEC]
+                                   text-lg lg:text-[22px] 2xl:text-2xl
+                                   mb-4 lg:mb-5 2xl:mb-6
+                                  ">
+                            NexGen's web design brought our vision
+                        </h3>
+
+                        <p class="text-sm lg:text-base 2xl:text-lg text-[#B3B3B2]">
+                            Their responsive design ensures our website looks stunning on all devices, contributing to increased user engagement. </p>
+                    </div>
+
+                    <!--                    User info -->
+                    <div class="bg-[#1F1F1F]
+                                flex justify-between items-center
+                                px-5 py-4 lg:px-7.5 lg:py-5 2xl:px-10 2xl:py-7.5
+                               ">
+                        <div class="flex gap-2 lg:gap-2.5 2xl:gap-3.75">
+                            <!--                            User image -->
+                            <div class="w-10 h-10 lg:w-12.5 lg:h-12.5 2xl:w-15 2xl:h-15
+                                        rounded-full">
+                                <img src="assets/images/user-4.png" alt="user-4">
+                            </div>
+                            <!--                            User name-->
+                            <div class="flex flex-col justify-between ">
+                                <span class="
+                                            font-medium lg:text-lg 2xl:text-xl text-[#F3DFD8]
+                                            ">
+                                    Jennifer Lee
+                                </span>
+                                <span class="text-sm lg:text-base 2xl:text-lg text-[#81807E] ">COO of Foodie Haven</span>
+                            </div>
+                        </div>
+
+                        <!--                        Icon -->
+                        <div class="w-10 h-10 2xl:w-13 2xl:h-13
+                                    rounded-full border border-[#333333]
+                                    p-2.5 2xl:p-3.5
+                                    bg-[#1F1F1F]
+                                   ">
+                            <img src="assets/icons/arrow-right-light.svg" alt="arrow-right-light" class="w-5 h-5 2xl:w-6 2xl:h-6 ">
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <!--            Mobile icon view all-->
+            <div class="lg:hidden rounded-xl px-4 py-5 mt-2.5
+                        flex items-center justify-center gap-1.5
+                        bg-[#1A1A1A]
+                        ">
+                <!--                Icon -->
+                <div class="w-12 h-12 rounded-full
+                            border border-[#262626] bg-[#0F0F0F]
+                            p-3.5
+                            ">
+                    <img src="assets/icons/arrow-down.svg" alt="arrow-down" class="w-5 h-5 ">
+                </div>
+
+                <!--                Icon name -->
+                <span class="font-['Roboto_Mono'] font-medium
+                             text-sm text-[#B3B3B2]
+                             uppercase
+                            ">
+                    ALL Testimonials
+                </span>
+
+            </div>
+
+        </section>
+
+        <!--    5.FAQ + Form    -->
+        <section>
+            <!--            Mobile title -->
+            <h2 class=" lg:hidden
+                        rounded-[14px] 2xl:rounded-2xl
+                        p-6 lg:p-10 2xl:p-12.5
+                        bg-[#1A1A1A]
+                        font-semibold
+                        text-[28px] lg:text-[38px] 2xl:text-5xl
+                        uppercase text-[#F9EFEC]
+                        mb-2.5 2xl:mb-5
+                      ">
+                Frequently Asked Questions
+            </h2>
+
+
+            <!--            Desktop title -->
+            <div class=" hidden lg:flex items-center justify-between
+                        rounded-[14px] 2xl:rounded-2xl
+                        p-6 lg:p-10 2xl:p-12.5
+                         mb-2.5 2xl:mb-5
+                         bg-[#1A1A1A]
+                      ">
+
+                <h2 class="
+                        font-semibold
+                        text-[28px] lg:text-[38px] 2xl:text-5xl
+                        uppercase text-[#F9EFEC]
+
+                      ">
+                    Frequently Asked Questions
+                </h2>
+
+                <!--            Desktop icon view all -->
+                <div class=" hidden lg:flex items-center  gap-2">
+                    <div class="w-14 h-14 2xl:w-17 2xl:h-17 rounded-[100px] border border-[#262626] bg-[#1A1A1A] p-4 2xl:p-5">
+                        <img src="assets/icons/arrow-topRight.svg" alt="arrow-top-right" class="w-6 h-6 2xl:w-7 2xl:h-7 ">
+                    </div>
+                    <span class="font-medium 2xl:text-xl font-['Roboto_Mono'] uppercase text-[#B3B3B2]">View All</span>
+                </div>
+
+            </div>
+
+<!--            FAQ + Form -->
+            <div class=" flex flex-col gap-2.5 lg:flex-row lg:items-start 2xl:gap-5
+                         mb-12.5 lg:mb-20 2xl:mb-30
+                        ">
+<!--            FAQs -->
+                <article class="flex flex-col gap-2.5 2xl:gap-5
+                            lg:w-[59%]">
+<!--                    FAQ 1-->
+                    <div class="group flex
+                                rounded-[14px] lg:rounded-2xl
+                                px-7.5 py-4 lg:px-10 lg:py-7.5 2xl:px-15 2xl:py-10
+                                bg-[#1A1A1A]
+                               ">
+<!--                        CHeckbox hack -->
+                        <input id="faq1" name="faq1" type="checkbox" value="faq1" class="peer hidden " checked >
+
+<!--                        Question-->
+                        <div class="flex flex-col gap-5 lg:gap-6 2xl:gap-7.5 ">
+
+                                <h3 class=" font-medium text-[#F9EFEC]
+                                        text-lg lg:text-xl 2xl:text-[22px]
+                                        mt-5
+                                      ">
+                                    How long does it take to complete a web development project?
+                                </h3>
+
+<!--  Answer -->
+                                 <div class="max-h-0 overflow-hidden opacity-0
+                                        group-has-[:checked]:max-h-40
+                                        group-has-[:checked]:opacity-100
+                                        transition-height duration-600 ease in out ">
+
+                                <!--                        Boder -->
+                                    <div class="h-0 border border-[#1F1F1F]
+                                            mb-5 lg:mb-6 2xl:mb-7.5
+                                           "></div>
+
+                                <!--                        Description-->
+                                    <p class="text-sm lg:text-base 2xl:text-lg text-[#B3B3B2]">
+                                    The timeline varies depending on the project's complexity and requirements. Our team strives to deliver projects on time while maintaining the highest quality standards.
+                                     </p>
+                                 </div>
+                        </div>
+
+                        <!-- Minus icon  -->
+                        <label for="faq1" class="hidden peer-checked:flex
+                                        bg-[#1F1F1F] mt-4
+                                        w-10 h-10 2xl:w-13 2xl:h-13
+                                        flex items-center justify-center shrink-0
+                                        rounded-full border border-[#333333]
+                                       ">
+                            <img src="assets/icons/minus-icon.svg" alt="minus-icon" class="w-5 h-5 2xl:w-6 2xl:h-6 ">
+                        </label>
+
+<!--                        Plus icon -->
+                        <label for="faq1" class=" peer-checked:hidden
+                                        bg-[#1F1F1F] mt-4
+                                        w-10 h-10 2xl:w-13 2xl:h-13
+                                        flex items-center justify-center shrink-0
+                                        rounded-full border border-[#333333]
+                                       ">
+                            <img src="assets/icons/plus-icon.svg" alt="plus-icon" class="w-5 h-5 2xl:w-6 2xl:h-6 ">
+                        </label>
+                    </div>
+
+                    <!--                    FAQ 2-->
+                    <div class="group flex
+                                rounded-[14px] lg:rounded-2xl
+                                px-7.5 py-4 lg:px-10 lg:py-7.5 2xl:px-15 2xl:py-10
+                                bg-[#1A1A1A]
+                               ">
+                        <!--                        CHeckbox hack -->
+                        <input id="faq2" name="faq2" type="checkbox" value="faq2" class="peer hidden "  >
+
+                        <!--                        Question-->
+                        <div class="flex flex-col gap-5 lg:gap-6 2xl:gap-7.5 ">
+
+                            <h3 class=" font-medium text-[#F9EFEC]
+                                        text-lg lg:text-xl 2xl:text-[22px]
+                                        mt-5
+                                      ">
+                                Can you handle large-scale mobile app development projects?
+                            </h3>
+
+                            <!--  Answer -->
+                            <div class="max-h-0 overflow-hidden opacity-0
+                                        group-has-[:checked]:max-h-40
+                                        group-has-[:checked]:opacity-100
+                                        transition-height duration-600 ease in out ">
+
+                                <!--                        Boder -->
+                                <div class="h-0 border border-[#1F1F1F]
+                                            mb-5 lg:mb-6 2xl:mb-7.5
+                                           "></div>
+
+                                <!--                        Description-->
+                                <p class="text-sm lg:text-base 2xl:text-lg text-[#B3B3B2]">
+                                    The timeline varies depending on the project's complexity and requirements. Our team strives to deliver projects on time while maintaining the highest quality standards.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Minus icon  -->
+                        <label for="faq2" class="hidden peer-checked:flex
+                                        bg-[#1F1F1F] mt-4
+                                        w-10 h-10 2xl:w-13 2xl:h-13
+                                        flex items-center justify-center shrink-0
+                                        rounded-full border border-[#333333]
+                                       ">
+                            <img src="assets/icons/minus-icon.svg" alt="minus-icon" class="w-5 h-5 2xl:w-6 2xl:h-6 ">
+                        </label>
+
+                        <!--                        Plus icon -->
+                        <label for="faq2" class=" peer-checked:hidden
+                                        bg-[#1F1F1F] mt-4
+                                        w-10 h-10 2xl:w-13 2xl:h-13
+                                        flex items-center justify-center shrink-0
+                                        rounded-full border border-[#333333]
+                                       ">
+                            <img src="assets/icons/plus-icon.svg" alt="plus-icon" class="w-5 h-5 2xl:w-6 2xl:h-6 ">
+                        </label>
+                    </div>
+
+                    <!--                    FAQ 3-->
+                    <div class="group flex
+                                rounded-[14px] lg:rounded-2xl
+                                px-7.5 py-4 lg:px-10 lg:py-7.5 2xl:px-15 2xl:py-10
+                                bg-[#1A1A1A]
+                               ">
+                        <!--                        CHeckbox hack -->
+                        <input id="faq3" name="faq3" type="checkbox" value="faq3" class="peer hidden "  >
+
+                        <!--                        Question-->
+                        <div class="flex flex-col gap-5 lg:gap-6 2xl:gap-7.5 ">
+
+                            <h3 class=" font-medium text-[#F9EFEC]
+                                        text-lg lg:text-xl 2xl:text-[22px]
+                                        mt-5
+                                      ">
+                                Can you integrate third-party APIs into our mobile app?
+                            </h3>
+
+                            <!--  Answer -->
+                            <div class="max-h-0 overflow-hidden opacity-0
+                                        group-has-[:checked]:max-h-40
+                                        group-has-[:checked]:opacity-100
+                                        transition-height duration-600 ease in out ">
+
+                                <!--                        Boder -->
+                                <div class="h-0 border border-[#1F1F1F]
+                                            mb-5 lg:mb-6 2xl:mb-7.5
+                                           "></div>
+
+                                <!--                        Description-->
+                                <p class="text-sm lg:text-base 2xl:text-lg text-[#B3B3B2]">
+                                    The timeline varies depending on the project's complexity and requirements. Our team strives to deliver projects on time while maintaining the highest quality standards.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Minus icon  -->
+                        <label for="faq3" class="hidden peer-checked:flex
+                                        bg-[#1F1F1F] mt-4
+                                        w-10 h-10 2xl:w-13 2xl:h-13
+                                        flex items-center justify-center shrink-0
+                                        rounded-full border border-[#333333]
+                                       ">
+                            <img src="assets/icons/minus-icon.svg" alt="minus-icon" class="w-5 h-5 2xl:w-6 2xl:h-6 ">
+                        </label>
+
+                        <!--                        Plus icon -->
+                        <label for="faq3" class=" peer-checked:hidden
+                                        bg-[#1F1F1F] mt-4
+                                        w-10 h-10 2xl:w-13 2xl:h-13
+                                        flex items-center justify-center shrink-0
+                                        rounded-full border border-[#333333]
+                                       ">
+                            <img src="assets/icons/plus-icon.svg" alt="plus-icon" class="w-5 h-5 2xl:w-6 2xl:h-6 ">
+                        </label>
+                    </div>
+
+                    <!--                    FAQ 4-->
+                    <div class="group flex
+                                rounded-[14px] lg:rounded-2xl
+                                px-7.5 py-4 lg:px-10 lg:py-7.5 2xl:px-15 2xl:py-10
+                                bg-[#1A1A1A]
+                               ">
+                        <!--                        CHeckbox hack -->
+                        <input id="faq4" name="faq4" type="checkbox" value="faq4" class="peer hidden "  >
+
+                        <!--                        Question-->
+                        <div class="flex flex-col gap-5 lg:gap-6 2xl:gap-7.5 ">
+
+                            <h3 class=" font-medium text-[#F9EFEC]
+                                        text-lg lg:text-xl 2xl:text-[22px]
+                                        mt-5
+                                      ">
+                                How do you ensure cross-platform compatibility for mobile apps?
+                            </h3>
+
+                            <!--  Answer -->
+                            <div class="max-h-0 overflow-hidden opacity-0
+                                        group-has-[:checked]:max-h-40
+                                        group-has-[:checked]:opacity-100
+                                        transition-height duration-600 ease in out ">
+
+                                <!--                        Boder -->
+                                <div class="h-0 border border-[#1F1F1F]
+                                            mb-5 lg:mb-6 2xl:mb-7.5
+                                           "></div>
+
+                                <!--                        Description-->
+                                <p class="text-sm lg:text-base 2xl:text-lg text-[#B3B3B2]">
+                                    The timeline varies depending on the project's complexity and requirements. Our team strives to deliver projects on time while maintaining the highest quality standards.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Minus icon  -->
+                        <label for="faq4" class="hidden peer-checked:flex
+                                        bg-[#1F1F1F] mt-4
+                                        w-10 h-10 2xl:w-13 2xl:h-13
+                                        flex items-center justify-center shrink-0
+                                        rounded-full border border-[#333333]
+                                       ">
+                            <img src="assets/icons/minus-icon.svg" alt="minus-icon" class="w-5 h-5 2xl:w-6 2xl:h-6 ">
+                        </label>
+
+                        <!--                        Plus icon -->
+                        <label for="faq4" class=" peer-checked:hidden
+                                        bg-[#1F1F1F] mt-4
+                                        w-10 h-10 2xl:w-13 2xl:h-13
+                                        flex items-center justify-center shrink-0
+                                        rounded-full border border-[#333333]
+                                       ">
+                            <img src="assets/icons/plus-icon.svg" alt="plus-icon" class="w-5 h-5 2xl:w-6 2xl:h-6 ">
+                        </label>
+                    </div>
+
+                    <!--                    FAQ 5-->
+                    <div class="group flex
+                                rounded-[14px] lg:rounded-2xl
+                                px-7.5 py-4 lg:px-10 lg:py-7.5 2xl:px-15 2xl:py-10
+                                bg-[#1A1A1A]
+                               ">
+                        <!--                        CHeckbox hack -->
+                        <input id="faq5" name="faq5" type="checkbox" value="faq5" class="peer hidden "  >
+
+                        <!--                        Question-->
+                        <div class="flex flex-col gap-5 lg:gap-6 2xl:gap-7.5 ">
+
+                            <h3 class=" font-medium text-[#F9EFEC]
+                                        text-lg lg:text-xl 2xl:text-[22px]
+                                        mt-5
+                                      ">
+                                What is your approach to user experience (UX) design?
+                            </h3>
+
+                            <!--  Answer -->
+                            <div class="max-h-0 overflow-hidden opacity-0
+                                        group-has-[:checked]:max-h-40
+                                        group-has-[:checked]:opacity-100
+                                        transition-height duration-600 ease in out ">
+
+                                <!--                        Boder -->
+                                <div class="h-0 border border-[#1F1F1F]
+                                            mb-5 lg:mb-6 2xl:mb-7.5
+                                           "></div>
+
+                                <!--                        Description-->
+                                <p class="text-sm lg:text-base 2xl:text-lg text-[#B3B3B2]">
+                                    The timeline varies depending on the project's complexity and requirements. Our team strives to deliver projects on time while maintaining the highest quality standards.
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Minus icon  -->
+                        <label for="faq5" class="hidden peer-checked:flex
+                                        bg-[#1F1F1F] mt-4
+                                        w-10 h-10 2xl:w-13 2xl:h-13
+                                        flex items-center justify-center shrink-0
+                                        rounded-full border border-[#333333]
+                                       ">
+                            <img src="assets/icons/minus-icon.svg" alt="minus-icon" class="w-5 h-5 2xl:w-6 2xl:h-6 ">
+                        </label>
+
+                        <!--                        Plus icon -->
+                        <label for="faq5" class=" peer-checked:hidden
+                                        bg-[#1F1F1F] mt-4
+                                        w-10 h-10 2xl:w-13 2xl:h-13
+                                        flex items-center justify-center shrink-0
+                                        rounded-full border border-[#333333]
+                                       ">
+                            <img src="assets/icons/plus-icon.svg" alt="plus-icon" class="w-5 h-5 2xl:w-6 2xl:h-6 ">
+                        </label>
+                    </div>
+
+
+                </article>
+
+<!--             Form -->
+                <article class="flex flex-col gap-5 lg:gap-7.5 2xl:gap-12.5
+                                bg-[#1A1A1A]
+                                rounded-xl lg:rounded-[14px]
+                                p-7.5 lg:p-12.5 2xl:p-15
+                                shadow-[10px_10px_50px_rgba(0,98,255,0.03)]
+                                lg:w-[40%]
+                               ">
+<!--                    Title -->
+                        <h3 class="font-medium text-[#F9EFEC] uppercase
+                                   text-lg lg:text-xl 2xl:text-2xl
+                                   shadow-[10px_10px_50px_rgba(0,98,255,0.03)]
+                                   ">
+                            Ask your question
+                        </h3>
+
+<!--                    Border -->
+                    <div class="h-0 border border-[#262626]"></div>
+
+<!--                    Form -->
+                    <form class="flex flex-col gap-3.5 lg:gap-4 2xl:gap-5">
+<!--                        Name-->
+                        <div class="flex flex-col gap-2  2xl:gap-2.5">
+                            <label for="name" class="
+                                          font-medium 2xl:text-lg leading-6 uppercase text-[#F3DFD8]
+                                         ">
+                                Name
+                            </label>
+                            <input id="name" name="name" class="bg-[#0F0F0F]
+                                          rounded-lg 2xl:rounded-[10px]
+                                          p-4 lg:p-5 2xl:p-6
+                                          text-[#F9EFEC] placeholder-[#676665]  2xl:placeholder:text-lg
+                                         " placeholder="Enter your name">
+                        </div>
+
+                        <!--                        Email -->
+                        <div class="flex flex-col gap-2  2xl:gap-2.5">
+                            <label for="email" class="
+                                          font-medium 2xl:text-lg leading-6 uppercase text-[#F3DFD8]
+                                         ">
+                                Email
+                            </label>
+                            <input id="email" name="email" class="bg-[#0F0F0F]
+                                          rounded-lg 2xl:rounded-[10px]
+                                          p-4 lg:p-5 2xl:p-6
+                                          text-[#F9EFEC] placeholder-[#676665] 2xl:placeholder:text-lg
+                                         " placeholder="Enter your email">
+                        </div>
+
+                        <!--                        Your question  -->
+                        <div class="flex flex-col gap-2  2xl:gap-2.5">
+                            <label for="question" class="
+                                          font-medium 2xl:text-lg leading-6 uppercase text-[#F3DFD8]
+                                         ">
+                                Your Question
+                            </label>
+                            <textarea id="question" name="question" class="bg-[#0F0F0F]
+                                          rounded-lg 2xl:rounded-[10px]
+                                          p-4 lg:p-5 2xl:p-6
+                                          text-[#F9EFEC] placeholder-[#676665] 2xl:placeholder:text-lg"
+                                      placeholder="Enter Your Question Here ....."></textarea>
+                        </div>
+                    </form>
+
+                    <button class="bg-[#CE7D63]
+                                   rounded-lg 2xl:rounded-xl
+                                   px-5 py-3.5  2xl:px-6 2xl:py-4.5
+                                   font-medium uppercase text-[#0F0F0F]
+                                   text-sm 2xl:text-lg
+                                  ">
+                        Send Your Message
+                    </button>
+
+
+
+                </article>
+            </div>
+        </section>
+
+    </main>
+
+<!--   FOOTER SECTION -->
+    <footer>
+        <!-- Call To Action banner -->
+        <div
+                class="flex flex-col  lg:flex-row lg:justify-between
+                           gap-4 lg:gap-6 2xl:8
+                           p-7.5 lg:p-15 2xl:p-20
+                           bg-[#CE7D63]
+                           rounded-[14px] lg:rounded-2xl 2xl:rounded-[20px]
+                           mb-2.5 2xl:mb-5 "
+        >
+            <!--                CTA content -->
+            <div>
+                <!--                    Title -->
+                <h2
+                        class="text-[#0F0F0F] font-medium
+                                   uppercase leading-[150%] tracking-[0%]
+                                   text-[28px] lg:text-[42px] 2xl:text-[58px]
+                                   mb-0.5 2xl:mb-1
+                                   "
+                >
+                    Ready to Transform Your Digital Presence?
+                </h2>
+
+                <!--                    Description -->
+                <p
+                        class="text-[#262626]
+                                   text-[14px] lg:text-base 2xl:text-lg
+                                   leading-[150%] tracking-[0%] "
+                >
+                    Take the first step towards digital success with NexGen by your
+                    side. Our team of experts is eager to craft tailored solutions
+                    that drive growth for your business.
+                </p>
+            </div>
+
+            <!--                CTA button -->
+            <a href="#!"
+                    class="flex items-center justify-center lg:self-end shrink-0
+                           gap-2 2xl:gap-2.5
+                           bg-[#0F0F0F]
+                           px-6 py-3.5 2xl:px-8.5 2xl:py-4.5
+                           rounded-xl
+                           text-[#F3DFD8] uppercase font-medium
+                           text-sm lg:text-base 2xl:text-lg
+                           leading-[150%] tracking-[0%]
+                           cursor-pointer hover:bg-[#1A1A1A]">
+
+                    Get in touch
+
+                <img src="assets/icons/arrow-topRight.svg" alt="arrow top right">
+            </a>
+        </div>
+
+        <!-- CTA text -->
+        <div class="flex items-center justify-center
+                            overflow-hidden
+                            flex-nowrap
+                            mb-2.5 2xl:mb-5
+                            gap-2 2xl:gap-2.5
+                            py-3.5  lg:py-4 2xl:py-5
+                            bg-[#1A1A1A]
+                            rounded-lg lg:rounded-[10px] 2xl:rounded-xl
+                           ">
+            <ul class="flex gap-2.5 lg:gap-4 2xl:gap-5">
+                <li class="flex items-center gap-2.5 lg:gap-4 2xl:gap-5
+                           leading-[150%] tracking-[0%]
+                           font-['Roboto_Mono']
+                           text-[#676665]
+                           text-sm lg:text-base 2xl:text-xl
+                           whitespace-nowrap
+                           uppercase
+                          ">
+                    <span class="w-1.75 h-1.75 rounded-full bg-[#CE7D63]"></span>
+                    Follow Us on Social Media</li>
+
+                <li class="flex items-center gap-2.5 lg:gap-4 2xl:gap-5
+                           leading-[150%] tracking-[0%]
+                           font-['Roboto_Mono']
+                           text-[#676665]
+                           text-sm lg:text-base 2xl:text-xl
+                           whitespace-nowrap
+                           uppercase
+                          ">
+                    <span class="w-1.75 h-1.75 rounded-full bg-[#CE7D63]"></span>
+                    Follow Us on Social Media</li>
+
+                <li class="flex items-center gap-2.5 lg:gap-4 2xl:gap-5
+                           leading-[150%] tracking-[0%]
+                           font-['Roboto_Mono']
+                           text-[#676665]
+                           text-sm lg:text-base 2xl:text-xl
+                           whitespace-nowrap
+                           uppercase
+                          ">
+                    <span class="w-1.75 h-1.75 rounded-full bg-[#CE7D63]"></span>
+                    Follow Us on Social Media</li>
+
+                <li class="flex items-center gap-2.5 lg:gap-4 2xl:gap-5
+                           leading-[150%] tracking-[0%]
+                           font-['Roboto_Mono']
+                           text-[#676665]
+                           text-sm lg:text-base 2xl:text-xl
+                           whitespace-nowrap
+                           uppercase
+                          ">
+                    <span class="w-1.75 h-1.75 rounded-full bg-[#CE7D63]"></span>
+                    Follow Us on Social Media</li>
+
+                <li class="flex items-center gap-2.5 lg:gap-4 2xl:gap-5
+                           leading-[150%] tracking-[0%]
+                           font-['Roboto_Mono']
+                           text-[#676665]
+                           text-sm lg:text-base 2xl:text-xl
+                           whitespace-nowrap
+                           uppercase
+                          ">
+                    <span class="w-1.75 h-1.75 rounded-full bg-[#CE7D63]"></span>
+                    Follow Us on Social Media</li>
+
+            </ul>
+        </div>
+
+        <!-- Footer -->
+        <div
+                class="grid gap-2.5 2xl:gap-5 grid-cols-1 lg:grid-cols-10 lg:grid-rows-6 lg:gap-3"
+        >
+            <!-- Social icon on mobile -->
+            <div class="grid grid-cols-4 gap-2.5 lg:hidden">
+                <a href="#!"
+                        class="flex justify-center items-center p-3.5 bg-[#1F1F1F]
+                               border border-[#333333] rounded-[10px]
+                               cursor-pointer hover:bg-black"
+                >
+                    <img src="assets/icons/instagram.svg" alt="instagram icon">
+                </a>
+
+                <a href="#!"
+                        class="flex justify-center items-center
+                               p-3.5 bg-[#1F1F1F]
+                               border border-[#333333] rounded-[10px]
+                               cursor-pointer hover:bg-black"
+                >
+                    <img src="assets/icons/twitter.svg" alt="twitter icon">
+                </a>
+
+                <a href="#!"
+                        class="flex justify-center items-center
+                               p-3.5 bg-[#1F1F1F]
+                               border border-[#333333] rounded-[10px]
+                               cursor-pointer hover:bg-black"
+                >
+                    <img src="assets/icons/dribbble.svg" alt="dribble icon">
+                </a>
+
+                <a href="#!"
+                        class="flex justify-center items-center
+                               p-3.5 bg-[#1F1F1F]
+                               border border-[#333333] rounded-[10px]
+                               cursor-pointer hover:bg-black"
+                >
+                    <img src="assets/icons/behance.svg" alt="behance icon">
+                </a>
+                
+
+            </div>
+
+            <!-- Social icon on desktop -->
+            <div
+                    class="hidden lg:grid col-span-4 row-span-6 grid-rows-2 grid-cols-2 gap-2.5"
+            >
+                <!-- Card 1 -->
+                <div
+                        class="flex flex-col lg:p-7.5 2xl:p-10 justify-between
+                               lg:gap-15 2xl:gap-20
+                               lg:rounded-[10px] 2xl:rounded-[14px] bg-[#1A1A1A]"
+                >
+                    <!--   Icon card -->
+                    <div class="flex justify-between">
+                        <!-- Icon brand -->
+                        <a href="#!"
+                                class="bg-[#1F1F1F]
+                                       w-14 h-14 2xl:w-16.5 2xl:h-16.5
+                                       rounded-[10px] 2xl:rounded-xl
+                                       p-3.5 2xl:p-4
+                                       border border-[#333333]
+                                       cursor-pointer hover:bg-black
+                                      "
+                        >
+                            <img src="assets/icons/instagram.svg" alt="instagram icon" class="w-6 h-6 2xl:w-8.5 2xl:h-8.5">
+                        </a>
+                        <!-- -topRight arrow -->
+                        <a href="#!"
+                                class="
+                                       w-10 h-10 2xl:w-13 2xl:h-13
+                                       p-2.5 2xl:p-3.5 cursor-pointer hover:bg-black
+                                       bg-[#1F1F1F] border border-[#333333] rounded-full"
+                        >
+                            <img src="assets/icons/arrow-topRight.svg" alt="arrow-topRight" class="w-5 h-5 2xl:w-6 2xl:h-6" />
+
+                        </a>
+                    </div>
+
+                    <!-- Content card -->
+                    <div >
+                        <h3
+                                class="text-[#F9EFEC] uppercase font-medium text-[22px]
+                                mb-2.5 2xl:mb-3
+                                leading-[150%] tracking-[0%] 2xl:text-3xl"
+                        >
+                            Instagram
+                        </h3>
+                        <p
+                                class="text-[#B3B3B2]  leading-[150%] tracking-[0%] 2xl:text-lg"
+                        >
+                            Share visually appealing snippets of our latest web
+                            projects.
+                        </p>
+                    </div>
+                </div>
+
+
+
+                <!-- Card 2 -->
+                <div
+                        class="flex flex-col lg:p-7.5 2xl:p-10 justify-between
+                               lg:gap-15 2xl:gap-20
+                               lg:rounded-[10px] 2xl:rounded-[14px] bg-[#1A1A1A]"
+                >
+                    <!-- Title card -->
+                    <div class="flex justify-between">
+                        <!-- Icon brand -->
+                        <a href="#!"
+                           class="bg-[#1F1F1F]
+                                       w-14 h-14 2xl:w-16.5 2xl:h-16.5
+                                       rounded-[10px] 2xl:rounded-xl
+                                       p-3.5 2xl:p-4
+                                       border border-[#333333]
+                                       cursor-pointer hover:bg-black
+                                      "
+                        >
+                            <img src="assets/icons/twitter.svg" alt="twitter icon" class="w-6 h-6 2xl:w-8.5 2xl:h-8.5">
+                        </a>
+                        <!-- -topRight arrow -->
+                        <a href="#!"
+                           class="
+                                       w-10 h-10 2xl:w-13 2xl:h-13
+                                       p-2.5 2xl:p-3.5 cursor-pointer hover:bg-black
+                                       bg-[#1F1F1F] border border-[#333333] rounded-full"
+                        >
+                            <img src="assets/icons/arrow-topRight.svg" alt="arrow-topRight" class="w-5 h-5 2xl:w-6 2xl:h-6" />
+
+                        </a>
+                    </div>
+                    <!-- Content card -->
+                    <div >
+                        <h3
+                                class="text-[#F9EFEC] uppercase font-medium text-[22px]
+                                mb-2.5 2xl:mb-3
+                                leading-[150%] tracking-[0%] 2xl:text-3xl"
+                        >
+                            Twitter
+                        </h3>
+                        <p
+                                class="text-[#B3B3B2]  leading-[150%] tracking-[0%] 2xl:text-lg"
+                        >
+                            Tweet about interesting coding challenges
+                        </p>
+                    </div>
+                </div>
+                <!-- end Card2  -->
+                <!-- Card 3 -->
+                <div
+                        class="flex flex-col lg:p-7.5 2xl:p-10 justify-between
+                               lg:gap-15 2xl:gap-20
+                               lg:rounded-[10px] 2xl:rounded-[14px] bg-[#1A1A1A]"
+                >
+                    <!-- Title card -->
+                    <div class="flex justify-between">
+                        <!-- Icon brand -->
+                        <a href="#!"
+                           class="bg-[#1F1F1F]
+                                       w-14 h-14 2xl:w-16.5 2xl:h-16.5
+                                       rounded-[10px] 2xl:rounded-xl
+                                       p-3.5 2xl:p-4
+                                       border border-[#333333]
+                                       cursor-pointer hover:bg-black
+                                      "
+                        >
+                            <img src="assets/icons/dribbble.svg" alt="dribbble icon" class="w-6 h-6 2xl:w-8.5 2xl:h-8.5">
+                        </a>
+                        <!-- -topRight arrow -->
+                        <a href="#!"
+                           class="
+                                       w-10 h-10 2xl:w-13 2xl:h-13
+                                       p-2.5 2xl:p-3.5 cursor-pointer hover:bg-black
+                                       bg-[#1F1F1F] border border-[#333333] rounded-full"
+                        >
+                            <img src="assets/icons/arrow-topRight.svg" alt="arrow-topRight" class="w-5 h-5 2xl:w-6 2xl:h-6" />
+
+                        </a>
+                    </div>
+                    <!-- Content card -->
+                    <div >
+                        <h3
+                                class="text-[#F9EFEC] uppercase font-medium text-[22px]
+                                mb-2.5 2xl:mb-3
+                                leading-[150%] tracking-[0%] 2xl:text-3xl"
+                        >
+                            Dribbble
+                        </h3>
+                        <p
+                                class="text-[#B3B3B2]  leading-[150%] tracking-[0%] 2xl:text-lg"
+                        >
+                            Showcase design elements of our web projects.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div
+                        class="flex flex-col lg:p-7.5 2xl:p-10 justify-between
+                               lg:gap-15 2xl:gap-20
+                               lg:rounded-[10px] 2xl:rounded-[14px] bg-[#1A1A1A]"
+                >
+                    <!-- Title card -->
+                    <div class="flex justify-between">
+                        <!-- Icon brand -->
+                        <a href="#!"
+                           class="bg-[#1F1F1F]
+                                       w-14 h-14 2xl:w-16.5 2xl:h-16.5
+                                       rounded-[10px] 2xl:rounded-xl
+                                       p-3.5 2xl:p-4
+                                       border border-[#333333]
+                                       cursor-pointer hover:bg-black
+                                      "
+                        >
+                            <img src="assets/icons/behance.svg" alt="behance icon" class="w-6 h-6 2xl:w-8.5 2xl:h-8.5">
+                        </a>
+                        <!-- -topRight arrow -->
+                        <a href="#!"
+                           class="
+                                       w-10 h-10 2xl:w-13 2xl:h-13
+                                       p-2.5 2xl:p-3.5 cursor-pointer hover:bg-black
+                                       bg-[#1F1F1F] border border-[#333333] rounded-full"
+                        >
+                            <img src="assets/icons/arrow-topRight.svg" alt="arrow-topRight" class="w-5 h-5 2xl:w-6 2xl:h-6" />
+
+                        </a>
+                    </div>
+                    <!-- Content card -->
+                    <div>
+                        <h3
+                                class="text-[#F9EFEC] uppercase font-medium text-[22px]
+                                mb-2.5 2xl:mb-3
+                                leading-[150%] tracking-[0%] 2xl:text-3xl"
+                        >
+                            Behance
+                        </h3>
+                        <p
+                                class="text-[#B3B3B2]  leading-[150%] tracking-[0%] 2xl:text-lg"
+                        >
+                            Create detailed presentations for our projects.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Footer content -->
+            <div
+                    class="grid grid-cols-1 gap-2.5 2xl:gap-5 lg:col-span-6 lg:row-span-6   lg:gap-3  "
+            >
+                <!-- Footer link -->
+                <div
+                        class="grid grid-cols-2 grid-rows-2
+                               lg:grid-cols-4 lg:grid-rows-1
+                               gap-7.5 lg:gap-10 2xl:gap-15
+                               rounded-[14px] lg:rounded-2xl 2xl:rounded-[20px]
+                               p-6 lg:p-10 2xl:p-15
+                               bg-[#1A1A1A]
+                               "
+                >
+                    <!-- Home link -->
+                    <div class=" flex flex-col gap-4 lg:gap-5 2xl:gap-7.5 ">
+                        <h3 class="text-[#F3DFD8] font-['Roboto_Mono'] font-bold
+                                   text-lg  lg:text-[22px]
+                                   leading-[100%] tracking-[0%]">
+                            Home
+                        </h3>
+                        <ul class="flex flex-col gap-4 lg:gap-5 2xl:gap-7.5">
+                            <li
+                                    class="text-sm lg:text-base 2xl:text-lg
+                                           leading-[150%] tracking-[0%] text-[#81807E]
+                                           "
+                            >
+                                <a href="#!"> Why Us</a>
+                            </li>
+                            <li
+                                    class="text-sm lg:text-base 2xl:text-lg
+                                           leading-[150%] tracking-[0%] text-[#81807E]
+                                           "
+                            >
+                                <a href="#!">About Us</a>
+                            </li>
+                            <li
+                                    class="text-sm lg:text-base 2xl:text-lg
+                                           leading-[150%] tracking-[0%] text-[#81807E]
+                                           "
+                            >
+                                <a href="#!">Testimonials</a>
+                            </li>
+                            <li
+                                    class="text-sm lg:text-base 2xl:text-lg
+                                           leading-[150%] tracking-[0%] text-[#81807E]
+                                           "
+                            >
+                                <a href="#!">FAQ's</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Service link -->
+                     <div class=" flex flex-col gap-4 lg:gap-5 2xl:gap-7.5 ">
+                        <h3 class="text-[#F3DFD8] font-['Roboto_Mono'] font-bold
+                                   text-lg  lg:text-[22px]
+                                   leading-[100%] tracking-[0%]">
+                            Services
+                        </h3>
+                        <ul class="flex flex-col gap-4 lg:gap-5 2xl:gap-7.5">
+                            <li
+                                    class="text-sm lg:text-base 2xl:text-lg
+                                           leading-[150%] tracking-[0%] text-[#81807E]
+                                           "
+                            >
+                                <a href="#!"> Web Development </a>
+                            </li>
+                            <li
+                                    class="text-sm lg:text-base 2xl:text-lg
+                                           leading-[150%] tracking-[0%] text-[#81807E]
+                                           "
+                            >
+                                <a href="#!"> App Development </a>
+                            </li>
+                            <li
+                                    class="text-sm lg:text-base 2xl:text-lg
+                                           leading-[150%] tracking-[0%] text-[#81807E]
+                                           "
+                            >
+                                <a href="#!"> Web Design </a>
+                            </li>
+                            <li
+                                    class="text-sm lg:text-base 2xl:text-lg
+                                           leading-[150%] tracking-[0%] text-[#81807E]
+                                           "
+                            >
+                                <a href="#!">Digital Marketing </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Projects link -->
+                    <div class=" flex flex-col gap-4 lg:gap-5 2xl:gap-7.5 ">
+                        <h3 class="text-[#F3DFD8] font-['Roboto_Mono'] font-bold
+                                   text-lg  lg:text-[22px]
+                                   leading-[100%] tracking-[0%]">
+                            Projects
+                        </h3>
+                        <ul class="flex flex-col gap-4 lg:gap-5 2xl:gap-7.5">
+                            <li
+                                    class="text-sm lg:text-base 2xl:text-lg
+                                           leading-[150%] tracking-[0%] text-[#81807E]
+                                           "
+                            >
+                                <a href="#!">Klothink </a>
+                            </li>
+                            <li
+                                    class="text-sm lg:text-base 2xl:text-lg
+                                           leading-[150%] tracking-[0%] text-[#81807E]
+                                           "
+                            >
+                                <a href="#!"> Zenith</a>
+                            </li>
+                            <li
+                                    class="text-sm lg:text-base 2xl:text-lg
+                                           leading-[150%] tracking-[0%] text-[#81807E]
+                                           "
+                            >
+                                <a href="#!"> Novus</a>
+                            </li>
+                            <li
+                                    class="text-sm lg:text-base 2xl:text-lg
+                                           leading-[150%] tracking-[0%] text-[#81807E]
+                                           "
+                            >
+                                <a href="#!"> Apex</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Blogs link -->
+                     <div class=" flex flex-col gap-4 lg:gap-5 2xl:gap-7.5 ">
+                        <h3 class="text-[#F3DFD8] font-['Roboto_Mono'] font-bold
+                                   text-lg  lg:text-[22px]
+                                   leading-[100%] tracking-[0%]">
+                            Blogs
+                        </h3>
+                        <ul class="flex flex-col gap-4 lg:gap-5 2xl:gap-7.5">
+                            <li
+                                    class="text-sm lg:text-base 2xl:text-lg
+                                           leading-[150%] tracking-[0%] text-[#81807E]
+                                           "
+                            >
+                                <a href="#!"> Business </a>
+                            </li>
+                            <li
+                                    class="flex items-center gap-2 text-sm text-[#81807E] lg:text-base 2xl:text-lg"
+                            >
+                                <a href="#!">Design </a>
+                                <span
+                                        class="px-2.5 py-1 2xl:px-3
+                                        bg-[#262626] border-[#333333] border rounded-md"
+                                >Soon</span
+                                >
+                            </li>
+                            <li
+                                    class="flex  items-center gap-2 text-sm text-[#81807E] lg:text-base 2xl:text-lg"
+                            >
+                                <a href="#!">Development</a>
+                                <span
+                                        class="px-3 py-1 2xl:px-3
+                                        bg-[#262626] border-[#333333] border rounded-md"
+                                >Soon</span
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Newsletter -->
+                <div
+                        class="flex flex-col gap-4 2xl:gap-5
+                               lg:flex-row lg:items-center lg:justify-between
+                               bg-[#1A1A1A]
+                               rounded-[14px] lg:rounded-2xl
+                               p-6 lg:p-10 2xl:p-12.5
+                               "
+                >
+                    <!-- Title -->
+                    <div class="flex flex-col gap-1 lg:gap-2 2xl:gap-2.5">
+                        <span
+                                class=" font-['Roboto_Mono'] text-[#676665]
+                                        text-sm  lg:text-base 2xl:text-lg
+                                        leading-[150%] tracking-[0%] uppercase
+                                      "
+                        >
+                            Newsletter
+                        </span>
+                        <h3
+                                class="font-medium text-[#F9EFEC]
+                                       text-xl lg:text-2xl 2xl:text-3xl
+                                       leading-[150%] tracking-[0%] uppercase
+                                      "
+                        >
+                            Subscribe To our Newsletter
+                        </h3>
+                    </div>
+
+                    <!-- Input -->
+                    <form class="flex items-end gap-2 lg:gap-2.5 2xl:gap-5">
+
+                        <input
+                                type="email"
+                                placeholder="Enter your email"
+                                class="placeholder-[#676665] placeholder:text-sm lg:placeholder:text-base 2xl:placeholder:text-lg
+                                       px-4 py-3.5 2xl:px-5 2xl:py-4.5
+                                       border-b border-[#333333] text-[#F9EFEC]  "
+                        />
+
+                        <button type="submit"
+                                class="
+                                       w-10 h-10 2xl:w-13 2xl:h-13
+                                       p-2.5 2xl:p-3.5
+                                       bg-[#1F1F1F] border border-[#333333] rounded-full"
+                        >
+                            <img src="assets/icons/arrow-topRight.svg" alt="arrow-topRight" class="w-5 h-5 2xl:w-6 2xl:h-6" />
+
+
+                        </button>
+
+                    </form>
+
+                </div>
+
+                <!-- Footer bottom -->
+                <div
+                        class="flex flex-col gap-5
+                               lg:flex-row lg:justify-between items-center
+                               p-6 lg:p-10 2xl:p-12.5
+                               rounded-[14px] lg:rounded-2xl
+                               bg-[#1A1A1A]
+                               text-[#B3B3B2]"
+                >
+                    <p class="text-sm lg:text-lg
+                              font-['Roboto_Mono'] leading-[150%] tracking-[0%]">
+                        © 2024 NextGen. All rights reserved.
+                    </p>
+
+                    <div class="flex flex-col gap-5 text-center lg:flex-row lg:gap-4 2xl:gap-5.5">
+                        <p class="text-sm 2xl:text-lg font-['Roboto_Mono'] leading-[150%] tracking-[0%]">Terms & Conditions</p>
+
+                        <div class=" w-full border border-[#232329] lg:hidden  "></div>
+
+                        <p class="text-sm lg:text-lg
+                              font-['Roboto_Mono'] leading-[150%] tracking-[0%]">
+                            Privacy Policy
+                        </p>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </footer>
+
+</div>
+
+</body>
+</html>

@@ -247,21 +247,24 @@
         </label>
 
         <!-- ======== HERO =========== -->
-        <section class="mt-5 mb-4">
+        <!--    1.Hero section    -->
+        <section class="mt-5 mb-4 lg:mt-[42px] 2xl:mb-5">
             <div
-                class="max-w-[calc(100%-32px)] mx-auto lg:max-w-[calc(100%-80px)]"
+                class="max-w-[calc(100%-32px)] mx-auto lg:max-w-[calc(100%-80px)] 2xl:max-w-[calc(100%-100px)]"
             >
-                <div class="grid grid-cols-1 lg:grid-cols-12 gap-5">
+                <!-- Wrapper 2 cột -->
+
+                <div
+                    class="flex flex-col lg:flex-row lg:gap-4 2xl:gap-5 lg:items-stretch"
+                >
                     <!-- HERO LEFT CARD -->
                     <div
-                        class="lg:col-span-8 p-6 lg:p-15 rounded-2xl bg-[#1A1A1A] flex flex-col justify-between"
+                        class="pt-[30px] lg:pt-20 2xl:pt-25 pb-4 px-4 lg:px-15 2lx:px-20 lg:flex-1 lg:min-w-0 rounded-xl lg:rounded-2xl 2xl:rounded-[20px] bg-[#1A1A1A] flex flex-col justify-between"
                     >
-                        <div class="mb-[78px]">
-                            <div
-                                class="flex items-center gap-4 pt-4 lg:pt-10 mb-2"
-                            >
+                        <div>
+                            <div class="flex items-center gap-4 mb-2">
                                 <h2
-                                    class="font-['Roboto_Flex'] font-semibold text-[#F9EFEC] text-[28px] leading-tight uppercase lg:text-[52px] xl:text-[60px]"
+                                    class="font-['Roboto_Flex'] font-semibold text-[#F9EFEC] text-[25px] leading-tight uppercase lg:text-[50px] 2xl:text-[60px]"
                                 >
                                     DIGITAL SOLUTIONS
                                 </h2>
@@ -269,13 +272,13 @@
                                     <img
                                         src="assets/icon/CTA btn.svg"
                                         alt="CTA"
-                                        class="h-[50px] xl:h-[60px] w-auto"
+                                        class="lg:w-[228px] 2xl:w-[255px] h-[50px] 2xl:h-[60px] w-auto"
                                     />
                                 </div>
                             </div>
 
                             <h2
-                                class="font-['Roboto_Flex'] font-semibold text-[#F9EFEC] text-[28px] leading-tight uppercase lg:text-[52px] xl:text-[60px] mb-6"
+                                class="font-['Roboto_Flex'] font-semibold text-[#F9EFEC] text-[28px] leading-tight uppercase lg:text-[50px] 2xl:text-[60px] mb-6"
                             >
                                 THAT DRIVE SUCCESS
                             </h2>
@@ -289,7 +292,7 @@
                             </div>
 
                             <p
-                                class="font-['Roboto_Flex'] font-normal text-[#98989A] text-[14px] leading-relaxed max-w-[90%]"
+                                class="font-['Roboto_Flex'] font-normal text-[#98989A] text-sm lg:text-base 2xl:text-xl"
                             >
                                 At NexGen, we believe in the transformative
                                 power of digital solutions. Our team of experts
@@ -374,25 +377,29 @@
                         </div>
                     </div>
 
-                    <!-- HERO RIGHT CARD -->
-
+                    <!--  1-2. Hero right column (cột phải: ảnh + text) -->
                     <div
-                        class="hidden lg:flex lg:col-span-4 flex-col bg-[#1A1A1A] rounded-2xl"
+                        class="hidden lg:flex lg:flex-col lg:w-[452px] 2xl:w-[452px] lg:shrink-0 lg:rounded-2xl 2xl:rounded-[20px] overflow-hidden bg-[#1A1A1A]"
                     >
-                        <div
-                            class="relative overflow-hidden rounded-xl flex-grow"
-                        >
+                        <!-- Ảnh chiếm phần lớn -->
+                        <div class="flex-1 overflow-hidden">
                             <img
-                                src="assets/img/Estatein.png"
-                                alt="Estatein"
-                                class="w-full h-[368px] object-cover"
+                                src="assets/img/Hero Right.png"
+                                alt="hero-image"
+                                class="w-full h-full object-cover"
                             />
                         </div>
-                        <div class="p-6">
-                            <h4 class="text-[#F9EFEC] text-lg font-medium">
+
+                        <!-- Text phía dưới -->
+                        <div class="px-6 py-5 2xl:px-8 2xl:py-6 shrink-0">
+                            <p
+                                class="text-[#F9EFEC] font-semibold text-base 2xl:text-lg uppercase tracking-wide"
+                            >
                                 ESTATEIN REAL ESTATE
-                            </h4>
-                            <p class="text-[#676665] text-sm mt-1">
+                            </p>
+                            <p
+                                class="text-[#676665] text-sm 2xl:text-base mt-1"
+                            >
                                 Web Development.
                             </p>
                         </div>
@@ -405,7 +412,7 @@
 
         <section class="mb-[50px]">
             <div
-                class="max-w-[calc(100%-32px)] mx-auto lg:max-w-[calc(100%-80px)]"
+                class="max-w-[calc(100%-32px)] mx-auto lg:max-w-[calc(100%-80px)] 2xl:max-w-[calc(100%-100px)] 2xl:max-w-[calc(100%-100px)]"
             >
                 <div
                     class="border-solid border-[2px] border-[#1F1F1F] rounded-2xl"
@@ -520,7 +527,7 @@
 
         <section class="mb-[50px]">
             <div
-                class="max-w-[calc(100%-32px)] mx-auto lg:max-w-[calc(100%-80px)]"
+                class="max-w-[calc(100%-32px)] mx-auto lg:max-w-[calc(100%-80px)] 2xl:max-w-[calc(100%-100px)]"
             >
                 <div
                     class="border-solid border-[2px] border-[#1F1F1F] rounded-2xl"
@@ -730,7 +737,7 @@
 
         <section class="mb-[50px]">
             <div
-                class="max-w-[calc(100%-32px)] mx-auto lg:max-w-[calc(100%-80px)]"
+                class="max-w-[calc(100%-32px)] mx-auto lg:max-w-[calc(100%-80px)] 2xl:max-w-[calc(100%-100px)]"
             >
                 <div
                     class="border-solid border-[2px] border-[#1F1F1F] rounded-2xl"
@@ -1070,7 +1077,7 @@
         <!-- ─── Our Works ─── -->
         <section class="mb-[50px]">
             <div
-                class="max-w-[calc(100%-32px)] mx-auto lg:max-w-[calc(100%-80px)]"
+                class="max-w-[calc(100%-32px)] mx-auto lg:max-w-[calc(100%-80px)] 2xl:max-w-[calc(100%-100px)]"
             >
                 <!-- Input nằm ngoài cùng -->
                 <input type="checkbox" id="toggle-works" class="hidden" />
@@ -1093,11 +1100,11 @@
                             <div class="flex-shrink-0" aria-hidden="true">
                                 <img
                                     src="assets/icon/Arrow button.png"
-                                    alt=""
+                                    alt="Arow icon"
                                 />
                             </div>
                             <span
-                                class="font-['Roboto_Flex'] font-normal text-base text-[#B3B3B2] leading-[150%] uppercase"
+                                class="font-['Roboto_Mono'] font-normal text-base text-[#B3B3B2] leading-[150%] uppercase"
                             >
                                 ALL Works
                             </span>
@@ -1140,53 +1147,25 @@
                                         </h3>
 
                                         <!-- Button desktop -->
+
                                         <button
-                                            class="ml-auto hidden lg:flex items-center gap-2 px-4 py-1 border border-[#333333] rounded-full group transition"
-                                        >
-                                            <span
-                                                class="w-10 h-10 flex items-center justify-center rounded-full border border-[#333333] text-[#E7BEB1] group-hover:bg-[#CE7D63] transition"
-                                            >
-                                                <svg
-                                                    width="14"
-                                                    height="14"
-                                                    viewBox="0 0 14 14"
-                                                    fill="none"
-                                                    xmlns="http://www.w3.org/2000/svg"
-                                                >
-                                                    <path
-                                                        fill-rule="evenodd"
-                                                        clip-rule="evenodd"
-                                                        d="M3.75 4.09782e-07L13.125 0C13.2908 0 13.4497 0.065848 13.5669 0.183058C13.6842 0.300269 13.75 0.45924 13.75 0.625V10C13.75 10.3452 13.4702 10.625 13.125 10.625C12.7798 10.625 12.5 10.3452 12.5 10V2.13388L1.06694 13.5669C0.822864 13.811 0.427136 13.811 0.183058 13.5669C-0.0610194 13.3229 -0.0610194 12.9271 0.183058 12.6831L11.6161 1.25L3.75 1.25C3.40482 1.25 3.125 0.970178 3.125 0.625C3.125 0.279822 3.40482 4.09782e-07 3.75 4.09782e-07Z"
-                                                        fill="#E7BEB1"
-                                                    />
-                                                </svg>
-                                            </span>
-
-                                            <span
-                                                class="text-xs uppercase font-medium text-[#B3B3B2]"
-                                            >
-                                                Details
-                                            </span>
-                                        </button>
-
-                                        <!-- <button
-                                            class="ml-auto hidden lg:flex items-center px-4 py-1 mt-6 gap-2 group cursor-pointer transition-opacity hover:opacity-80"
+                                            class="hidden ml-auto lg:flex items-center px-4 py-1 gap-2 group cursor-pointer transition-opacity hover:opacity-80"
                                         >
                                             <div
                                                 class="w-10 h-10 border border-[#333333] bg-[#1F1F1F] rounded-full flex items-center justify-center cursor-pointer hover:bg-[#333333] transition-colors"
                                                 aria-hidden="true"
                                             >
                                                 <svg
-                                                    width="14"
-                                                    height="14"
-                                                    viewBox="0 0 14 14"
+                                                    width="20"
+                                                    height="20"
+                                                    viewBox="0 0 20 20"
                                                     fill="none"
                                                     xmlns="http://www.w3.org/2000/svg"
                                                 >
                                                     <path
                                                         fill-rule="evenodd"
                                                         clip-rule="evenodd"
-                                                        d="M3.75 4.09782e-07L13.125 0C13.2908 0 13.4497 0.065848 13.5669 0.183058C13.6842 0.300269 13.75 0.45924 13.75 0.625V10C13.75 10.3452 13.4702 10.625 13.125 10.625C12.7798 10.625 12.5 10.3452 12.5 10V2.13388L1.06694 13.5669C0.822864 13.811 0.427136 13.811 0.183058 13.5669C-0.0610194 13.3229 -0.0610194 12.9271 0.183058 12.6831L11.6161 1.25L3.75 1.25C3.40482 1.25 3.125 0.970178 3.125 0.625C3.125 0.279822 3.40482 4.09782e-07 3.75 4.09782e-07Z"
+                                                        d="M6.875 3.125L16.25 3.125C16.4158 3.125 16.5747 3.19085 16.6919 3.30806C16.8092 3.42527 16.875 3.58424 16.875 3.75V13.125C16.875 13.4702 16.5952 13.75 16.25 13.75C15.9048 13.75 15.625 13.4702 15.625 13.125V5.25888L4.19194 16.6919C3.94786 16.936 3.55214 16.936 3.30806 16.6919C3.06398 16.4479 3.06398 16.0521 3.30806 15.8081L14.7411 4.375L6.875 4.375C6.52982 4.375 6.25 4.09518 6.25 3.75C6.25 3.40482 6.52982 3.125 6.875 3.125Z"
                                                         fill="#E7BEB1"
                                                     />
                                                 </svg>
@@ -1197,7 +1176,7 @@
                                             >
                                                 Details
                                             </span>
-                                        </button> -->
+                                        </button>
                                     </div>
                                     <div class="flex flex-col gap-2 mb-4">
                                         <div
@@ -1274,32 +1253,32 @@
                                 class="flex-1 hidden lg:flex flex-col gap-[10px] order-3"
                             >
                                 <div
-                                    class="bg-[#1A1A1A] rounded-[10px] p-6 flex-1"
+                                    class="bg-[#1A1A1A] rounded-[10px] p-[30px] flex-1"
                                 >
                                     <h4
-                                        class="text-[#B3B3B2] text-xs uppercase mb-4"
+                                        class="font-['Roboto_Flex'] text-[#FFFFFF] text-lg uppercase mb-4"
                                     >
                                         Technologies Used
                                     </h4>
                                     <div class="flex flex-wrap gap-2">
                                         <span
-                                            class="bg-[#1F1F1F] px-3 py-2 rounded-lg text-xs text-[#E6E6E6]"
+                                            class="font-['Roboto_Mono'] bg-[#1F1F1F] px-[14px] py-2 rounded-[45px] text-base text-[#E6E6E6]"
                                             >React Native</span
                                         >
                                         <span
-                                            class="bg-[#1F1F1F] px-3 py-2 rounded-lg text-xs text-[#E6E6E6]"
+                                            class="font-['Roboto_Mono'] bg-[#1F1F1F] px-[14px] py-2 rounded-[45px] text-base text-[#E6E6E6]"
                                             >Firebase</span
                                         >
                                         <span
-                                            class="bg-[#1F1F1F] px-3 py-2 rounded-lg text-xs text-[#E6E6E6]"
+                                            class="font-['Roboto_Mono'] bg-[#1F1F1F] px-[14px] py-2 rounded-[45px] text-base text-[#E6E6E6]"
                                             >Redux</span
                                         >
                                         <span
-                                            class="bg-[#1F1F1F] px-3 py-2 rounded-lg text-xs text-[#E6E6E6]"
+                                            class="font-['Roboto_Mono'] bg-[#1F1F1F] px-[14px] py-2 rounded-[45px] text-base text-[#E6E6E6]"
                                             >REST API</span
                                         >
                                         <span
-                                            class="bg-[#1F1F1F] px-3 py-2 rounded-lg text-xs text-[#E6E6E6]"
+                                            class="font-['Roboto_Mono'] bg-[#1F1F1F] px-[14px] py-2 rounded-[45px] text-base text-[#E6E6E6]"
                                             >MongoDB</span
                                         >
                                     </div>
@@ -1312,21 +1291,31 @@
                                     >
                                         Team Members
                                     </h4>
-                                    <div class="flex -space-x-2">
+                                    <div class="flex lg:gap-2 2xl:gap-[10px]">
                                         <img
-                                            class="w-8 h-8 rounded-full border-2 border-[#1A1A1A]"
-                                            src="https://i.pravatar.cc/100?u=1"
-                                            alt=""
+                                            class="w-[40px] h-[40px]"
+                                            src="/assets/img/team ava 1.png"
+                                            alt="Team avatar"
                                         />
                                         <img
-                                            class="w-8 h-8 rounded-full border-2 border-[#1A1A1A]"
-                                            src="https://i.pravatar.cc/100?u=2"
-                                            alt=""
+                                            class="w-[40px] h-[40px]"
+                                            src="/assets/img/team ava 2.png"
+                                            alt="Team avatar"
                                         />
                                         <img
-                                            class="w-8 h-8 rounded-full border-2 border-[#1A1A1A]"
-                                            src="https://i.pravatar.cc/100?u=3"
-                                            alt=""
+                                            class="w-[40px] h-[40px]"
+                                            src="/assets/img/team ava 3.png"
+                                            alt="Team avatar"
+                                        />
+                                        <img
+                                            class="w-[40px] h-[40px]"
+                                            src="/assets/img/team ava 4.png"
+                                            alt="Team avatar"
+                                        />
+                                        <img
+                                            class="w-[40px] h-[40px]"
+                                            src="/assets/img/team ava 5.png"
+                                            alt="Team avatar"
                                         />
                                     </div>
                                 </div>
@@ -1378,18 +1367,35 @@
                                         </h3>
 
                                         <!-- Button desktop -->
+
                                         <button
-                                            class="ml-auto lg:flex hidden items-center gap-2 border border-[#333333] rounded-full px-4 py-1"
+                                            class="hidden ml-auto lg:flex items-center px-4 py-1 gap-2 group cursor-pointer transition-opacity hover:opacity-80"
                                         >
-                                            <span
-                                                class="text-xs text-[#B3B3B2] uppercase font-medium"
-                                                >Details</span
+                                            <div
+                                                class="w-10 h-10 border border-[#333333] bg-[#1F1F1F] rounded-full flex items-center justify-center cursor-pointer hover:bg-[#333333] transition-colors"
+                                                aria-hidden="true"
                                             >
-                                            <img
-                                                src="assets/icon/arrow icon.svg"
-                                                class="w-3 h-3 rotate-[-45deg]"
-                                                alt="Arrow icon"
-                                            />
+                                                <svg
+                                                    width="20"
+                                                    height="20"
+                                                    viewBox="0 0 20 20"
+                                                    fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg"
+                                                >
+                                                    <path
+                                                        fill-rule="evenodd"
+                                                        clip-rule="evenodd"
+                                                        d="M6.875 3.125L16.25 3.125C16.4158 3.125 16.5747 3.19085 16.6919 3.30806C16.8092 3.42527 16.875 3.58424 16.875 3.75V13.125C16.875 13.4702 16.5952 13.75 16.25 13.75C15.9048 13.75 15.625 13.4702 15.625 13.125V5.25888L4.19194 16.6919C3.94786 16.936 3.55214 16.936 3.30806 16.6919C3.06398 16.4479 3.06398 16.0521 3.30806 15.8081L14.7411 4.375L6.875 4.375C6.52982 4.375 6.25 4.09518 6.25 3.75C6.25 3.40482 6.52982 3.125 6.875 3.125Z"
+                                                        fill="#E7BEB1"
+                                                    />
+                                                </svg>
+                                            </div>
+
+                                            <span
+                                                class="font-['Roboto_Mono'] font-normal text-base text-[#B3B3B2] leading-[150%] uppercase"
+                                            >
+                                                Details
+                                            </span>
                                         </button>
                                     </div>
                                     <div class="flex flex-col gap-2 mb-4">
@@ -1469,29 +1475,29 @@
                                     class="bg-[#1A1A1A] rounded-[10px] p-6 flex-1"
                                 >
                                     <h4
-                                        class="text-[#B3B3B2] text-xs uppercase mb-4"
+                                        class="font-['Roboto_Flex'] text-[#FFFFFF] text-lg uppercase mb-4"
                                     >
                                         Technologies Used
                                     </h4>
                                     <div class="flex flex-wrap gap-2">
                                         <span
-                                            class="bg-[#1F1F1F] px-3 py-2 rounded-lg text-xs text-[#E6E6E6]"
+                                            class="font-['Roboto_Mono'] bg-[#1F1F1F] px-[14px] py-2 rounded-[45px] text-base text-[#E6E6E6]"
                                             >React Native</span
                                         >
                                         <span
-                                            class="bg-[#1F1F1F] px-3 py-2 rounded-lg text-xs text-[#E6E6E6]"
+                                            class="font-['Roboto_Mono'] bg-[#1F1F1F] px-[14px] py-2 rounded-[45px] text-base text-[#E6E6E6]"
                                             >Firebase</span
                                         >
                                         <span
-                                            class="bg-[#1F1F1F] px-3 py-2 rounded-lg text-xs text-[#E6E6E6]"
+                                            class="font-['Roboto_Mono'] bg-[#1F1F1F] px-[14px] py-2 rounded-[45px] text-base text-[#E6E6E6]"
                                             >Redux</span
                                         >
                                         <span
-                                            class="bg-[#1F1F1F] px-3 py-2 rounded-lg text-xs text-[#E6E6E6]"
+                                            class="font-['Roboto_Mono'] bg-[#1F1F1F] px-[14px] py-2 rounded-[45px] text-base text-[#E6E6E6]"
                                             >REST API</span
                                         >
                                         <span
-                                            class="bg-[#1F1F1F] px-3 py-2 rounded-lg text-xs text-[#E6E6E6]"
+                                            class="font-['Roboto_Mono'] bg-[#1F1F1F] px-[14px] py-2 rounded-[45px] text-base text-[#E6E6E6]"
                                             >MongoDB</span
                                         >
                                     </div>
@@ -1504,21 +1510,31 @@
                                     >
                                         Team Members
                                     </h4>
-                                    <div class="flex -space-x-2">
+                                    <div class="flex lg:gap-2 2xl:gap-[10px]">
                                         <img
-                                            class="w-8 h-8 rounded-full border-2 border-[#1A1A1A]"
-                                            src="https://i.pravatar.cc/100?u=1"
-                                            alt=""
+                                            class="w-[40px] h-[40px]"
+                                            src="/assets/img/team ava 1.png"
+                                            alt="Team avatar"
                                         />
                                         <img
-                                            class="w-8 h-8 rounded-full border-2 border-[#1A1A1A]"
-                                            src="https://i.pravatar.cc/100?u=2"
-                                            alt=""
+                                            class="w-[40px] h-[40px]"
+                                            src="/assets/img/team ava 2.png"
+                                            alt="Team avatar"
                                         />
                                         <img
-                                            class="w-8 h-8 rounded-full border-2 border-[#1A1A1A]"
-                                            src="https://i.pravatar.cc/100?u=3"
-                                            alt=""
+                                            class="w-[40px] h-[40px]"
+                                            src="/assets/img/team ava 3.png"
+                                            alt="Team avatar"
+                                        />
+                                        <img
+                                            class="w-[40px] h-[40px]"
+                                            src="/assets/img/team ava 4.png"
+                                            alt="Team avatar"
+                                        />
+                                        <img
+                                            class="w-[40px] h-[40px]"
+                                            src="/assets/img/team ava 5.png"
+                                            alt="Team avatar"
                                         />
                                     </div>
                                 </div>
@@ -1561,18 +1577,36 @@
                                         >
                                             Zenith Fitness App
                                         </h3>
+                                        <!-- Button desktop -->
+
                                         <button
-                                            class="ml-auto lg:flex hidden items-center gap-2 border border-[#333333] rounded-full px-4 py-1"
+                                            class="hidden ml-auto lg:flex items-center px-4 py-1 gap-2 group cursor-pointer transition-opacity hover:opacity-80"
                                         >
-                                            <span
-                                                class="text-xs text-[#B3B3B2] uppercase font-medium"
-                                                >Details</span
+                                            <div
+                                                class="w-10 h-10 border border-[#333333] bg-[#1F1F1F] rounded-full flex items-center justify-center cursor-pointer hover:bg-[#333333] transition-colors"
+                                                aria-hidden="true"
                                             >
-                                            <img
-                                                src="assets/icon/arrow icon.svg"
-                                                class="w-3 h-3 rotate-[-45deg]"
-                                                alt=""
-                                            />
+                                                <svg
+                                                    width="20"
+                                                    height="20"
+                                                    viewBox="0 0 20 20"
+                                                    fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg"
+                                                >
+                                                    <path
+                                                        fill-rule="evenodd"
+                                                        clip-rule="evenodd"
+                                                        d="M6.875 3.125L16.25 3.125C16.4158 3.125 16.5747 3.19085 16.6919 3.30806C16.8092 3.42527 16.875 3.58424 16.875 3.75V13.125C16.875 13.4702 16.5952 13.75 16.25 13.75C15.9048 13.75 15.625 13.4702 15.625 13.125V5.25888L4.19194 16.6919C3.94786 16.936 3.55214 16.936 3.30806 16.6919C3.06398 16.4479 3.06398 16.0521 3.30806 15.8081L14.7411 4.375L6.875 4.375C6.52982 4.375 6.25 4.09518 6.25 3.75C6.25 3.40482 6.52982 3.125 6.875 3.125Z"
+                                                        fill="#E7BEB1"
+                                                    />
+                                                </svg>
+                                            </div>
+
+                                            <span
+                                                class="font-['Roboto_Mono'] font-normal text-base text-[#B3B3B2] leading-[150%] uppercase"
+                                            >
+                                                Details
+                                            </span>
                                         </button>
                                     </div>
                                     <div class="flex flex-col gap-2 mb-4">
@@ -1653,29 +1687,29 @@
                                     class="bg-[#1A1A1A] rounded-[10px] p-6 flex-1"
                                 >
                                     <h4
-                                        class="text-[#B3B3B2] text-xs uppercase mb-4"
+                                        class="font-['Roboto_Flex'] text-[#FFFFFF] text-lg uppercase mb-4"
                                     >
                                         Technologies Used
                                     </h4>
                                     <div class="flex flex-wrap gap-2">
                                         <span
-                                            class="bg-[#1F1F1F] px-3 py-2 rounded-lg text-xs text-[#E6E6E6]"
+                                            class="font-['Roboto_Mono'] bg-[#1F1F1F] px-[14px] py-2 rounded-[45px] text-base text-[#E6E6E6]"
                                             >React Native</span
                                         >
                                         <span
-                                            class="bg-[#1F1F1F] px-3 py-2 rounded-lg text-xs text-[#E6E6E6]"
+                                            class="font-['Roboto_Mono'] bg-[#1F1F1F] px-[14px] py-2 rounded-[45px] text-base text-[#E6E6E6]"
                                             >Firebase</span
                                         >
                                         <span
-                                            class="bg-[#1F1F1F] px-3 py-2 rounded-lg text-xs text-[#E6E6E6]"
+                                            class="font-['Roboto_Mono'] bg-[#1F1F1F] px-[14px] py-2 rounded-[45px] text-base text-[#E6E6E6]"
                                             >Redux</span
                                         >
                                         <span
-                                            class="bg-[#1F1F1F] px-3 py-2 rounded-lg text-xs text-[#E6E6E6]"
+                                            class="font-['Roboto_Mono'] bg-[#1F1F1F] px-[14px] py-2 rounded-[45px] text-base text-[#E6E6E6]"
                                             >REST API</span
                                         >
                                         <span
-                                            class="bg-[#1F1F1F] px-3 py-2 rounded-lg text-xs text-[#E6E6E6]"
+                                            class="font-['Roboto_Mono'] bg-[#1F1F1F] px-[14px] py-2 rounded-[45px] text-base text-[#E6E6E6]"
                                             >MongoDB</span
                                         >
                                     </div>
@@ -1688,21 +1722,31 @@
                                     >
                                         Team Members
                                     </h4>
-                                    <div class="flex -space-x-2">
+                                    <div class="flex lg:gap-2 2xl:gap-[10px]">
                                         <img
-                                            class="w-8 h-8 rounded-full border-2 border-[#1A1A1A]"
-                                            src="https://i.pravatar.cc/100?u=1"
-                                            alt=""
+                                            class="w-[40px] h-[40px]"
+                                            src="/assets/img/team ava 1.png"
+                                            alt="Team avatar"
                                         />
                                         <img
-                                            class="w-8 h-8 rounded-full border-2 border-[#1A1A1A]"
-                                            src="https://i.pravatar.cc/100?u=2"
-                                            alt=""
+                                            class="w-[40px] h-[40px]"
+                                            src="/assets/img/team ava 2.png"
+                                            alt="Team avatar"
                                         />
                                         <img
-                                            class="w-8 h-8 rounded-full border-2 border-[#1A1A1A]"
-                                            src="https://i.pravatar.cc/100?u=3"
-                                            alt=""
+                                            class="w-[40px] h-[40px]"
+                                            src="/assets/img/team ava 3.png"
+                                            alt="Team avatar"
+                                        />
+                                        <img
+                                            class="w-[40px] h-[40px]"
+                                            src="/assets/img/team ava 4.png"
+                                            alt="Team avatar"
+                                        />
+                                        <img
+                                            class="w-[40px] h-[40px]"
+                                            src="/assets/img/team ava 5.png"
+                                            alt="Team avatar"
                                         />
                                     </div>
                                 </div>
@@ -1745,18 +1789,36 @@
                                         >
                                             Zenith Fitness App
                                         </h3>
+                                        <<!-- Button desktop -->
+
                                         <button
-                                            class="ml-auto lg:flex hidden items-center gap-2 border border-[#333333] rounded-full px-4 py-1"
+                                            class="hidden ml-auto lg:flex items-center px-4 py-1 gap-2 group cursor-pointer transition-opacity hover:opacity-80"
                                         >
-                                            <span
-                                                class="text-xs text-[#B3B3B2] uppercase font-medium"
-                                                >Details</span
+                                            <div
+                                                class="w-10 h-10 border border-[#333333] bg-[#1F1F1F] rounded-full flex items-center justify-center cursor-pointer hover:bg-[#333333] transition-colors"
+                                                aria-hidden="true"
                                             >
-                                            <img
-                                                src="assets/icon/arrow icon.svg"
-                                                class="w-3 h-3 rotate-[-45deg]"
-                                                alt=""
-                                            />
+                                                <svg
+                                                    width="20"
+                                                    height="20"
+                                                    viewBox="0 0 20 20"
+                                                    fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg"
+                                                >
+                                                    <path
+                                                        fill-rule="evenodd"
+                                                        clip-rule="evenodd"
+                                                        d="M6.875 3.125L16.25 3.125C16.4158 3.125 16.5747 3.19085 16.6919 3.30806C16.8092 3.42527 16.875 3.58424 16.875 3.75V13.125C16.875 13.4702 16.5952 13.75 16.25 13.75C15.9048 13.75 15.625 13.4702 15.625 13.125V5.25888L4.19194 16.6919C3.94786 16.936 3.55214 16.936 3.30806 16.6919C3.06398 16.4479 3.06398 16.0521 3.30806 15.8081L14.7411 4.375L6.875 4.375C6.52982 4.375 6.25 4.09518 6.25 3.75C6.25 3.40482 6.52982 3.125 6.875 3.125Z"
+                                                        fill="#E7BEB1"
+                                                    />
+                                                </svg>
+                                            </div>
+
+                                            <span
+                                                class="font-['Roboto_Mono'] font-normal text-base text-[#B3B3B2] leading-[150%] uppercase"
+                                            >
+                                                Details
+                                            </span>
                                         </button>
                                     </div>
                                     <div class="flex flex-col gap-2 mb-4">
@@ -1836,29 +1898,29 @@
                                     class="bg-[#1A1A1A] rounded-[10px] p-6 flex-1"
                                 >
                                     <h4
-                                        class="text-[#B3B3B2] text-xs uppercase mb-4"
+                                        class="font-['Roboto_Flex'] text-[#FFFFFF] text-lg uppercase mb-4"
                                     >
                                         Technologies Used
                                     </h4>
                                     <div class="flex flex-wrap gap-2">
                                         <span
-                                            class="bg-[#1F1F1F] px-3 py-2 rounded-lg text-xs text-[#E6E6E6]"
+                                            class="font-['Roboto_Mono'] bg-[#1F1F1F] px-[14px] py-2 rounded-[45px] text-base text-[#E6E6E6]"
                                             >React Native</span
                                         >
                                         <span
-                                            class="bg-[#1F1F1F] px-3 py-2 rounded-lg text-xs text-[#E6E6E6]"
+                                            class="font-['Roboto_Mono'] bg-[#1F1F1F] px-[14px] py-2 rounded-[45px] text-base text-[#E6E6E6]"
                                             >Firebase</span
                                         >
                                         <span
-                                            class="bg-[#1F1F1F] px-3 py-2 rounded-lg text-xs text-[#E6E6E6]"
+                                            class="font-['Roboto_Mono'] bg-[#1F1F1F] px-[14px] py-2 rounded-[45px] text-base text-[#E6E6E6]"
                                             >Redux</span
                                         >
                                         <span
-                                            class="bg-[#1F1F1F] px-3 py-2 rounded-lg text-xs text-[#E6E6E6]"
+                                            class="font-['Roboto_Mono'] bg-[#1F1F1F] px-[14px] py-2 rounded-[45px] text-base text-[#E6E6E6]"
                                             >REST API</span
                                         >
                                         <span
-                                            class="bg-[#1F1F1F] px-3 py-2 rounded-lg text-xs text-[#E6E6E6]"
+                                            class="font-['Roboto_Mono'] bg-[#1F1F1F] px-[14px] py-2 rounded-[45px] text-base text-[#E6E6E6]"
                                             >MongoDB</span
                                         >
                                     </div>
@@ -1871,21 +1933,31 @@
                                     >
                                         Team Members
                                     </h4>
-                                    <div class="flex -space-x-2">
+                                    <div class="flex lg:gap-2 2xl:gap-[10px]">
                                         <img
-                                            class="w-8 h-8 rounded-full border-2 border-[#1A1A1A]"
-                                            src="https://i.pravatar.cc/100?u=1"
-                                            alt=""
+                                            class="w-[40px] h-[40px]"
+                                            src="/assets/img/team ava 1.png"
+                                            alt="Team avatar"
                                         />
                                         <img
-                                            class="w-8 h-8 rounded-full border-2 border-[#1A1A1A]"
-                                            src="https://i.pravatar.cc/100?u=2"
-                                            alt=""
+                                            class="w-[40px] h-[40px]"
+                                            src="/assets/img/team ava 2.png"
+                                            alt="Team avatar"
                                         />
                                         <img
-                                            class="w-8 h-8 rounded-full border-2 border-[#1A1A1A]"
-                                            src="https://i.pravatar.cc/100?u=3"
-                                            alt=""
+                                            class="w-[40px] h-[40px]"
+                                            src="/assets/img/team ava 3.png"
+                                            alt="Team avatar"
+                                        />
+                                        <img
+                                            class="w-[40px] h-[40px]"
+                                            src="/assets/img/team ava 4.png"
+                                            alt="Team avatar"
+                                        />
+                                        <img
+                                            class="w-[40px] h-[40px]"
+                                            src="/assets/img/team ava 5.png"
+                                            alt="Team avatar"
                                         />
                                     </div>
                                 </div>
@@ -1939,7 +2011,7 @@
             <!-- Input nằm ngoài cùng -->
             <input type="checkbox" id="toggle-testimonals" class="hidden" />
             <div
-                class="max-w-[calc(100%-32px)] mx-auto lg:max-w-[calc(100%-80px)]"
+                class="max-w-[calc(100%-32px)] mx-auto lg:max-w-[calc(100%-80px)] 2xl:max-w-[calc(100%-100px)]"
             >
                 <div
                     class="border-solid border-[2px] border-[#1F1F1F] rounded-2xl"
@@ -1960,17 +2032,17 @@
                             <!-- ALL TESTIMONIALS — CHỈ NHÌN THẤY TRÊN TABLET/ desktop -->
 
                             <button
-                                class="hidden lg:flex flex-row items-center mt-6 gap-2 group cursor-pointer transition-opacity hover:opacity-80"
+                                class="hidden lg:flex flex-row items-center gap-2 group cursor-pointer transition-opacity hover:opacity-80"
                             >
                                 <div class="flex-shrink-0" aria-hidden="true">
                                     <img
                                         src="assets/icon/Arrow button.png"
-                                        alt=""
+                                        alt="Arrow Icon"
                                     />
                                 </div>
 
                                 <span
-                                    class="font-['Roboto_Flex'] font-normal text-base text-[#B3B3B2] leading-[150%]"
+                                    class="font-['Roboto_Mono'] font-normal text-base text-[#B3B3B2] leading-[150%]"
                                 >
                                     All Testimonials
                                 </span>
@@ -1979,10 +2051,10 @@
 
                         <!-- CARD 2 -->
                         <div
-                            class="testimonial-card rounded-[14px] bg-[#1A1A1A] overflow-hidden"
+                            class="testimonial-card rounded-[14px] bg-[#1A1A1A] overflow-hidden flex flex-col"
                         >
                             <div
-                                class="flex flex-col items-start justify-center p-6"
+                                class="flex flex-col items-start justify-center p-6 flex-1"
                             >
                                 <h3
                                     class="font-['Roboto_Flex'] font-medium text-lg text-[#F9EFEC] pb-2 leading-[150%] uppercase"
@@ -2044,10 +2116,10 @@
 
                         <!-- CARD 3 -->
                         <div
-                            class="testimonial-card rounded-[14px] bg-[#1A1A1A] overflow-hidden"
+                            class="testimonial-card rounded-[14px] bg-[#1A1A1A] overflow-hidden flex flex-col"
                         >
                             <div
-                                class="flex flex-col items-start justify-center p-6"
+                                class="flex flex-col items-start justify-center p-6 flex-1"
                             >
                                 <h3
                                     class="font-['Roboto_Flex'] font-medium text-lg text-[#F9EFEC] pb-2 leading-[150%] uppercase"
@@ -2109,10 +2181,10 @@
 
                         <!-- CARD 4: card hidden -->
                         <div
-                            class="testimonial-card hidden rounded-[14px] bg-[#1A1A1A] overflow-hidden"
+                            class="hidden lg:block testimonial-card hidden rounded-[14px] bg-[#1A1A1A] overflow-hidden flex flex-col"
                         >
                             <div
-                                class="flex flex-col items-start justify-center p-6"
+                                class="flex flex-col items-start justify-center p-6 flex-1"
                             >
                                 <h3
                                     class="font-['Roboto_Flex'] font-medium text-lg text-[#F9EFEC] pb-2 leading-[150%] uppercase"
@@ -2174,23 +2246,23 @@
 
                         <!-- CARD 5: card hidden -->
                         <div
-                            class="testimonial-card hidden rounded-[14px] bg-[#1A1A1A] overflow-hidden"
+                            class="hidden lg:block testimonial-card hidden rounded-[14px] bg-[#1A1A1A] overflow-hidden flex flex-col"
                         >
                             <div
-                                class="flex flex-col items-start justify-center p-6"
+                                class="flex flex-col items-start justify-center p-6 flex-1"
                             >
                                 <h3
                                     class="font-['Roboto_Flex'] font-medium text-lg text-[#F9EFEC] pb-2 leading-[150%] uppercase"
                                 >
-                                    Working with NexGen was a pleasure.
+                                    NexGen's web design team brought our vision
+                                    to life.
                                 </h3>
                                 <p
                                     class="font-['Roboto_Flex'] font-normal text-sm text-[#B3B3B2] leading-[150%]"
                                 >
-                                    Their web design team created a stunning
-                                    website that perfectly captured our brand's
-                                    essence. The feedback from our customers has
-                                    been overwhelmingly positive.
+                                    Their responsive design ensures our website
+                                    looks stunning on all devices, contributing
+                                    to increased user engagement.
                                 </p>
                             </div>
                             <!-- Card Footer -->
@@ -2201,7 +2273,7 @@
 
                                 <div class="flex items-center gap-2">
                                     <img
-                                        src="assets/img/Ava 3.png"
+                                        src="assets/img/Ava 4.png"
                                         alt="Avatar"
                                         class="w-10 h-10 rounded-full object-contain"
                                     />
@@ -2210,12 +2282,12 @@
                                         <p
                                             class="font-['Roboto_Flex'] text-base font-medium text-[#F3DFD8] leading-[150%]"
                                         >
-                                            Lisa Williams
+                                            Jennifer Lee
                                         </p>
                                         <p
                                             class="font-['Roboto_Flex'] text-sm font-normal text-[#81807E] leading-[150%]"
                                         >
-                                            CEO Of HealthTech
+                                            COO of Foodie Haven
                                         </p>
                                     </div>
                                 </div>
@@ -2282,7 +2354,9 @@
 
         <!-- ─── FAQ + FORM ─── -->
         <section class="mb-[10px]">
-            <div class="max-w-[calc(100%-32px)] mx-auto">
+            <div
+                class="max-w-[calc(100%-32px)] mx-auto lg:max-w-[calc(100%-80px)] 2xl:max-w-[calc(100%-100px)]"
+            >
                 <div class="grid grid-cols-1 gap-[10px] pt-[10px]">
                     <!-- CARD 1: TITLE - full width ở cả mobile lẫn lg -->
                     <div
@@ -2295,7 +2369,7 @@
                         </h2>
 
                         <button
-                            class="hidden lg:flex flex-row items-center mt-6 gap-2 group cursor-pointer transition-opacity hover:opacity-80"
+                            class="hidden lg:flex flex-row items-center gap-2 group cursor-pointer transition-opacity hover:opacity-80"
                         >
                             <div class="flex-shrink-0" aria-hidden="true">
                                 <img
@@ -2305,7 +2379,7 @@
                             </div>
 
                             <span
-                                class="font-['Roboto_Flex'] font-normal text-base text-[#B3B3B2] leading-[150%] uppercase"
+                                class="font-['Roboto_Mono'] font-normal text-base text-[#B3B3B2] leading-[150%] uppercase"
                             >
                                 View all
                             </span>
@@ -2656,13 +2730,13 @@
         <!-- CTA CARD -->
         <section class="mb-[10px]">
             <div
-                class="max-w-[calc(100%-32px)] mx-auto lg:max-w-[calc(100%-80px)]"
+                class="max-w-[calc(100%-32px)] mx-auto lg:max-w-[calc(100%-80px)] 2xl:max-w-[calc(100%-100px)]"
             >
                 <div
                     class="font-['Roboto_Flex'] bg-[#CE7D63] rounded-[20px] p-[30px] lg:p-[60px] text-[#0F0F0F]"
                 >
                     <h2
-                        class="text-[28px] lg:text-[44px] font-medium leading-[120%] uppercase mb-4 lg:mb-8 max-w-[900px]"
+                        class="text-[28px] lg:text-[44px] font-medium leading-[120%] whitespace-nowrap uppercase mb-4 lg:mb-8 max-w-[900px]"
                     >
                         Ready to transform your digital presence?
                     </h2>
@@ -2716,22 +2790,22 @@
                             class="flex items-center list-none p-0 m-0 whitespace-nowrap text-[#B3B3B2] text-[14px] font-normal uppercase"
                         >
                             <li
-                                class="flex items-center before:content-['•'] before:mx-2"
+                                class="flex items-center before:content-['•'] before:text-[#CE7D63] before:mx-2"
                             >
                                 Follow Us on Social Media
                             </li>
                             <li
-                                class="flex items-center before:content-['•'] before:mx-2"
+                                class="flex items-center before:content-['•'] before:text-[#CE7D63] before:mx-2"
                             >
                                 Follow Us on Social Media
                             </li>
                             <li
-                                class="flex items-center before:content-['•'] before:mx-2"
+                                class="flex items-center before:content-['•'] before:text-[#CE7D63] before:mx-2"
                             >
                                 Follow Us on Social Media
                             </li>
                             <li
-                                class="flex items-center before:content-['•'] before:mx-2"
+                                class="flex items-center before:content-['•'] before:text-[#CE7D63] before:mx-2"
                             >
                                 Follow Us on Social Media
                             </li>
@@ -2742,22 +2816,22 @@
                             class="flex items-center list-none p-0 m-0 whitespace-nowrap text-[#B3B3B2] text-[14px] font-normal uppercase"
                         >
                             <li
-                                class="flex items-center before:content-['•'] before:mx-2"
+                                class="flex items-center before:content-['•'] before:text-[#CE7D63] before:mx-2"
                             >
                                 Follow Us on Social Media
                             </li>
                             <li
-                                class="flex items-center before:content-['•'] before:mx-2"
+                                class="flex items-center before:content-['•'] before:text-[#CE7D63] before:mx-2"
                             >
                                 Follow Us on Social Media
                             </li>
                             <li
-                                class="flex items-center before:content-['•'] before:mx-2"
+                                class="flex items-center before:content-['•'] before:text-[#CE7D63] before:mx-2"
                             >
                                 Follow Us on Social Media
                             </li>
                             <li
-                                class="flex items-center before:content-['•'] before:mx-2"
+                                class="flex items-center before:content-['•'] before:text-[#CE7D63] before:mx-2"
                             >
                                 Follow Us on Social Media
                             </li>
@@ -3256,7 +3330,7 @@
                 </div>
 
                 <!-- FOOTER LINKS -->
-                <section class="mb-[10px] lg:mb-0 ">
+                <section class="mb-[10px] lg:mb-0">
                     <div
                         class="max-w-[calc(100%-32px)] mx-auto lg:max-w-full lg:h-full"
                     >
@@ -3439,7 +3513,9 @@
                 </section>
 
                 <!-- Wrap newsletter + copyright trong 1 div -->
-                <div class="lg:flex lg:flex-col lg:gap-[10px] lg:min-h-0 lg:h-full">
+                <div
+                    class="lg:flex lg:flex-col lg:gap-[10px] lg:min-h-0 lg:h-full"
+                >
                     <!-- NEWSLETTER -->
                     <section class="mb-[10px] lg:mb-0 lg:flex-1">
                         <div

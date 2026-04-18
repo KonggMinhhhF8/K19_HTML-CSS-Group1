@@ -1,0 +1,2054 @@
+<!doctype html>
+<html lang="en" style="font-family: &quot;Roboto&quot;, sans-serif">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Careers Page</title>
+    <link rel="stylesheet" href="assets/css/careerPage.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      @keyframes marquee {
+        0% {
+          transform: translateX(0);
+        }
+        100% {
+          transform: translateX(-50%);
+        } /* Chạy một nửa quãng đường để tạo hiệu ứng lặp vô tận */
+      }
+      .animate-marquee {
+        display: flex;
+        width: max-content;
+        animation: marquee 20s linear infinite;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper w-full pt-10 px-4 pb-5 bg-[#0F0F0F] flex flex-col">
+      <nav
+        class="w-full mx-auto p-[14px] flex justify-between items-center rounded-xl bg-[#1A1A1A] mb-5 lg:p-5 lg:pl-10 2xl:p-6 2xl:pl-[50px]"
+      >
+        <a
+          href="/"
+          class="block w-22 h-4 bg-[url('assets/images/Logo.png')] bg-contain bg-no-repeat bg-center lg:w-[97px] lg:h-[18px] 2xl:w-[130px] 2xl:h-[24px]"
+        ></a>
+        <ul
+          class="hidden lg:flex items-center gap-4 text-[#81807E] whitespace-nowrap"
+        >
+          <li>
+            <a
+              href="#"
+              class="px-5 py-[14px] leading-[150%] tracking-[0%] font-medium text-sm bg-[#0F0F0F] rounded-lg hover:text-[#E7BEB1] uppercase 2xl:px-6 2xl:py-[18px] 2xl:text-[18px] 2xl:rounded-xl"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="px-5 py-[14px] leading-[150%] tracking-[0%] font-medium text-sm bg-[#0F0F0F] rounded-lg hover:text-[#E7BEB1] uppercase 2xl:px-6 2xl:py-[18px] 2xl:text-[18px] 2xl:rounded-xl"
+              >Services</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="px-5 py-[14px] leading-[150%] tracking-[0%] font-medium text-sm bg-[#0F0F0F] rounded-lg hover:text-[#E7BEB1] uppercase 2xl:px-6 2xl:py-[18px] 2xl:text-[18px] 2xl:rounded-xl"
+              >Projects</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="px-5 py-[14px] leading-[150%] tracking-[0%] font-medium text-sm bg-[#0F0F0F] rounded-lg hover:text-[#E7BEB1] uppercase 2xl:px-6 2xl:py-[18px] 2xl:text-[18px] 2xl:rounded-xl"
+              >About</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="px-5 py-[14px] leading-[150%] tracking-[0%] font-medium text-sm bg-[#0F0F0F] rounded-lg hover:text-[#E7BEB1] uppercase 2xl:px-6 2xl:py-[18px] 2xl:text-[18px] 2xl:rounded-xl"
+              >Careers</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="px-5 py-[14px] leading-[150%] tracking-[0%] font-medium text-sm bg-[#0F0F0F] rounded-lg hover:text-[#E7BEB1] uppercase 2xl:px-6 2xl:py-[18px] 2xl:text-[18px] 2xl:rounded-xl"
+              >Blogs</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="px-5 py-[14px] leading-[150%] tracking-[0%] text-sm bg-[#CE7D63] rounded-lg text-[#0F0F0F] font-medium uppercase 2xl:px-6 2xl:py-[18px] 2xl:text-[18px] 2xl:rounded-xl"
+              >Contact Us</a
+            >
+          </li>
+        </ul>
+
+        <button
+          aria-label="Toggle menu"
+          class="w-11 h-11 bg-[url('assets/images/Button.svg')] border-none cursor-pointer lg:hidden"
+        ></button>
+      </nav>
+      <div class="w-full flex flex-col gap-12 2xl:gap-30">
+        <header class="flex flex-col gap-5 sm:gap-3 w-full lg:flex-row">
+          <div
+            class="headerBtn px-6 py-[30px] rounded-xl bg-[#1A1A1A] sm:flex sm:items-center lg:w-[65%] lg:flex-row lg:justify-between lg:items-start lg:py-[60px] lg:px-[60px]"
+          >
+            <h1
+              class="text-2xl w-full font-semibold mb-6 leading-[150%] tracking-[0%] uppercase text-[#F9EFEC] lg:mb-0 lg:text-[37px] 2xl:text-[49px]"
+            >
+              <span class="flex flex-nowrap">
+                <span>Unlock your potential</span>
+                <a
+                  href="#"
+                  class="hidden lg:inline-flex items-center gap-2 cursor-pointer group mx-2 lg:items-center lg:mx-4 lg:self-start"
+                >
+                  <div
+                    class="relative flex items-center justify-center shrink-0"
+                  >
+                    <div
+                      class="w-[56px] h-[56px] bg-[url('assets/images/Shape.svg')] bg-contain bg-no-repeat bg-center flex items-center justify-center 2xl:w-[77px] 2xl:h-[77px]"
+                    >
+                      <div
+                        class="w-8 h-8 flex items-center justify-center rounded-full bg-[#CE7D63] 2xl:w-12 2xl:h-12"
+                      >
+                        <div
+                          class="w-4 h-4 bg-[url('assets/images/Icon.svg')] bg-contain bg-no-repeat bg-center"
+                        ></div>
+                      </div>
+                    </div>
+                  </div>
+                  <span
+                    class="font-medium text-[16px] uppercase text-[#CE7D63] leading-[150%] lg:text-[20px] 2xl:text-[24px] whitespace-nowrap"
+                  >
+                    Start a project
+                  </span>
+                </a>
+              </span>
+              <span>in the Digital World</span>
+            </h1>
+            <a
+              href="#"
+              class="flex items-center gap-4 cursor-pointer group sm:h-14 lg:hidden"
+            >
+              <div class="relative flex items-center justify-center shrink-0">
+                <div
+                  class="w-14 h-14 bg-[url('assets/images/Shape.svg')] bg-contain bg-no-repeat bg-center 2xl:w-[77px] 2xl:h-[77px]"
+                ></div>
+
+                <div
+                  class="absolute p-[10px] flex items-center justify-center rounded-full bg-[#CE7D63] 2xl:p-[14px]"
+                >
+                  <div
+                    class="w-5 h-5 bg-[url('assets/images/Icon.svg')] bg-contain bg-no-repeat bg-center 2xl:w-6 2xl:h-6"
+                  ></div>
+                </div>
+              </div>
+
+              <span
+                class="font-medium text-[20px] uppercase text-[#CE7D63] leading-[150%] self-center 2xl:text-[24px] sm:whitespace-nowrap"
+              >
+                Start a project
+              </span>
+            </a>
+          </div>
+          <div
+            class="intro rounded-xl bg-[#1A1A1A] flex flex-col gap-[30px] p-6 lg:w-[35%] lg:gap-10 2xl:gap-[50px]"
+          >
+            <div class="flex flex-col gap-3 lg:gap-4 2xl:gap-5">
+              <h2
+                class="mb-3 text-[#F9EFEC] font-medium text-xl leading-[150%] tracking-[0%] uppercase lg:text-[24px]"
+              >
+                At NexGen
+              </h2>
+              <p
+                class="font-normal text-sm leading-[150%] tracking-[0%] text-[#B3B3B2] lg:text-[16px]"
+              >
+                We believe in fostering a dynamic and collaborative work
+                environment that empowers our team members to excel in their
+                respective fields. Join us to be part of a passionate and
+                innovative team dedicated to crafting exceptional digital
+                solutions for clients across the globe. We are committed to
+                nurturing talent, encouraging professional growth, and creating
+                a workplace where creativity thrives.
+              </p>
+            </div>
+            <a href="#" class="footerHeader flex gap-[30px] items-center group">
+              <div
+                class="p-[10px] border-[1px] border-[#333333] rounded-full flex justify-center items-center bg-[#1F1F1F] 2xl:p-[14px]"
+              >
+                <div
+                  class="w-5 h-5 bg-[url('assets/images/arrowDown.svg')] bg-contain bg-no-repeat bg-center 2xl:w-6 2xl:h-6"
+                ></div>
+              </div>
+              <h3
+                class="font-medium text-base leading-[150%] tracking-[0%] uppercase text-[#B3B3B2] group-hover:text-white transition-colors"
+              >
+                KNOW MORE
+              </h3>
+            </a>
+          </div>
+        </header>
+
+        <section
+          class="flex flex-col gap-[10px] border-[2px] border-[#1F1F1F] p-[10px] rounded-[14px] 2xl:gap-5"
+        >
+          <div class="p-6 rounded-3xl gap-4 bg-[#1A1A1A] lg:p-10 2xl:p-[50px]">
+            <h2
+              class="font-semibold text-[28px] leading-[100%] text-[#F9EFEC] tracking-[0%] uppercase lg:text-[38px] 2xl:text-[48px]"
+            >
+              Join Our Team at NexGen
+            </h2>
+          </div>
+          <div
+            class="flex flex-col gap-[10px] lg:grid lg:grid-cols-2 lg:gap-2.5"
+          >
+            <div
+              class="flex flex-col p-6 rounded-3xl gap-6 bg-[#1A1A1A] lg:gap-[30px] 2xl:gap-[40px] 2xl:p-[50px]"
+            >
+              <div class="flex items-center gap-2">
+                <div
+                  class="p-4 border-[1px] border-[#333333] bg-[#1F1F1F] flex justify-center items-center"
+                >
+                  <div
+                    class="w-6 h-6 bg-[url('assets/images/Pipette.svg')] bg-contain bg-no-repeat bg-center"
+                  ></div>
+                </div>
+                <h3
+                  class="font-medium text-[20px] leading-[150%] text-[#F9EFEC] tracking-[0%] uppercase lg:text[24px]"
+                >
+                  Web Designer
+                </h3>
+                <a
+                  href="#"
+                  class="hidden lg:flex lg:ml-auto gap-2 items-center group"
+                >
+                  <div
+                    class="flex justify-center items-center border-[1px] p-3 border-[#333333] bg-[#1F1F1F] rounded-full"
+                  >
+                    <div
+                      class="w-5 h-5 bg-[url('assets/images/arrowTopLeft.svg')] bg-contain bg-no-repeat bg-center"
+                    ></div>
+                  </div>
+                  <span
+                    class="text-[#B3B3B2] font-medium text-[14px] leading-[150%] tracking-[0%] uppercase group-hover:text-white transition-colors"
+                  >
+                    View Details
+                  </span>
+                </a>
+              </div>
+
+              <div class="flex flex-col gap-3">
+                <div class="flex flex-col gap-3 lg:flex-row">
+                  <div
+                    class="flex items-center rounded-[48px] bg-[#1F1F1F] w-fit py-2 px-3"
+                  >
+                    <span
+                      class="text-[#B3B3B2] font-normal text-[14px] leading-[150%] tracking-[0%] uppercase 2xl:text-[18px]"
+                      >Salary</span
+                    >
+                    <span
+                      class="inline-block w-1 h-1 rounded-full ml-1 mr-1 bg-[#CE7D63]"
+                    ></span>
+                    <span
+                      class="text-[#E6E6E6] font-medium text-[14px] leading-[150%] tracking-[0%] uppercase 2xl:text-[18px]"
+                      >$45,000 - $60,000 per year</span
+                    >
+                  </div>
+                  <div
+                    class="flex items-center rounded-[48px] bg-[#1F1F1F] w-fit py-2 px-3"
+                  >
+                    <span
+                      class="text-[#B3B3B2] font-normal text-[14px] leading-[150%] tracking-[0%] uppercase 2xl:text-[18px]"
+                      >Experience</span
+                    >
+                    <span
+                      class="inline-block w-1 h-1 rounded-full ml-1 mr-1 bg-[#CE7D63]"
+                    ></span>
+                    <span
+                      class="text-[#E6E6E6] font-medium text-[14px] leading-[150%] tracking-[0%] uppercase 2xl:text-[18px]"
+                      >1+ year</span
+                    >
+                  </div>
+                </div>
+                <div
+                  class="flex items-center rounded-[48px] bg-[#1F1F1F] w-fit py-2 px-3"
+                >
+                  <span
+                    class="text-[#B3B3B2] font-normal text-[14px] leading-[150%] tracking-[0%] uppercase 2xl:text-[18px]"
+                  >
+                    Deadline</span
+                  >
+                  <span
+                    class="inline-block w-1 h-1 rounded-full ml-1 mr-1 bg-[#CE7D63]"
+                  ></span>
+                  <span
+                    class="text-[#E6E6E6] font-medium text-[14px] leading-[150%] tracking-[0%] uppercase 2xl:text-[18px]"
+                    >30/09/2025</span
+                  >
+                </div>
+              </div>
+              <div>
+                <p
+                  class="text-[#F9EFEC] font-medium text-[16px] leading-[150%] tracking-[0%] uppercase 2xl:text-[24px]"
+                >
+                  Skills
+                </p>
+                <p
+                  class="text-[#B3B3B2] font-normal text-[14px] leading-[150%] tracking-[0%] 2xl:text-[18px]"
+                >
+                  Proficiency in Adobe Creative Suite (Photoshop, Illustrator,
+                  etc.), strong understanding of UI/UX design principles,
+                  responsive design expertise.
+                </p>
+              </div>
+              <a href="#" class="flex gap-2 items-center lg:hidden group">
+                <div
+                  class="flex justify-center items-center border-[1px] p-[14px] border-[#333333] bg-[#1F1F1F] rounded-full"
+                >
+                  <div
+                    class="w-5 h-5 bg-[url('assets/images/arrowTopLeft.svg')] bg-contain bg-no-repeat bg-center"
+                  ></div>
+                </div>
+                <span
+                  class="text-[#B3B3B2] font-medium text-[14px] leading-[150%] tracking-[0%] uppercase group-hover:text-white transition-colors"
+                >
+                  View Details
+                </span>
+              </a>
+              <a
+                href="#"
+                class="block text-center py-[14px] px-5 rounded-[8px] bg-[#CE7D63] font-medium text-[14px] leading-[150%] tracking-[0%] uppercase mt-auto hover:bg-[#b06750] transition-colors text-black"
+              >
+                Apply Now
+              </a>
+            </div>
+            <div
+              class="flex flex-col p-6 rounded-3xl gap-6 bg-[#1A1A1A] lg:gap-[30px] 2xl:gap-[40px] 2xl:p-[50px]"
+            >
+              <div class="flex items-center gap-2">
+                <div
+                  class="p-4 border-[1px] border-[#333333] bg-[#1F1F1F] flex justify-center items-center"
+                >
+                  <div
+                    class="w-6 h-6 bg-[url('assets/images/Smartphone2.svg')] bg-contain bg-no-repeat bg-center"
+                  ></div>
+                </div>
+                <h3
+                  class="font-medium text-[20px] leading-[150%] text-[#F9EFEC] tracking-[0%] uppercase lg:text[24px]"
+                >
+                  Mobile App Developer
+                </h3>
+                <a
+                  href="#"
+                  class="hidden lg:flex lg:ml-auto gap-2 items-center group"
+                >
+                  <div
+                    class="flex justify-center items-center border-[1px] p-3 border-[#333333] bg-[#1F1F1F] rounded-full"
+                  >
+                    <div
+                      class="w-5 h-5 bg-[url('assets/images/arrowTopLeft.svg')] bg-contain bg-no-repeat bg-center"
+                    ></div>
+                  </div>
+                  <span
+                    class="text-[#B3B3B2] font-medium text-[14px] leading-[150%] tracking-[0%] uppercase 2xl:text-[18px] group-hover:text-white transition-colors"
+                  >
+                    View Details
+                  </span>
+                </a>
+              </div>
+
+              <div class="flex flex-col gap-3">
+                <div class="flex flex-col gap-3 lg:flex-row">
+                  <div
+                    class="flex items-center rounded-[48px] bg-[#1F1F1F] w-fit py-2 px-3"
+                  >
+                    <span
+                      class="text-[#B3B3B2] font-normal text-[14px] leading-[150%] tracking-[0%] uppercase 2xl:text-[18px]"
+                      >Salary</span
+                    >
+                    <span
+                      class="inline-block w-1 h-1 rounded-full ml-1 mr-1 bg-[#CE7D63]"
+                    ></span>
+                    <span
+                      class="text-[#E6E6E6] font-medium text-[14px] leading-[150%] tracking-[0%] uppercase 2xl:text-[18px]"
+                      >$55,000 - $75,000 per year</span
+                    >
+                  </div>
+                  <div
+                    class="flex items-center rounded-[48px] bg-[#1F1F1F] w-fit py-2 px-3"
+                  >
+                    <span
+                      class="text-[#B3B3B2] font-normal text-[14px] leading-[150%] tracking-[0%] uppercase 2xl:text-[18px]"
+                      >Experience</span
+                    >
+                    <span
+                      class="inline-block w-1 h-1 rounded-full ml-1 mr-1 bg-[#CE7D63]"
+                    ></span>
+                    <span
+                      class="text-[#E6E6E6] font-medium text-[14px] leading-[150%] tracking-[0%] uppercase 2xl:text-[18px]"
+                      >2+ year</span
+                    >
+                  </div>
+                </div>
+
+                <div
+                  class="flex items-center rounded-[48px] bg-[#1F1F1F] w-fit py-2 px-3"
+                >
+                  <span
+                    class="text-[#B3B3B2] font-normal text-[14px] leading-[150%] tracking-[0%] uppercase 2xl:text-[18px]"
+                  >
+                    Deadline</span
+                  >
+                  <span
+                    class="inline-block w-1 h-1 rounded-full ml-1 mr-1 bg-[#CE7D63]"
+                  ></span>
+                  <span
+                    class="text-[#E6E6E6] font-medium text-[14px] leading-[150%] tracking-[0%] uppercase 2xl:text-[18px]"
+                    >15/10/2025</span
+                  >
+                </div>
+              </div>
+              <div>
+                <p
+                  class="text-[#F9EFEC] font-medium text-[16px] leading-[150%] tracking-[0%] uppercase 2xl-text[24px]"
+                >
+                  Skills
+                </p>
+                <p
+                  class="text-[#B3B3B2] font-normal text-[14px] leading-[150%] tracking-[0%] 2xl:text-[18px]"
+                >
+                  Proficiency in iOS or Android development (Swift, Kotlin),
+                  knowledge of mobile app design patterns, experience with
+                  mobile testing and debugging.
+                </p>
+              </div>
+              <a href="#" class="flex gap-2 items-center lg:hidden group">
+                <div
+                  class="flex justify-center items-center border-[1px] p-[14px] border-[#333333] bg-[#1F1F1F] rounded-full"
+                >
+                  <div
+                    class="w-5 h-5 bg-[url('assets/images/arrowTopLeft.svg')] bg-contain bg-no-repeat bg-center"
+                  ></div>
+                </div>
+                <span
+                  class="text-[#B3B3B2] font-medium text-[14px] leading-[150%] tracking-[0%] uppercase group-hover:text-white transition-colors"
+                >
+                  View Details
+                </span>
+              </a>
+              <a
+                href="#"
+                class="block text-center py-[14px] px-5 rounded-[8px] bg-[#CE7D63] font-medium text-[14px] leading-[150%] tracking-[0%] uppercase mt-auto hover:bg-[#b06750] transition-colors text-black"
+              >
+                Apply Now
+              </a>
+            </div>
+            <a
+              href="#"
+              class="flex justify-center flex-nowrap items-center w-full px-4 py-5 gap-[6px] rounded-[12px] bg-[#1A1A1A] h-full lg:hidden group"
+            >
+              <div
+                class="p-[14px] border-[1px] border-[#262626] rounded-[100px] bg-[#0F0F0F]"
+              >
+                <div
+                  class="w-5 h-5 bg-[url('assets/images/arrowDown.svg')] bg-contain bg-center bg-no-repeat"
+                ></div>
+              </div>
+              <span
+                class="font-medium text-[14px] leading-[150%] text-[#B3B3B2] tracking-[0%] uppercase group-hover:text-white transition-colors"
+              >
+                View All
+              </span>
+            </a>
+            <div
+              class="hidden lg:flex flex-col p-6 rounded-3xl gap-6 bg-[#1A1A1A] lg:gap-[30px] 2xl:gap-[40px] 2xl:p-[50px]"
+            >
+              <div class="flex items-center gap-2">
+                <div
+                  class="p-4 border-[1px] border-[#333333] bg-[#1F1F1F] flex justify-center items-center"
+                >
+                  <div
+                    class="w-6 h-6 bg-[url('assets/images/marketingIcon.svg')] bg-contain bg-no-repeat bg-center"
+                  ></div>
+                </div>
+                <h3
+                  class="font-medium text-[20px] leading-[150%] text-[#F9EFEC] tracking-[0%] uppercase lg:text[24px]"
+                >
+                  Digital Marketing Specialist
+                </h3>
+                <a
+                  href="#"
+                  class="hidden lg:flex lg:ml-auto gap-2 items-center group"
+                >
+                  <div
+                    class="flex justify-center items-center border-[1px] p-3 border-[#333333] bg-[#1F1F1F] rounded-full"
+                  >
+                    <div
+                      class="w-5 h-5 bg-[url('assets/images/arrowTopLeft.svg')] bg-contain bg-no-repeat bg-center"
+                    ></div>
+                  </div>
+                  <span
+                    class="text-[#B3B3B2] font-medium text-[14px] leading-[150%] tracking-[0%] uppercase 2xl:text-[18px] group-hover:text-white transition-colors"
+                  >
+                    View Details
+                  </span>
+                </a>
+              </div>
+
+              <div class="flex flex-col gap-3">
+                <div class="flex flex-col gap-3 lg:flex-row">
+                  <div
+                    class="flex items-center rounded-[48px] bg-[#1F1F1F] w-fit py-2 px-3"
+                  >
+                    <span
+                      class="text-[#B3B3B2] font-normal text-[14px] leading-[150%] tracking-[0%] uppercase 2xl:text-[18px]"
+                      >Salary</span
+                    >
+                    <span
+                      class="inline-block w-1 h-1 rounded-full ml-1 mr-1 bg-[#CE7D63]"
+                    ></span>
+                    <span
+                      class="text-[#E6E6E6] font-medium text-[14px] leading-[150%] tracking-[0%] uppercase 2xl:text-[18px]"
+                      >$45,000 - $65,000 per year</span
+                    >
+                  </div>
+                  <div
+                    class="flex items-center rounded-[48px] bg-[#1F1F1F] w-fit py-2 px-3"
+                  >
+                    <span
+                      class="text-[#B3B3B2] font-normal text-[14px] leading-[150%] tracking-[0%] uppercase 2xl:text-[18px]"
+                      >Experience</span
+                    >
+                    <span
+                      class="inline-block w-1 h-1 rounded-full ml-1 mr-1 bg-[#CE7D63]"
+                    ></span>
+                    <span
+                      class="text-[#E6E6E6] font-medium text-[14px] leading-[150%] tracking-[0%] uppercase 2xl:text-[18px]"
+                      >3+ year</span
+                    >
+                  </div>
+                </div>
+                <div
+                  class="flex items-center rounded-[48px] bg-[#1F1F1F] w-fit py-2 px-3"
+                >
+                  <span
+                    class="text-[#B3B3B2] font-normal text-[14px] leading-[150%] tracking-[0%] uppercase 2xl:text-[18px]"
+                  >
+                    Deadline</span
+                  >
+                  <span
+                    class="inline-block w-1 h-1 rounded-full ml-1 mr-1 bg-[#CE7D63]"
+                  ></span>
+                  <span
+                    class="text-[#E6E6E6] font-medium text-[14px] leading-[150%] tracking-[0%] uppercase 2xl:text-[18px]"
+                    >20/11/2025</span
+                  >
+                </div>
+              </div>
+              <div>
+                <p
+                  class="text-[#F9EFEC] font-medium text-[16px] leading-[150%] tracking-[0%] uppercase 2xl:text-[24px]"
+                >
+                  Skills
+                </p>
+                <p
+                  class="text-[#B3B3B2] font-normal text-[14px] leading-[150%] tracking-[0%] 2xl:text-[18px]"
+                >
+                  Proficiency in SEO, SEM, and social media marketing,
+                  experience with analytics tools (Google Analytics, etc.),
+                  content marketing expertise.
+                </p>
+              </div>
+              <a href="#" class="flex gap-2 items-center lg:hidden group">
+                <div
+                  class="flex justify-center items-center border-[1px] p-[14px] border-[#333333] bg-[#1F1F1F] rounded-full"
+                >
+                  <div
+                    class="w-5 h-5 bg-[url('assets/images/arrowTopLeft.svg')] bg-contain bg-no-repeat bg-center"
+                  ></div>
+                </div>
+                <span
+                  class="text-[#B3B3B2] font-medium text-[14px] leading-[150%] tracking-[0%] uppercase group-hover:text-white transition-colors"
+                >
+                  View Details
+                </span>
+              </a>
+              <a
+                href="#"
+                class="block text-center py-[14px] px-5 rounded-[8px] bg-[#CE7D63] font-medium text-[14px] leading-[150%] tracking-[0%] uppercase mt-auto hover:bg-[#b06750] transition-colors text-black"
+              >
+                Apply Now
+              </a>
+            </div>
+            <div
+              class="hidden lg:flex flex-col p-6 rounded-3xl gap-6 bg-[#1A1A1A] lg:gap-[30px] 2xl:gap-[40px] 2xl:p-[50px]"
+            >
+              <div class="flex items-center gap-2">
+                <div
+                  class="p-4 border-[1px] border-[#333333] bg-[#1F1F1F] flex justify-center items-center"
+                >
+                  <div
+                    class="w-6 h-6 bg-[url('assets/images/Suitcase.svg')] bg-contain bg-no-repeat bg-center"
+                  ></div>
+                </div>
+                <h3
+                  class="font-medium text-[20px] leading-[150%] text-[#F9EFEC] tracking-[0%] uppercase lg:text[24px]"
+                >
+                  Project Manager
+                </h3>
+                <a
+                  href="#"
+                  class="hidden lg:flex lg:ml-auto gap-2 items-center group"
+                >
+                  <div
+                    class="flex justify-center items-center border-[1px] p-3 border-[#333333] bg-[#1F1F1F] rounded-full"
+                  >
+                    <div
+                      class="w-5 h-5 bg-[url('assets/images/arrowTopLeft.svg')] bg-contain bg-no-repeat bg-center"
+                    ></div>
+                  </div>
+                  <span
+                    class="text-[#B3B3B2] font-medium text-[14px] leading-[150%] tracking-[0%] uppercase 2xl:text-[18px] group-hover:text-white transition-colors"
+                  >
+                    View Details
+                  </span>
+                </a>
+              </div>
+
+              <div class="flex flex-col gap-3">
+                <div class="flex flex-col gap-3 lg:flex-row">
+                  <div
+                    class="flex items-center rounded-[48px] bg-[#1F1F1F] w-fit py-2 px-3"
+                  >
+                    <span
+                      class="text-[#B3B3B2] font-normal text-[14px] leading-[150%] tracking-[0%] uppercase 2xl:text-[18px]"
+                      >Salary</span
+                    >
+                    <span
+                      class="inline-block w-1 h-1 rounded-full ml-1 mr-1 bg-[#CE7D63]"
+                    ></span>
+                    <span
+                      class="text-[#E6E6E6] font-medium text-[14px] leading-[150%] tracking-[0%] uppercase 2xl:text-[18px]"
+                      >$60,000 - $80,000 per year</span
+                    >
+                  </div>
+                  <div
+                    class="flex items-center rounded-[48px] bg-[#1F1F1F] w-fit py-2 px-3"
+                  >
+                    <span
+                      class="text-[#B3B3B2] font-normal text-[14px] leading-[150%] tracking-[0%] uppercase 2xl:text-[18px]"
+                      >Experience</span
+                    >
+                    <span
+                      class="inline-block w-1 h-1 rounded-full ml-1 mr-1 bg-[#CE7D63]"
+                    ></span>
+                    <span
+                      class="text-[#E6E6E6] font-medium text-[14px] leading-[150%] tracking-[0%] uppercase 2xl:text-[18px]"
+                      >5+ year</span
+                    >
+                  </div>
+                </div>
+                <div
+                  class="flex items-center rounded-[48px] bg-[#1F1F1F] w-fit py-2 px-3"
+                >
+                  <span
+                    class="text-[#B3B3B2] font-normal text-[14px] leading-[150%] tracking-[0%] uppercase 2xl:text-[18px]"
+                  >
+                    Deadline</span
+                  >
+                  <span
+                    class="inline-block w-1 h-1 rounded-full ml-1 mr-1 bg-[#CE7D63]"
+                  ></span>
+                  <span
+                    class="text-[#E6E6E6] font-medium text-[14px] leading-[150%] tracking-[0%] uppercase 2xl:text-[18px]"
+                    >5/12/2025</span
+                  >
+                </div>
+              </div>
+              <div>
+                <p
+                  class="text-[#F9EFEC] font-medium text-[16px] leading-[150%] tracking-[0%] uppercase 2xl:text-[24px]"
+                >
+                  Skills
+                </p>
+                <p
+                  class="text-[#B3B3B2] font-normal text-[14px] leading-[150%] tracking-[0%] 2xl:text-[18px]"
+                >
+                  Proficiency in Adobe Creative Suite (Photoshop, Illustrator,
+                  etc.), strong understanding of UI/UX design principles,
+                  responsive design expertise.
+                </p>
+              </div>
+              <a href="#" class="flex gap-2 items-center lg:hidden group">
+                <div
+                  class="flex justify-center items-center border-[1px] p-[14px] border-[#333333] bg-[#1F1F1F] rounded-full"
+                >
+                  <div
+                    class="w-5 h-5 bg-[url('assets/images/arrowTopLeft.svg')] bg-contain bg-no-repeat bg-center"
+                  ></div>
+                </div>
+                <span
+                  class="text-[#B3B3B2] font-medium text-[14px] leading-[150%] tracking-[0%] uppercase group-hover:text-white transition-colors"
+                >
+                  View Details
+                </span>
+              </a>
+              <a
+                href="#"
+                class="block text-center py-[14px] px-5 rounded-[8px] bg-[#CE7D63] font-medium text-[14px] leading-[150%] tracking-[0%] uppercase mt-auto hover:bg-[#b06750] transition-colors text-black"
+              >
+                Apply Now
+              </a>
+            </div>
+          </div>
+        </section>
+        <section
+          class="flex flex-col gap-[10px] border-[2px] border-[#1F1F1F] p-[10px] rounded-[14px]"
+        >
+          <h2
+            class="p-4 gap-6 rounded-[14px] bg-[#1A1A1A] text-[#F9EFEC] font-semibold text-[28px] leading-[100%] tracking-[0%] uppercase 2xl:p-[50px] 2xl:text-[48px]"
+          >
+            How to Apply
+          </h2>
+          <div class="flex flex-col gap-2.5 lg:grid grid-cols-4">
+            <div class="rounded-[12px] bg-[#1A1A1A] flex flex-col h-full">
+              <p
+                class="px-5 py-5 text-[#81807E] font-normal text-[14px] leading-[150%] tracking-[0%] 2xl:text-[20px] 2xl:py-4 2xl:px-[30px]"
+              >
+                Step 01
+              </p>
+              <h3
+                class="py-6 px-5 bg-[#1F1F1F] border-y-2 border-[#262626] text-[#F9EFEC] font-medium text-[18px] leading-[150%] tracking-[0%] uppercase 2xl:text-[24px] 2xl:px-[30px] 2lx:py-[40px]"
+              >
+                Review Job Description
+              </h3>
+              <div
+                class="flex flex-col p-5 gap-2 justify-between flex-1 lg:p-6 2xl:p-[30px]"
+              >
+                <p
+                  class="text-[#B3B3B2] font-normal text-[14px] leading-[150%] tracking-[0%] lg:text-[16px] 2xl:text[18px]"
+                >
+                  Visit our website's "Careers" page to explore the current job
+                  listings. Review the various roles available and select the
+                  position that aligns with your skills, experience, and career
+                  aspirations.
+                </p>
+                <div>
+                  <a href="#" class="flex gap-2.5 items-center group w-fit">
+                    <div
+                      class="p-2.5 border-1 border-[#333333] bg-[#1F1F1F] rounded-full"
+                    >
+                      <div
+                        class="bg-[url('assets/images/arrowDown.svg')] bg-contain bg-center bg-no-repeat w-5 h-5"
+                      ></div>
+                    </div>
+                    <span
+                      class="text-[#B3B3B2] font-medium text-[16px] leading-[150%] tracking-[0%] uppercase 2xl:text-[18px] group-hover:text-white transition-colors"
+                    >
+                      Know More
+                    </span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="rounded-[12px] bg-[#1A1A1A] flex flex-col h-full">
+              <p
+                class="px-5 py-5 text-[#81807E] font-normal text-[14px] leading-[150%] tracking-[0%] 2xl:text-[20px] 2xl:py-4 2xl:px-[30px]"
+              >
+                Step 02
+              </p>
+              <h3
+                class="py-6 px-5 bg-[#1F1F1F] border-y-2 border-[#262626] text-[#F9EFEC] font-medium text-[18px] leading-[150%] tracking-[0%] uppercase 2xl:text-[24px] 2xl:px-[30px] 2lx:py-[40px]"
+              >
+                Review Job Description
+              </h3>
+              <div
+                class="flex flex-col p-5 gap-2 justify-between flex-1 lg:p-6 2xl:p-[30px]"
+              >
+                <p
+                  class="text-[#B3B3B2] font-normal text-[14px] leading-[150%] tracking-[0%] lg:text-[16px] 2xl:text[18px]"
+                >
+                  Click on the desired job title to view the detailed job
+                  description. Take your time to read through the
+                  responsibilities, requirements, and qualifications to ensure
+                  you have a clear understanding of the role.
+                </p>
+                <div>
+                  <a href="#" class="flex gap-2.5 items-center group w-fit">
+                    <div
+                      class="p-2.5 border-1 border-[#333333] bg-[#1F1F1F] rounded-full"
+                    >
+                      <div
+                        class="bg-[url('assets/images/arrowDown.svg')] bg-contain bg-center bg-no-repeat w-5 h-5"
+                      ></div>
+                    </div>
+                    <span
+                      class="text-[#B3B3B2] font-medium text-[16px] leading-[150%] tracking-[0%] uppercase 2xl:text-[18px] group-hover:text-white transition-colors"
+                    >
+                      Know More
+                    </span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="rounded-[12px] bg-[#1A1A1A] flex flex-col h-full">
+              <p
+                class="px-5 py-5 text-[#81807E] font-normal text-[14px] leading-[150%] tracking-[0%] 2xl:text-[20px] 2xl:py-4 2xl:px-[30px]"
+              >
+                Step 03
+              </p>
+              <h3
+                class="py-6 px-5 bg-[#1F1F1F] border-y-2 border-[#262626] text-[#F9EFEC] font-medium text-[18px] leading-[150%] tracking-[0%] uppercase 2xl:text-[24px] 2xl:px-[30px] 2lx:py-[40px]"
+              >
+                Prepare Your Application
+              </h3>
+              <div
+                class="flex flex-col p-5 gap-2 justify-between flex-1 lg:p-6 2xl:p-[30px]"
+              >
+                <p
+                  class="text-[#B3B3B2] font-normal text-[14px] leading-[150%] tracking-[0%] lg:text-[16px] 2xl:text[18px]"
+                >
+                  Before applying, ensure you have the following ready
+                </p>
+                <div>
+                  <a href="#" class="flex gap-2.5 items-center group w-fit">
+                    <div
+                      class="p-2.5 border-1 border-[#333333] bg-[#1F1F1F] rounded-full"
+                    >
+                      <div
+                        class="bg-[url('assets/images/arrowDown.svg')] bg-contain bg-center bg-no-repeat w-5 h-5"
+                      ></div>
+                    </div>
+                    <span
+                      class="text-[#B3B3B2] font-medium text-[16px] leading-[150%] tracking-[0%] uppercase 2xl:text-[18px] group-hover:text-white transition-colors"
+                    >
+                      Know More
+                    </span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div
+              class="hidden lg:flex rounded-[12px] bg-[#1A1A1A] flex-col h-full"
+            >
+              <p
+                class="px-5 py-5 text-[#81807E] font-normal text-[14px] leading-[150%] tracking-[0%] 2xl:text-[20px] 2xl:py-4 2xl:px-[30px]"
+              >
+                Step 04
+              </p>
+              <h3
+                class="py-6 px-5 bg-[#1F1F1F] border-y-2 border-[#262626] text-[#F9EFEC] font-medium text-[18px] leading-[150%] tracking-[0%] uppercase 2xl:text-[24px] 2xl:px-[30px] 2lx:py-[40px]"
+              >
+                Complete the Application
+              </h3>
+              <div
+                class="flex flex-col p-5 gap-2 justify-between flex-1 lg:p-6 2xl:p-[30px]"
+              >
+                <p
+                  class="text-[#B3B3B2] font-normal text-[14px] leading-[150%] tracking-[0%] lg:text-[16px] 2xl:text[18px]"
+                >
+                  Click the "Apply Now" button on the job listing page to access
+                  our online application form. Fill in your personal
+                  information, contact details, and the position you are
+                  applying for.
+                </p>
+                <div>
+                  <a href="#" class="flex gap-2.5 items-center group w-fit">
+                    <div
+                      class="p-2.5 border-1 border-[#333333] bg-[#1F1F1F] rounded-full"
+                    >
+                      <div
+                        class="bg-[url('assets/images/arrowDown.svg')] bg-contain bg-center bg-no-repeat w-5 h-5"
+                      ></div>
+                    </div>
+                    <span
+                      class="text-[#B3B3B2] font-medium text-[16px] leading-[150%] tracking-[0%] uppercase 2xl:text-[18px] group-hover:text-white transition-colors"
+                    >
+                      Know More
+                    </span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div
+              class="hidden lg:flex rounded-[12px] bg-[#1A1A1A] flex-col h-full"
+            >
+              <p
+                class="px-5 py-5 text-[#81807E] font-normal text-[14px] leading-[150%] tracking-[0%] 2xl:text-[20px] 2xl:py-4 2xl:px-[30px]"
+              >
+                Step 05
+              </p>
+              <h3
+                class="py-6 px-5 bg-[#1F1F1F] border-y-2 border-[#262626] text-[#F9EFEC] font-medium text-[18px] leading-[150%] tracking-[0%] uppercase 2xl:text-[24px] 2xl:px-[30px] 2lx:py-[40px]"
+              >
+                Upload Your Documents
+              </h3>
+              <div
+                class="flex flex-col p-5 gap-2 justify-between flex-1 lg:p-6 2xl:p-[30px]"
+              >
+                <p
+                  class="text-[#B3B3B2] font-normal text-[14px] leading-[150%] tracking-[0%] lg:text-[16px] 2xl:text[18px]"
+                >
+                  Attach your resume, cover letter, and portfolio (if
+                  applicable) in their respective fields on the application
+                  form.
+                </p>
+                <div>
+                  <a href="#" class="flex gap-2.5 items-center group w-fit">
+                    <div
+                      class="p-2.5 border-1 border-[#333333] bg-[#1F1F1F] rounded-full"
+                    >
+                      <div
+                        class="bg-[url('assets/images/arrowDown.svg')] bg-contain bg-center bg-no-repeat w-5 h-5"
+                      ></div>
+                    </div>
+                    <span
+                      class="text-[#B3B3B2] font-medium text-[16px] leading-[150%] tracking-[0%] uppercase 2xl:text-[18px] group-hover:text-white transition-colors"
+                    >
+                      Know More
+                    </span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div
+              class="hidden lg:flex rounded-[12px] bg-[#1A1A1A] flex-col h-full"
+            >
+              <p
+                class="px-5 py-5 text-[#81807E] font-normal text-[14px] leading-[150%] tracking-[0%] 2xl:text-[20px] 2xl:py-4 2xl:px-[30px]"
+              >
+                Step 06
+              </p>
+              <h3
+                class="py-6 px-5 bg-[#1F1F1F] border-y-2 border-[#262626] text-[#F9EFEC] font-medium text-[18px] leading-[150%] tracking-[0%] uppercase 2xl:text-[24px] 2xl:px-[30px] 2lx:py-[40px]"
+              >
+                Submit Your Application
+              </h3>
+              <div
+                class="flex flex-col p-5 gap-2 justify-between flex-1 lg:p-6 2xl:p-[30px]"
+              >
+                <p
+                  class="text-[#B3B3B2] font-normal text-[14px] leading-[150%] tracking-[0%] lg:text-[16px] 2xl:text[18px]"
+                >
+                  Double-check all the information you provided to ensure
+                  accuracy and completeness. Once you are satisfied with your
+                  application, click the "Submit" button to send it to our HR
+                  team.
+                </p>
+                <div>
+                  <a href="#" class="flex gap-2.5 items-center group w-fit">
+                    <div
+                      class="p-2.5 border-1 border-[#333333] bg-[#1F1F1F] rounded-full"
+                    >
+                      <div
+                        class="bg-[url('assets/images/arrowDown.svg')] bg-contain bg-center bg-no-repeat w-5 h-5"
+                      ></div>
+                    </div>
+                    <span
+                      class="text-[#B3B3B2] font-medium text-[16px] leading-[150%] tracking-[0%] uppercase 2xl:text-[18px] group-hover:text-white transition-colors"
+                    >
+                      Know More
+                    </span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div
+              class="hidden lg:flex rounded-[12px] bg-[#1A1A1A] flex-col h-full"
+            >
+              <p
+                class="px-5 py-5 text-[#81807E] font-normal text-[14px] leading-[150%] tracking-[0%] 2xl:text-[20px] 2xl:py-4 2xl:px-[30px]"
+              >
+                Step 07
+              </p>
+              <h3
+                class="py-6 px-5 bg-[#1F1F1F] border-y-2 border-[#262626] text-[#F9EFEC] font-medium text-[18px] leading-[150%] tracking-[0%] uppercase 2xl:text-[24px] 2xl:px-[30px] 2lx:py-[40px]"
+              >
+                Application Review
+              </h3>
+              <div
+                class="flex flex-col p-5 gap-2 justify-between flex-1 lg:p-6 2xl:p-[30px]"
+              >
+                <p
+                  class="text-[#B3B3B2] font-normal text-[14px] leading-[150%] tracking-[0%] lg:text-[16px] 2xl:text[18px]"
+                >
+                  After the application deadline, our HR team will carefully
+                  review all applications. Shortlisted candidates will be
+                  contacted for further evaluation, which may include interviews
+                  and assessments.
+                </p>
+                <div>
+                  <a href="#" class="flex gap-2.5 items-center group w-fit">
+                    <div
+                      class="p-2.5 border-1 border-[#333333] bg-[#1F1F1F] rounded-full"
+                    >
+                      <div
+                        class="bg-[url('assets/images/arrowDown.svg')] bg-contain bg-center bg-no-repeat w-5 h-5"
+                      ></div>
+                    </div>
+                    <span
+                      class="text-[#B3B3B2] font-medium text-[16px] leading-[150%] tracking-[0%] uppercase 2xl:text-[18px] group-hover:text-white transition-colors"
+                    >
+                      Know More
+                    </span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div
+              class="hidden lg:flex rounded-[12px] bg-[#1A1A1A] flex-col h-full"
+            >
+              <p
+                class="px-5 py-5 text-[#81807E] font-normal text-[14px] leading-[150%] tracking-[0%] 2xl:text-[20px] 2xl:py-4 2xl:px-[30px]"
+              >
+                Step 08
+              </p>
+              <h3
+                class="py-6 px-5 bg-[#1F1F1F] border-y-2 border-[#262626] text-[#F9EFEC] font-medium text-[18px] leading-[150%] tracking-[0%] uppercase 2xl:text-[24px] 2xl:px-[30px] 2lx:py-[40px]"
+              >
+                Interview Process
+              </h3>
+              <div
+                class="flex flex-col p-5 gap-2 justify-between flex-1 lg:p-6 2xl:p-[30px]"
+              >
+                <p
+                  class="text-[#B3B3B2] font-normal text-[14px] leading-[150%] tracking-[0%] lg:text-[16px] 2xl:text[18px]"
+                >
+                  If you are selected for an interview, we will reach out to
+                  schedule a suitable date and time. Interviews may be conducted
+                  in-person or virtually, depending on the position and your
+                  location.
+                </p>
+                <div>
+                  <a href="#" class="flex gap-2.5 items-center group w-fit">
+                    <div
+                      class="p-2.5 border-1 border-[#333333] bg-[#1F1F1F] rounded-full"
+                    >
+                      <div
+                        class="bg-[url('assets/images/arrowDown.svg')] bg-contain bg-center bg-no-repeat w-5 h-5"
+                      ></div>
+                    </div>
+                    <span
+                      class="text-[#B3B3B2] font-medium text-[16px] leading-[150%] tracking-[0%] uppercase 2xl:text-[18px] group-hover:text-white transition-colors"
+                    >
+                      Know More
+                    </span>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <a
+              href="#"
+              class="flex px-4 py-5 bg-[#1A1A1A] justify-center items-center gap-1.5 lg:hidden group"
+            >
+              <div
+                class="p-[14px] bg-[#0F0F0F] border-[1px] border-[#262626] rounded-full"
+              >
+                <div
+                  class="bg-[url('assets/images/arrowDown.svg')] bg-contain bg-center bg-no-repeat w-5 h-5"
+                ></div>
+              </div>
+              <span
+                class="text-[#B3B3B2] font-medium text-[14px] leading-[150%] tracking-[0%] uppercase group-hover:text-white transition-colors"
+              >
+                All Steps
+              </span>
+            </a>
+          </div>
+        </section>
+        <section
+          class="flex flex-col gap-[10px] border-[2px] border-[#1F1F1F] p-[10px] rounded-[14px]"
+        >
+          <div class="rounded-[14px] p-6 bg-[#1A1A1A] sm:flex justify-between">
+            <h2
+              class="text-[#F9EFEC] font-semibold text-[28px] leading-[100%] tracking-[0%] uppercase lg:text-[38px] 2xl:text-[48px]"
+            >
+              Testimonials
+            </h2>
+            <a href="#" class="hidden sm:flex gap-2.5 items-center group">
+              <div
+                class="p-5 bg-[#1F1F1F] border-[1px] border-[#262626] rounded-full"
+              >
+                <div
+                  class="w-6 h-6 bg-[url('assets/images/arrowTopLeft.svg')] bg-contain bg-center bg-no-repeat 2xl:w-7 2xl:h-7"
+                ></div>
+              </div>
+              <span
+                class="text-[#B3B3B2] font-medium text-[16px] leading-[100%] tracking-[0%] uppercase self-center 2xl:text-[20px] group-hover:text-white transition-colors"
+              >
+                ALL Testimonials
+              </span>
+            </a>
+          </div>
+
+          <div class="grid grid-cols-1 gap-2 lg:grid-cols-4 lg:gap-2.5">
+            <div
+              class="flex rounded-[10px] bg-[#1A1A1A] flex-col h-full overflow-hidden"
+            >
+              <div class="p-6 flex flex-col gap-4 lg:p-[30px] 2xl:p-10">
+                <p
+                  class="text-[#F9EFEC] font-medium text-[18px] leading-[150%] tracking-[0%] uppercase lg:text-[22px] 2xl:text-[24px]"
+                >
+                  NexGen turned our business around!
+                </p>
+                <p
+                  class="text-[#B3B3B2] font-normal text-[14px] leading-[150%] tracking-[0%] lg:text-[16px] 2xl:text-[18px]"
+                >
+                  Their digital marketing strategies helped us reach new
+                  customers and increase our revenue by 30% within just a few
+                  months. Highly recommended!
+                </p>
+              </div>
+              <div class="flex px-4 py-5 bg-[#1F1F1F] mt-auto">
+                <div class="flex gap-2 items-center lg:gap-2.5">
+                  <div class="bg-[#CE7D63] p-1 rounded-full">
+                    <div
+                      class="w-10 h-10 bg-[url('assets/images/image1.svg')] bg-contain bg-center bg-no-repeat lg:w-[50px] lg:h-[50px] 2xl:w-[60px] 2xl:h-[60px]"
+                    ></div>
+                  </div>
+                  <div class="flex flex-col gap-2.5">
+                    <p
+                      class="text-[#F3DFD8] font-medium text-[16px] leading-[150%] tracking-[0%] lg:text-[18px] 2xl:text-[20px]"
+                    >
+                      Sarah Thompson
+                    </p>
+                    <p
+                      class="text-[#81807E] font-normal text-[14px] leading-[150%] tracking-[0%] lg:text-[16px] 2xl:text-[18px]"
+                    >
+                      CEO of BlueBloom
+                    </p>
+                  </div>
+                </div>
+                <a
+                  href="#"
+                  class="flex items-center p-2.5 border-[1px] border-[#333333] bg-[#1F1F1F] rounded-full ml-auto 2xl:p-[14px] hover:bg-[#333] transition-colors"
+                  aria-label="Read full testimonial"
+                >
+                  <div
+                    class="w-6 h-6 bg-[url('assets/images/arrowRight.svg')] bg-contain bg-center bg-no-repeat 2xl:w-8 2xl:h-7"
+                  ></div>
+                </a>
+              </div>
+            </div>
+            <div
+              class="flex rounded-[10px] bg-[#1A1A1A] flex-col h-full overflow-hidden"
+            >
+              <div class="p-6 flex flex-col gap-4 lg:p-[30px] 2xl:p-10">
+                <p
+                  class="text-[#F9EFEC] font-medium text-[18px] leading-[150%] tracking-[0%] uppercase lg:text-[22px] 2xl:text-[24px]"
+                >
+                  NexGen turned our business around!
+                </p>
+                <p
+                  class="text-[#B3B3B2] font-normal text-[14px] leading-[150%] tracking-[0%] lg:text-[16px] 2xl:text-[18px]"
+                >
+                  Their digital marketing strategies helped us reach new
+                  customers and increase our revenue by 30% within just a few
+                  months. Highly recommended!
+                </p>
+              </div>
+              <div class="flex px-4 py-5 bg-[#1F1F1F] mt-auto">
+                <div class="flex gap-2 items-center lg:gap-2.5">
+                  <div class="bg-[#CE7D63] p-1 rounded-full">
+                    <div
+                      class="w-10 h-10 bg-[url('assets/images/image2.svg')] bg-contain bg-center bg-no-repeat lg:w-[50px] lg:h-[50px] 2xl:w-[60px] 2xl:h-[60px]"
+                    ></div>
+                  </div>
+                  <div class="flex flex-col gap-2.5">
+                    <p
+                      class="text-[#F3DFD8] font-medium text-[16px] leading-[150%] tracking-[0%] lg:text-[18px] 2xl:text-[20px]"
+                    >
+                      Wade Warren
+                    </p>
+                    <p
+                      class="text-[#81807E] font-normal text-[14px] leading-[150%] tracking-[0%] lg:text-[16px] 2xl:text-[18px]"
+                    >
+                      Art Director
+                    </p>
+                  </div>
+                </div>
+                <a
+                  href="#"
+                  class="flex items-center p-2.5 border-[1px] border-[#333333] bg-[#1F1F1F] rounded-full ml-auto 2xl:p-[14px] hover:bg-[#333] transition-colors"
+                  aria-label="Read full testimonial"
+                >
+                  <div
+                    class="w-6 h-6 bg-[url('assets/images/arrowRight.svg')] bg-contain bg-center bg-no-repeat 2xl:w-8 2xl:h-7"
+                  ></div>
+                </a>
+              </div>
+            </div>
+            <div
+              class="flex rounded-[10px] bg-[#1A1A1A] flex-col h-full overflow-hidden"
+            >
+              <div class="p-6 flex flex-col gap-4 lg:p-[30px] 2xl:p-10">
+                <p
+                  class="text-[#F9EFEC] font-medium text-[18px] leading-[150%] tracking-[0%] uppercase lg:text-[22px] 2xl:text-[24px]"
+                >
+                  NexGen turned our business around!
+                </p>
+                <p
+                  class="text-[#B3B3B2] font-normal text-[14px] leading-[150%] tracking-[0%] lg:text-[16px] 2xl:text-[18px]"
+                >
+                  Their digital marketing strategies helped us reach new
+                  customers and increase our revenue by 30% within just a few
+                  months. Highly recommended!
+                </p>
+              </div>
+              <div class="flex px-4 py-5 bg-[#1F1F1F] mt-auto">
+                <div class="flex gap-2 items-center lg:gap-2.5">
+                  <div class="bg-[#CE7D63] p-1 rounded-full">
+                    <div
+                      class="w-10 h-10 bg-[url('assets/images/image3.svg')] bg-contain bg-center bg-no-repeat lg:w-[50px] lg:h-[50px] 2xl:w-[60px] 2xl:h-[60px]"
+                    ></div>
+                  </div>
+                  <div class="flex flex-col gap-2.5">
+                    <p
+                      class="text-[#F3DFD8] font-medium text-[16px] leading-[150%] tracking-[0%] lg:text-[18px] 2xl:text-[20px]"
+                    >
+                      Lisa Williams
+                    </p>
+                    <p
+                      class="text-[#81807E] font-normal text-[14px] leading-[150%] tracking-[0%] lg:text-[16px] 2xl:text-[18px]"
+                    >
+                      CEO Of HealthTech
+                    </p>
+                  </div>
+                </div>
+                <a
+                  href="#"
+                  class="flex items-center p-2.5 border-[1px] border-[#333333] bg-[#1F1F1F] rounded-full ml-auto 2xl:p-[14px] hover:bg-[#333] transition-colors"
+                  aria-label="Read full testimonial"
+                >
+                  <div
+                    class="w-6 h-6 bg-[url('assets/images/arrowRight.svg')] bg-contain bg-center bg-no-repeat 2xl:w-8 2xl:h-7"
+                  ></div>
+                </a>
+              </div>
+            </div>
+            <div
+              class="hidden lg:flex rounded-[10px] bg-[#1A1A1A] flex-col h-full overflow-hidden"
+            >
+              <div class="p-6 flex flex-col gap-4 lg:p-[30px] 2xl:p-10">
+                <p
+                  class="text-[#F9EFEC] font-medium text-[18px] leading-[150%] tracking-[0%] uppercase lg:text-[22px] 2xl:text-[24px]"
+                >
+                  NexGen's web design team brought our vision to life.
+                </p>
+                <p
+                  class="text-[#B3B3B2] font-normal text-[14px] leading-[150%] tracking-[0%] lg:text-[16px] 2xl:text-[18px]"
+                >
+                  Their responsive design ensures our website looks stunning on
+                  all devices, contributing to increased user engagement.
+                </p>
+              </div>
+              <div class="flex px-4 py-5 bg-[#1F1F1F] mt-auto">
+                <div class="flex gap-2 items-center lg:gap-2.5">
+                  <div class="bg-[#CE7D63] p-1 rounded-full">
+                    <div
+                      class="w-10 h-10 bg-[url('assets/images/image4.svg')] bg-contain bg-center bg-no-repeat lg:w-[50px] lg:h-[50px] 2xl:w-[60px] 2xl:h-[60px]"
+                    ></div>
+                  </div>
+                  <div class="flex flex-col gap-2.5">
+                    <p
+                      class="text-[#F3DFD8] font-medium text-[16px] leading-[150%] tracking-[0%] lg:text-[18px] 2xl:text-[20px]"
+                    >
+                      Jennifer Lee
+                    </p>
+                    <p
+                      class="text-[#81807E] font-normal text-[14px] leading-[150%] tracking-[0%] lg:text-[16px] 2xl:text-[18px]"
+                    >
+                      CEO of Foodie Haven
+                    </p>
+                  </div>
+                </div>
+                <a
+                  href="#"
+                  class="flex items-center p-2.5 border-[1px] border-[#333333] bg-[#1F1F1F] rounded-full ml-auto 2xl:p-[14px] hover:bg-[#333] transition-colors"
+                  aria-label="Read full testimonial"
+                >
+                  <div
+                    class="w-6 h-6 bg-[url('assets/images/arrowRight.svg')] bg-contain bg-center bg-no-repeat 2xl:w-8 2xl:h-7"
+                  ></div>
+                </a>
+              </div>
+            </div>
+            <a
+              href="#"
+              class="flex px-4 py-5 bg-[#1A1A1A] justify-center items-center gap-1.5 lg:hidden group"
+            >
+              <div
+                class="p-[14px] bg-[#0F0F0F] border-[1px] border-[#262626] rounded-full"
+              >
+                <div
+                  class="bg-[url('assets/images/arrowDown.svg')] bg-contain bg-center bg-no-repeat w-5 h-5"
+                ></div>
+              </div>
+              <span
+                class="text-[#B3B3B2] font-medium text-[14px] leading-[150%] tracking-[0%] uppercase group-hover:text-white transition-colors"
+              >
+                ALL Testimonials
+              </span>
+            </a>
+          </div>
+        </section>
+        <section class="flex flex-col gap-[10px]">
+          <div
+            class="flex justify-between p-[24px] rounded-[14px] bg-[#1A1A1A] lg:p-[40px] 2xl:p-[50px]"
+          >
+            <h2
+              class="text-[#F9EFEC] font-semibold text-[28px] leading-[100%] tracking-[0%] uppercase lg:p-[38px] 2xl:p-[48px]"
+            >
+              Frequently Asked Questions
+            </h2>
+            <a href="#" class="hidden sm:flex gap-2.5 items-center group">
+              <div
+                class="flex flex-shrink-0 justify-center items-center w-13 h-13 bg-[#1F1F1F] border-[1px] border-[#262626] rounded-full"
+              >
+                <div
+                  class="w-6 h-6 bg-[url('assets/images/arrowTopLeft.svg')] bg-contain bg-center bg-no-repeat 2xl:w-7 2xl:h-7"
+                ></div>
+              </div>
+              <span
+                class="text-[#B3B3B2] font-medium text-[16px] leading-[100%] tracking-[0%] uppercase self-center 2xl:text-[20px] group-hover:text-white transition-colors"
+              >
+                ALL Testimonials
+              </span>
+            </a>
+          </div>
+          <div class="grid grid-cols-1 gap-[10px] lg:grid-cols-10">
+            <div class="grid grid-cols-1 gap-[10px] h-auto lg:col-span-7">
+              <div
+                class="group flex flex-col gap-5 bg-[#1A1A1A] rounded-[14px] p-[30px] lg:p-[40px] 2xl:p-[50px]"
+              >
+                <input
+                  type="checkbox"
+                  name="openCard"
+                  id="btn"
+                  class="hidden"
+                />
+                <div class="flex justify-between">
+                  <p
+                    class="text-[#F9EFEC] font-medium text-[18px] leading-[100%] tracking-[0%] uppercase self-center lg:text-[20px] 2xl:text-[22px]"
+                  >
+                    How long does it take to complete a web development project?
+                  </p>
+                  <label
+                    for="btn"
+                    class="relative flex-shrink-0 w-10 h-10 border-[1px] border-[#333333] bg-[#1F1F1F] cursor-pointer flex justify-center items-center rounded-full 2xl:w-13 2xl:h-13"
+                  >
+                    <div
+                      class="absolute w-5 h-5 bg-[url('assets/images/cong.svg')] bg-contain bg-center bg-no-repeat 2xl:w-6 2xl:h-6 transition-all duration-300 opacity-100 group-has-[:checked]:opacity-0 group-has-[:checked]:rotate-90"
+                    ></div>
+                    <div
+                      class="absolute w-5 h-5 bg-[url('assets/images/tru.svg')] bg-contain bg-center bg-no-repeat 2xl:w-6 2xl:h-6 transition-all duration-300 opacity-0 group-has-[:checked]:opacity-100 group-has-[:checked]:rotate-0"
+                    ></div>
+                  </label>
+                </div>
+                <div
+                  class="grid grid-rows-[0fr] border-t-[1px] border-[#262626] transition-all ease-in-out duration-500 group-has-[:checked]:grid-rows-[1fr] opacity-0 group-has-[:checked]:opacity-100"
+                >
+                  <div class="overflow-hidden">
+                    <p
+                      class="text-[#B3B3B2] font-normal text-[14px] leading-[150%] tracking-[0%] lg:text-[16px] 2xl:text-[18px] pt-4"
+                    >
+                      The timeline varies depending on the project's complexity
+                      and requirements. Our team strives to deliver projects on
+                      time while maintaining the highest quality standards.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="group flex flex-col gap-5 bg-[#1A1A1A] rounded-[14px] p-[30px] lg:p-[40px] 2xl:p-[50px]"
+              >
+                <input
+                  type="checkbox"
+                  name="openCard"
+                  id="btn2"
+                  class="hidden"
+                />
+                <div class="flex justify-between">
+                  <p
+                    class="text-[#F9EFEC] font-medium text-[18px] leading-[100%] tracking-[0%] uppercase self-center lg:text-[20px] 2xl:text-[22px]"
+                  >
+                    Can you handle large-scale mobile app development projects?
+                  </p>
+                  <label
+                    for="btn2"
+                    class="relative flex-shrink-0 w-10 h-10 border-[1px] border-[#333333] bg-[#1F1F1F] cursor-pointer flex justify-center items-center rounded-full 2xl:w-13 2xl:h-13"
+                  >
+                    <div
+                      class="absolute w-5 h-5 bg-[url('assets/images/cong.svg')] bg-contain bg-center bg-no-repeat 2xl:w-6 2xl:h-6 transition-all duration-300 opacity-100 group-has-[:checked]:opacity-0 group-has-[:checked]:rotate-90"
+                    ></div>
+                    <div
+                      class="absolute w-5 h-5 bg-[url('assets/images/tru.svg')] bg-contain bg-center bg-no-repeat 2xl:w-6 2xl:h-6 transition-all duration-300 opacity-0 group-has-[:checked]:opacity-100 group-has-[:checked]:rotate-0"
+                    ></div>
+                  </label>
+                </div>
+                <div
+                  class="grid grid-rows-[0fr] border-t-[1px] border-[#262626] transition-all ease-in-out duration-500 group-has-[:checked]:grid-rows-[1fr] opacity-0 group-has-[:checked]:opacity-100"
+                >
+                  <div class="overflow-hidden">
+                    <p
+                      class="text-[#B3B3B2] font-normal text-[14px] leading-[150%] tracking-[0%] lg:text-[16px] 2xl:text-[18px] pt-4"
+                    >
+                      2 The timeline varies depending on the project's
+                      complexity and requirements. Our team strives to deliver
+                      projects on time while maintaining the highest quality
+                      standards.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="group flex flex-col gap-5 bg-[#1A1A1A] rounded-[14px] p-[30px] lg:p-[40px] 2xl:p-[50px]"
+              >
+                <input
+                  type="checkbox"
+                  name="openCard"
+                  id="btn3"
+                  class="hidden"
+                />
+                <div class="flex justify-between">
+                  <p
+                    class="text-[#F9EFEC] font-medium text-[18px] leading-[100%] tracking-[0%] uppercase self-center lg:text-[20px] 2xl:text-[22px]"
+                  >
+                    Can you integrate third-party APIs into our mobile app?
+                  </p>
+                  <label
+                    for="btn3"
+                    class="relative flex-shrink-0 w-10 h-10 border-[1px] border-[#333333] bg-[#1F1F1F] cursor-pointer flex justify-center items-center rounded-full 2xl:w-13 2xl:h-13"
+                  >
+                    <div
+                      class="absolute w-5 h-5 bg-[url('assets/images/cong.svg')] bg-contain bg-center bg-no-repeat 2xl:w-6 2xl:h-6 transition-all duration-300 opacity-100 group-has-[:checked]:opacity-0 group-has-[:checked]:rotate-90"
+                    ></div>
+                    <div
+                      class="absolute w-5 h-5 bg-[url('assets/images/tru.svg')] bg-contain bg-center bg-no-repeat 2xl:w-6 2xl:h-6 transition-all duration-300 opacity-0 group-has-[:checked]:opacity-100 group-has-[:checked]:rotate-0"
+                    ></div>
+                  </label>
+                </div>
+                <div
+                  class="grid grid-rows-[0fr] border-t-[1px] border-[#262626] transition-all ease-in-out duration-500 group-has-[:checked]:grid-rows-[1fr] opacity-0 group-has-[:checked]:opacity-100"
+                >
+                  <div class="overflow-hidden">
+                    <p
+                      class="text-[#B3B3B2] font-normal text-[14px] leading-[150%] tracking-[0%] lg:text-[16px] 2xl:text-[18px] pt-4"
+                    >
+                      3 The timeline varies depending on the project's
+                      complexity and requirements. Our team strives to deliver
+                      projects on time while maintaining the highest quality
+                      standards.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="group flex flex-col gap-5 bg-[#1A1A1A] rounded-[14px] p-[30px] lg:p-[40px] 2xl:p-[50px]"
+              >
+                <input
+                  type="checkbox"
+                  name="openCard"
+                  id="btn5"
+                  class="hidden"
+                />
+                <div class="flex justify-between">
+                  <p
+                    class="text-[#F9EFEC] font-medium text-[18px] leading-[100%] tracking-[0%] uppercase self-center lg:text-[20px] 2xl:text-[22px]"
+                  >
+                    How do you ensure cross-platform compatibility for mobile
+                    apps?
+                  </p>
+                  <label
+                    for="btn5"
+                    class="relative flex-shrink-0 w-10 h-10 border-[1px] border-[#333333] bg-[#1F1F1F] cursor-pointer flex justify-center items-center rounded-full 2xl:w-13 2xl:h-13"
+                  >
+                    <div
+                      class="absolute w-5 h-5 bg-[url('assets/images/cong.svg')] bg-contain bg-center bg-no-repeat 2xl:w-6 2xl:h-6 transition-all duration-300 opacity-100 group-has-[:checked]:opacity-0 group-has-[:checked]:rotate-90"
+                    ></div>
+                    <div
+                      class="absolute w-5 h-5 bg-[url('assets/images/tru.svg')] bg-contain bg-center bg-no-repeat 2xl:w-6 2xl:h-6 transition-all duration-300 opacity-0 group-has-[:checked]:opacity-100 group-has-[:checked]:rotate-0"
+                    ></div>
+                  </label>
+                </div>
+                <div
+                  class="grid grid-rows-[0fr] border-t-[1px] border-[#262626] transition-all ease-in-out duration-500 group-has-[:checked]:grid-rows-[1fr] opacity-0 group-has-[:checked]:opacity-100"
+                >
+                  <div class="overflow-hidden">
+                    <p
+                      class="text-[#B3B3B2] font-normal text-[14px] leading-[150%] tracking-[0%] lg:text-[16px] 2xl:text-[18px] pt-4"
+                    >
+                      5 The timeline varies depending on the project's
+                      complexity and requirements. Our team strives to deliver
+                      projects on time while maintaining the highest quality
+                      standards.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="group flex flex-col gap-5 bg-[#1A1A1A] rounded-[14px] p-[30px] lg:p-[40px] 2xl:p-[50px]"
+              >
+                <input
+                  type="checkbox"
+                  name="openCard"
+                  id="btn4"
+                  class="hidden"
+                />
+                <div class="flex justify-between">
+                  <p
+                    class="text-[#F9EFEC] font-medium text-[18px] leading-[100%] tracking-[0%] uppercase self-center lg:text-[20px] 2xl:text-[22px]"
+                  >
+                    What is your approach to user experience (UX) design?
+                  </p>
+                  <label
+                    for="btn4"
+                    class="relative flex-shrink-0 w-10 h-10 border-[1px] border-[#333333] bg-[#1F1F1F] cursor-pointer flex justify-center items-center rounded-full 2xl:w-13 2xl:h-13"
+                  >
+                    <div
+                      class="absolute w-5 h-5 bg-[url('assets/images/cong.svg')] bg-contain bg-center bg-no-repeat 2xl:w-6 2xl:h-6 transition-all duration-300 opacity-100 group-has-[:checked]:opacity-0 group-has-[:checked]:rotate-90"
+                    ></div>
+                    <div
+                      class="absolute w-5 h-5 bg-[url('assets/images/tru.svg')] bg-contain bg-center bg-no-repeat 2xl:w-6 2xl:h-6 transition-all duration-300 opacity-0 group-has-[:checked]:opacity-100 group-has-[:checked]:rotate-0"
+                    ></div>
+                  </label>
+                </div>
+                <div
+                  class="grid grid-rows-[0fr] border-t-[1px] border-[#262626] transition-all ease-in-out duration-500 group-has-[:checked]:grid-rows-[1fr] opacity-0 group-has-[:checked]:opacity-100"
+                >
+                  <div class="overflow-hidden">
+                    <p
+                      class="text-[#B3B3B2] font-normal text-[14px] leading-[150%] tracking-[0%] lg:text-[16px] 2xl:text-[18px] pt-4"
+                    >
+                      4 The timeline varies depending on the project's
+                      complexity and requirements. Our team strives to deliver
+                      projects on time while maintaining the highest quality
+                      standards.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <form
+              action=""
+              method="post"
+              class="flex flex-col lg:h-full p-[30px] gap-5 rounded-xl bg-[#1A1A1A] lg:col-span-3 lg:gap-[30px] 2xl:gap-[50px]"
+            >
+              <p
+                class="self-center text-[#F9EFEC] font-medium text-[18px] uppercase leading-[150%] tracking-[0%] border-b-[1px] border-[#262626] pb-[20px] lg:text-[20px] lg:pb-[10px] 2xl:pb-[20px] 2xl:text-[24px]"
+              >
+                Ask your question
+              </p>
+              <div class="grid grid-cols-1 gap-[10px]">
+                <label
+                  for="name"
+                  class="text-[#F3DFD8] font-medium text-[16px] uppercase leading-[150%] tracking-[0%] lg:text-[18px] 2xl:text-[20px]"
+                  >Name</label
+                >
+                <input
+                  type="text"
+                  id="name"
+                  class="rounded-lg p-4 bg-[#0F0F0F] placeholder-[#676665] font-normal text-[16px] uppercase leading-[150%] tracking-[0%] lg:text-[18px] 2xl:text-[20px]"
+                  placeholder="Enter your name"
+                />
+              </div>
+              <div class="grid grid-cols-1 gap-[10px]">
+                <label
+                  for="email"
+                  class="text-[#F3DFD8] font-medium text-[16px] uppercase leading-[150%] tracking-[0%] lg:text-[18px] 2xl:text-[20px]"
+                  >Email</label
+                >
+                <input
+                  type="email"
+                  id="email"
+                  class="rounded-lg p-4 bg-[#0F0F0F] placeholder-[#676665] font-normal text-[16px] uppercase leading-[150%] tracking-[0%] lg:text-[18px] 2xl:text-[20px]"
+                  placeholder="Enter your email"
+                />
+              </div>
+              <div class="grid grid-cols-1 gap-[10px]">
+                <label
+                  for="question"
+                  class="text-[#F3DFD8] font-medium text-[16px] uppercase leading-[150%] tracking-[0%] lg:text-[18px] 2xl:text-[20px]"
+                  >Your Question</label
+                >
+                <textarea
+                  id="question"
+                  class="rounded-lg min-h-[100px] p-4 bg-[#0F0F0F] placeholder-[#676665] font-normal text-[16px] uppercase leading-[150%] tracking-[0%] lg:text-[18px] 2xl:text-[20px] resize-y"
+                  placeholder="Enter your question"
+                ></textarea>
+              </div>
+              <button
+                type="submit"
+                class="mt-auto text-[#0F0F0F] bg-[#CE7D63] rounded-lg px-5 py-[14px] font-medium text-[16px] uppercase leading-[150%] tracking-[0%] lg:px-6 lg:py-[18px] lg:text-[18px] 2xl:text-[20px] hover:bg-[#b06750] transition-colors cursor-pointer"
+              >
+                Send Your Message
+              </button>
+            </form>
+          </div>
+        </section>
+        <footer class="grid grid-cols-1 gap-2.5">
+          <div
+            class="flex flex-col p-[30px] rounded-2xl gap-4 bg-[#CE7D63] lg:p-[60px] lg:rounded-[20px] 2xl:p-[80px] lg:flex-row lg:justify-between"
+          >
+            <div>
+              <h2
+                class="text-[#0F0F0F] font-medium text-[28px] leading-[150%] tracking-[0%] lg:text-[42px] 2xl:text-[58px]"
+              >
+                Ready to Transform Your Digital Presence?
+              </h2>
+              <p
+                class="text-[#262626] font-normal text-[14px] leading-[150%] tracking-[0%] lg:text-[16px] 2xl:text-[18px]"
+              >
+                Take the first step towards digital success with NexGen by your
+                side. Our team of experts is eager to craft tailored solutions
+                that drive growth for your business.
+              </p>
+            </div>
+            <a
+              href="#"
+              class="bg-[#0F0F0F] px-[24px] py-[14px] rounded-xl flex items-center gap-2 justify-center w-fit self-start lg:self-end hover:bg-[#1a1a1a] transition-colors"
+            >
+              <span
+                class="flex-shrink-0 text-[#F3DFD8] uppercase font-medium text-[14px] leading-[150%] tracking-[0%] lg:text-[16px] 2xl:text-[18px]"
+              >
+                Get in touch
+              </span>
+              <div
+                class="w-5 h-5 bg-[url('assets/images/arrowTopLeft.svg')] bg-contain bg-center bg-no-repeat"
+              ></div>
+            </a>
+          </div>
+          <div
+            class="w-full overflow-hidden bg-[#1A1A1A] py-4 border-y border-dashed border-[#262626]"
+          >
+            <div class="animate-marquee">
+              <div class="flex items-center space-x-10 px-5">
+                <span
+                  class="text-[#81807E] font-medium text-xl uppercase whitespace-nowrap"
+                  >Follow us on social media</span
+                >
+                <span class="w-2 h-2 rounded-full bg-[#CE7D63]"></span>
+                <span
+                  class="text-[#81807E] font-medium text-xl uppercase whitespace-nowrap"
+                  >Follow us on social media</span
+                >
+                <span class="w-2 h-2 rounded-full bg-[#CE7D63]"></span>
+                <span
+                  class="text-[#81807E] font-medium text-xl uppercase whitespace-nowrap"
+                  >Follow us on social media</span
+                >
+                <span class="w-2 h-2 rounded-full bg-[#CE7D63]"></span>
+              </div>
+
+              <div class="flex items-center space-x-10 px-5">
+                <span
+                  class="text-[#81807E] font-medium text-xl uppercase whitespace-nowrap"
+                  >Follow us on social media</span
+                >
+                <span class="w-2 h-2 rounded-full bg-[#CE7D63]"></span>
+                <span
+                  class="text-[#81807E] font-medium text-xl uppercase whitespace-nowrap"
+                  >Follow us on social media</span
+                >
+                <span class="w-2 h-2 rounded-full bg-[#CE7D63]"></span>
+                <span
+                  class="text-[#81807E] font-medium text-xl uppercase whitespace-nowrap"
+                  >Follow us on social media</span
+                >
+                <span class="w-2 h-2 rounded-full bg-[#CE7D63]"></span>
+              </div>
+            </div>
+          </div>
+          <div
+            class="grid gap-2.5 grid-cols-1 lg:grid-cols-10 lg:grid-rows-6 lg:gap-3"
+          >
+            <div class="grid grid-cols-4 gap-2.5 lg:hidden">
+              <a
+                href="#"
+                class="flex justify-center items-center p-[14px] bg-[#1F1F1F] border-[1px] border-[#333333] rounded-xl hover:bg-[#333] transition-colors"
+                aria-label="Instagram"
+              >
+                <div
+                  class="w-7 h-7 bg-[url('assets/images/insta.svg')] bg-contain bg-center bg-no-repeat"
+                ></div>
+              </a>
+              <a
+                href="#"
+                class="flex justify-center items-center p-[14px] bg-[#1F1F1F] border-[1px] border-[#333333] rounded-xl hover:bg-[#333] transition-colors"
+                aria-label="Twitter"
+              >
+                <div
+                  class="w-7 h-7 bg-[url('assets/images/twit.svg')] bg-contain bg-center bg-no-repeat"
+                ></div>
+              </a>
+              <a
+                href="#"
+                class="flex justify-center items-center p-[14px] bg-[#1F1F1F] border-[1px] border-[#333333] rounded-xl hover:bg-[#333] transition-colors"
+                aria-label="Dribbble"
+              >
+                <div
+                  class="w-7 h-7 bg-[url('assets/images/ball.svg')] bg-contain bg-center bg-no-repeat"
+                ></div>
+              </a>
+              <a
+                href="#"
+                class="flex justify-center items-center p-[14px] bg-[#1F1F1F] border-[1px] border-[#333333] rounded-xl hover:bg-[#333] transition-colors"
+                aria-label="Behance"
+              >
+                <div
+                  class="w-7 h-7 bg-[url('assets/images/be.svg')] bg-contain bg-center bg-no-repeat"
+                ></div>
+              </a>
+            </div>
+            <div
+              class="hidden lg:grid col-span-4 row-span-6 grid-rows-2 grid-cols-2 gap-2.5"
+            >
+              <a
+                href="#"
+                class="flex flex-col gap-[60px] p-[40px] rounded-[14px] bg-[#1A1A1A] group hover:bg-[#1f1f1f] transition-colors"
+              >
+                <div class="flex justify-between">
+                  <div
+                    class="flex justify-center items-center p-[14px] bg-[#1F1F1F] border-[1px] border-[#333333] rounded-xl 2xl:p-[18px]"
+                  >
+                    <div
+                      class="w-7 h-7 bg-[url('assets/images/insta.svg')] bg-contain bg-center bg-no-repeat 2xl:w-8 2xl:h-8"
+                    ></div>
+                  </div>
+                  <div
+                    class="flex flex-shrink-0 justify-center items-center w-13 h-13 bg-[#1F1F1F] border-[1px] border-[#262626] rounded-full group-hover:bg-[#333] transition-colors"
+                  >
+                    <div
+                      class="w-6 h-6 bg-[url('assets/images/arrowTopLeft.svg')] bg-contain bg-center bg-no-repeat 2xl:w-7 2xl:h-7"
+                    ></div>
+                  </div>
+                </div>
+                <div class="mt-auto">
+                  <p
+                    class="text-[#F9EFEC] uppercase font-medium text-[22px] leading-[150%] tracking-[0%] 2xl:text-[30px]"
+                  >
+                    Instagram
+                  </p>
+                  <p
+                    class="text-[#B3B3B2] font-normal text-[14px] leading-[150%] tracking-[0%] 2xl:text-[16px]"
+                  >
+                    Share visually appealing snippets of our latest web
+                    projects.
+                  </p>
+                </div>
+              </a>
+              <a
+                href="#"
+                class="flex flex-col gap-[60px] p-[40px] rounded-[14px] bg-[#1A1A1A] group hover:bg-[#1f1f1f] transition-colors"
+              >
+                <div class="flex justify-between">
+                  <div
+                    class="flex justify-center items-center p-[14px] bg-[#1F1F1F] border-[1px] border-[#333333] rounded-xl 2xl:p-[18px]"
+                  >
+                    <div
+                      class="w-7 h-7 bg-[url('assets/images/twit.svg')] bg-contain bg-center bg-no-repeat 2xl:w-8 2xl:h-8"
+                    ></div>
+                  </div>
+                  <div
+                    class="flex flex-shrink-0 justify-center items-center w-13 h-13 bg-[#1F1F1F] border-[1px] border-[#262626] rounded-full group-hover:bg-[#333] transition-colors"
+                  >
+                    <div
+                      class="w-6 h-6 bg-[url('assets/images/arrowTopLeft.svg')] bg-contain bg-center bg-no-repeat 2xl:w-7 2xl:h-7"
+                    ></div>
+                  </div>
+                </div>
+                <div class="mt-auto">
+                  <p
+                    class="text-[#F9EFEC] uppercase font-medium text-[22px] leading-[150%] tracking-[0%] 2xl:text-[30px]"
+                  >
+                    Twitter
+                  </p>
+                  <p
+                    class="text-[#B3B3B2] font-normal text-[14px] leading-[150%] tracking-[0%] 2xl:text-[16px]"
+                  >
+                    Tweet about interesting coding challenges
+                  </p>
+                </div>
+              </a>
+              <a
+                href="#"
+                class="flex flex-col gap-[60px] p-[40px] rounded-[14px] bg-[#1A1A1A] group hover:bg-[#1f1f1f] transition-colors"
+              >
+                <div class="flex justify-between">
+                  <div
+                    class="flex justify-center items-center p-[14px] bg-[#1F1F1F] border-[1px] border-[#333333] rounded-xl 2xl:p-[18px]"
+                  >
+                    <div
+                      class="w-7 h-7 bg-[url('assets/images/ball.svg')] bg-contain bg-center bg-no-repeat 2xl:w-8 2xl:h-8"
+                    ></div>
+                  </div>
+
+                  <div
+                    class="flex flex-shrink-0 justify-center items-center w-13 h-13 bg-[#1F1F1F] border-[1px] border-[#262626] rounded-full group-hover:bg-[#333] transition-colors"
+                  >
+                    <div
+                      class="w-6 h-6 bg-[url('assets/images/arrowTopLeft.svg')] bg-contain bg-center bg-no-repeat 2xl:w-7 2xl:h-7"
+                    ></div>
+                  </div>
+                </div>
+                <div class="mt-auto">
+                  <p
+                    class="text-[#F9EFEC] uppercase font-medium text-[22px] leading-[150%] tracking-[0%] 2xl:text-[30px]"
+                  >
+                    Dribbble
+                  </p>
+                  <p
+                    class="text-[#B3B3B2] font-normal text-[14px] leading-[150%] tracking-[0%] 2xl:text-[16px]"
+                  >
+                    Showcase design elements of our web projects.
+                  </p>
+                </div>
+              </a>
+              <a
+                href="#"
+                class="flex flex-col gap-[60px] p-[40px] rounded-[14px] bg-[#1A1A1A] group hover:bg-[#1f1f1f] transition-colors"
+              >
+                <div class="flex justify-between">
+                  <div
+                    class="flex justify-center items-center p-[14px] bg-[#1F1F1F] border-[1px] border-[#333333] rounded-xl 2xl:p-[18px]"
+                  >
+                    <div
+                      class="w-7 h-7 bg-[url('assets/images/be.svg')] bg-contain bg-center bg-no-repeat 2xl:w-8 2xl:h-8"
+                    ></div>
+                  </div>
+
+                  <div
+                    class="flex flex-shrink-0 justify-center items-center w-13 h-13 bg-[#1F1F1F] border-[1px] border-[#262626] rounded-full group-hover:bg-[#333] transition-colors"
+                  >
+                    <div
+                      class="w-6 h-6 bg-[url('assets/images/arrowTopLeft.svg')] bg-contain bg-center bg-no-repeat 2xl:w-7 2xl:h-7"
+                    ></div>
+                  </div>
+                </div>
+                <div class="mt-auto">
+                  <p
+                    class="text-[#F9EFEC] uppercase font-medium text-[22px] leading-[150%] tracking-[0%] 2xl:text-[30px]"
+                  >
+                    Behance
+                  </p>
+                  <p
+                    class="text-[#B3B3B2] font-normal text-[14px] leading-[150%] tracking-[0%] 2xl:text-[16px]"
+                  >
+                    Create detailed presentations for our projects.
+                  </p>
+                </div>
+              </a>
+            </div>
+
+            <div
+              class="grid grid-cols-1 gap-2.5 lg:col-span-6 lg:row-span-6 lg:grid-cols-1 lg:grid-rows-6 lg:gap-3"
+            >
+              <div
+                class="grid grid-cols-2 grid-rows-2 gap-4 rounded-2xl p-6 bg-[#1A1A1A] lg:row-span-3 lg:grid-cols-4 lg:grid-rows-1 lg:place-items-center lg:gap-5 l:p-7"
+              >
+                <div class="grid grid-cols-1 gap-2">
+                  <h3 class="text-lg text-[#F3DFD8] font-bold lg:text-xl">
+                    Home
+                  </h3>
+                  <ul class="grid grid-cols-1 gap-2.5">
+                    <li>
+                      <a
+                        href="#"
+                        class="block text-sm font-normal text-[#81807E] lg:text-base 2xl:text-lg hover:text-[#E7BEB1] transition-colors"
+                        >Why Us</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="block text-sm font-normal text-[#81807E] lg:text-base 2xl:text-lg hover:text-[#E7BEB1] transition-colors"
+                        >About Us</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="block text-sm font-normal text-[#81807E] lg:text-base 2xl:text-lg hover:text-[#E7BEB1] transition-colors"
+                        >Testimonials</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="block text-sm font-normal text-[#81807E] lg:text-base 2xl:text-lg hover:text-[#E7BEB1] transition-colors"
+                        >FAQ's</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <div class="grid grid-cols-1 gap-2">
+                  <h3 class="text-lg text-[#F3DFD8] font-bold lg:text-xl">
+                    Services
+                  </h3>
+                  <ul class="grid grid-cols-1 gap-2.5">
+                    <li>
+                      <a
+                        href="#"
+                        class="block text-sm font-normal text-[#81807E] lg:text-base 2xl:text-lg hover:text-[#E7BEB1] transition-colors"
+                        >Web Development</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="block text-sm font-normal text-[#81807E] lg:text-base 2xl:text-lg hover:text-[#E7BEB1] transition-colors"
+                        >App Development</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="block text-sm font-normal text-[#81807E] lg:text-base 2xl:text-lg hover:text-[#E7BEB1] transition-colors"
+                        >Web Design</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="block text-sm font-normal text-[#81807E] lg:text-base 2xl:text-lg hover:text-[#E7BEB1] transition-colors"
+                        >Digital Marketing</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <div class="grid grid-cols-1 gap-2">
+                  <h3 class="text-lg text-[#F3DFD8] font-bold lg:text-xl">
+                    Projects
+                  </h3>
+                  <ul class="grid grid-cols-1 gap-2.5">
+                    <li>
+                      <a
+                        href="#"
+                        class="block text-sm font-normal text-[#81807E] lg:text-base 2xl:text-lg hover:text-[#E7BEB1] transition-colors"
+                        >Klothink</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="block text-sm font-normal text-[#81807E] lg:text-base 2xl:text-lg hover:text-[#E7BEB1] transition-colors"
+                        >Zenith</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="block text-sm font-normal text-[#81807E] lg:text-base 2xl:text-lg hover:text-[#E7BEB1] transition-colors"
+                        >Novus</a
+                      >
+                    </li>
+                    <li></li>
+                  </ul>
+                </div>
+                <div class="grid grid-cols-1 gap-2">
+                  <h3 class="text-lg text-[#F3DFD8] font-bold lg:text-xl">
+                    Blogs
+                  </h3>
+                  <ul class="grid grid-cols-1 gap-2.5">
+                    <li>
+                      <a
+                        href="#"
+                        class="block text-sm font-normal text-[#81807E] lg:text-base 2xl:text-lg hover:text-[#E7BEB1] transition-colors"
+                        >Business</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="flex items-center gap-2 text-sm font-normal text-[#81807E] lg:text-base 2xl:text-lg hover:text-[#E7BEB1] transition-colors"
+                      >
+                        <span>Design</span>
+                        <span
+                          class="px-3 flex-wrap py-1 bg-[#262626] border-[#333333] border-[1px] rounded-md text-white"
+                          >Soon</span
+                        >
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="#"
+                        class="flex flex-wrap items-center gap-2 text-sm font-normal text-[#81807E] lg:text-base 2xl:text-lg hover:text-[#E7BEB1] transition-colors"
+                      >
+                        <span>Development</span>
+                        <span
+                          class="px-3 py-1 bg-[#262626] border-[#333333] border-[1px] rounded-md text-white"
+                          >Soon</span
+                        >
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <form
+                action=""
+                class="grid grid-cols-1 gap-4 bg-[#1A1A1A] rounded-xl p-6 lg:p-10 lg:row-span-2 lg:flex lg:flex-row lg:items-center lg:justify-between lg:rounded-2xl 2xl:p-12"
+              >
+                <div>
+                  <p
+                    class="text-sm font-normal text-[#676665] lg:text-base 2xl:text-lg"
+                  >
+                    Newsletter
+                  </p>
+                  <p
+                    class="text-[#F9EFEC] text-xl font-normal lg:text-2xl 2xl:text-3xl"
+                  >
+                    Subscribe To our Newsletter
+                  </p>
+                </div>
+                <div class="flex justify-between gap-2">
+                  <input
+                    type="email"
+                    required
+                    placeholder="Enter your email"
+                    class="placeholder-[#676665] py-3 px-4 border-b border-[#333333] text-white lg:px-4 lg:py-5 lg:text-2xl outline-none focus:border-[#CE7D63] transition-colors"
+                  />
+                  <button
+                    type="submit"
+                    class="flex flex-shrink-0 justify-center items-center w-13 h-13 bg-[#1F1F1F] border-[1px] border-[#262626] rounded-full cursor-pointer hover:bg-[#333] transition-colors"
+                  >
+                    <div
+                      class="w-6 h-6 bg-[url('assets/images/arrowTopLeft.svg')] bg-contain bg-center bg-no-repeat 2xl:w-7 2xl:h-7"
+                    ></div>
+                  </button>
+                </div>
+              </form>
+              <div
+                class="flex flex-col justify-center gap-2.5 p-6 rounded-xl bg-[#1A1A1A] lg:flex-row lg:justify-between items-center text-[#B3B3B2]"
+              >
+                <p class="text-sm lg:text-lg">
+                  © 2024 NextGen. All rights reserved.
+                </p>
+                <div class="flex flex-col gap-3 text-center lg:flex-row">
+                  <a
+                    href="#"
+                    class="text-sm lg:text-lg hover:text-white transition-colors"
+                    >Terms & Conditions</a
+                  >
+                  <a
+                    href="#"
+                    class="self-stretch text-sm border-t border-[#232329] lg:text-lg lg:border-t-0 lg:border-l lg:pl-3 hover:text-white transition-colors"
+                  >
+                    Privacy Policy
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>

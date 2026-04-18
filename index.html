@@ -1,0 +1,2806 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Home Page</title>
+
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap"
+            rel="stylesheet"
+        />
+        <!--    Google font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght,XOPQ,XTRA,YOPQ,YTDE,YTFI,YTLC,YTUC@8..144,100..1000,96,468,79,-203,738,514,712&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+            rel="stylesheet"
+        />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght,XOPQ,XTRA,YOPQ,YTDE,YTFI,YTLC,YTUC@8..144,100..1000,96,468,79,-203,738,514,712&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet"
+        />
+        <!--    Tailwind CDN -->
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+        <style>
+            #toggle-works:checked ~ div .card-hidden {
+                display: grid;
+            }
+            @keyframes marquee {
+                0% {
+                    transform: translateX(0);
+                }
+                100% {
+                    transform: translateX(-50%);
+                }
+            }
+            .animate-marquee {
+                display: flex;
+                width: max-content;
+                animation: marquee 15s linear infinite;
+            }
+            /* Dùng để pause chữ khi hover */
+            .animate-marquee:hover {
+                animation-play-state: paused;
+            }
+
+            /* Chỉnh phần animation phần follow - không bị chạy vượt quá viền */
+            .marquee-mask {
+                -webkit-mask-image: linear-gradient(
+                    to right,
+                    transparent,
+                    black 5%,
+                    black 95%,
+                    transparent
+                );
+                mask-image: linear-gradient(
+                    to right,
+                    transparent,
+                    black 5%,
+                    black 95%,
+                    transparent
+                );
+            }
+        </style>
+    </head>
+
+    <body class="bg-[#0F0F0F] text-[#676665]">
+        <!-- HEADER -->
+        <!--    Checkbox hack ẩn hiện nav bar -->
+        <input type="checkbox" id="menu-toggle" class="peer hidden" />
+
+        <header
+            class="w-[calc(100%-32px)] h-[72px] mx-auto mt-[41px] sticky top-0 z-[1001] flex items-center justify-between rounded-[10px] p-[14px] bg-[#1A1A1A] lg:w-[calc(100%-80px)] lg:h-[89px] lg:mt-[30px] lg:mb-[42px] lg:mx-auto lg:pl-10 lg:pr-5 lg:py-5 2xl:w-[calc(100%-100px)] 2xl:mx-auto 2xl:h-[111px] 2xl:mt-[30px] 2xl:mb-5 2xl:pl-[50px] 2xl:pr-[24px] 2xl:py-6"
+        >
+            <!-- Logo -->
+            <a href="#" class="cursor-pointer">
+                <img
+                    src="assets/icon/Logo.svg"
+                    alt="Nexgen logo"
+                    class="lg:w-[97px] 2xl:w-[129px]"
+                />
+            </a>
+            <!-- Mobile menu toggle icons -->
+            <label for="menu-toggle" class="cursor-pointer lg:hidden">
+                <img src="assets/icon/hamburger icon.svg" alt="Btn menu" />
+            </label>
+        </header>
+        <!-- Desktop Navigation -->
+
+        <nav class="hidden lg:flex lg:items-center">
+            <ul class="lg:flex lg:gap-[14px] 2xl:gap-4">
+                <li
+                    class="flex items-center justify-center flex-shrink h-[49px] rounded-[10px] bg-[#0F0F0F] px-[20px] py-[14px] text-[#81807E] font-mono font-medium text-[14px] leading-[150%] text-center uppercase hover:bg-[#CE7D63] hover:text-[#0F0F0F] transition duration-200 cursor-pointer 2xl:text-[18px] 2xl:h-[63px]"
+                >
+                    Home
+                </li>
+                <li
+                    class="flex items-center justify-center flex-shrink h-[49px] rounded-[10px] bg-[#0F0F0F] px-[20px] py-[14px] text-[#81807E] font-mono font-medium text-[14px] leading-[150%] text-center uppercase 2xl:text-[18px] 2xl:h-[63px]"
+                >
+                    Services
+                </li>
+                <li
+                    class="flex items-center justify-center flex-shrink h-[49px] rounded-[10px] bg-[#0F0F0F] px-[20px] py-[14px] text-[#81807E] font-mono font-medium text-[14px] leading-[150%] text-center uppercase 2xl:text-[18px] 2xl:h-[63px]"
+                >
+                    Projects
+                </li>
+                <li
+                    class="flex items-center justify-center flex-shrink h-[49px] rounded-[10px] bg-[#0F0F0F] px-[20px] py-[14px] text-[#E7BEB1] font-mono font-medium text-[14px] leading-[150%] text-center uppercase 2xl:text-[18px] 2xl:h-[63px]"
+                >
+                    About
+                </li>
+                <li
+                    class="flex items-center justify-center flex-shrink h-[49px] rounded-[10px] bg-[#0F0F0F] px-[20px] py-[14px] text-[#81807E] font-mono font-medium text-[14px] leading-[150%] text-center uppercase 2xl:text-[18px] 2xl:h-[63px]"
+                >
+                    Careers
+                </li>
+                <li
+                    class="flex items-center justify-center flex-shrink h-[49px] rounded-[10px] bg-[#0F0F0F] px-[20px] py-[14px] text-[#81807E] font-mono font-medium text-[14px] leading-[150%] text-center uppercase 2xl:text-[18px] 2xl:h-[63px]"
+                >
+                    Blogs
+                </li>
+                <li
+                    class="flex items-center justify-center flex-shrink h-[49px] rounded-[10px] bg-[#CE7D63] px-[20px] py-[14px] text-[#0F0F0F] font-mono font-medium text-[14px] leading-[150%] text-center uppercase 2xl:text-[18px] 2xl:h-[63px]"
+                >
+                    Contact Us
+                </li>
+            </ul>
+        </nav>
+
+        <!-- !-- Mobile navigation -->
+        <nav
+            class="fixed top-10.25 z-[1000] w-[280px] h-screen right-[-280px] px-6 font-['Roboto_Mono'] bg-[#1A1A1A] peer-checked:right-4 transition-[right] duration-300 ease-in-out"
+        >
+            <ul class="flex flex-col mt-30 gap-5 text-[#81807E] uppercase">
+                <li
+                    class="flex items-center justify-center bg-[#0F0F0F] rounded-xl"
+                >
+                    <a href="#" class="px-20 py-3 hover:text-[#E7BEB1]">
+                        Home
+                    </a>
+                </li>
+                <li
+                    class="flex items-center justify-center bg-[#0F0F0F] rounded-xl"
+                >
+                    <a href="#" class="px-20 py-3 hover:text-[#E7BEB1]">
+                        Services
+                    </a>
+                </li>
+                <li
+                    class="flex items-center justify-center bg-[#0F0F0F] rounded-xl"
+                >
+                    <a href="#" class="px-20 py-3 hover:text-[#E7BEB1]">
+                        Projects
+                    </a>
+                </li>
+                <li
+                    class="flex items-center justify-center bg-[#0F0F0F] rounded-xl"
+                >
+                    <a href="#" class="px-20 py-3 hover:text-[#E7BEB1]">
+                        About
+                    </a>
+                </li>
+                <li
+                    class="flex items-center justify-center bg-[#0F0F0F] rounded-xl"
+                >
+                    <a href="#" class="px-20 py-3 hover:text-[#E7BEB1]">
+                        Careers
+                    </a>
+                </li>
+                <li
+                    class="flex items-center justify-center bg-[#0F0F0F] rounded-xl"
+                >
+                    <a href="#" class="px-20 py-3 hover:text-[#E7BEB1]">
+                        Blogs
+                    </a>
+                </li>
+                <li
+                    class="flex items-center justify-center rounded-xl bg-[#CE7D63] whitespace-nowrap"
+                >
+                    <a
+                        href="#"
+                        class="px-20 py-3 text-[#0F0F0F] hover:text-[#E7BEB1]"
+                    >
+                        Contact us
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Overlay -->
+        <label
+            for="menu-toggle"
+            class="fixed inset-0 z-[998] bg-[#1A1A1A] opacity-0 invisible peer-checked:visible peer-checked:opacity-60 transition-all duration-300 ease-in-out cursor-pointer"
+        >
+        </label>
+
+        <!-- ======== HERO =========== -->
+        <section class="mt-5 mb-4">
+            <div
+                class="max-w-[calc(100%-32px)] mx-auto lg:max-w-[calc(100%-80px)]"
+            >
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-5">
+                    <!-- HERO LEFT CARD -->
+                    <div
+                        class="lg:col-span-8 p-6 lg:p-15 rounded-2xl bg-[#1A1A1A] flex flex-col justify-between"
+                    >
+                        <div class="mb-[78px]">
+                            <div
+                                class="flex items-center gap-4 pt-4 lg:pt-10 mb-2"
+                            >
+                                <h2
+                                    class="font-['Roboto_Flex'] font-semibold text-[#F9EFEC] text-[28px] leading-tight uppercase lg:text-[52px] xl:text-[60px]"
+                                >
+                                    DIGITAL SOLUTIONS
+                                </h2>
+                                <div class="hidden lg:block">
+                                    <img
+                                        src="assets/icon/CTA btn.svg"
+                                        alt="CTA"
+                                        class="h-[50px] xl:h-[60px] w-auto"
+                                    />
+                                </div>
+                            </div>
+
+                            <h2
+                                class="font-['Roboto_Flex'] font-semibold text-[#F9EFEC] text-[28px] leading-tight uppercase lg:text-[52px] xl:text-[60px] mb-6"
+                            >
+                                THAT DRIVE SUCCESS
+                            </h2>
+
+                            <div class="lg:hidden mb-6">
+                                <img
+                                    src="assets/icon/CTA btn.svg"
+                                    alt="CTA Button"
+                                    class="h-10"
+                                />
+                            </div>
+
+                            <p
+                                class="font-['Roboto_Flex'] font-normal text-[#98989A] text-[14px] leading-relaxed max-w-[90%]"
+                            >
+                                At NexGen, we believe in the transformative
+                                power of digital solutions. Our team of experts
+                                is dedicated to helping businesses like yours
+                                thrive in the fast-paced digital landscape.
+                            </p>
+                        </div>
+
+                        <!-- ==== TAGS ===== -->
+
+                        <!-- Thêm rounded-lg ở thẻ này để khi animation chạy thì vẫn có bo góc + Margin âm để phần tags lệch giống design-->
+                        <div
+                            class="ml-[-7px] lg:mx-[-44px] mt-[31px] mb-4 rounded-lg overflow-hidden"
+                        >
+                            <div class="relative w-full overflow-hidden">
+                                <div
+                                    class="flex items-center bg-[#0F0F0F] py-[14px] lg:px-4 lg:mx-0 animate-marquee"
+                                >
+                                    <!-- List 1 -->
+                                    <ul
+                                        class="font-['Roboto_Mono'] flex list-none p-0 m-0 whitespace-nowrap text-muted-foreground text-[14px] font-normal uppercase"
+                                    >
+                                        <li
+                                            class="before:content-['•'] before:text-[#CE7D63] before:mx-1"
+                                        >
+                                            DIGITAL MARKETING
+                                        </li>
+                                        <li
+                                            class="before:content-['•'] before:text-[#CE7D63] before:mx-1"
+                                        >
+                                            WEBSITE DESIGN
+                                        </li>
+                                        <li
+                                            class="before:content-['•'] before:text-[#CE7D63] before:mx-1"
+                                        >
+                                            BRANDING
+                                        </li>
+                                        <li
+                                            class="before:content-['•'] before:text-[#CE7D63] before:mx-1"
+                                        >
+                                            WEBSITE DEVELOPMENT
+                                        </li>
+                                        <li
+                                            class="before:content-['•'] before:text-[#CE7D63] before:mx-1"
+                                        >
+                                            MOBILE APP DEVELOPMENT
+                                        </li>
+                                    </ul>
+
+                                    <!-- List 2 (dùng để duplicate - chạy không bị ngắt quãng) -->
+                                    <ul
+                                        class="font-['Roboto_Mono'] flex list-none p-0 m-0 whitespace-nowrap text-muted-foreground text-[14px] font-normal uppercase"
+                                    >
+                                        <li
+                                            class="before:content-['•'] before:text-[#CE7D63] before:mx-1"
+                                        >
+                                            DIGITAL MARKETING
+                                        </li>
+                                        <li
+                                            class="before:content-['•'] before:text-[#CE7D63] before:mx-1"
+                                        >
+                                            WEBSITE DESIGN
+                                        </li>
+                                        <li
+                                            class="before:content-['•'] before:text-[#CE7D63] before:mx-1"
+                                        >
+                                            BRANDING
+                                        </li>
+                                        <li
+                                            class="before:content-['•'] before:text-[#CE7D63] before:mx-1"
+                                        >
+                                            WEBSITE DEVELOPMENT
+                                        </li>
+                                        <li
+                                            class="before:content-['•'] before:text-[#CE7D63] before:mx-1"
+                                        >
+                                            MOBILE APP DEVELOPMENT
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- HERO RIGHT CARD -->
+
+                    <div
+                        class="hidden lg:flex lg:col-span-4 flex-col bg-[#1A1A1A] rounded-2xl"
+                    >
+                        <div
+                            class="relative overflow-hidden rounded-xl flex-grow"
+                        >
+                            <img
+                                src="assets/img/Estatein.png"
+                                alt="Estatein"
+                                class="w-full h-[368px] object-cover"
+                            />
+                        </div>
+                        <div class="p-6">
+                            <h4 class="text-[#F9EFEC] text-lg font-medium">
+                                ESTATEIN REAL ESTATE
+                            </h4>
+                            <p class="text-[#676665] text-sm mt-1">
+                                Web Development.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ─── Stats Row ─── -->
+
+        <section class="mb-[50px]">
+            <div
+                class="max-w-[calc(100%-32px)] mx-auto lg:max-w-[calc(100%-80px)]"
+            >
+                <div
+                    class="border-solid border-[2px] border-[#1F1F1F] rounded-2xl"
+                >
+                    <div
+                        class="grid grid-cols-2 gap-[10px] p-[10px] lg:grid-cols-6"
+                    >
+                        <!-- Clients -->
+                        <div
+                            class="flex flex-col items-center justify-center rounded-xl px-[14px] py-4 text-center bg-[#1A1A1A]"
+                        >
+                            <div
+                                class="font-['Roboto_Mono'] font-medium text-sm text-[#B3B3B2] leading-[150%] uppercase"
+                            >
+                                CLIENTS
+                            </div>
+                            <div
+                                class="font-['Roboto_Flex'] font-semibold text-[40px] text-[#DA9E8B] leading-[150%] uppercase"
+                            >
+                                200+
+                            </div>
+                        </div>
+
+                        <!-- Projects -->
+                        <div
+                            class="flex flex-col items-center justify-center rounded-xl px-[14px] py-4 text-center bg-[#1A1A1A]"
+                        >
+                            <div
+                                class="font-['Roboto_Mono'] font-medium text-sm text-[#B3B3B2] leading-[150%] uppercase"
+                            >
+                                PROJECTS
+                            </div>
+                            <div
+                                class="font-['Roboto_Flex'] font-semibold text-[40px] text-[#DA9E8B] leading-[150%] uppercase"
+                            >
+                                280+
+                            </div>
+                        </div>
+
+                        <!-- Happy Clients -->
+                        <div
+                            class="flex flex-col items-center justify-center rounded-xl px-[14px] py-4 text-center bg-[#1A1A1A]"
+                        >
+                            <div
+                                class="font-['Roboto_Mono'] font-medium text-sm text-[#B3B3B2] leading-[150%] uppercase"
+                            >
+                                HAPPY CLIENTS
+                            </div>
+                            <div
+                                class="font-['Roboto_Flex'] font-semibold text-[40px] text-[#DA9E8B] leading-[150%] uppercase"
+                            >
+                                100%
+                            </div>
+                        </div>
+
+                        <!-- Followers -->
+                        <div
+                            class="flex flex-col items-center justify-center rounded-xl px-[14px] py-4 text-center bg-[#1A1A1A]"
+                        >
+                            <div
+                                class="font-['Roboto_Mono'] font-medium text-sm text-[#B3B3B2] leading-[150%] uppercase"
+                            >
+                                FOLLOWERS
+                            </div>
+                            <div
+                                class="font-['Roboto_Flex'] font-semibold text-[40px] text-[#DA9E8B] leading-[150%] uppercase"
+                            >
+                                420K
+                            </div>
+                        </div>
+
+                        <!-- Experience -->
+                        <div
+                            class="col-span-2 lg:col-span-1 flex flex-col items-center justify-center rounded-xl px-[14px] py-4 text-center bg-[#1A1A1A] lg:col-span-1"
+                        >
+                            <div
+                                class="font-['Roboto_Mono'] font-medium text-sm text-[#B3B3B2] leading-[150%]"
+                            >
+                                Years Of Experience
+                            </div>
+                            <div
+                                class="font-['Roboto_Flex'] font-semibold text-[40px] text-[#DA9E8B] leading-[150%] uppercase"
+                            >
+                                10+
+                            </div>
+                        </div>
+
+                        <!-- Btn Know More -->
+                        <a
+                            href="#!"
+                            class="col-span-2 flex items-center justify-center gap-[6px] rounded-xl px-[14px] py-5 bg-[#1A1A1A] group transition-all hover:bg-[#252525] lg:col-span-1"
+                        >
+                            <img
+                                src="assets/icon/Icon Container.png"
+                                alt="Know MORE"
+                                aria-hidden="true"
+                                class="shrink-0"
+                            />
+
+                            <span
+                                class="font-['Roboto_Mono'] font-medium text-sm text-[#B3B3B2] leading-[150%] uppercase"
+                            >
+                                KNOW MORE
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ─── Reasons ─── -->
+
+        <section class="mb-[50px]">
+            <div
+                class="max-w-[calc(100%-32px)] mx-auto lg:max-w-[calc(100%-80px)]"
+            >
+                <div
+                    class="border-solid border-[2px] border-[#1F1F1F] rounded-2xl"
+                >
+                    <div
+                        class="grid grid-cols-1 gap-[10px] p-[10px] lg:grid-cols-4"
+                    >
+                        <!-- CARD 1 -->
+                        <div
+                            class="flex flex-col items-start justify-center rounded-[14px] p-6 bg-[#1A1A1A] lg:col-span-4"
+                        >
+                            <h2
+                                class="font-['Roboto_Flex'] font-semibold text-[28px] text-[#F9EFEC] leading-[100%] uppercase"
+                            >
+                                Reasons to Choose NexGen for Your Digital
+                                Journey
+                            </h2>
+                        </div>
+
+                        <!-- CARD 2 -->
+                        <div
+                            class="flex flex-col items-start justify-center rounded-[14px] p-6 bg-[#1A1A1A]"
+                        >
+                            <h3
+                                class="font-['Roboto_Flex'] font-medium text-xl text-[#F9EFEC] mb-2 leading-[150%] uppercase"
+                            >
+                                Expertise in Cutting-Edge Technologies
+                            </h3>
+                            <p
+                                class="font-['Roboto_Flex'] font-normal text-sm text-[#B3B3B2] leading-[150%]"
+                            >
+                                NexGen ensures your projects are powered by
+                                state-of-the-art technologies, guaranteeing...
+                            </p>
+                            <button
+                                class="flex flex-row items-center mt-6 gap-2 group cursor-pointer transition-opacity hover:opacity-80"
+                            >
+                                <div class="flex-shrink-0" aria-hidden="true">
+                                    <img
+                                        src="assets/icon/Arrow button.png"
+                                        alt=""
+                                    />
+                                </div>
+
+                                <span
+                                    class="font-['Roboto_Flex'] font-normal text-base text-[#B3B3B2] leading-[150%]"
+                                >
+                                    Learn More
+                                </span>
+                            </button>
+                        </div>
+
+                        <!-- CARD 3 -->
+                        <div
+                            class="flex flex-col items-start justify-center rounded-[14px] p-6 bg-[#1A1A1A]"
+                        >
+                            <h3
+                                class="font-['Roboto_Flex'] font-medium text-xl text-[#F9EFEC] mb-2 leading-[150%] uppercase"
+                            >
+                                Proven Track Record of Success
+                            </h3>
+                            <p
+                                class="font-['Roboto_Flex'] font-normal text-sm text-[#B3B3B2] leading-[150%]"
+                            >
+                                NexGen demonstrates a consistent ability to meet
+                                and exceed client expectations, providing
+                                reliable...
+                            </p>
+                            <button
+                                class="flex flex-row items-center mt-6 gap-2 group cursor-pointer transition-opacity hover:opacity-80"
+                            >
+                                <div class="flex-shrink-0" aria-hidden="true">
+                                    <img
+                                        src="assets/icon/Arrow button.png"
+                                        alt=""
+                                    />
+                                </div>
+
+                                <span
+                                    class="font-['Roboto_Flex'] font-normal text-base text-[#B3B3B2] leading-[150%]"
+                                >
+                                    Learn More
+                                </span>
+                            </button>
+                        </div>
+
+                        <!-- CARD 4 -->
+                        <div
+                            class="flex flex-col items-start justify-center rounded-[14px] p-6 bg-[#1A1A1A]"
+                        >
+                            <h3
+                                class="font-['Roboto_Flex'] font-medium text-xl text-[#F9EFEC] mb-2 leading-[150%] uppercase"
+                            >
+                                Client-Centric Approach
+                            </h3>
+                            <p
+                                class="font-['Roboto_Flex'] font-normal text-sm text-[#B3B3B2] leading-[150%]"
+                            >
+                                At NexGen, we prioritize understanding our
+                                clients' unique requirements, fostering ...
+                            </p>
+                            <button
+                                class="flex flex-row items-center mt-6 gap-2 group cursor-pointer transition-opacity hover:opacity-80"
+                            >
+                                <div class="flex-shrink-0" aria-hidden="true">
+                                    <img
+                                        src="assets/icon/Arrow button.png"
+                                        alt=""
+                                    />
+                                </div>
+
+                                <span
+                                    class="font-['Roboto_Flex'] font-normal text-base text-[#B3B3B2] leading-[150%]"
+                                >
+                                    Learn More
+                                </span>
+                            </button>
+                        </div>
+
+                        <!-- CARD 5 -->
+                        <div
+                            class="flex flex-col items-start justify-center rounded-[14px] p-6 bg-[#1A1A1A]"
+                        >
+                            <h3
+                                class="font-['Roboto_Flex'] font-medium text-xl text-[#F9EFEC] mb-2 leading-[150%] uppercase"
+                            >
+                                Dedicated Team of Professionals
+                            </h3>
+                            <p
+                                class="font-['Roboto_Flex'] font-normal text-sm text-[#B3B3B2] leading-[150%]"
+                            >
+                                Our professionals bring a wealth of expertise to
+                                the table, ensuring the delivery of top-notch,
+                                scalable...
+                            </p>
+                            <button
+                                class="flex flex-row items-center mt-6 gap-2 group cursor-pointer transition-opacity hover:opacity-80"
+                            >
+                                <div class="flex-shrink-0" aria-hidden="true">
+                                    <img
+                                        src="assets/icon/Arrow button.png"
+                                        alt=""
+                                    />
+                                </div>
+
+                                <span
+                                    class="font-['Roboto_Flex'] font-normal text-base text-[#B3B3B2] leading-[150%]"
+                                >
+                                    Learn More
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ─── Services ─── -->
+        <section class="mb-[50px]">
+            <div
+                class="max-w-[calc(100%-32px)] mx-auto lg:max-w-[calc(100%-80px)]"
+            >
+                <div
+                    class="border-solid border-[2px] border-[#1F1F1F] rounded-2xl"
+                >
+                    <div
+                        class="grid grid-cols-1 gap-[10px] p-[10px] lg:grid-cols-2"
+                    >
+                        <!--Title-->
+                        <div
+                            class="flex flex-col items-start justify-center rounded-[14px] p-6 bg-[#1A1A1A] lg:col-span-2"
+                        >
+                            <h2
+                                class="font-['Roboto_Flex'] font-semibold text-[28px] text-[#F9EFEC] leading-[100%] uppercase"
+                            >
+                                Our Services
+                            </h2>
+                        </div>
+
+                        <!-- CARD 1 -->
+                        <div
+                            class="flex flex-col gap-5 rounded-[14px] p-6 bg-[#1A1A1A]"
+                        >
+                            <div class="flex flex-row gap-[14px] items-center">
+                                <img
+                                    src="assets/icon/web-design icon.png"
+                                    alt="Web Design Icon"
+                                />
+                                <h3
+                                    class="font-['Roboto_Flex'] font-medium text-xl text-[#F9EFEC] leading-[150%] uppercase"
+                                >
+                                    Web Design
+                                </h3>
+                            </div>
+                            <div>
+                                <div
+                                    class="font-['Roboto_Flex'] font-medium text-lg text-[#F9EFEC] leading-[150%] mb-[6px] uppercase"
+                                >
+                                    Starts From $1,500
+                                </div>
+                                <p
+                                    class="font-['Roboto_Flex'] font-normal text-sm text-[#B3B3B2] leading-[150%] mb-[6px]"
+                                >
+                                    Our Web Design service is all about creating
+                                    visually stunning and user-friendly websites
+                                    that leave a lasting.
+                                </p>
+                            </div>
+
+                            <div class="flex justify-center">
+                                <button
+                                    class="min-w-[290px] bg-[#CE7D63] rounded-lg px-5 py-[14px] transition-all duration-300 hover:opacity-90 active:scale-[0.98] cursor-pointer group"
+                                >
+                                    <span
+                                        class="font-['Roboto_Flex'] font-medium text-sm text-[#0F0F0F] leading-[150%] uppercase tracking-wide transition-colors"
+                                    >
+                                        BOOK A CALL
+                                    </span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- CARD 2 -->
+                        <div
+                            class="flex flex-col gap-5 rounded-[14px] p-6 bg-[#1A1A1A]"
+                        >
+                            <div class="flex flex-row gap-[14px] items-center">
+                                <img
+                                    src="assets/icon/Mobile-App Icon.png"
+                                    alt="Mobile App Development Icon"
+                                />
+                                <h3
+                                    class="font-['Roboto_Flex'] font-medium text-xl text-[#F9EFEC] leading-[150%] uppercase"
+                                >
+                                    Mobile App Development
+                                </h3>
+                            </div>
+                            <div>
+                                <div
+                                    class="font-['Roboto_Flex'] font-medium text-lg text-[#F9EFEC] leading-[150%] mb-[6px] uppercase"
+                                >
+                                    Starts From $2,500
+                                </div>
+                                <p
+                                    class="font-['Roboto_Flex'] font-normal text-sm text-[#B3B3B2] leading-[150%] mb-[6px]"
+                                >
+                                    With our Mobile App Development service, we
+                                    harness the power of mobile technology to
+                                    create cutting-edge applications .
+                                </p>
+                            </div>
+
+                            <div class="flex justify-center">
+                                <button
+                                    class="min-w-[290px] bg-[#CE7D63] rounded-lg px-5 py-[14px] transition-all duration-300 hover:opacity-90 active:scale-[0.98] cursor-pointer group"
+                                >
+                                    <span
+                                        class="font-['Roboto_Flex'] font-medium text-sm text-[#0F0F0F] leading-[150%] uppercase tracking-wide transition-colors"
+                                    >
+                                        BOOK A CALL
+                                    </span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- CARD 3 -->
+                        <div
+                            class="flex flex-col gap-5 rounded-[14px] p-6 bg-[#1A1A1A]"
+                        >
+                            <div class="flex flex-row gap-[14px] items-center">
+                                <img
+                                    src="assets/icon/Web-Dev Icon.png"
+                                    alt="Web Development Icon"
+                                />
+                                <h3
+                                    class="font-['Roboto_Flex'] font-medium text-xl text-[#F9EFEC] leading-[150%] uppercase"
+                                >
+                                    Web Development
+                                </h3>
+                            </div>
+                            <div>
+                                <div
+                                    class="font-['Roboto_Flex'] font-medium text-lg text-[#F9EFEC] leading-[150%] mb-[6px] uppercase"
+                                >
+                                    Starts From $1,800
+                                </div>
+                                <p
+                                    class="font-['Roboto_Flex'] font-normal text-sm text-[#B3B3B2] leading-[150%] mb-[6px]"
+                                >
+                                    Our Web Development service is focused on
+                                    turning your website into a powerful digital
+                                    asset. We utilize the latest technologies
+                                    and industry best practices to build
+                                    websites.
+                                </p>
+                            </div>
+                            <div class="flex justify-center">
+                                <button
+                                    class="min-w-[290px] bg-[#CE7D63] rounded-lg px-5 py-[14px] transition-all duration-300 hover:opacity-90 active:scale-[0.98] cursor-pointer group"
+                                >
+                                    <span
+                                        class="font-['Roboto_Flex'] font-medium text-sm text-[#0F0F0F] leading-[150%] uppercase tracking-wide transition-colors"
+                                    >
+                                        BOOK A CALL
+                                    </span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- CARD 4 -->
+                        <div
+                            class="flex flex-col gap-5 rounded-[14px] p-6 bg-[#1A1A1A]"
+                        >
+                            <div class="flex flex-row gap-[14px] items-center">
+                                <img
+                                    src="assets/icon/Digital-Marketing Icon.png"
+                                    alt="Digital Marketing Icon"
+                                />
+                                <h3
+                                    class="font-['Roboto_Flex'] font-medium text-xl text-[#F9EFEC] leading-[150%] uppercase"
+                                >
+                                    Digital Marketing
+                                </h3>
+                            </div>
+                            <div>
+                                <div
+                                    class="font-['Roboto_Flex'] font-medium text-lg text-[#F9EFEC] leading-[150%] mb-[6px] uppercase"
+                                >
+                                    Starts From $1,200
+                                </div>
+                                <p
+                                    class="font-['Roboto_Flex'] font-normal text-sm text-[#B3B3B2] leading-[150%] mb-[6px]"
+                                >
+                                    In the digital age, marketing is a critical
+                                    aspect of your business's success. Our
+                                    Digital Marketing service employs
+                                    data-driven strategies to enhance your
+                                    brand's visibility
+                                </p>
+                            </div>
+                            <div class="flex justify-center">
+                                <button
+                                    class="min-w-[290px] bg-[#CE7D63] rounded-lg px-5 py-[14px] transition-all duration-300 hover:opacity-90 active:scale-[0.98] cursor-pointer group"
+                                >
+                                    <span
+                                        class="font-['Roboto_Flex'] font-medium text-sm text-[#0F0F0F] leading-[150%] uppercase tracking-wide transition-colors"
+                                    >
+                                        BOOK A CALL
+                                    </span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ─── Our Works ─── -->
+        <section class="mb-[50px]">
+            <div
+                class="max-w-[calc(100%-32px)] mx-auto lg:max-w-[calc(100%-80px)]"
+            >
+                <!-- ① Input nằm ngoài cùng -->
+                <input type="checkbox" id="toggle-works" class="hidden" />
+
+                <div>
+                    <!-- ── HEADER BAR ── -->
+                    <div
+                        class="w-full rounded-[14px] p-6 bg-[#1A1A1A] mb-[10px] flex justify-between items-center"
+                    >
+                        <h2
+                            class="font-['Roboto_Flex'] font-semibold text-[28px] text-[#F9EFEC] leading-[100%] uppercase"
+                        >
+                            Our Works
+                        </h2>
+
+                        <label
+                            for="toggle-works"
+                            class="hidden lg:flex flex-row items-center gap-2 group cursor-pointer transition-opacity hover:opacity-80"
+                        >
+                            <div class="flex-shrink-0" aria-hidden="true">
+                                <img
+                                    src="assets/icon/Arrow button.png"
+                                    alt=""
+                                />
+                            </div>
+                            <span
+                                class="font-['Roboto_Flex'] font-normal text-base text-[#B3B3B2] leading-[150%] uppercase"
+                            >
+                                ALL Works
+                            </span>
+                        </label>
+                    </div>
+
+                    <!-- ── WRAPPER BORDER ── -->
+                    <div class="rounded-2xl flex flex-col gap-[10px]">
+                        <!-- CARD 1: ZENITH FITNESS APP -->
+                        <div
+                            class="w-full border-solid border-[2px] p-[10px] border-[#1F1F1F] rounded-2xl grid grid-cols-1 lg:grid-cols-3 gap-[10px]"
+                        >
+                            <div
+                                class="flex-1 flex flex-col items-start justify-between gap-5 rounded-[10px] p-6 bg-[#1A1A1A] order-2 lg:order-1"
+                            >
+                                <div class="w-full">
+                                    <div
+                                        class="flex flex-row gap-2 items-center mb-4"
+                                    >
+                                        <div
+                                            class="w-[52px] h-[52px] border border-[#333333] rounded-[10px] flex items-center justify-center"
+                                        >
+                                            <svg
+                                                width="20"
+                                                height="20"
+                                                viewBox="0 0 20 20"
+                                                fill="none"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                            >
+                                                <path
+                                                    d="M11.0356 1.6516L10.4625 1.99097C9.83309 2.36373 9.51837 2.55011 9.17167 2.59353C8.82496 2.63696 8.48553 2.53251 7.80666 2.3236L7.18861 2.13342C4.79965 1.39828 3.60517 1.03072 2.88716 1.68788C2.16916 2.34505 2.40313 3.59173 2.87109 6.08509L2.99216 6.73015C3.12513 7.43868 3.19162 7.79295 3.11275 8.13904C3.03388 8.48513 2.81858 8.78387 2.38797 9.38133L1.99594 9.92527C0.480625 12.0278 -0.277034 13.079 0.0925984 13.9505C0.46223 14.8221 1.71435 14.9367 4.2186 15.1659L4.8665 15.2252C5.57812 15.2903 5.93394 15.3229 6.2319 15.4934C6.52986 15.6638 6.73623 15.9529 7.14897 16.5311L7.52473 17.0574C8.97717 19.092 9.70339 20.1092 10.6498 19.9907C11.5963 19.8722 12.1362 18.6963 13.2159 16.3446L13.4953 15.7362C13.6521 15.3947 13.7688 15.1404 13.8806 14.9413L18.4697 19.5303C18.7626 19.8232 19.2374 19.8232 19.5303 19.5303C19.8232 19.2374 19.8232 18.7626 19.5303 18.4697L15.0986 14.0379C15.2206 13.9935 15.3568 13.9458 15.5101 13.8921L16.1344 13.6735C18.5474 12.8284 19.7538 12.4059 19.9691 11.4611C20.1845 10.5163 19.266 9.67498 17.4291 7.99234L16.9538 7.55701C16.4318 7.07887 16.1708 6.83978 16.0354 6.52053C15.9 6.20128 15.9055 5.838 15.9166 5.11145L15.9266 4.44993C15.9655 1.8931 15.9849 0.614678 15.1715 0.149312C14.3582 -0.316052 13.2506 0.339834 11.0356 1.6516Z"
+                                                    fill="#CE7D63"
+                                                />
+                                            </svg>
+                                        </div>
+                                        <h3
+                                            class="font-['Roboto_Flex'] font-medium text-base text-[#F9EFEC] uppercase"
+                                        >
+                                            Zenith Fitness App
+                                        </h3>
+
+                                        <button
+    class="ml-auto hidden lg:flex items-center gap-2 px-4 py-1 border border-[#333333] rounded-full group transition"
+>
+    <span
+        class="w-10 h-10 flex items-center justify-center rounded-full border border-[#333333] text-[#E7BEB1] group-hover:bg-[#CE7D63] transition"
+    >
+        <svg class="w-5 h-5" viewBox="0 0 20 20" fill="none">
+            <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M6.875 3.125L16.25 3.125C16.4158 3.125 16.5747 3.19085 16.6919 3.30806C16.8092 3.42527 16.875 3.58424 16.875 3.75V13.125C16.875 13.4702 16.5952 13.75 16.25 13.75C15.9048 13.75 15.625 13.4702 15.625 13.125V5.25888L4.19194 16.6919C3.94786 16.936 3.55214 16.936 3.30806 16.6919C3.06398 16.4479 3.06398 16.0521 3.30806 15.8081L14.7411 4.375L6.875 4.375C6.52982 4.375 6.25 4.09518 6.25 3.75C6.25 3.40482 6.52982 3.125 6.875 3.125Z"
+                fill="currentColor"
+            />
+        </svg>
+    </span>
+
+    <span class="text-xs uppercase font-medium text-[#B3B3B2]">
+        Details
+    </span>
+</button>
+                                        <!-- <button
+                                            class="ml-auto lg:flex hidden items-center gap-2 border border-[#333333] rounded-full px-4 py-1"
+                                        >
+                                            <span
+                                                class="text-xs text-[#B3B3B2] uppercase font-medium"
+                                                >Details</span
+                                            >
+                                            <img
+                                                src="assets/icon/arrow icon.svg"
+                                                class="w-3 h-3 rotate-[-45deg]"
+                                                alt=""
+                                            />
+                                        </button> -->
+                                    </div>
+                                    <div class="flex flex-col gap-2 mb-4">
+                                        <div
+                                            class="bg-[#1F1F1F] rounded-[45px] px-[10px] py-[6px] font-['Roboto_Flex'] font-normal text-xs text-[#B3B3B2] leading-[150%]"
+                                        >
+                                            Category
+                                            <span class="text-[#CE7D63]"
+                                                >•</span
+                                            >
+                                            <span class="text-[#E6E6E6]"
+                                                >Web Design & Development</span
+                                            >
+                                        </div>
+                                        <div
+                                            class="bg-[#1F1F1F] inline-block rounded-[45px] px-[10px] py-[6px] font-['Roboto_Flex'] font-normal text-xs text-[#B3B3B2] leading-[150%]"
+                                        >
+                                            Time Taken
+                                            <span class="text-[#CE7D63]"
+                                                >•</span
+                                            >
+                                            <span class="text-[#E6E6E6]"
+                                                >3 months</span
+                                            >
+                                        </div>
+                                    </div>
+                                    <p
+                                        class="font-['Roboto_Flex'] font-normal text-sm text-[#B3B3B2] leading-[150%]"
+                                    >
+                                        An all-in-one health and wellness app
+                                        that offers personalized fitness plans,
+                                        nutrition guidance
+                                    </p>
+                                </div>
+                                <button
+                                    class="flex flex-row items-center mt-6 gap-2 group cursor-pointer transition-opacity hover:opacity-80"
+                                >
+                                    <div
+                                        class="flex-shrink-0"
+                                        aria-hidden="true"
+                                    >
+                                        <img
+                                            src="assets/icon/Arrow button.png"
+                                            alt="Arrow Button"
+                                        />
+                                    </div>
+                                    <span
+                                        class="font-['Roboto_Flex'] font-normal text-base text-[#B3B3B2] leading-[150%]"
+                                        >Details</span
+                                    >
+                                </button>
+                            </div>
+                            <div class="flex-1 order-1 lg:order-2">
+                                <img
+                                    src="assets/img/Works.png"
+                                    alt="Zen Fitness"
+                                    class="w-full h-full object-cover rounded-xl"
+                                />
+                            </div>
+                            <div
+                                class="flex-1 hidden lg:flex flex-col gap-[10px] order-3"
+                            >
+                                <div
+                                    class="bg-[#1A1A1A] rounded-[10px] p-6 flex-1"
+                                >
+                                    <h4
+                                        class="text-[#B3B3B2] text-xs uppercase mb-4"
+                                    >
+                                        Technologies Used
+                                    </h4>
+                                    <div class="flex flex-wrap gap-2">
+                                        <span
+                                            class="bg-[#1F1F1F] px-3 py-2 rounded-lg text-xs text-[#E6E6E6]"
+                                            >React Native</span
+                                        >
+                                        <span
+                                            class="bg-[#1F1F1F] px-3 py-2 rounded-lg text-xs text-[#E6E6E6]"
+                                            >Firebase</span
+                                        >
+                                        <span
+                                            class="bg-[#1F1F1F] px-3 py-2 rounded-lg text-xs text-[#E6E6E6]"
+                                            >Redux</span
+                                        >
+                                        <span
+                                            class="bg-[#1F1F1F] px-3 py-2 rounded-lg text-xs text-[#E6E6E6]"
+                                            >REST API</span
+                                        >
+                                        <span
+                                            class="bg-[#1F1F1F] px-3 py-2 rounded-lg text-xs text-[#E6E6E6]"
+                                            >MongoDB</span
+                                        >
+                                    </div>
+                                </div>
+                                <div
+                                    class="bg-[#1A1A1A] rounded-[10px] p-4 flex items-center justify-between"
+                                >
+                                    <h4
+                                        class="text-[#B3B3B2] text-xs uppercase"
+                                    >
+                                        Team Members
+                                    </h4>
+                                    <div class="flex -space-x-2">
+                                        <img
+                                            class="w-8 h-8 rounded-full border-2 border-[#1A1A1A]"
+                                            src="https://i.pravatar.cc/100?u=1"
+                                            alt=""
+                                        />
+                                        <img
+                                            class="w-8 h-8 rounded-full border-2 border-[#1A1A1A]"
+                                            src="https://i.pravatar.cc/100?u=2"
+                                            alt=""
+                                        />
+                                        <img
+                                            class="w-8 h-8 rounded-full border-2 border-[#1A1A1A]"
+                                            src="https://i.pravatar.cc/100?u=3"
+                                            alt=""
+                                        />
+                                    </div>
+                                </div>
+                                <button
+                                    class="w-full py-4 bg-[#CE7D63] text-black font-bold rounded-[10px] uppercase text-sm hover:bg-[#b36a52] transition-colors"
+                                >
+                                    Book a call
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- CARD 2: ECOMMERCE -->
+                        <div
+                            class="w-full border-solid border-[2px] p-[10px] border-[#1F1F1F] rounded-2xl grid grid-cols-1 lg:grid-cols-3 gap-[10px]"
+                        >
+                            <div
+                                class="flex-1 flex flex-col items-start justify-between gap-5 rounded-[10px] p-6 bg-[#1A1A1A] order-2 lg:order-1"
+                            >
+                                <div class="w-full">
+                                    <div
+                                        class="flex flex-row gap-2 items-center mb-4"
+                                    >
+                                        <div
+                                            class="w-[52px] h-[52px] border border-[#333333] rounded-[10px] flex items-center justify-center"
+                                        >
+                                            <svg
+                                                width="24"
+                                                height="24"
+                                                viewBox="0 0 24 24"
+                                                fill="none"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                            >
+                                                <path
+                                                    fill-rule="evenodd"
+                                                    clip-rule="evenodd"
+                                                    d="M19.4998 9.56052C19.5332 13.7025 16.0815 17.5334 11.9395 17.5C7.79748 17.4666 4.53367 13.5815 4.50025 9.43948C4.46683 5.29748 7.79748 1.96682 11.9395 2.00025C16.0815 2.03367 19.4663 5.41852 19.4998 9.56052ZM12.5061 5.25003C12.0919 5.24668 11.7534 5.57975 11.75 5.99395C11.7467 6.40815 12.0797 6.74663 12.4939 6.74998C13.7281 6.75993 14.7401 7.77194 14.75 9.00605C14.7534 9.42025 15.0919 9.75332 15.5061 9.74998C15.9203 9.74663 16.2533 9.40815 16.25 8.99395C16.2334 6.94088 14.5591 5.26659 12.5061 5.25003Z"
+                                                    fill="#CE7D63"
+                                                />
+                                                <path
+                                                    d="M14.167 18.2144C14.4992 19.2767 13.8108 20.3461 12.7501 20.5616V21.9998C12.7501 22.414 12.4143 22.7498 12.0001 22.7498C11.5859 22.7498 11.2501 22.414 11.2501 21.9998V20.5616C10.1894 20.3461 9.50094 19.2767 9.83316 18.2144L9.84005 18.193C10.5044 18.3867 11.2043 18.4939 11.9315 18.4998C12.7025 18.506 13.4493 18.3973 14.1595 18.1909C14.1622 18.1988 14.1646 18.2066 14.167 18.2144Z"
+                                                    fill="#CE7D63"
+                                                />
+                                            </svg>
+                                        </div>
+                                        <h3
+                                            class="font-['Roboto_Flex'] font-medium text-base text-[#F9EFEC] uppercase"
+                                        >
+                                            A-Aura Ecommerce
+                                        </h3>
+                                        <button
+                                            class="ml-auto lg:flex hidden items-center gap-2 border border-[#333333] rounded-full px-4 py-1"
+                                        >
+                                            <span
+                                                class="text-xs text-[#B3B3B2] uppercase font-medium"
+                                                >Details</span
+                                            >
+                                            <img
+                                                src="assets/icon/arrow icon.svg"
+                                                class="w-3 h-3 rotate-[-45deg]"
+                                                alt=""
+                                            />
+                                        </button>
+                                    </div>
+                                    <div class="flex flex-col gap-2 mb-4">
+                                        <div
+                                            class="bg-[#1F1F1F] rounded-[45px] px-[10px] py-[6px] font-['Roboto_Flex'] font-normal text-xs text-[#B3B3B2] leading-[150%]"
+                                        >
+                                            Category
+                                            <span class="text-[#CE7D63]"
+                                                >•</span
+                                            >
+                                            <span class="text-[#E6E6E6]"
+                                                >Web Design & Development</span
+                                            >
+                                        </div>
+                                        <div
+                                            class="self-start bg-[#1F1F1F] rounded-[45px] px-[10px] py-[6px] font-['Roboto_Flex'] font-normal text-xs text-[#B3B3B2] leading-[150%]"
+                                        >
+                                            Time Taken
+                                            <span class="text-[#CE7D63]"
+                                                >•</span
+                                            >
+                                            <span class="text-[#E6E6E6]"
+                                                >3 months</span
+                                            >
+                                        </div>
+                                    </div>
+                                    <p
+                                        class="font-['Roboto_Flex'] font-normal text-sm text-[#B3B3B2] leading-[150%]"
+                                    >
+                                        An all-in-one health and wellness app
+                                        that offers personalized fitness plans,
+                                        nutrition guidance
+                                    </p>
+                                </div>
+                                <button
+                                    class="flex flex-row items-center mt-6 gap-2 group cursor-pointer transition-opacity hover:opacity-80"
+                                >
+                                    <div
+                                        class="flex-shrink-0"
+                                        aria-hidden="true"
+                                    >
+                                        <img
+                                            src="assets/icon/Arrow button.png"
+                                            alt=""
+                                        />
+                                    </div>
+                                    <span
+                                        class="font-['Roboto_Flex'] font-normal text-base text-[#B3B3B2] leading-[150%]"
+                                        >Details</span
+                                    >
+                                </button>
+                            </div>
+                            <div class="flex-1 order-1 lg:order-2">
+                                <img
+                                    src="assets/img/Works.png"
+                                    alt="Zen Fitness"
+                                    class="w-full h-full object-cover rounded-xl"
+                                />
+                            </div>
+                            <div
+                                class="flex-1 hidden lg:flex flex-col gap-[10px] order-3"
+                            >
+                                <div
+                                    class="bg-[#1A1A1A] rounded-[10px] p-6 flex-1"
+                                >
+                                    <h4
+                                        class="text-[#B3B3B2] text-xs uppercase mb-4"
+                                    >
+                                        Technologies Used
+                                    </h4>
+                                    <div class="flex flex-wrap gap-2">
+                                        <span
+                                            class="bg-[#1F1F1F] px-3 py-2 rounded-lg text-xs text-[#E6E6E6]"
+                                            >React Native</span
+                                        >
+                                        <span
+                                            class="bg-[#1F1F1F] px-3 py-2 rounded-lg text-xs text-[#E6E6E6]"
+                                            >Firebase</span
+                                        >
+                                        <span
+                                            class="bg-[#1F1F1F] px-3 py-2 rounded-lg text-xs text-[#E6E6E6]"
+                                            >Redux</span
+                                        >
+                                        <span
+                                            class="bg-[#1F1F1F] px-3 py-2 rounded-lg text-xs text-[#E6E6E6]"
+                                            >REST API</span
+                                        >
+                                        <span
+                                            class="bg-[#1F1F1F] px-3 py-2 rounded-lg text-xs text-[#E6E6E6]"
+                                            >MongoDB</span
+                                        >
+                                    </div>
+                                </div>
+                                <div
+                                    class="bg-[#1A1A1A] rounded-[10px] p-4 flex items-center justify-between"
+                                >
+                                    <h4
+                                        class="text-[#B3B3B2] text-xs uppercase"
+                                    >
+                                        Team Members
+                                    </h4>
+                                    <div class="flex -space-x-2">
+                                        <img
+                                            class="w-8 h-8 rounded-full border-2 border-[#1A1A1A]"
+                                            src="https://i.pravatar.cc/100?u=1"
+                                            alt=""
+                                        />
+                                        <img
+                                            class="w-8 h-8 rounded-full border-2 border-[#1A1A1A]"
+                                            src="https://i.pravatar.cc/100?u=2"
+                                            alt=""
+                                        />
+                                        <img
+                                            class="w-8 h-8 rounded-full border-2 border-[#1A1A1A]"
+                                            src="https://i.pravatar.cc/100?u=3"
+                                            alt=""
+                                        />
+                                    </div>
+                                </div>
+                                <button
+                                    class="w-full py-4 bg-[#CE7D63] text-black font-bold rounded-[10px] uppercase text-sm hover:bg-[#b36a52] transition-colors"
+                                >
+                                    Book a call
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- ② CARD 3: card hidden -->
+                        <div
+                            class="card-hidden hidden w-full border-solid border-[2px] p-[10px] border-[#1F1F1F] rounded-2xl grid-cols-1 lg:grid-cols-3 gap-[10px]"
+                        >
+                            <div
+                                class="flex-1 flex flex-col items-start justify-between gap-5 rounded-[10px] p-6 bg-[#1A1A1A] order-2 lg:order-1"
+                            >
+                                <div class="w-full">
+                                    <div
+                                        class="flex flex-row gap-2 items-center mb-4"
+                                    >
+                                        <div
+                                            class="w-[52px] h-[52px] border border-[#333333] rounded-[10px] flex items-center justify-center"
+                                        >
+                                            <svg
+                                                width="20"
+                                                height="20"
+                                                viewBox="0 0 20 20"
+                                                fill="none"
+                                            >
+                                                <path
+                                                    d="M11.0356 1.6516L..."
+                                                    fill="#CE7D63"
+                                                />
+                                            </svg>
+                                        </div>
+                                        <h3
+                                            class="font-['Roboto_Flex'] font-medium text-base text-[#F9EFEC] uppercase"
+                                        >
+                                            Zenith Fitness App
+                                        </h3>
+                                        <button
+                                            class="ml-auto lg:flex hidden items-center gap-2 border border-[#333333] rounded-full px-4 py-1"
+                                        >
+                                            <span
+                                                class="text-xs text-[#B3B3B2] uppercase font-medium"
+                                                >Details</span
+                                            >
+                                            <img
+                                                src="assets/icon/arrow icon.svg"
+                                                class="w-3 h-3 rotate-[-45deg]"
+                                                alt=""
+                                            />
+                                        </button>
+                                    </div>
+                                    <div class="flex flex-col gap-2 mb-4">
+                                        <div
+                                            class="bg-[#1F1F1F] rounded-[45px] px-[10px] py-[6px] font-['Roboto_Flex'] font-normal text-xs text-[#B3B3B2] leading-[150%]"
+                                        >
+                                            Category
+                                            <span class="text-[#CE7D63]"
+                                                >•</span
+                                            >
+                                            <span class="text-[#E6E6E6]"
+                                                >Web Design & Development</span
+                                            >
+                                        </div>
+                                        <div
+                                            class="self-start bg-[#1F1F1F] rounded-[45px] px-[10px] py-[6px] font-['Roboto_Flex'] font-normal text-xs text-[#B3B3B2] leading-[150%]"
+                                        >
+                                            Time Taken
+                                            <span class="text-[#CE7D63]"
+                                                >•</span
+                                            >
+                                            <span class="text-[#E6E6E6]"
+                                                >3 months</span
+                                            >
+                                        </div>
+                                    </div>
+                                    <p
+                                        class="font-['Roboto_Flex'] font-normal text-sm text-[#B3B3B2] leading-[150%]"
+                                    >
+                                        An all-in-one health and wellness app
+                                        that offers personalized fitness plans,
+                                        nutrition guidance
+                                    </p>
+                                </div>
+                                <button
+                                    class="flex flex-row items-center mt-6 gap-2 group cursor-pointer transition-opacity hover:opacity-80"
+                                >
+                                    <div
+                                        class="flex-shrink-0"
+                                        aria-hidden="true"
+                                    >
+                                        <img
+                                            src="assets/icon/Arrow button.png"
+                                            alt=""
+                                        />
+                                    </div>
+                                    <span
+                                        class="font-['Roboto_Flex'] font-normal text-base text-[#B3B3B2] leading-[150%]"
+                                        >Details</span
+                                    >
+                                </button>
+                            </div>
+                            <div class="flex-1 order-1 lg:order-2">
+                                <img
+                                    src="assets/img/Works.png"
+                                    alt="Zen Fitness"
+                                    class="w-full h-full object-cover rounded-xl"
+                                />
+                            </div>
+                            <div
+                                class="flex-1 hidden lg:flex flex-col gap-[10px] order-3"
+                            >
+                                <div
+                                    class="bg-[#1A1A1A] rounded-[10px] p-6 flex-1"
+                                >
+                                    <h4
+                                        class="text-[#B3B3B2] text-xs uppercase mb-4"
+                                    >
+                                        Technologies Used
+                                    </h4>
+                                    <div class="flex flex-wrap gap-2">
+                                        <span
+                                            class="bg-[#1F1F1F] px-3 py-2 rounded-lg text-xs text-[#E6E6E6]"
+                                            >React Native</span
+                                        >
+                                        <span
+                                            class="bg-[#1F1F1F] px-3 py-2 rounded-lg text-xs text-[#E6E6E6]"
+                                            >Firebase</span
+                                        >
+                                        <span
+                                            class="bg-[#1F1F1F] px-3 py-2 rounded-lg text-xs text-[#E6E6E6]"
+                                            >Redux</span
+                                        >
+                                        <span
+                                            class="bg-[#1F1F1F] px-3 py-2 rounded-lg text-xs text-[#E6E6E6]"
+                                            >REST API</span
+                                        >
+                                        <span
+                                            class="bg-[#1F1F1F] px-3 py-2 rounded-lg text-xs text-[#E6E6E6]"
+                                            >MongoDB</span
+                                        >
+                                    </div>
+                                </div>
+                                <div
+                                    class="bg-[#1A1A1A] rounded-[10px] p-4 flex items-center justify-between"
+                                >
+                                    <h4
+                                        class="text-[#B3B3B2] text-xs uppercase"
+                                    >
+                                        Team Members
+                                    </h4>
+                                    <div class="flex -space-x-2">
+                                        <img
+                                            class="w-8 h-8 rounded-full border-2 border-[#1A1A1A]"
+                                            src="https://i.pravatar.cc/100?u=1"
+                                            alt=""
+                                        />
+                                        <img
+                                            class="w-8 h-8 rounded-full border-2 border-[#1A1A1A]"
+                                            src="https://i.pravatar.cc/100?u=2"
+                                            alt=""
+                                        />
+                                        <img
+                                            class="w-8 h-8 rounded-full border-2 border-[#1A1A1A]"
+                                            src="https://i.pravatar.cc/100?u=3"
+                                            alt=""
+                                        />
+                                    </div>
+                                </div>
+                                <button
+                                    class="w-full py-4 bg-[#CE7D63] text-black font-bold rounded-[10px] uppercase text-sm hover:bg-[#b36a52] transition-colors"
+                                >
+                                    Book a call
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- ② CARD 4: card hidden -->
+                        <div
+                            class="card-hidden hidden w-full border-solid border-[2px] p-[10px] border-[#1F1F1F] rounded-2xl grid-cols-1 lg:grid-cols-3 gap-[10px]"
+                        >
+                            <div
+                                class="flex-1 flex flex-col items-start justify-between gap-5 rounded-[10px] p-6 bg-[#1A1A1A] order-2 lg:order-1"
+                            >
+                                <div class="w-full">
+                                    <div
+                                        class="flex flex-row gap-2 items-center mb-4"
+                                    >
+                                        <div
+                                            class="w-[52px] h-[52px] border border-[#333333] rounded-[10px] flex items-center justify-center"
+                                        >
+                                            <svg
+                                                width="20"
+                                                height="20"
+                                                viewBox="0 0 20 20"
+                                                fill="none"
+                                            >
+                                                <path
+                                                    d="M11.0356 1.6516L..."
+                                                    fill="#CE7D63"
+                                                />
+                                            </svg>
+                                        </div>
+                                        <h3
+                                            class="font-['Roboto_Flex'] font-medium text-base text-[#F9EFEC] uppercase"
+                                        >
+                                            Zenith Fitness App
+                                        </h3>
+                                        <button
+                                            class="ml-auto lg:flex hidden items-center gap-2 border border-[#333333] rounded-full px-4 py-1"
+                                        >
+                                            <span
+                                                class="text-xs text-[#B3B3B2] uppercase font-medium"
+                                                >Details</span
+                                            >
+                                            <img
+                                                src="assets/icon/arrow icon.svg"
+                                                class="w-3 h-3 rotate-[-45deg]"
+                                                alt=""
+                                            />
+                                        </button>
+                                    </div>
+                                    <div class="flex flex-col gap-2 mb-4">
+                                        <div
+                                            class="bg-[#1F1F1F] rounded-[45px] px-[10px] py-[6px] font-['Roboto_Flex'] font-normal text-xs text-[#B3B3B2] leading-[150%]"
+                                        >
+                                            Category
+                                            <span class="text-[#CE7D63]"
+                                                >•</span
+                                            >
+                                            <span class="text-[#E6E6E6]"
+                                                >Web Design & Development</span
+                                            >
+                                        </div>
+                                        <div
+                                            class="self-start bg-[#1F1F1F] rounded-[45px] px-[10px] py-[6px] font-['Roboto_Flex'] font-normal text-xs text-[#B3B3B2] leading-[150%]"
+                                        >
+                                            Time Taken
+                                            <span class="text-[#CE7D63]"
+                                                >•</span
+                                            >
+                                            <span class="text-[#E6E6E6]"
+                                                >3 months</span
+                                            >
+                                        </div>
+                                    </div>
+                                    <p
+                                        class="font-['Roboto_Flex'] font-normal text-sm text-[#B3B3B2] leading-[150%]"
+                                    >
+                                        An all-in-one health and wellness app
+                                        that offers personalized fitness plans,
+                                        nutrition guidance
+                                    </p>
+                                </div>
+                                <button
+                                    class="flex flex-row items-center mt-6 gap-2 group cursor-pointer transition-opacity hover:opacity-80"
+                                >
+                                    <div
+                                        class="flex-shrink-0"
+                                        aria-hidden="true"
+                                    >
+                                        <img
+                                            src="assets/icon/Arrow button.png"
+                                            alt=""
+                                        />
+                                    </div>
+                                    <span
+                                        class="font-['Roboto_Flex'] font-normal text-base text-[#B3B3B2] leading-[150%]"
+                                        >Details</span
+                                    >
+                                </button>
+                            </div>
+                            <div class="flex-1 order-1 lg:order-2">
+                                <img
+                                    src="assets/img/Works.png"
+                                    alt="Zen Fitness"
+                                    class="w-full h-full object-cover rounded-xl"
+                                />
+                            </div>
+                            <div
+                                class="flex-1 hidden lg:flex flex-col gap-[10px] order-3"
+                            >
+                                <div
+                                    class="bg-[#1A1A1A] rounded-[10px] p-6 flex-1"
+                                >
+                                    <h4
+                                        class="text-[#B3B3B2] text-xs uppercase mb-4"
+                                    >
+                                        Technologies Used
+                                    </h4>
+                                    <div class="flex flex-wrap gap-2">
+                                        <span
+                                            class="bg-[#1F1F1F] px-3 py-2 rounded-lg text-xs text-[#E6E6E6]"
+                                            >React Native</span
+                                        >
+                                        <span
+                                            class="bg-[#1F1F1F] px-3 py-2 rounded-lg text-xs text-[#E6E6E6]"
+                                            >Firebase</span
+                                        >
+                                        <span
+                                            class="bg-[#1F1F1F] px-3 py-2 rounded-lg text-xs text-[#E6E6E6]"
+                                            >Redux</span
+                                        >
+                                        <span
+                                            class="bg-[#1F1F1F] px-3 py-2 rounded-lg text-xs text-[#E6E6E6]"
+                                            >REST API</span
+                                        >
+                                        <span
+                                            class="bg-[#1F1F1F] px-3 py-2 rounded-lg text-xs text-[#E6E6E6]"
+                                            >MongoDB</span
+                                        >
+                                    </div>
+                                </div>
+                                <div
+                                    class="bg-[#1A1A1A] rounded-[10px] p-4 flex items-center justify-between"
+                                >
+                                    <h4
+                                        class="text-[#B3B3B2] text-xs uppercase"
+                                    >
+                                        Team Members
+                                    </h4>
+                                    <div class="flex -space-x-2">
+                                        <img
+                                            class="w-8 h-8 rounded-full border-2 border-[#1A1A1A]"
+                                            src="https://i.pravatar.cc/100?u=1"
+                                            alt=""
+                                        />
+                                        <img
+                                            class="w-8 h-8 rounded-full border-2 border-[#1A1A1A]"
+                                            src="https://i.pravatar.cc/100?u=2"
+                                            alt=""
+                                        />
+                                        <img
+                                            class="w-8 h-8 rounded-full border-2 border-[#1A1A1A]"
+                                            src="https://i.pravatar.cc/100?u=3"
+                                            alt=""
+                                        />
+                                    </div>
+                                </div>
+                                <button
+                                    class="w-full py-4 bg-[#CE7D63] text-black font-bold rounded-[10px] uppercase text-sm hover:bg-[#b36a52] transition-colors"
+                                >
+                                    Book a call
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Label mobile ALL WORKS -->
+                        <label
+                            for="toggle-works"
+                            class="lg:hidden w-full flex flex-row gap-[6px] items-center justify-center rounded-xl px-[14px] py-4 bg-[#1A1A1A] cursor-pointer transition-opacity hover:opacity-80"
+                        >
+                            <div
+                                class="w-10 h-10 border border-[#333333] rounded-full flex items-center justify-center shrink-0"
+                            >
+                                <img
+                                    src="assets/icon/arrow down.png"
+                                    alt=""
+                                    class="object-contain"
+                                />
+                            </div>
+                            <span
+                                class="font-['Roboto_Flex'] font-medium text-base text-[#B3B3B2] uppercase"
+                                >ALL Works</span
+                            >
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials -->
+
+        <section class="mb-[50px]">
+            <div
+                class="max-w-[calc(100%-32px)] mx-auto lg:max-w-[calc(100%-80px)]"
+            >
+                <div
+                    class="border-solid border-[2px] border-[#1F1F1F] rounded-2xl"
+                >
+                    <div
+                        class="grid grid-cols-1 gap-[10px] p-[10px] lg:grid-cols-4"
+                    >
+                        <!-- CARD 1: TITLE -->
+                        <div
+                            class="flex flex-col items-start justify-between rounded-[14px] p-6 bg-[#1A1A1A] lg:col-span-4 lg:flex-row lg:items-center"
+                        >
+                            <h2
+                                class="font-['Roboto_Flex'] font-semibold text-[28px] text-[#F9EFEC] leading-[100%] uppercase"
+                            >
+                                Testimonials
+                            </h2>
+
+                            <!-- ALL TESTIMONIALS — CHỈ NHÌN THẤY TRÊN TABLET/ desktop -->
+
+                            <button
+                                class="hidden lg:flex flex-row items-center mt-6 gap-2 group cursor-pointer transition-opacity hover:opacity-80"
+                            >
+                                <div class="flex-shrink-0" aria-hidden="true">
+                                    <img
+                                        src="assets/icon/Arrow button.png"
+                                        alt=""
+                                    />
+                                </div>
+
+                                <span
+                                    class="font-['Roboto_Flex'] font-normal text-base text-[#B3B3B2] leading-[150%]"
+                                >
+                                    All Testimonials
+                                </span>
+                            </button>
+                        </div>
+
+                        <!-- CARD 2 -->
+                        <div
+                            class="rounded-[14px] bg-[#1A1A1A] overflow-hidden"
+                        >
+                            <div
+                                class="flex flex-col items-start justify-center p-6"
+                            >
+                                <h3
+                                    class="font-['Roboto_Flex'] font-medium text-lg text-[#F9EFEC] pb-2 leading-[150%] uppercase"
+                                >
+                                    NexGen turned our business around!
+                                </h3>
+                                <p
+                                    class="font-['Roboto_Flex'] font-normal text-sm text-[#B3B3B2] leading-[150%]"
+                                >
+                                    Their digital marketing strategies helped us
+                                    reach new customers and increase our revenue
+                                    by 30% within just a few months. Highly
+                                    recommended!
+                                </p>
+                            </div>
+                            <!-- Card Footer -->
+                            <div
+                                class="flex items-center justify-between px-5 py-4 bg-[#1F1F1F]"
+                            >
+                                <!-- Left: Avatar + Info -->
+
+                                <div class="flex items-center gap-2">
+                                    <img
+                                        src="assets/img/Ava 1.png"
+                                        alt="Avatar"
+                                        class="w-10 h-10 rounded-full object-contain"
+                                    />
+
+                                    <div>
+                                        <p
+                                            class="font-['Roboto_Flex'] text-base font-medium text-[#F3DFD8] leading-[150%]"
+                                        >
+                                            Sarah Thompson
+                                        </p>
+                                        <p
+                                            class="font-['Roboto_Flex'] text-sm font-normal text-[#81807E] leading-[150%]"
+                                        >
+                                            CEO of BlueBloom
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <!-- Right: Arrow button -->
+
+                                <button
+                                    type="button"
+                                    aria-label="View testimonial"
+                                    class="w-10 h-10 border border-[#333333] rounded-full flex items-center justify-center cursor-pointer hover:bg-[#333333] transition-colors"
+                                >
+                                    <img
+                                        src="assets/icon/arrow right.svg"
+                                        alt=""
+                                        class="object-contain"
+                                        aria-hidden="true"
+                                    />
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- CARD 3 -->
+                        <div
+                            class="rounded-[14px] bg-[#1A1A1A] overflow-hidden"
+                        >
+                            <div
+                                class="flex flex-col items-start justify-center p-6"
+                            >
+                                <h3
+                                    class="font-['Roboto_Flex'] font-medium text-lg text-[#F9EFEC] pb-2 leading-[150%] uppercase"
+                                >
+                                    NexGen turned our business around!
+                                </h3>
+                                <p
+                                    class="font-['Roboto_Flex'] font-normal text-sm text-[#B3B3B2] leading-[150%]"
+                                >
+                                    Their digital marketing strategies helped us
+                                    reach new customers and increase our revenue
+                                    by 30% within just a few months. Highly
+                                    recommended!
+                                </p>
+                            </div>
+                            <!-- Card Footer -->
+                            <div
+                                class="flex items-center justify-between px-5 py-4 bg-[#1F1F1F]"
+                            >
+                                <!-- Left: Avatar + Info -->
+
+                                <div class="flex items-center gap-2">
+                                    <img
+                                        src="assets/img/Ava 2.png"
+                                        alt="Avatar"
+                                        class="w-10 h-10 rounded-full object-contain"
+                                    />
+
+                                    <div>
+                                        <p
+                                            class="font-['Roboto_Flex'] text-base font-medium text-[#F3DFD8] leading-[150%]"
+                                        >
+                                            Wade Warren
+                                        </p>
+                                        <p
+                                            class="font-['Roboto_Flex'] text-sm font-normal text-[#81807E] leading-[150%]"
+                                        >
+                                            Art Director
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <!-- Right: Arrow button -->
+
+                                <button
+                                    type="button"
+                                    aria-label="View testimonial"
+                                    class="w-10 h-10 border border-[#333333] rounded-full flex items-center justify-center cursor-pointer hover:bg-[#333333] transition-colors"
+                                >
+                                    <img
+                                        src="assets/icon/arrow right.svg"
+                                        alt=""
+                                        class="object-contain"
+                                        aria-hidden="true"
+                                    />
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- CARD 4 -->
+                        <div
+                            class="rounded-[14px] bg-[#1A1A1A] overflow-hidden"
+                        >
+                            <div
+                                class="flex flex-col items-start justify-center p-6"
+                            >
+                                <h3
+                                    class="font-['Roboto_Flex'] font-medium text-lg text-[#F9EFEC] pb-2 leading-[150%] uppercase"
+                                >
+                                    Working with NexGen was a pleasure.
+                                </h3>
+                                <p
+                                    class="font-['Roboto_Flex'] font-normal text-sm text-[#B3B3B2] leading-[150%]"
+                                >
+                                    Their web design team created a stunning
+                                    website that perfectly captured our brand's
+                                    essence. The feedback from our customers has
+                                    been overwhelmingly positive.
+                                </p>
+                            </div>
+                            <!-- Card Footer -->
+                            <div
+                                class="flex items-center justify-between px-5 py-4 bg-[#1F1F1F]"
+                            >
+                                <!-- Left: Avatar + Info -->
+
+                                <div class="flex items-center gap-2">
+                                    <img
+                                        src="assets/img/Ava 3.png"
+                                        alt="Avatar"
+                                        class="w-10 h-10 rounded-full object-contain"
+                                    />
+
+                                    <div>
+                                        <p
+                                            class="font-['Roboto_Flex'] text-base font-medium text-[#F3DFD8] leading-[150%]"
+                                        >
+                                            Lisa Williams
+                                        </p>
+                                        <p
+                                            class="font-['Roboto_Flex'] text-sm font-normal text-[#81807E] leading-[150%]"
+                                        >
+                                            CEO Of HealthTech
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <!-- Right: Arrow button -->
+
+                                <button
+                                    type="button"
+                                    aria-label="View testimonial"
+                                    class="w-10 h-10 border border-[#333333] rounded-full flex items-center justify-center cursor-pointer hover:bg-[#333333] transition-colors"
+                                >
+                                    <img
+                                        src="assets/icon/arrow right.svg"
+                                        alt=""
+                                        class="object-contain"
+                                        aria-hidden="true"
+                                    />
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- CARD 5 : btn chuẩn-->
+                        <button
+                            type="button"
+                            aria-label="View all testimonial"
+                            class="w-full flex flex-row gap-[6px] items-center justify-center rounded-xl px-[14px] py-4 bg-[#1A1A1A] cursor-pointer hover:bg-[#252525] transition-colors active:scale-[0.98]"
+                        >
+                            <div
+                                class="w-10 h-10 border border-[#333333] rounded-full flex items-center justify-center"
+                            >
+                                <img
+                                    src="assets/icon/arrow down.svg"
+                                    alt=""
+                                    class="object-contain"
+                                    aria-hidden="true"
+                                />
+                            </div>
+
+                            <span
+                                class="font-['Roboto_Flex'] font-medium text-base text-[#B3B3B2] leading-[150%] uppercase"
+                            >
+                                ALL Testimonials
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ─── FAQ ─── -->
+
+        <section class="mb-[10px]">
+            <div class="max-w-[calc(100%-32px)] mx-auto">
+                <div class="rounded-2xl">
+                    <div class="grid grid-cols-1 gap-[10px] pt-[10px]">
+                        <!-- CARD 1 -->
+                        <div
+                            class="flex flex-col items-start justify-center rounded-[14px] p-6 bg-[#1A1A1A]"
+                        >
+                            <h2
+                                class="font-['Roboto_Flex'] font-semibold text-[28px] text-[#F9EFEC] leading-[100%] uppercase"
+                            >
+                                Frequently Asked Questions
+                            </h2>
+                        </div>
+
+                        <!-- FAQ ITEM 1 (OPEN) -->
+                        <div class="rounded-[14px] p-[30px] bg-[#1A1A1A]">
+                            <button
+                                type="button"
+                                class="w-full flex items-center justify-between gap-5 cursor-pointer text-left group"
+                            >
+                                <h3
+                                    class="font-medium text-lg text-[#F9EFEC] mb-2 leading-[150%] flex-1"
+                                >
+                                    How long does it take to complete a web
+                                    development project?
+                                </h3>
+                                <div
+                                    class="w-10 h-10 border border-[#333333] rounded-full flex items-center justify-center shrink-0 group-hover:bg-[#333333] transition-colors"
+                                >
+                                    <img
+                                        src="assets/icon/Close Btn.svg"
+                                        alt=""
+                                        aria-hidden="true"
+                                        class="object-contain"
+                                    />
+                                </div>
+                            </button>
+
+                            <!-- Divider -->
+                            <div class="border-t border-[#262626] my-5"></div>
+
+                            <p
+                                class="font-['Roboto_Flex'] font-normal text-sm text-[#B3B3B2] leading-[150%]"
+                            >
+                                The timeline varies depending on the project's
+                                complexity and requirements. Our team strives to
+                                deliver projects on time while maintaining the
+                                highest quality standards.
+                            </p>
+                        </div>
+
+                        <!-- FAQ ITEM 2 (CLOSED) -->
+                        <div class="rounded-[14px] p-[30px] bg-[#1A1A1A]">
+                            <button
+                                type="button"
+                                class="w-full flex items-center justify-between gap-5 cursor-pointer text-left group"
+                            >
+                                <h3
+                                    class="font-medium text-lg text-[#F9EFEC] mb-2 leading-[150%] flex-1"
+                                >
+                                    Can you handle large-scale mobile app
+                                    development projects?
+                                </h3>
+                                <div
+                                    class="w-10 h-10 border border-[#333333] rounded-full flex items-center justify-center shrink-0 group-hover:bg-[#333333] transition-colors"
+                                >
+                                    <img
+                                        src="assets/icon/Open Btn.svg"
+                                        alt=""
+                                        aria-hidden="true"
+                                        class="object-contain"
+                                    />
+                                </div>
+                            </button>
+                        </div>
+
+                        <!-- FAQ ITEM 3 (CLOSED) -->
+                        <div class="rounded-[14px] p-[30px] bg-[#1A1A1A]">
+                            <div
+                                class="flex items-center justify-between gap-5"
+                            >
+                                <h3
+                                    class="font-['Roboto_Flex'] font-medium text-lg text-[#F9EFEC] mb-2 leading-[150%]"
+                                >
+                                    Can you integrate third-party APIs into our
+                                    mobile app?
+                                </h3>
+
+                                <div
+                                    class="w-10 h-10 border-[1px] border-[#333333] rounded-full flex items-center justify-center shrink-0"
+                                >
+                                    <img
+                                        src="assets/icon/Open Btn.svg"
+                                        alt="Open Btn"
+                                        class="object-contain"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ ITEM 4 (CLOSED) -->
+                        <div class="rounded-[14px] p-[30px] bg-[#1A1A1A]">
+                            <div
+                                class="flex items-center justify-between gap-5"
+                            >
+                                <h3
+                                    class="font-['Roboto_Flex'] font-medium text-lg text-[#F9EFEC] mb-2 leading-[150%]"
+                                >
+                                    How do you ensure cross-platform
+                                    compatibility for mobile apps?
+                                </h3>
+
+                                <div
+                                    class="w-10 h-10 border-[1px] border-[#333333] rounded-full flex items-center justify-center shrink-0"
+                                >
+                                    <img
+                                        src="assets/icon/Open Btn.svg"
+                                        alt="Open Btn"
+                                        class="object-contain"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- FAQ ITEM 5 (CLOSED) -->
+                        <div class="rounded-[14px] p-[30px] bg-[#1A1A1A]">
+                            <button
+                                type="button"
+                                class="w-full flex items-center justify-between gap-5 cursor-pointer text-left group"
+                            >
+                                <h3
+                                    class="font-['Roboto_Flex'] font-medium text-lg text-[#F9EFEC] mb-2 leading-[150%]"
+                                >
+                                    How do you ensure cross-platform
+                                    compatibility for mobile apps?
+                                </h3>
+
+                                <div
+                                    class="w-10 h-10 border border-[#333333] rounded-full flex items-center justify-center shrink-0 group-hover:bg-[#333333] transition-colors"
+                                >
+                                    <img
+                                        src="assets/icon/Open Btn.svg"
+                                        alt=""
+                                        aria-hidden="true"
+                                        class="object-contain"
+                                    />
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FORM -->
+        <section class="mb-[50px]">
+            <div class="max-w-[calc(100%-32px)] mx-auto">
+                <div class="rounded-2xl">
+                    <div class="grid grid-cols-1 gap-[10px] pb-[10px]">
+                        <div
+                            class="w-full rounded-xl bg-[#1A1A1A] p-[30px] font-['Roboto_Flex']"
+                        >
+                            <h2
+                                class="text-[#F9EFEC] text-lg font-medium mb-[20px] leading-[150%] uppercase"
+                            >
+                                Ask Your Question
+                            </h2>
+
+                            <div class="h-px bg-[#262626] mb-[20px]"></div>
+
+                            <form class="space-y-[14px]">
+                                <div class="space-y-2">
+                                    <label
+                                        for="name"
+                                        class="block text-[#F3DFD8] text-base font-medium uppercase tracking-normal cursor-pointer"
+                                    >
+                                        Name
+                                    </label>
+                                    <input
+                                        id="name"
+                                        type="text"
+                                        placeholder="Enter your name"
+                                        class="w-full bg-[#0F0F0F] border-none rounded-lg p-4 text-[#F9EFEC] placeholder:text-[#676665] focus:ring-2 focus:ring-[#CE7D63] outline-none transition-shadow"
+                                        required
+                                    />
+                                </div>
+
+                                <div class="space-y-2">
+                                    <label
+                                        for="email"
+                                        class="block text-[#F3DFD8] text-base font-medium uppercase tracking-normal cursor-pointer"
+                                    >
+                                        Email
+                                    </label>
+                                    <input
+                                        id="email"
+                                        type="email"
+                                        placeholder="Enter your email"
+                                        class="w-full bg-[#0F0F0F] border-none rounded-lg p-4 text-[#F9EFEC] placeholder:text-[#676665] focus:ring-2 focus:ring-[#CE7D63] outline-none transition-shadow"
+                                        required
+                                    />
+                                </div>
+
+                                <div class="space-y-2">
+                                    <label
+                                        for="question"
+                                        class="block text-[#F3DFD8] text-base font-medium uppercase tracking-normal cursor-pointer"
+                                    >
+                                        Your Question
+                                    </label>
+                                    <textarea
+                                        id="question"
+                                        rows="4"
+                                        placeholder="Enter Your Question Here ....."
+                                        class="w-full bg-[#0F0F0F] border-none rounded-lg p-4 text-[#F9EFEC] placeholder:text-[#676665] focus:ring-2 focus:ring-[#CE7D63] outline-none resize-none transition-shadow"
+                                        required
+                                    ></textarea>
+                                </div>
+
+                                <button
+                                    type="submit"
+                                    class="w-full bg-[#CE7D63] text-[#0F0F0F] font-semibold py-[14px] rounded-lg uppercase cursor-pointer hover:bg-[#b86d54] active:scale-[0.99] transition-all"
+                                >
+                                    Send Your Message
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA CARD -->
+        <section class="mb-[10px]">
+            <div
+                class="max-w-[calc(100%-32px)] mx-auto lg:max-w-[calc(100%-80px)]"
+            >
+                <div
+                    class="font-['Roboto_Flex'] bg-[#CE7D63] rounded-[14px] p-[30px] text-[#0F0F0F]"
+                >
+                    <h2
+                        class="text-[28px] font-medium leading-[150%] uppercase mb-[2px]"
+                    >
+                        Ready to transform your digital presence?
+                    </h2>
+                    <p class="text-sm mb-4 text-[#262626] leading-[150%]">
+                        Take the first step towards digital success with NexGen
+                        by your side. Our team of experts is eager to craft
+                        tailored solutions that drive growth for your business.
+                    </p>
+
+                    <button
+                        type="button"
+                        class="flex justify-center items-center w-full h-[50px] gap-2 bg-[#0F0F0F] text-[#F3DFD8] font-medium rounded-xl uppercase cursor-pointer hover:bg-[#1A1A1A] active:scale-[0.98] transition-all"
+                    >
+                        <span>Get in Touch</span>
+                        <img
+                            src="assets/icon/Arrow high icon.svg"
+                            alt=""
+                            aria-hidden="true"
+                            class="object-contain"
+                        />
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- TAG -->
+        <div class="mb-[10px]">
+            <!-- LAYER 1: border + bg + clip -->
+            <div
+                class="max-w-[calc(100%-32px)] lg:max-w-[calc(100%-80px)] mx-auto rounded-lg bg-[#1A1A1A] overflow-hidden"
+            >
+                <!-- LAYER 2: layout width -->
+                <div class="w-full overflow-hidden">
+                    <!-- LAYER 3: animation -->
+
+                    <div
+                        class="font-['Roboto_Mono'] text-[#676665] flex items-center h-[49px] my-[10px] mx-auto py-[14px] animate-marquee"
+                    >
+                        <!-- List 1 -->
+                        <ul
+                            class="flex items-center list-none p-0 m-0 whitespace-nowrap text-[#B3B3B2] text-[14px] font-normal uppercase"
+                        >
+                            <li
+                                class="flex items-center before:content-['•'] before:mx-2"
+                            >
+                                Follow Us on Social Media
+                            </li>
+                            <li
+                                class="flex items-center before:content-['•'] before:mx-2"
+                            >
+                                Follow Us on Social Media
+                            </li>
+                            <li
+                                class="flex items-center before:content-['•'] before:mx-2"
+                            >
+                                Follow Us on Social Media
+                            </li>
+                            <li
+                                class="flex items-center before:content-['•'] before:mx-2"
+                            >
+                                Follow Us on Social Media
+                            </li>
+                        </ul>
+
+                        <!-- List 2 (dùng để duplicate - chạy liên tục) -->
+                        <ul
+                            class="flex items-center list-none p-0 m-0 whitespace-nowrap text-[#B3B3B2] text-[14px] font-normal uppercase"
+                        >
+                            <li
+                                class="flex items-center before:content-['•'] before:mx-2"
+                            >
+                                Follow Us on Social Media
+                            </li>
+                            <li
+                                class="flex items-center before:content-['•'] before:mx-2"
+                            >
+                                Follow Us on Social Media
+                            </li>
+                            <li
+                                class="flex items-center before:content-['•'] before:mx-2"
+                            >
+                                Follow Us on Social Media
+                            </li>
+                            <li
+                                class="flex items-center before:content-['•'] before:mx-2"
+                            >
+                                Follow Us on Social Media
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ─── FOOTER WRAPPER (desktop: flex row) ─── -->
+        <div
+            class="lg:flex lg:gap-[10px] lg:max-w-[calc(100%-80px)] lg:mx-auto lg:mb-5"
+        >
+            <!-- ══════DESKTOP SOCIAL CARDS (hidden on mobile) ═════ -->
+            <div
+                class="hidden lg:grid lg:grid-cols-2 lg:gap-[10px] lg:w-[360px] lg:shrink-0 lg:self-stretch lg:grid-rows-2"
+            >
+                <!-- Instagram -->
+                <a
+                    href="#"
+                    aria-label="Instagram"
+                    class="bg-[#1A1A1A] border border-[#232329] rounded-[14px] p-5 flex flex-col justify-between min-h-[175px] lg:h-full hover:bg-[#1F1F1F] transition-colors"
+                >
+                    <div class="flex items-start justify-between">
+                        <div
+                            class="w-[44px] h-[44px] bg-[#1F1F1F] border border-[#333333] rounded-[10px] flex items-center justify-center"
+                        >
+                            <svg
+                                width="24"
+                                height="24"
+                                viewBox="0 0 28 28"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    d="M10.1102 13.9996C10.1102 11.852 11.8518 10.1105 14.0008 10.1105C16.1498 10.1105 17.8923 11.852 17.8923 13.9996C17.8923 16.1473 16.1498 17.8888 14.0008 17.8888C11.8518 17.8888 10.1102 16.1473 10.1102 13.9996ZM8.00651 13.9996C8.00651 17.3083 10.6901 19.9903 14.0008 19.9903C17.3114 19.9903 19.9951 17.3083 19.9951 13.9996C19.9951 10.691 17.3114 8.00897 14.0008 8.00897C10.6901 8.00897 8.00651 10.691 8.00651 13.9996ZM18.8315 7.77143C18.8314 8.04833 18.9135 8.31903 19.0673 8.54932C19.2211 8.77961 19.4398 8.95914 19.6958 9.06521C19.9517 9.17127 20.2333 9.19911 20.5051 9.1452C20.7769 9.09129 21.0265 8.95805 21.2225 8.76234C21.4185 8.56662 21.552 8.31722 21.6062 8.04567C21.6603 7.77412 21.6327 7.49261 21.5268 7.23675C21.4208 6.9809 21.2414 6.76218 21.0111 6.60825C20.7808 6.45432 20.51 6.37211 20.2329 6.372H20.2324C19.861 6.37217 19.5049 6.51965 19.2422 6.78204C18.9795 7.04443 18.8318 7.40028 18.8315 7.77143ZM9.28463 23.496C8.1465 23.4442 7.52789 23.2547 7.11679 23.0947C6.57177 22.8826 6.1829 22.6301 5.77405 22.222C5.36519 21.814 5.1121 21.4257 4.90086 20.881C4.7406 20.4703 4.55102 19.8519 4.49928 18.7145C4.44269 17.4847 4.43139 17.1153 4.43139 13.9997C4.43139 10.8842 4.44362 10.5158 4.49928 9.28502C4.55112 8.14756 4.7421 7.53035 4.90086 7.11847C5.11304 6.57378 5.36575 6.18514 5.77405 5.77653C6.18234 5.36792 6.57084 5.11499 7.11679 4.90387C7.52771 4.74371 8.1465 4.55424 9.28463 4.50254C10.5151 4.44598 10.8848 4.43468 14.0008 4.43468C17.1168 4.43468 17.4868 4.44691 18.7183 4.50254C19.8565 4.55434 20.474 4.7452 20.8862 4.90387C21.4312 5.11499 21.8201 5.36848 22.2289 5.77653C22.6378 6.18458 22.8899 6.57378 23.1021 7.11847C23.2624 7.52914 23.4519 8.14756 23.5037 9.28502C23.5603 10.5158 23.5716 10.8842 23.5716 13.9997C23.5716 17.1153 23.5603 17.4837 23.5037 18.7145C23.4518 19.8519 23.2613 20.4701 23.1021 20.881C22.8899 21.4257 22.6372 21.8143 22.2289 22.222C21.8206 22.6297 21.4312 22.8826 20.8862 23.0947C20.4753 23.2548 19.8565 23.4443 18.7183 23.496C17.4878 23.5526 17.1182 23.5639 14.0008 23.5639C10.8834 23.5639 10.5148 23.5526 9.28463 23.496ZM9.18798 2.40366C7.94525 2.46022 7.09606 2.65715 6.35446 2.94555C5.58643 3.24338 4.93625 3.64294 4.28654 4.29123C3.63684 4.93952 3.23807 5.59033 2.94006 6.3579C2.65149 7.09953 2.45444 7.94774 2.39784 9.18972C2.34032 10.4337 2.32715 10.8314 2.32715 13.9996C2.32715 17.1679 2.34032 17.5656 2.39784 18.8096C2.45444 20.0516 2.65149 20.8998 2.94006 21.6414C3.23807 22.4085 3.63693 23.06 4.28654 23.7081C4.93616 24.3561 5.58643 24.7551 6.35446 25.0537C7.09746 25.3421 7.94525 25.5391 9.18798 25.5956C10.4333 25.6522 10.8306 25.6663 14.0008 25.6663C17.171 25.6663 17.5689 25.6531 18.8136 25.5956C20.0564 25.5391 20.905 25.3421 21.6471 25.0537C22.4147 24.7551 23.0653 24.3563 23.715 23.7081C24.3647 23.0598 24.7627 22.4085 25.0615 21.6414C25.3501 20.8998 25.5481 20.0515 25.6037 18.8096C25.6603 17.5647 25.6735 17.1679 25.6735 13.9996C25.6735 10.8314 25.6603 10.4337 25.6037 9.18972C25.5471 7.94765 25.3501 7.09906 25.0615 6.3579C24.7627 5.5908 24.3637 4.94055 23.715 4.29123C23.0663 3.64191 22.4147 3.24338 21.648 2.94555C20.905 2.65715 20.0563 2.45929 18.8145 2.40366C17.5698 2.3471 17.1719 2.33301 14.0017 2.33301C10.8315 2.33301 10.4333 2.34617 9.18798 2.40366Z"
+                                    fill="#CE7D63"
+                                />
+                            </svg>
+                        </div>
+                        <div
+                            class="w-8 h-8 border border-[#333333] rounded-full flex items-center justify-center"
+                        >
+                            <svg
+                                width="10"
+                                height="10"
+                                viewBox="0 0 14 14"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    fill-rule="evenodd"
+                                    clip-rule="evenodd"
+                                    d="M3.75 4.09782e-07L13.125 0C13.2908 0 13.4497 0.065848 13.5669 0.183058C13.6842 0.300269 13.75 0.45924 13.75 0.625V10C13.75 10.3452 13.4702 10.625 13.125 10.625C12.7798 10.625 12.5 10.3452 12.5 10V2.13388L1.06694 13.5669C0.822864 13.811 0.427136 13.811 0.183058 13.5669C-0.0610194 13.3229 -0.0610194 12.9271 0.183058 12.6831L11.6161 1.25L3.75 1.25C3.40482 1.25 3.125 0.970178 3.125 0.625C3.125 0.279822 3.40482 4.09782e-07 3.75 4.09782e-07Z"
+                                    fill="#E7BEB1"
+                                />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-1">
+                        <h3
+                            class="font-['Roboto_Mono'] font-bold text-[#F3DFD8] text-sm uppercase"
+                        >
+                            Instagram
+                        </h3>
+                        <p
+                            class="font-['Roboto_Flex'] text-[#676665] text-xs leading-[150%]"
+                        >
+                            Share visually appealing snippets of our latest web
+                            projects.
+                        </p>
+                    </div>
+                </a>
+
+                <!-- Twitter -->
+                <a
+                    href="#"
+                    aria-label="Twitter"
+                    class="bg-[#1A1A1A] border border-[#232329] rounded-[14px] p-5 flex flex-col justify-between min-h-[175px] lg:h-full hover:bg-[#1F1F1F] transition-colors"
+                >
+                    <div class="flex items-start justify-between">
+                        <div
+                            class="w-[44px] h-[44px] bg-[#1F1F1F] border border-[#333333] rounded-[10px] flex items-center justify-center"
+                        >
+                            <svg
+                                width="24"
+                                height="24"
+                                viewBox="0 0 28 28"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    d="M26.624 6.02266C25.7999 6.3773 24.9336 6.62426 24.0464 6.75742C24.4612 6.68631 25.0715 5.9397 25.3144 5.6375C25.6835 5.18166 25.9648 4.66128 26.144 4.1028C26.144 4.06132 26.1855 4.00207 26.144 3.97244C26.1231 3.96103 26.0997 3.95505 26.0759 3.95505C26.0521 3.95505 26.0286 3.96103 26.0077 3.97244C25.0444 4.49413 24.0191 4.8923 22.9561 5.15754C22.9191 5.16885 22.8796 5.16987 22.842 5.16048C22.8045 5.15108 22.7701 5.13163 22.7428 5.10421C22.66 5.00568 22.571 4.91265 22.4761 4.82571C22.0426 4.43726 21.5507 4.11934 21.0185 3.88356C20.3 3.58881 19.524 3.46116 18.749 3.51025C17.997 3.55774 17.2628 3.75944 16.5921 4.1028C15.9317 4.4648 15.3512 4.95659 14.8856 5.54862C14.3958 6.15797 14.0423 6.86513 13.8486 7.62254C13.689 8.34299 13.6709 9.08761 13.7953 9.81497C13.7953 9.9394 13.7953 9.95718 13.6886 9.9394C9.46377 9.31723 5.99736 7.81808 3.16498 4.60054C3.04055 4.45833 2.97537 4.45833 2.87463 4.60054C1.64213 6.47299 2.24061 9.43574 3.78123 10.8993C3.98863 11.0949 4.20194 11.2845 4.42711 11.4623C3.72074 11.4121 3.03163 11.2207 2.4006 10.8993C2.28209 10.8223 2.21691 10.8638 2.21098 11.006C2.19418 11.2031 2.19418 11.4014 2.21098 11.5985C2.33462 12.5434 2.70699 13.4385 3.29001 14.1923C3.87303 14.946 4.64579 15.5314 5.52925 15.8886C5.74462 15.9808 5.96903 16.0503 6.19883 16.096C5.54491 16.2247 4.87423 16.2447 4.21379 16.1552C4.07158 16.1256 4.01825 16.2026 4.07158 16.3389C4.94263 18.7091 6.83286 19.432 8.21942 19.835C8.40904 19.8646 8.59865 19.8646 8.81197 19.912C8.81197 19.912 8.81197 19.912 8.77642 19.9475C8.36756 20.6942 6.71435 21.1978 5.95589 21.4585C4.5715 21.9558 3.09548 22.1459 1.63028 22.0155C1.39919 21.98 1.34586 21.9859 1.2866 22.0155C1.22735 22.0452 1.2866 22.1103 1.35178 22.1696C1.64806 22.3651 1.94433 22.537 2.25246 22.7029C3.16975 23.2032 4.13951 23.6007 5.14409 23.888C10.3467 25.322 16.201 24.2672 20.1059 20.386C23.1753 17.3403 24.2538 13.1392 24.2538 8.93207C24.2538 8.77208 24.4493 8.67727 24.5619 8.59432C25.3384 7.98926 26.0231 7.27471 26.5943 6.47299C26.6933 6.35349 26.744 6.20133 26.7366 6.04636C26.7366 5.95748 26.7366 5.97525 26.624 6.02266Z"
+                                    fill="#CE7D63"
+                                />
+                            </svg>
+                        </div>
+                        <div
+                            class="w-8 h-8 border border-[#333333] rounded-full flex items-center justify-center"
+                        >
+                            <svg
+                                width="10"
+                                height="10"
+                                viewBox="0 0 14 14"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    fill-rule="evenodd"
+                                    clip-rule="evenodd"
+                                    d="M3.75 4.09782e-07L13.125 0C13.2908 0 13.4497 0.065848 13.5669 0.183058C13.6842 0.300269 13.75 0.45924 13.75 0.625V10C13.75 10.3452 13.4702 10.625 13.125 10.625C12.7798 10.625 12.5 10.3452 12.5 10V2.13388L1.06694 13.5669C0.822864 13.811 0.427136 13.811 0.183058 13.5669C-0.0610194 13.3229 -0.0610194 12.9271 0.183058 12.6831L11.6161 1.25L3.75 1.25C3.40482 1.25 3.125 0.970178 3.125 0.625C3.125 0.279822 3.40482 4.09782e-07 3.75 4.09782e-07Z"
+                                    fill="#E7BEB1"
+                                />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-1">
+                        <h3
+                            class="font-['Roboto_Mono'] font-bold text-[#F3DFD8] text-sm uppercase"
+                        >
+                            Twitter
+                        </h3>
+                        <p
+                            class="font-['Roboto_Flex'] text-[#676665] text-xs leading-[150%]"
+                        >
+                            Tweet about interesting coding challenges you've
+                            overcome.
+                        </p>
+                    </div>
+                </a>
+
+                <!-- Dribbble -->
+                <a
+                    href="#"
+                    aria-label="Dribbble"
+                    class="bg-[#1A1A1A] border border-[#232329] rounded-[14px] p-5 flex flex-col justify-between min-h-[175px] lg:h-full hover:bg-[#1F1F1F] transition-colors"
+                >
+                    <div class="flex items-start justify-between">
+                        <div
+                            class="w-[44px] h-[44px] bg-[#1F1F1F] border border-[#333333] rounded-[10px] flex items-center justify-center"
+                        >
+                            <svg
+                                width="24"
+                                height="24"
+                                viewBox="0 0 26 26"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    d="M12.8475 0.853516C19.4724 0.853516 24.8326 6.21371 24.8326 12.8286C24.8326 19.4435 19.4724 24.8138 12.8475 24.8138C6.2225 24.8138 0.862305 19.4536 0.862305 12.8387C0.862305 6.22375 6.2225 0.853516 12.8475 0.853516Z"
+                                    fill="#E7BEB1"
+                                />
+                                <path
+                                    d="M12.8484 25.6667C5.76171 25.6667 0 19.915 0 12.8384C0 5.75167 5.76171 0 12.8484 0C19.9351 0 25.6968 5.75167 25.6968 12.8283C25.6968 19.905 19.9351 25.6667 12.8484 25.6667ZM23.6792 14.5849C23.3078 14.4645 20.2864 13.5711 16.8435 14.1132C18.2789 18.048 18.8611 21.2601 18.9715 21.9226C21.4408 20.2663 23.1974 17.6364 23.6792 14.5849ZM17.1345 22.9364C16.9739 21.9728 16.3315 18.6201 14.7957 14.6251C14.7757 14.6351 14.7455 14.6452 14.7255 14.6452C8.53214 16.8033 6.31379 21.0894 6.11303 21.491C7.97002 22.9364 10.3088 23.7997 12.8484 23.7997C14.3641 23.8097 15.8196 23.4985 17.1345 22.9364ZM4.6977 20.176C4.94864 19.7544 7.95999 14.7757 13.6213 12.9387C13.7618 12.8886 13.9124 12.8484 14.0529 12.8083C13.7819 12.1859 13.4808 11.5636 13.1596 10.9513C7.67893 12.5874 2.35889 12.5172 1.87707 12.5071C1.87707 12.6175 1.86703 12.7279 1.86703 12.8384C1.87707 15.659 2.94108 18.2287 4.6977 20.176ZM2.10794 10.5999C2.59979 10.61 7.11681 10.63 12.2562 9.2649C10.4393 6.03273 8.47192 3.32252 8.19086 2.93104C5.10925 4.37649 2.82063 7.20715 2.10794 10.5999ZM10.2787 2.18824C10.5799 2.58976 12.5774 5.29997 14.3741 8.60241C18.2789 7.13689 19.9251 4.92857 20.1258 4.64751C18.1885 2.93104 15.6389 1.88711 12.8484 1.88711C11.9651 1.88711 11.1018 1.99752 10.2787 2.18824ZM21.3404 5.91227C21.1095 6.22344 19.2726 8.58233 15.2173 10.2386C15.4683 10.7605 15.7192 11.2925 15.9501 11.8245C16.0304 12.0153 16.1107 12.206 16.191 12.3867C19.8448 11.9249 23.4684 12.6677 23.8298 12.738C23.7997 10.1583 22.8762 7.77931 21.3404 5.91227Z"
+                                    fill="#CE7D63"
+                                />
+                            </svg>
+                        </div>
+                        <div
+                            class="w-8 h-8 border border-[#333333] rounded-full flex items-center justify-center"
+                        >
+                            <svg
+                                width="10"
+                                height="10"
+                                viewBox="0 0 14 14"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    fill-rule="evenodd"
+                                    clip-rule="evenodd"
+                                    d="M3.75 4.09782e-07L13.125 0C13.2908 0 13.4497 0.065848 13.5669 0.183058C13.6842 0.300269 13.75 0.45924 13.75 0.625V10C13.75 10.3452 13.4702 10.625 13.125 10.625C12.7798 10.625 12.5 10.3452 12.5 10V2.13388L1.06694 13.5669C0.822864 13.811 0.427136 13.811 0.183058 13.5669C-0.0610194 13.3229 -0.0610194 12.9271 0.183058 12.6831L11.6161 1.25L3.75 1.25C3.40482 1.25 3.125 0.970178 3.125 0.625C3.125 0.279822 3.40482 4.09782e-07 3.75 4.09782e-07Z"
+                                    fill="#E7BEB1"
+                                />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-1">
+                        <h3
+                            class="font-['Roboto_Mono'] font-bold text-[#F3DFD8] text-sm uppercase"
+                        >
+                            Dribbble
+                        </h3>
+                        <p
+                            class="font-['Roboto_Flex'] text-[#676665] text-xs leading-[150%]"
+                        >
+                            Showcase design elements of our web projects.
+                        </p>
+                    </div>
+                </a>
+
+                <!-- Behance -->
+                <a
+                    href="#"
+                    aria-label="Behance"
+                    class="bg-[#1A1A1A] border border-[#232329] rounded-[14px] p-5 flex flex-col justify-between min-h-[175px] lg:h-full hover:bg-[#1F1F1F] transition-colors"
+                >
+                    <div class="flex items-start justify-between">
+                        <div
+                            class="w-[44px] h-[44px] bg-[#1F1F1F] border border-[#333333] rounded-[10px] flex items-center justify-center"
+                        >
+                            <svg
+                                width="24"
+                                height="24"
+                                viewBox="0 0 28 28"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    d="M11.5155 13.31C11.5155 13.31 13.9565 13.1246 13.9565 10.2037C13.9565 7.28535 12.301 5.84672 9.77047 5.84672L1.10156 5.83301V21.9612H9.97207C9.97207 21.9612 14.4073 22.1015 14.4073 17.1227C14.4073 17.1227 14.7331 13.31 11.5155 13.31ZM4.3272 8.25224H8.76246C8.76246 8.25224 10.2801 8.27724 10.2801 10.2449C10.2801 10.2449 10.2801 12.2843 10.2801 12.2843C10.2801 12.2843 8.76246 12.2843 8.76246 12.2843H4.3272V8.25224ZM9.16566 19.542H4.3272V14.7035H9.16566C9.16566 14.7035 11.5849 14.7285 11.5849 17.1227C11.5849 19.517 9.51403 19.542 9.16566 19.542Z"
+                                    fill="#D48E77"
+                                />
+                                <path
+                                    d="M21.262 9.86523C15.2035 9.86523 15.214 15.9133 15.214 15.9133C15.214 15.9133 14.8108 21.9614 21.262 21.9614C21.262 21.9614 26.9069 21.9614 26.9069 17.1229H23.6813C23.6813 17.1229 23.6813 19.5422 21.262 19.5422C21.262 19.5422 18.8428 19.5422 18.8428 16.3165C18.8428 16.3165 25.2941 16.3165 26.9069 16.3165C26.9069 14.7037 26.9069 9.86523 21.262 9.86523ZM18.8428 14.7037C18.8428 14.7037 18.7896 12.2845 21.262 12.2845C23.7337 12.2845 23.6813 14.7037 23.6813 14.7037H18.8428Z"
+                                    fill="#D48E77"
+                                />
+                                <path
+                                    d="M24.4879 7.44629H18.0366V9.05911H24.4879V7.44629Z"
+                                    fill="#D48E77"
+                                />
+                            </svg>
+                        </div>
+                        <div
+                            class="w-8 h-8 border border-[#333333] rounded-full flex items-center justify-center"
+                        >
+                            <svg
+                                width="10"
+                                height="10"
+                                viewBox="0 0 14 14"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    fill-rule="evenodd"
+                                    clip-rule="evenodd"
+                                    d="M3.75 4.09782e-07L13.125 0C13.2908 0 13.4497 0.065848 13.5669 0.183058C13.6842 0.300269 13.75 0.45924 13.75 0.625V10C13.75 10.3452 13.4702 10.625 13.125 10.625C12.7798 10.625 12.5 10.3452 12.5 10V2.13388L1.06694 13.5669C0.822864 13.811 0.427136 13.811 0.183058 13.5669C-0.0610194 13.3229 -0.0610194 12.9271 0.183058 12.6831L11.6161 1.25L3.75 1.25C3.40482 1.25 3.125 0.970178 3.125 0.625C3.125 0.279822 3.40482 4.09782e-07 3.75 4.09782e-07Z"
+                                    fill="#E7BEB1"
+                                />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-1">
+                        <h3
+                            class="font-['Roboto_Mono'] font-bold text-[#F3DFD8] text-sm uppercase"
+                        >
+                            Behance
+                        </h3>
+                        <p
+                            class="font-['Roboto_Flex'] text-[#676665] text-xs leading-[150%]"
+                        >
+                            Create detailed presentations for our projects.
+                        </p>
+                    </div>
+                </a>
+            </div>
+
+            <!-- ═══ RIGHT COLUMN: all other sections ═════ -->
+            <div class="lg:flex-1 lg:flex lg:flex-col lg:gap-[10px] lg:min-w-0">
+                <!-- SOCIAL MEDIA — mobile icon row (hidden on desktop) -->
+                <div class="mb-[10px] lg:hidden">
+                    <div class="max-w-[calc(100%-32px)] mx-auto">
+                        <div
+                            class="grid grid-cols-4 gap-[10px] items-center mx-auto"
+                        >
+                            <a
+                                href="#"
+                                aria-label="Instagram"
+                                class="h-[56px] border border-[#333333] rounded-[10px] bg-[#1F1F1F] flex items-center justify-center cursor-pointer hover:bg-[#262626] transition-colors active:scale-95"
+                            >
+                                <svg
+                                    width="28"
+                                    height="28"
+                                    viewBox="0 0 28 28"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        d="M10.1102 13.9996C10.1102 11.852 11.8518 10.1105 14.0008 10.1105C16.1498 10.1105 17.8923 11.852 17.8923 13.9996C17.8923 16.1473 16.1498 17.8888 14.0008 17.8888C11.8518 17.8888 10.1102 16.1473 10.1102 13.9996ZM8.00651 13.9996C8.00651 17.3083 10.6901 19.9903 14.0008 19.9903C17.3114 19.9903 19.9951 17.3083 19.9951 13.9996C19.9951 10.691 17.3114 8.00897 14.0008 8.00897C10.6901 8.00897 8.00651 10.691 8.00651 13.9996ZM18.8315 7.77143C18.8314 8.04833 18.9135 8.31903 19.0673 8.54932C19.2211 8.77961 19.4398 8.95914 19.6958 9.06521C19.9517 9.17127 20.2333 9.19911 20.5051 9.1452C20.7769 9.09129 21.0265 8.95805 21.2225 8.76234C21.4185 8.56662 21.552 8.31722 21.6062 8.04567C21.6603 7.77412 21.6327 7.49261 21.5268 7.23675C21.4208 6.9809 21.2414 6.76218 21.0111 6.60825C20.7808 6.45432 20.51 6.37211 20.2329 6.372H20.2324C19.861 6.37217 19.5049 6.51965 19.2422 6.78204C18.9795 7.04443 18.8318 7.40028 18.8315 7.77143ZM9.28463 23.496C8.1465 23.4442 7.52789 23.2547 7.11679 23.0947C6.57177 22.8826 6.1829 22.6301 5.77405 22.222C5.36519 21.814 5.1121 21.4257 4.90086 20.881C4.7406 20.4703 4.55102 19.8519 4.49928 18.7145C4.44269 17.4847 4.43139 17.1153 4.43139 13.9997C4.43139 10.8842 4.44362 10.5158 4.49928 9.28502C4.55112 8.14756 4.7421 7.53035 4.90086 7.11847C5.11304 6.57378 5.36575 6.18514 5.77405 5.77653C6.18234 5.36792 6.57084 5.11499 7.11679 4.90387C7.52771 4.74371 8.1465 4.55424 9.28463 4.50254C10.5151 4.44598 10.8848 4.43468 14.0008 4.43468C17.1168 4.43468 17.4868 4.44691 18.7183 4.50254C19.8565 4.55434 20.474 4.7452 20.8862 4.90387C21.4312 5.11499 21.8201 5.36848 22.2289 5.77653C22.6378 6.18458 22.8899 6.57378 23.1021 7.11847C23.2624 7.52914 23.4519 8.14756 23.5037 9.28502C23.5603 10.5158 23.5716 10.8842 23.5716 13.9997C23.5716 17.1153 23.5603 17.4837 23.5037 18.7145C23.4518 19.8519 23.2613 20.4701 23.1021 20.881C22.8899 21.4257 22.6372 21.8143 22.2289 22.222C21.8206 22.6297 21.4312 22.8826 20.8862 23.0947C20.4753 23.2548 19.8565 23.4443 18.7183 23.496C17.4878 23.5526 17.1182 23.5639 14.0008 23.5639C10.8834 23.5639 10.5148 23.5526 9.28463 23.496ZM9.18798 2.40366C7.94525 2.46022 7.09606 2.65715 6.35446 2.94555C5.58643 3.24338 4.93625 3.64294 4.28654 4.29123C3.63684 4.93952 3.23807 5.59033 2.94006 6.3579C2.65149 7.09953 2.45444 7.94774 2.39784 9.18972C2.34032 10.4337 2.32715 10.8314 2.32715 13.9996C2.32715 17.1679 2.34032 17.5656 2.39784 18.8096C2.45444 20.0516 2.65149 20.8998 2.94006 21.6414C3.23807 22.4085 3.63693 23.06 4.28654 23.7081C4.93616 24.3561 5.58643 24.7551 6.35446 25.0537C7.09746 25.3421 7.94525 25.5391 9.18798 25.5956C10.4333 25.6522 10.8306 25.6663 14.0008 25.6663C17.171 25.6663 17.5689 25.6531 18.8136 25.5956C20.0564 25.5391 20.905 25.3421 21.6471 25.0537C22.4147 24.7551 23.0653 24.3563 23.715 23.7081C24.3647 23.0598 24.7627 22.4085 25.0615 21.6414C25.3501 20.8998 25.5481 20.0515 25.6037 18.8096C25.6603 17.5647 25.6735 17.1679 25.6735 13.9996C25.6735 10.8314 25.6603 10.4337 25.6037 9.18972C25.5471 7.94765 25.3501 7.09906 25.0615 6.3579C24.7627 5.5908 24.3637 4.94055 23.715 4.29123C23.0663 3.64191 22.4147 3.24338 21.648 2.94555C20.905 2.65715 20.0563 2.45929 18.8145 2.40366C17.5698 2.3471 17.1719 2.33301 14.0017 2.33301C10.8315 2.33301 10.4333 2.34617 9.18798 2.40366Z"
+                                        fill="#CE7D63"
+                                    />
+                                </svg>
+                            </a>
+                            <a
+                                href="#"
+                                aria-label="Twitter"
+                                class="h-[56px] border border-[#333333] rounded-[10px] bg-[#1F1F1F] flex items-center justify-center cursor-pointer hover:bg-[#262626] transition-colors active:scale-95"
+                            >
+                                <svg
+                                    width="28"
+                                    height="28"
+                                    viewBox="0 0 28 28"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        d="M26.624 6.02266C25.7999 6.3773 24.9336 6.62426 24.0464 6.75742C24.4612 6.68631 25.0715 5.9397 25.3144 5.6375C25.6835 5.18166 25.9648 4.66128 26.144 4.1028C26.144 4.06132 26.1855 4.00207 26.144 3.97244C26.1231 3.96103 26.0997 3.95505 26.0759 3.95505C26.0521 3.95505 26.0286 3.96103 26.0077 3.97244C25.0444 4.49413 24.0191 4.8923 22.9561 5.15754C22.9191 5.16885 22.8796 5.16987 22.842 5.16048C22.8045 5.15108 22.7701 5.13163 22.7428 5.10421C22.66 5.00568 22.571 4.91265 22.4761 4.82571C22.0426 4.43726 21.5507 4.11934 21.0185 3.88356C20.3 3.58881 19.524 3.46116 18.749 3.51025C17.997 3.55774 17.2628 3.75944 16.5921 4.1028C15.9317 4.4648 15.3512 4.95659 14.8856 5.54862C14.3958 6.15797 14.0423 6.86513 13.8486 7.62254C13.689 8.34299 13.6709 9.08761 13.7953 9.81497C13.7953 9.9394 13.7953 9.95718 13.6886 9.9394C9.46377 9.31723 5.99736 7.81808 3.16498 4.60054C3.04055 4.45833 2.97537 4.45833 2.87463 4.60054C1.64213 6.47299 2.24061 9.43574 3.78123 10.8993C3.98863 11.0949 4.20194 11.2845 4.42711 11.4623C3.72074 11.4121 3.03163 11.2207 2.4006 10.8993C2.28209 10.8223 2.21691 10.8638 2.21098 11.006C2.19418 11.2031 2.19418 11.4014 2.21098 11.5985C2.33462 12.5434 2.70699 13.4385 3.29001 14.1923C3.87303 14.946 4.64579 15.5314 5.52925 15.8886C5.74462 15.9808 5.96903 16.0503 6.19883 16.096C5.54491 16.2247 4.87423 16.2447 4.21379 16.1552C4.07158 16.1256 4.01825 16.2026 4.07158 16.3389C4.94263 18.7091 6.83286 19.432 8.21942 19.835C8.40904 19.8646 8.59865 19.8646 8.81197 19.912C8.81197 19.912 8.81197 19.912 8.77642 19.9475C8.36756 20.6942 6.71435 21.1978 5.95589 21.4585C4.5715 21.9558 3.09548 22.1459 1.63028 22.0155C1.39919 21.98 1.34586 21.9859 1.2866 22.0155C1.22735 22.0452 1.2866 22.1103 1.35178 22.1696C1.64806 22.3651 1.94433 22.537 2.25246 22.7029C3.16975 23.2032 4.13951 23.6007 5.14409 23.888C10.3467 25.322 16.201 24.2672 20.1059 20.386C23.1753 17.3403 24.2538 13.1392 24.2538 8.93207C24.2538 8.77208 24.4493 8.67727 24.5619 8.59432C25.3384 7.98926 26.0231 7.27471 26.5943 6.47299C26.6933 6.35349 26.744 6.20133 26.7366 6.04636C26.7366 5.95748 26.7366 5.97525 26.624 6.02266Z"
+                                        fill="#CE7D63"
+                                    />
+                                </svg>
+                            </a>
+                            <a
+                                href="#"
+                                aria-label="Dribbble"
+                                class="h-[56px] border border-[#333333] rounded-[10px] bg-[#1F1F1F] flex items-center justify-center cursor-pointer hover:bg-[#262626] transition-colors active:scale-95"
+                            >
+                                <svg
+                                    width="26"
+                                    height="26"
+                                    viewBox="0 0 26 26"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        d="M12.8475 0.853516C19.4724 0.853516 24.8326 6.21371 24.8326 12.8286C24.8326 19.4435 19.4724 24.8138 12.8475 24.8138C6.2225 24.8138 0.862305 19.4536 0.862305 12.8387C0.862305 6.22375 6.2225 0.853516 12.8475 0.853516Z"
+                                        fill="#E7BEB1"
+                                    />
+                                    <path
+                                        d="M12.8484 25.6667C5.76171 25.6667 0 19.915 0 12.8384C0 5.75167 5.76171 0 12.8484 0C19.9351 0 25.6968 5.75167 25.6968 12.8283C25.6968 19.905 19.9351 25.6667 12.8484 25.6667ZM23.6792 14.5849C23.3078 14.4645 20.2864 13.5711 16.8435 14.1132C18.2789 18.048 18.8611 21.2601 18.9715 21.9226C21.4408 20.2663 23.1974 17.6364 23.6792 14.5849ZM17.1345 22.9364C16.9739 21.9728 16.3315 18.6201 14.7957 14.6251C14.7757 14.6351 14.7455 14.6452 14.7255 14.6452C8.53214 16.8033 6.31379 21.0894 6.11303 21.491C7.97002 22.9364 10.3088 23.7997 12.8484 23.7997C14.3641 23.8097 15.8196 23.4985 17.1345 22.9364ZM4.6977 20.176C4.94864 19.7544 7.95999 14.7757 13.6213 12.9387C13.7618 12.8886 13.9124 12.8484 14.0529 12.8083C13.7819 12.1859 13.4808 11.5636 13.1596 10.9513C7.67893 12.5874 2.35889 12.5172 1.87707 12.5071C1.87707 12.6175 1.86703 12.7279 1.86703 12.8384C1.87707 15.659 2.94108 18.2287 4.6977 20.176ZM2.10794 10.5999C2.59979 10.61 7.11681 10.63 12.2562 9.2649C10.4393 6.03273 8.47192 3.32252 8.19086 2.93104C5.10925 4.37649 2.82063 7.20715 2.10794 10.5999ZM10.2787 2.18824C10.5799 2.58976 12.5774 5.29997 14.3741 8.60241C18.2789 7.13689 19.9251 4.92857 20.1258 4.64751C18.1885 2.93104 15.6389 1.88711 12.8484 1.88711C11.9651 1.88711 11.1018 1.99752 10.2787 2.18824ZM21.3404 5.91227C21.1095 6.22344 19.2726 8.58233 15.2173 10.2386C15.4683 10.7605 15.7192 11.2925 15.9501 11.8245C16.0304 12.0153 16.1107 12.206 16.191 12.3867C19.8448 11.9249 23.4684 12.6677 23.8298 12.738C23.7997 10.1583 22.8762 7.77931 21.3404 5.91227Z"
+                                        fill="#CE7D63"
+                                    />
+                                </svg>
+                            </a>
+                            <a
+                                href="#"
+                                aria-label="Behance"
+                                class="h-[56px] border border-[#333333] rounded-[10px] bg-[#1F1F1F] flex items-center justify-center cursor-pointer hover:bg-[#262626] transition-colors active:scale-95"
+                            >
+                                <svg
+                                    width="28"
+                                    height="28"
+                                    viewBox="0 0 28 28"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        d="M11.5155 13.31C11.5155 13.31 13.9565 13.1246 13.9565 10.2037C13.9565 7.28535 12.301 5.84672 9.77047 5.84672L1.10156 5.83301V21.9612H9.97207C9.97207 21.9612 14.4073 22.1015 14.4073 17.1227C14.4073 17.1227 14.7331 13.31 11.5155 13.31ZM4.3272 8.25224H8.76246C8.76246 8.25224 10.2801 8.27724 10.2801 10.2449C10.2801 10.2449 10.2801 12.2843 10.2801 12.2843C10.2801 12.2843 8.76246 12.2843 8.76246 12.2843H4.3272V8.25224ZM9.16566 19.542H4.3272V14.7035H9.16566C9.16566 14.7035 11.5849 14.7285 11.5849 17.1227C11.5849 19.517 9.51403 19.542 9.16566 19.542Z"
+                                        fill="#D48E77"
+                                    />
+                                    <path
+                                        d="M21.262 9.86523C15.2035 9.86523 15.214 15.9133 15.214 15.9133C15.214 15.9133 14.8108 21.9614 21.262 21.9614C21.262 21.9614 26.9069 21.9614 26.9069 17.1229H23.6813C23.6813 17.1229 23.6813 19.5422 21.262 19.5422C21.262 19.5422 18.8428 19.5422 18.8428 16.3165C18.8428 16.3165 25.2941 16.3165 26.9069 16.3165C26.9069 14.7037 26.9069 9.86523 21.262 9.86523ZM18.8428 14.7037C18.8428 14.7037 18.7896 12.2845 21.262 12.2845C23.7337 12.2845 23.6813 14.7037 23.6813 14.7037H18.8428Z"
+                                        fill="#D48E77"
+                                    />
+                                    <path
+                                        d="M24.4879 7.44629H18.0366V9.05911H24.4879V7.44629Z"
+                                        fill="#D48E77"
+                                    />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FOOTER LINKS -->
+                <section class="mb-[10px] lg:mb-0">
+                    <div class="max-w-[calc(100%-32px)] mx-auto lg:max-w-full">
+                        <div class="bg-[#1A1A1A] rounded-2xl">
+                            <div
+                                class="grid grid-cols-2 gap-[30px] p-6 lg:grid-cols-4"
+                            >
+                                <div class="flex flex-col gap-y-4">
+                                    <h4
+                                        class="font-['Roboto_Mono'] font-bold text-lg text-[#F3DFD8] leading-[100%]"
+                                    >
+                                        Home
+                                    </h4>
+                                    <ul
+                                        class="font-['Roboto_Flex'] flex flex-col gap-[10px] text-[#81807E] text-sm"
+                                    >
+                                        <li>
+                                            <a
+                                                href="#"
+                                                class="hover:text-[#CE7D63] transition-colors"
+                                                >Why Us</a
+                                            >
+                                        </li>
+                                        <li>
+                                            <a
+                                                href="#"
+                                                class="hover:text-[#CE7D63] transition-colors"
+                                                >About Us</a
+                                            >
+                                        </li>
+                                        <li>
+                                            <a
+                                                href="#"
+                                                class="hover:text-[#CE7D63] transition-colors"
+                                                >Testimonials</a
+                                            >
+                                        </li>
+                                        <li>
+                                            <a
+                                                href="#"
+                                                class="hover:text-[#CE7D63] transition-colors"
+                                                >FAQ's</a
+                                            >
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="flex flex-col gap-y-4">
+                                    <h4
+                                        class="font-['Roboto_Mono'] font-bold text-lg text-[#F3DFD8] leading-[100%]"
+                                    >
+                                        Services
+                                    </h4>
+                                    <ul
+                                        class="font-['Roboto_Flex'] flex flex-col gap-[10px] text-[#81807E] text-sm"
+                                    >
+                                        <li>
+                                            <a
+                                                href="#"
+                                                class="hover:text-[#CE7D63] transition-colors"
+                                                >Web Development</a
+                                            >
+                                        </li>
+                                        <li>
+                                            <a
+                                                href="#"
+                                                class="hover:text-[#CE7D63] transition-colors"
+                                                >App Development</a
+                                            >
+                                        </li>
+                                        <li>
+                                            <a
+                                                href="#"
+                                                class="hover:text-[#CE7D63] transition-colors"
+                                                >Web Design</a
+                                            >
+                                        </li>
+                                        <li>
+                                            <a
+                                                href="#"
+                                                class="hover:text-[#CE7D63] transition-colors"
+                                                >Digital Marketing</a
+                                            >
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="flex flex-col gap-y-4">
+                                    <h4
+                                        class="font-['Roboto_Mono'] font-bold text-lg text-[#F3DFD8] leading-[100%]"
+                                    >
+                                        Projects
+                                    </h4>
+                                    <ul
+                                        class="font-['Roboto_Flex'] flex flex-col gap-[10px] text-[#81807E] text-sm"
+                                    >
+                                        <li>
+                                            <a
+                                                href="#"
+                                                class="hover:text-[#CE7D63] transition-colors"
+                                                >Klothink</a
+                                            >
+                                        </li>
+                                        <li>
+                                            <a
+                                                href="#"
+                                                class="hover:text-[#CE7D63] transition-colors"
+                                                >Zenith</a
+                                            >
+                                        </li>
+                                        <li>
+                                            <a
+                                                href="#"
+                                                class="hover:text-[#CE7D63] transition-colors"
+                                                >Novus</a
+                                            >
+                                        </li>
+                                        <li>
+                                            <a
+                                                href="#"
+                                                class="hover:text-[#CE7D63] transition-colors"
+                                                >Apex</a
+                                            >
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="flex flex-col gap-y-4">
+                                    <h4
+                                        class="font-['Roboto_Mono'] font-bold text-lg text-[#F3DFD8] leading-[100%]"
+                                    >
+                                        Blogs
+                                    </h4>
+                                    <ul
+                                        class="font-['Roboto_Flex'] flex flex-col gap-[10px] text-[#81807E] text-sm"
+                                    >
+                                        <li>
+                                            <a
+                                                href="#"
+                                                class="hover:text-[#CE7D63] transition-colors"
+                                                >Business</a
+                                            >
+                                        </li>
+                                        <li class="flex items-center gap-2">
+                                            <a
+                                                href="#"
+                                                class="hover:text-[#CE7D63] transition-colors"
+                                                >Design</a
+                                            >
+                                            <span
+                                                class="text-xs bg-[#262626] border border-[#333333] px-[10px] py-1 rounded-md text-[#CCCCCC]"
+                                                >Soon</span
+                                            >
+                                        </li>
+                                        <li class="flex items-center gap-2">
+                                            <a
+                                                href="#"
+                                                class="hover:text-[#CE7D63] transition-colors"
+                                                >Development</a
+                                            >
+                                            <span
+                                                class="text-xs bg-[#262626] border border-[#333333] px-[10px] py-1 rounded-md text-[#CCCCCC]"
+                                                >Soon</span
+                                            >
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- NEWSLETTER -->
+                <section class="mb-[10px] lg:mb-0">
+                    <div class="max-w-[calc(100%-32px)] mx-auto lg:max-w-full">
+                        <div
+                            class="bg-[#1A1A1A] rounded-[14px] p-6 flex flex-col gap-4 lg:flex-row lg:items-center lg:justify-between"
+                        >
+                            <div class="flex flex-col gap-1">
+                                <span
+                                    class="font-['Roboto_Mono'] text-[#676665] text-sm uppercase leading-[150%] font-normal"
+                                >
+                                    Newsletter
+                                </span>
+                                <h2
+                                    class="font-['Roboto_Flex'] text-[#F9EFEC] text-xl font-medium uppercase leading-[150%]"
+                                >
+                                    Subscribe to our newsletter
+                                </h2>
+                            </div>
+                            <div
+                                class="relative flex items-center border-b border-[#333333] font-['Roboto_Flex'] pb-2 mt-2 group lg:mt-0 lg:w-[45%] lg:min-w-[320px]"
+                            >
+                                <input
+                                    type="email"
+                                    placeholder="Enter your email"
+                                    class="bg-transparent w-full text-[#F9EFEC] text-sm outline-none placeholder:text-[#676665] py-[14px] px-4"
+                                />
+                                <button
+                                    type="button"
+                                    aria-label="Subscribe"
+                                    class="flex items-center justify-center w-10 h-10 min-w-[40px] shrink-0 border border-[#333333] rounded-full hover:bg-[#333333] transition-all duration-300 cursor-pointer active:scale-90"
+                                >
+                                    <svg
+                                        width="14"
+                                        height="14"
+                                        viewBox="0 0 14 14"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path
+                                            fill-rule="evenodd"
+                                            clip-rule="evenodd"
+                                            d="M3.75 4.09782e-07L13.125 0C13.2908 0 13.4497 0.065848 13.5669 0.183058C13.6842 0.300269 13.75 0.45924 13.75 0.625V10C13.75 10.3452 13.4702 10.625 13.125 10.625C12.7798 10.625 12.5 10.3452 12.5 10V2.13388L1.06694 13.5669C0.822864 13.811 0.427136 13.811 0.183058 13.5669C-0.0610194 13.3229 -0.0610194 12.9271 0.183058 12.6831L11.6161 1.25L3.75 1.25C3.40482 1.25 3.125 0.970178 3.125 0.625C3.125 0.279822 3.40482 4.09782e-07 3.75 4.09782e-07Z"
+                                            fill="#E7BEB1"
+                                        />
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- COPYRIGHT -->
+                <section class="mb-5 lg:mb-0">
+                    <div class="max-w-[calc(100%-32px)] mx-auto lg:max-w-full">
+                        <div
+                            class="bg-[#1A1A1A] mx-auto rounded-[14px] overflow-hidden"
+                        >
+                            <div
+                                class="font-['Roboto_Mono'] flex flex-col gap-5 items-center justify-center text-sm px-[31px] py-6 text-[#676665] lg:flex-row lg:justify-between lg:gap-0"
+                            >
+                                <p>© 2024 NexGen. All rights reserved.</p>
+                                <div
+                                    class="w-full flex flex-col justify-center items-center gap-5 lg:w-auto lg:flex-row lg:gap-6"
+                                >
+                                    <a
+                                        href="#"
+                                        class="w-full border-b border-[#232329] pb-5 text-center hover:text-[#F9EFEC] transition-colors lg:w-auto lg:border-b-0 lg:pb-0"
+                                    >
+                                        Terms & Conditions
+                                    </a>
+                                    <a
+                                        href="#"
+                                        class="hover:text-[#F9EFEC] transition-colors"
+                                    >
+                                        Privacy Policy
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </body>
+</html>

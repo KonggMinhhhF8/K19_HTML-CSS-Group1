@@ -2842,12 +2842,16 @@
         </div>
 
         <!-- ─── FOOTER WRAPPER (desktop: flex row) ─── -->
+         <div class="lg:mb-5 lg:mx-auto lg:max-w-[calc(100%-80px)] 2xl:max-w-[calc(100%-100px)]">
         <div
-            class="lg:flex lg:gap-[10px] lg:max-w-[calc(100%-80px)] lg:mx-auto lg:mb-5 lg:items-stretch"
+            class="lg:grid lg:grid-cols-[45%_1fr] 2xl:grid-cols-[42%_1fr] 
+            lg:gap-[10px] 2xl:gap-5 
+             lg:items-stretch"
         >
             <!-- ══════DESKTOP SOCIAL CARDS (hidden on mobile) ═════ -->
             <div
-                class="hidden lg:grid lg:grid-cols-2 lg:gap-[10px] 2xl:gap-5 lg:w-[554px] 2xl:w-[748px] 2xl:gap-5 lg:shrink-0 lg:self-stretch lg:grid-rows-2"
+                class="hidden lg:grid lg:grid-cols-2 lg:gap-[10px] 2xl:gap-5 
+                lg:self-stretch lg:grid-rows-2"
             >
                 <!-- Instagram -->
                 <a
@@ -2857,7 +2861,7 @@
                 >
                     <div class="flex items-start justify-between">
                         <div
-                            class="w-[56px] h-[56px] 2xl:w-[66px] 2x:h-[66px] bg-[#1F1F1F] border border-[#333333] rounded-[10px] 2xl:rouned-[12px] flex items-center justify-center"
+                            class="w-[56px] h-[56px] 2xl:w-[66px] 2xl:h-[66px] bg-[#1F1F1F] border border-[#333333] rounded-[10px] 2xl:rounded-[12px] flex items-center justify-center"
                         >
                             <svg
                                 width="24"
@@ -2927,7 +2931,7 @@
                             </svg>
                         </div>
                     </div>
-                    <div class="flex flex-col gap-[10px] gap-3">
+                    <div class="flex flex-col lg:gap-[10px] 2xl:gap-3">
                         <h3
                             class="font-['Roboto_Flex'] font-medium text-[#F9EFEC] text-[22px] 2xl:text-3xl uppercase"
                         >
@@ -2950,7 +2954,7 @@
                 >
                     <div class="flex items-start justify-between">
                         <div
-                            class="w-[56px] h-[56px] 2xl:w-[66px] 2x:h-[66px] bg-[#1F1F1F] border border-[#333333] rounded-[10px] 2xl:rouned-[12px] flex items-center justify-center"
+                            class="w-[56px] h-[56px] 2xl:w-[66px] 2xl:h-[66px] bg-[#1F1F1F] border border-[#333333] rounded-[10px] 2xl:rounded-[12px] flex items-center justify-center"
                         >
                             <svg
                                 width="26"
@@ -3016,7 +3020,7 @@
                             </svg>
                         </div>
                     </div>
-                    <div class="flex flex-col gap-[10px] gap-3">
+                    <div class="flex flex-col lg:gap-[10px] 2xl:gap-3">
                         <h3
                             class="font-['Roboto_Flex'] font-medium text-[#F9EFEC] text-[22px] 2xl:text-3xl uppercase"
                         >
@@ -3039,7 +3043,7 @@
                 >
                     <div class="flex items-start justify-between">
                         <div
-                            class="w-[56px] h-[56px] 2xl:w-[66px] 2x:h-[66px] bg-[#1F1F1F] border border-[#333333] rounded-[10px] 2xl:rouned-[12px] flex items-center justify-center"
+                            class="w-[56px] h-[56px] 2xl:w-[66px] 2xl:h-[66px] bg-[#1F1F1F] border border-[#333333] rounded-[10px] 2xl:rounded-[12px] flex items-center justify-center"
                         >
                             <svg
                                 width="26"
@@ -3113,7 +3117,7 @@
                             </svg>
                         </div>
                     </div>
-                    <div class="flex flex-col gap-[10px] gap-3">
+                    <div class="flex flex-col lg:gap-[10px] 2xl:gap-3">
                         <h3
                             class="font-['Roboto_Flex'] font-medium text-[#F9EFEC] text-[22px] 2xl:text-3xl uppercase"
                         >
@@ -3134,7 +3138,7 @@
                 >
                     <div class="flex items-start justify-between">
                         <div
-                            class="w-[56px] h-[56px] 2xl:w-[66px] 2x:h-[66px] bg-[#1F1F1F] border border-[#333333] rounded-[10px] 2xl:rouned-[12px] flex items-center justify-center"
+                            class="w-[56px] h-[56px] 2xl:w-[66px] 2xl:h-[66px] bg-[#1F1F1F] border border-[#333333] rounded-[10px] 2xl:rounded-[12px] flex items-center justify-center"
                         >
                             <svg
                                 width="26"
@@ -3216,7 +3220,7 @@
                             </svg>
                         </div>
                     </div>
-                    <div class="flex flex-col gap-[10px] gap-3">
+                    <div class="flex flex-col lg:gap-[10px] 2xl:gap-3">
                         <h3
                             class="font-['Roboto_Flex'] font-medium text-[#F9EFEC] text-[22px] 2xl:text-3xl uppercase"
                         >
@@ -3233,7 +3237,7 @@
 
             <!-- ═══ RIGHT COLUMN: all other sections ═════ -->
             <div
-                class="lg:flex-1 lg:grid lg:grid-rows-2 lg:gap-[10px] lg:self-stretch"
+                class="lg:min-w-0 lg:grid lg:grid-rows-2 lg:gap-[10px] 2xl:gap-5 lg:self-stretch"
             >
                 <!-- SOCIAL MEDIA — mobile icon row (hidden on desktop) -->
                 <div class="mb-[10px] lg:hidden">
@@ -3518,56 +3522,38 @@
                 >
                     <!-- NEWSLETTER -->
                     <section class="mb-[10px] lg:mb-0 lg:flex-1">
-                        <div
-                            class="max-w-[calc(100%-32px)] mx-auto lg:max-w-full lg:h-full"
-                        >
-                            <div
-                                class="bg-[#1A1A1A] rounded-[14px] p-6 lg:p-10 2xl:p-[50px] flex flex-col gap-4 lg:flex-row lg:items-center lg:justify-between lg:h-full"
-                            >
-                                <div class="flex flex-col gap-1">
-                                    <span
-                                        class="font-['Roboto_Mono'] text-[#676665] text-sm lg:text-base 2xl:text-lg uppercase leading-[150%] font-normal"
-                                    >
-                                        Newsletter
-                                    </span>
-                                    <h2
-                                        class="font-['Roboto_Flex'] text-[#F9EFEC] text-xl lg:text-2xl 2xl:text-3xl font-medium uppercase leading-[150%]"
-                                    >
-                                        Subscribe to our newsletter
-                                    </h2>
-                                </div>
-                                <div
-                                    class="relative flex items-center border-b border-[#333333] font-['Roboto_Flex'] pb-2 mt-2 group lg:mt-0 lg:w-[45%] lg:min-w-[320px]"
-                                >
-                                    <input
-                                        type="email"
-                                        placeholder="Enter your email"
-                                        class="bg-transparent w-full text-[#F9EFEC] text-sm lg:text-base 2xl:text-lg outline-none placeholder:text-[#676665] py-[14px]"
-                                    />
-                                    <button
-                                        type="button"
-                                        aria-label="Subscribe"
-                                        class="flex items-center justify-center w-10 h-10 min-w-[40px] shrink-0 border border-[#333333] rounded-full hover:bg-[#333333] transition-all duration-300 cursor-pointer active:scale-90"
-                                    >
-                                        <svg
-                                            width="14"
-                                            height="14"
-                                            viewBox="0 0 14 14"
-                                            fill="none"
-                                            xmlns="http://www.w3.org/2000/svg"
-                                        >
-                                            <path
-                                                fill-rule="evenodd"
-                                                clip-rule="evenodd"
-                                                d="M3.75 4.09782e-07L13.125 0C13.2908 0 13.4497 0.065848 13.5669 0.183058C13.6842 0.300269 13.75 0.45924 13.75 0.625V10C13.75 10.3452 13.4702 10.625 13.125 10.625C12.7798 10.625 12.5 10.3452 12.5 10V2.13388L1.06694 13.5669C0.822864 13.811 0.427136 13.811 0.183058 13.5669C-0.0610194 13.3229 -0.0610194 12.9271 0.183058 12.6831L11.6161 1.25L3.75 1.25C3.40482 1.25 3.125 0.970178 3.125 0.625C3.125 0.279822 3.40482 4.09782e-07 3.75 4.09782e-07Z"
-                                                fill="#E7BEB1"
-                                            />
-                                        </svg>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
+    <div class="max-w-[calc(100%-32px)] mx-auto lg:max-w-full lg:h-full">
+        <div class="bg-[#1A1A1A] rounded-[14px] p-6 lg:p-10 2xl:p-[50px] flex flex-col lg:flex-row lg:flex-wrap lg:items-center lg:justify-between lg:h-full gap-5">
+            
+            <div class="flex flex-col gap-1 lg:shrink-0">
+                <span class="font-['Roboto_Mono'] text-[#676665] text-sm lg:text-base 2xl:text-lg uppercase leading-[150%] font-normal">
+                    Newsletter
+                </span>
+                <h2 class="font-['Roboto_Flex'] text-[#F9EFEC] text-xl lg:text-2xl 2xl:text-3xl font-medium uppercase leading-[150%]">
+                    Subscribe to our newsletter
+                </h2>
+            </div>
+
+            <div class="relative flex items-center border-b border-[#333333] font-['Roboto_Flex'] pb-2 mt-5 lg:mt-0 w-full lg:w-auto lg:flex-1 lg:min-w-[250px] group">
+                <input
+                    type="email"
+                    placeholder="Enter your email"
+                    class="bg-transparent w-full text-[#F9EFEC] text-sm lg:text-base 2xl:text-lg outline-none placeholder:text-[#676665] py-[14px]"
+                />
+                <button
+                    type="button"
+                    aria-label="Subscribe"
+                    class="flex items-center justify-center w-10 h-10 min-w-[40px] shrink-0 border border-[#333333] rounded-full hover:bg-[#333333] transition-all duration-300 cursor-pointer active:scale-90"
+                >
+                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M3.75 4.09782e-07L13.125 0C13.2908 0 13.4497 0.065848 13.5669 0.183058C13.6842 0.300269 13.75 0.45924 13.75 0.625V10C13.75 10.3452 13.4702 10.625 13.125 10.625C12.7798 10.625 12.5 10.3452 12.5 10V2.13388L1.06694 13.5669C0.822864 13.811 0.427136 13.811 0.183058 13.5669C-0.0610194 13.3229 -0.0610194 12.9271 0.183058 12.6831L11.6161 1.25L3.75 1.25C3.40482 1.25 3.125 0.970178 3.125 0.625C3.125 0.279822 3.40482 4.09782e-07 3.75 4.09782e-07Z" fill="#E7BEB1"/>
+                    </svg>
+                </button>
+            </div>
+
+        </div>
+    </div>
+</section>
 
                     <!-- COPYRIGHT -->
                     <section class="mb-5 lg:mb-0">
@@ -3578,7 +3564,7 @@
                                 class="bg-[#1A1A1A] mx-auto rounded-[14px] overflow-hidden"
                             >
                                 <div
-                                    class="font-['Roboto_Mono'] flex flex-col gap-5 items-center justify-center text-sm lg:text-sm 2xl:text[18px] px-[31px] py-6 text-[#B3B3B2] lg:flex-row lg:justify-between lg:gap-0"
+                                    class="font-['Roboto_Mono'] flex flex-col gap-5 items-center justify-center text-sm lg:text-sm 2xl:text-[18px] px-[31px] py-6 text-[#B3B3B2] lg:flex-row lg:justify-between lg:gap-0"
                                 >
                                     <p>© 2024 NexGen. All rights reserved.</p>
                                     <div
@@ -3603,6 +3589,7 @@
                     </section>
                 </div>
             </div>
+        </div>
         </div>
     </body>
 </html>

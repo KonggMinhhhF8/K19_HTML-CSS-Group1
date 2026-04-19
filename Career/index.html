@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" style="font-family: &quot;Roboto&quot;, sans-serif">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,10 +9,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght,XOPQ,XTRA,YOPQ,YTDE,YTFI,YTLC,YTUC@8..144,100..1000,96,468,79,-203,738,514,712&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
       rel="stylesheet"
     />
     <style>
+      body {
+        font-family: "Roboto Flex", sans-serif;
+      }
       @keyframes marquee {
         0% {
           transform: translateX(0);
@@ -32,75 +35,163 @@
   </head>
   <body>
     <!-- Wrapper  -->
-    <div class="wrapper w-full pt-10 px-4 pb-5 bg-[#0F0F0F] flex flex-col">
-      <!-- Nav -->
-      <nav
-        class="w-full mx-auto p-[14px] flex justify-between items-center rounded-xl bg-[#1A1A1A] mb-5 lg:p-5 lg:pl-10 2xl:p-6 2xl:pl-[50px]"
-      >
-        <div
-          class="w-22 h-4 bg-[url('assets/images/Logo.png')] bg-contain bg-no-repeat bg-center lg:w-[97px] lg:h-[18px] 2xl:w-[130px] 2xl:h-[24px]"
-        ></div>
-        <!-- List of menu-->
-        <ul
-          class="hidden lg:flex items-center gap-4 text-[#81807E] whitespace-nowrap"
-        >
-          <li>
-            <a
-              href="#"
-              class="px-5 py-[14px] leading-[150%] tracking-[0%] font-medium text-sm bg-[#0F0F0F] rounded-lg hover:text-[#E7BEB1] uppercase 2xl:px-6 2xl:py-[18px] 2xl:text-[18px] 2xl:rounded-xl"
-              >Home</a
-            >
-          </li>
-          <li>
-            <a
-              href="#"
-              class="px-5 py-[14px] leading-[150%] tracking-[0%] font-medium text-sm bg-[#0F0F0F] rounded-lg hover:text-[#E7BEB1] uppercase 2xl:px-6 2xl:py-[18px] 2xl:text-[18px] 2xl:rounded-xl"
-              >Services</a
-            >
-          </li>
-          <li>
-            <a
-              href="#"
-              class="px-5 py-[14px] leading-[150%] tracking-[0%] font-medium text-sm bg-[#0F0F0F] rounded-lg hover:text-[#E7BEB1] uppercase 2xl:px-6 2xl:py-[18px] 2xl:text-[18px] 2xl:rounded-xl"
-              >Projects</a
-            >
-          </li>
-          <li>
-            <a
-              href="#"
-              class="px-5 py-[14px] leading-[150%] tracking-[0%] font-medium text-sm bg-[#0F0F0F] rounded-lg hover:text-[#E7BEB1] uppercase 2xl:px-6 2xl:py-[18px] 2xl:text-[18px] 2xl:rounded-xl"
-              >About</a
-            >
-          </li>
-          <li>
-            <a
-              href="#"
-              class="px-5 py-[14px] leading-[150%] tracking-[0%] font-medium text-sm bg-[#0F0F0F] rounded-lg hover:text-[#E7BEB1] uppercase 2xl:px-6 2xl:py-[18px] 2xl:text-[18px] 2xl:rounded-xl"
-              >Careers</a
-            >
-          </li>
-          <li>
-            <a
-              href="#"
-              class="px-5 py-[14px] leading-[150%] tracking-[0%] font-medium text-sm bg-[#0F0F0F] rounded-lg hover:text-[#E7BEB1] uppercase 2xl:px-6 2xl:py-[18px] 2xl:text-[18px] 2xl:rounded-xl"
-              >Blogs</a
-            >
-          </li>
-          <li>
-            <a
-              href="#"
-              class="px-5 py-[14px] leading-[150%] tracking-[0%] text-sm bg-[#CE7D63] rounded-lg text-[#0F0F0F] font-medium uppercase 2xl:px-6 2xl:py-[18px] 2xl:text-[18px] 2xl:rounded-xl"
-              >Contact Us</a
-            >
-          </li>
-        </ul>
+    <div
+      class="wrapper w-full px-4 pb-5 bg-[#0F0F0F] flex flex-col 2xl:px-[50px]"
+    >
+      <div class="w-full mb-5">
+        <!--    Checkbox hack ẩn hiện navigation -->
+        <input type="checkbox" id="menu-toggle" class="peer hidden" />
 
-        <div
-          class="w-11 h-11 bg-[url('assets/images/Button.svg')] lg:hidden"
-        ></div>
-      </nav>
+        <!--    Header dính khi scroll-->
+        <header
+          class="w-full h-[72px] mx-auto mt-[41px] sticky top-0 z-[1001] flex items-center justify-between rounded-[10px] p-[14px] bg-[#1A1A1A] lg:w-full lg:h-[89px] lg:mt-[30px] lg:mb-[42px] lg:mx-auto lg:pl-10 lg:pr-5 lg:py-5 2xl:w-full 2xl:mx-auto 2xl:h-[111px] 2xl:mt-[30px] 2xl:mb-5 2xl:pl-[50px] 2xl:pr-[24px] 2xl:py-6"
+        >
+          <!--  Logo -->
+          <a href="#" class="cursor-pointer">
+            <img
+              src="assets/icon/Logo.svg"
+              alt="NexGen Logo"
+              class="lg:w-[97px] 2xl:w-[129px]"
+            />
+          </a>
+
+          <!-- Mobile menu toggle -->
+          <label for="menu-toggle" class="cursor-pointer lg:hidden">
+            <img
+              src="assets/icon/hamburger icon.svg"
+              alt="Button Menu Mobile"
+            />
+          </label>
+
+          <!-- Desktop navigation -->
+          <nav class="hidden lg:flex lg:items-center">
+            <ul
+              class="flex lg:gap-[14px] 2xl:gap-4 lg:text-sm 2xl:text-lg text-[#81807E] font-['Roboto_Mono'] font-medium uppercase"
+            >
+              <li
+                class="flex items-center justify-center lg:rounded-[10px] 2xl:rounded-xl bg-[#0F0F0F] checked"
+              >
+                <a
+                  href="#"
+                  class="lg:px-5 lg:py-[14px] 2xl:px-6 2xl:py-4.5 hover:text-[#E7BEB1]"
+                  >Home</a
+                >
+              </li>
+              <li
+                class="flex items-center justify-center lg:rounded-[10px] 2xl:rounded-xl bg-[#0F0F0F]"
+              >
+                <a
+                  href="#"
+                  class="lg:px-5 lg:py-[14px] 2xl:px-6 2xl:py-4.5 hover:text-[#E7BEB1]"
+                  >SERVICES</a
+                >
+              </li>
+              <li
+                class="flex items-center justify-center lg:rounded-[10px] 2xl:rounded-xl bg-[#0F0F0F]"
+              >
+                <a
+                  href="#"
+                  class="lg:px-5 lg:py-[14px] 2xl:px-6 2xl:py-4.5 hover:text-[#E7BEB1]"
+                  >Projects</a
+                >
+              </li>
+              <li
+                class="flex items-center justify-center lg:rounded-[10px] 2xl:rounded-xl bg-[#0F0F0F]"
+              >
+                <a
+                  href="#"
+                  class="lg:px-5 lg:py-[14px] 2xl:px-6 2xl:py-4.5 hover:text-[#E7BEB1]"
+                  >About</a
+                >
+              </li>
+              <li
+                class="flex items-center justify-center lg:rounded-[10px] 2xl:rounded-xl bg-[#0F0F0F]"
+              >
+                <a
+                  href="#"
+                  class="lg:px-5 lg:py-[14px] 2xl:px-6 2xl:py-4.5 hover:text-[#E7BEB1]"
+                  >Careers</a
+                >
+              </li>
+              <li
+                class="flex items-center justify-center lg:rounded-[10px] 2xl:rounded-xl bg-[#0F0F0F]"
+              >
+                <a
+                  href="#"
+                  class="lg:px-5 lg:py-[14px] 2xl:px-6 2xl:py-4.5 hover:text-[#E7BEB1]"
+                  >Blogs</a
+                >
+              </li>
+              <li
+                class="flex items-center justify-center lg:rounded-[10px] 2xl:rounded-xl bg-[#CE7D63] whitespace-nowrap"
+              >
+                <a
+                  href="#"
+                  class="lg:px-5 lg:py-[14px] 2xl:px-6 2xl:py-4.5 text-[#0F0F0F] hover:text-[#E7BEB1]"
+                  >Contact us</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </header>
+
+        <!-- Mobile navigation -->
+        <nav
+          class="fixed top-10.25 z-[1000] w-[280px] h-screen right-[-280px] px-6 font-['Roboto_Mono'] bg-[#1A1A1A] peer-checked:right-4 transition-[right] duration-300 ease-in-out"
+        >
+          <ul class="flex flex-col mt-30 gap-5 text-[#81807E] uppercase">
+            <li
+              class="flex items-center justify-center bg-[#0F0F0F] rounded-xl"
+            >
+              <a href="#" class="px-20 py-3 hover:text-[#E7BEB1]"> Home </a>
+            </li>
+            <li
+              class="flex items-center justify-center bg-[#0F0F0F] rounded-xl"
+            >
+              <a href="#" class="px-20 py-3 hover:text-[#E7BEB1]"> Services </a>
+            </li>
+            <li
+              class="flex items-center justify-center bg-[#0F0F0F] rounded-xl"
+            >
+              <a href="#" class="px-20 py-3 hover:text-[#E7BEB1]"> Projects </a>
+            </li>
+            <li
+              class="flex items-center justify-center bg-[#0F0F0F] rounded-xl"
+            >
+              <a href="#" class="px-20 py-3 hover:text-[#E7BEB1]"> About </a>
+            </li>
+            <li
+              class="flex items-center justify-center bg-[#0F0F0F] rounded-xl"
+            >
+              <a href="#" class="px-20 py-3 hover:text-[#E7BEB1]"> Careers </a>
+            </li>
+            <li
+              class="flex items-center justify-center bg-[#0F0F0F] rounded-xl"
+            >
+              <a href="#" class="px-20 py-3 hover:text-[#E7BEB1]"> Blogs </a>
+            </li>
+            <li
+              class="flex items-center justify-center rounded-xl bg-[#CE7D63] whitespace-nowrap"
+            >
+              <a
+                href="#"
+                class="px-20 py-3 text-[#0F0F0F] hover:text-[#E7BEB1]"
+              >
+                Contact us
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+        <!-- Overlay -->
+        <label
+          for="menu-toggle"
+          class="fixed inset-0 z-[998] bg-[#1A1A1A] opacity-0 invisible peer-checked:visible peer-checked:opacity-60 transition-all duration-300 ease-in-out cursor-pointer"
+        >
+        </label>
+      </div>
       <!-- Body -->
-      <div class="w-full flex flex-col gap-12 2xl:gap-30">
+      <div class="w-full flex flex-col gap-12 2xl:gap-[50px]">
         <!-- Header -->
         <header class="flex flex-col gap-5 sm:gap-3 w-full lg:flex-row">
           <!-- Header button  -->
@@ -221,7 +312,7 @@
           </div>
           <!-- Cards -->
           <div
-            class="flex flex-col gap-[10px] lg:grid lg:grid-cols-2 lg:gap-2.5"
+            class="flex flex-col gap-[10px] lg:grid lg:grid-cols-2 lg:gap-2.5 2xl:gap-5"
           >
             <div
               class="flex flex-col p-6 rounded-3xl gap-6 bg-[#1A1A1A] lg:gap-[30px] 2xl:gap-[40px] 2xl:p-[50px]"
@@ -742,7 +833,7 @@
         </section>
         <!-- Section 2  How to apply-->
         <section
-          class="flex flex-col gap-[10px] border-[2px] border-[#1F1F1F] p-[10px] rounded-[14px]"
+          class="flex flex-col gap-[10px] border-[2px] border-[#1F1F1F] p-[10px] rounded-[14px] 2xl:gap-5"
         >
           <p
             class="p-4 gap-6 rounded-[14px] bg-[#1A1A1A] text-[#F9EFEC] font-semibold text-[28px] leading-[100%] tracking-[0%] uppercase 2xl:p-[50px] 2xl:text-[48px]"
@@ -750,7 +841,7 @@
             How to Apply
           </p>
           <!-- Cards -->
-          <div class="flex flex-col gap-2.5 lg:grid grid-cols-4">
+          <div class="flex flex-col gap-2.5 lg:grid grid-cols-4 2xl:gap-5">
             <!-- Card 1 -->
             <div class="rounded-[12px] bg-[#1A1A1A] flex flex-col h-full">
               <p
@@ -759,12 +850,12 @@
                 Step 01
               </p>
               <p
-                class="py-6 px-5 bg-[#1F1F1F] border-y-2 border-[#262626] text-[#F9EFEC] font-medium text-[18px] leading-[150%] tracking-[0%] uppercase 2xl:text-[24px] 2xl:px-[30px] 2lx:py-[40px]"
+                class="py-6 px-5 bg-[#1F1F1F] border-y-2 border-[#262626] text-[#F9EFEC] font-medium text-[18px] leading-[150%] tracking-[0%] uppercase lg:min-h-[106px] 2xl:text-[24px] 2xl:px-[30px] 2lx:py-[40px]"
               >
                 Review Job Description
               </p>
               <div
-                class="flex flex-col p-5 gap-2 justify-between flex-1 lg:p-6 2xl:p-[30px]"
+                class="flex flex-col p-5 gap-2 justify-between flex-1 lg:p-6 lg:gap-6 2xl:gap-[30px] 2xl:p-[30px]"
               >
                 <p
                   class="text-[#B3B3B2] font-normal text-[14px] leading-[150%] tracking-[0%] lg:text-[16px] 2xl:text[18px]"
@@ -802,12 +893,12 @@
                 Step 02
               </p>
               <p
-                class="py-6 px-5 bg-[#1F1F1F] border-y-2 border-[#262626] text-[#F9EFEC] font-medium text-[18px] leading-[150%] tracking-[0%] uppercase 2xl:text-[24px] 2xl:px-[30px] 2lx:py-[40px]"
+                class="py-6 px-5 bg-[#1F1F1F] border-y-2 border-[#262626] text-[#F9EFEC] font-medium text-[18px] leading-[150%] tracking-[0%] uppercase lg:min-h-[106px] 2xl:text-[24px] 2xl:px-[30px] 2lx:py-[40px]"
               >
                 Review Job Description
               </p>
               <div
-                class="flex flex-col p-5 gap-2 justify-between flex-1 lg:p-6 2xl:p-[30px]"
+                class="flex flex-col p-5 gap-2 justify-between flex-1 lg:p-6 lg:gap-6 2xl:gap-[30px] 2xl:p-[30px]"
               >
                 <p
                   class="text-[#B3B3B2] font-normal text-[14px] leading-[150%] tracking-[0%] lg:text-[16px] 2xl:text[18px]"
@@ -845,12 +936,12 @@
                 Step 03
               </p>
               <p
-                class="py-6 px-5 bg-[#1F1F1F] border-y-2 border-[#262626] text-[#F9EFEC] font-medium text-[18px] leading-[150%] tracking-[0%] uppercase 2xl:text-[24px] 2xl:px-[30px] 2lx:py-[40px]"
+                class="py-6 px-5 bg-[#1F1F1F] border-y-2 border-[#262626] text-[#F9EFEC] font-medium text-[18px] leading-[150%] tracking-[0%] uppercase lg:min-h-[106px] 2xl:text-[24px] 2xl:px-[30px] 2lx:py-[40px]"
               >
                 Prepare Your Application
               </p>
               <div
-                class="flex flex-col p-5 gap-2 justify-between flex-1 lg:p-6 2xl:p-[30px]"
+                class="flex flex-col p-5 gap-2 justify-between flex-1 lg:p-6 lg:gap-6 2xl:gap-[30px] 2xl:p-[30px]"
               >
                 <p
                   class="text-[#B3B3B2] font-normal text-[14px] leading-[150%] tracking-[0%] lg:text-[16px] 2xl:text[18px]"
@@ -887,12 +978,12 @@
                 Step 04
               </p>
               <p
-                class="py-6 px-5 bg-[#1F1F1F] border-y-2 border-[#262626] text-[#F9EFEC] font-medium text-[18px] leading-[150%] tracking-[0%] uppercase 2xl:text-[24px] 2xl:px-[30px] 2lx:py-[40px]"
+                class="py-6 px-5 bg-[#1F1F1F] border-y-2 border-[#262626] text-[#F9EFEC] font-medium text-[18px] leading-[150%] tracking-[0%] uppercase lg:min-h-[106px] 2xl:text-[24px] 2xl:px-[30px] 2lx:py-[40px]"
               >
                 Complete the Application
               </p>
               <div
-                class="flex flex-col p-5 gap-2 justify-between flex-1 lg:p-6 2xl:p-[30px]"
+                class="flex flex-col p-5 gap-2 justify-between flex-1 lg:p-6 lg:gap-6 2xl:gap-[30px] 2xl:p-[30px]"
               >
                 <p
                   class="text-[#B3B3B2] font-normal text-[14px] leading-[150%] tracking-[0%] lg:text-[16px] 2xl:text[18px]"
@@ -932,12 +1023,12 @@
                 Step 05
               </p>
               <p
-                class="py-6 px-5 bg-[#1F1F1F] border-y-2 border-[#262626] text-[#F9EFEC] font-medium text-[18px] leading-[150%] tracking-[0%] uppercase 2xl:text-[24px] 2xl:px-[30px] 2lx:py-[40px]"
+                class="py-6 px-5 bg-[#1F1F1F] border-y-2 border-[#262626] text-[#F9EFEC] font-medium text-[18px] leading-[150%] tracking-[0%] uppercase lg:min-h-[106px] 2xl:text-[24px] 2xl:px-[30px] 2lx:py-[40px]"
               >
                 Upload Your Documents
               </p>
               <div
-                class="flex flex-col p-5 gap-2 justify-between flex-1 lg:p-6 2xl:p-[30px]"
+                class="flex flex-col p-5 gap-2 justify-between flex-1 lg:p-6 lg:gap-6 2xl:gap-[30px] 2xl:p-[30px]"
               >
                 <p
                   class="text-[#B3B3B2] font-normal text-[14px] leading-[150%] tracking-[0%] lg:text-[16px] 2xl:text[18px]"
@@ -976,12 +1067,12 @@
                 Step 06
               </p>
               <p
-                class="py-6 px-5 bg-[#1F1F1F] border-y-2 border-[#262626] text-[#F9EFEC] font-medium text-[18px] leading-[150%] tracking-[0%] uppercase 2xl:text-[24px] 2xl:px-[30px] 2lx:py-[40px]"
+                class="py-6 px-5 bg-[#1F1F1F] border-y-2 border-[#262626] text-[#F9EFEC] font-medium text-[18px] leading-[150%] tracking-[0%] uppercase lg:min-h-[106px] 2xl:text-[24px] 2xl:px-[30px] 2lx:py-[40px]"
               >
                 Submit Your Application
               </p>
               <div
-                class="flex flex-col p-5 gap-2 justify-between flex-1 lg:p-6 2xl:p-[30px]"
+                class="flex flex-col p-5 gap-2 justify-between flex-1 lg:p-6 lg:gap-6 2xl:gap-[30px] 2xl:p-[30px]"
               >
                 <p
                   class="text-[#B3B3B2] font-normal text-[14px] leading-[150%] tracking-[0%] lg:text-[16px] 2xl:text[18px]"
@@ -1021,12 +1112,12 @@
                 Step 07
               </p>
               <p
-                class="py-6 px-5 bg-[#1F1F1F] border-y-2 border-[#262626] text-[#F9EFEC] font-medium text-[18px] leading-[150%] tracking-[0%] uppercase 2xl:text-[24px] 2xl:px-[30px] 2lx:py-[40px]"
+                class="py-6 px-5 bg-[#1F1F1F] border-y-2 border-[#262626] text-[#F9EFEC] font-medium text-[18px] leading-[150%] tracking-[0%] uppercase lg:min-h-[106px] 2xl:text-[24px] 2xl:px-[30px] 2lx:py-[40px]"
               >
                 Application Review
               </p>
               <div
-                class="flex flex-col p-5 gap-2 justify-between flex-1 lg:p-6 2xl:p-[30px]"
+                class="flex flex-col p-5 gap-2 justify-between flex-1 lg:p-6 lg:gap-6 2xl:gap-[30px] 2xl:p-[30px]"
               >
                 <p
                   class="text-[#B3B3B2] font-normal text-[14px] leading-[150%] tracking-[0%] lg:text-[16px] 2xl:text[18px]"
@@ -1066,12 +1157,12 @@
                 Step 08
               </p>
               <p
-                class="py-6 px-5 bg-[#1F1F1F] border-y-2 border-[#262626] text-[#F9EFEC] font-medium text-[18px] leading-[150%] tracking-[0%] uppercase 2xl:text-[24px] 2xl:px-[30px] 2lx:py-[40px]"
+                class="py-6 px-5 bg-[#1F1F1F] border-y-2 border-[#262626] text-[#F9EFEC] font-medium text-[18px] leading-[150%] tracking-[0%] uppercase lg:min-h-[106px] 2xl:text-[24px] 2xl:px-[30px] 2lx:py-[40px]"
               >
                 Interview Process
               </p>
               <div
-                class="flex flex-col p-5 gap-2 justify-between flex-1 lg:p-6 2xl:p-[30px]"
+                class="flex flex-col p-5 gap-2 justify-between flex-1 lg:p-6 lg:gap-6 2xl:gap-[30px] 2xl:p-[30px]"
               >
                 <p
                   class="text-[#B3B3B2] font-normal text-[14px] leading-[150%] tracking-[0%] lg:text-[16px] 2xl:text[18px]"
@@ -1123,7 +1214,7 @@
         </section>
         <!-- Section 3 Testimonials -->
         <section
-          class="flex flex-col gap-[10px] border-[2px] border-[#1F1F1F] p-[10px] rounded-[14px]"
+          class="flex flex-col gap-[10px] border-[2px] border-[#1F1F1F] p-[10px] rounded-[14px] 2xl:gap-5"
         >
           <div class="rounded-[14px] p-6 bg-[#1A1A1A] sm:flex justify-between">
             <p
@@ -1149,7 +1240,9 @@
           </div>
 
           <!-- Cards -->
-          <div class="grid grid-cols-1 gap-2 lg:grid-cols-4 lg:gap-2.5">
+          <div
+            class="grid grid-cols-1 gap-2 lg:grid-cols-4 lg:gap-2.5 2xl:gap-5"
+          >
             <!-- Card 1 -->
             <div
               class="flex rounded-[10px] bg-[#1A1A1A] flex-col h-full overflow-hidden"
@@ -1169,7 +1262,9 @@
                 </p>
               </div>
               <!-- Footer of card -->
-              <div class="flex px-4 py-5 bg-[#1F1F1F] mt-auto">
+              <div
+                class="flex items-center px-4 py-5 bg-[#1F1F1F] mt-auto lg:min-h-[152px] 2xl:min-h-0"
+              >
                 <div class="flex gap-2 items-center lg:gap-2.5">
                   <div class="bg-[#CE7D63] p-1 rounded-full">
                     <div
@@ -1220,7 +1315,9 @@
                 </p>
               </div>
               <!-- Footer of card -->
-              <div class="flex px-4 py-5 bg-[#1F1F1F] mt-auto">
+              <div
+                class="flex items-center px-4 py-5 bg-[#1F1F1F] mt-auto lg:min-h-[152px] 2xl:min-h-0"
+              >
                 <div class="flex gap-2 items-center lg:gap-2.5">
                   <div class="bg-[#CE7D63] p-1 rounded-full">
                     <div
@@ -1271,7 +1368,9 @@
                 </p>
               </div>
               <!-- Footer of card -->
-              <div class="flex px-4 py-5 bg-[#1F1F1F] mt-auto">
+              <div
+                class="flex items-center px-4 py-5 bg-[#1F1F1F] mt-auto lg:min-h-[152px] 2xl:min-h-0"
+              >
                 <div class="flex gap-2 items-center lg:gap-2.5">
                   <div class="bg-[#CE7D63] p-1 rounded-full">
                     <div
@@ -1321,7 +1420,9 @@
                 </p>
               </div>
               <!-- Footer of card -->
-              <div class="flex px-4 py-5 bg-[#1F1F1F] mt-auto">
+              <div
+                class="flex items-center px-4 py-5 bg-[#1F1F1F] mt-auto lg:min-h-[152px] 2xl:min-h-0"
+              >
                 <div class="flex gap-2 items-center lg:gap-2.5">
                   <div class="bg-[#CE7D63] p-1 rounded-full">
                     <div
@@ -1373,13 +1474,13 @@
           </div>
         </section>
         <!-- Section 4 Frequently Asked Questions -->
-        <section class="flex flex-col gap-[10px]">
+        <section class="flex flex-col gap-[10px] lg:gap-5">
           <!-- Title of section -->
           <div
             class="flex justify-between p-[24px] rounded-[14px] bg-[#1A1A1A] lg:p-[40px] 2xl:p-[50px]"
           >
             <p
-              class="text-[#F9EFEC] font-semibold text-[28px] leading-[100%] tracking-[0%] uppercase lg:p-[38px] 2xl:p-[48px]"
+              class="text-[#F9EFEC] font-semibold text-[28px] leading-[100%] tracking-[0%] uppercase lg:text-[38px] 2xl:text-[48px]"
             >
               Frequently Asked Questions
             </p>
@@ -1401,9 +1502,13 @@
             </div>
           </div>
           <!--Body of section 4  -->
-          <div class="grid grid-cols-1 gap-[10px] lg:grid-cols-10 items-start">
+          <div
+            class="grid grid-cols-1 gap-[10px] lg:grid-cols-10 items-start lg:gap-5"
+          >
             <!--Cards Section 4  -->
-            <div class="grid grid-cols-1 gap-[10px] h-auto lg:col-span-7">
+            <div
+              class="grid grid-cols-1 gap-[10px] h-auto lg:col-span-7 lg:gap-5"
+            >
               <!-- Card1  -->
               <div
                 class="group flex flex-col gap-5 bg-[#1A1A1A] rounded-[14px] p-[30px] lg:p-[40px] 2xl:p-[50px]"
@@ -1414,9 +1519,9 @@
                   id="btn"
                   class="hidden"
                 />
-                <div class="flex justify-between">
+                <div class="flex justify-between gap-5">
                   <p
-                    class="text-[#F9EFEC] font-medium text-[18px] leading-[100%] tracking-[0%] uppercase self-center lg:text-[20px] 2xl:text-[22px]"
+                    class="text-[#F9EFEC] font-medium text-[18px] leading-[100%] tracking-[0%] self-center lg:text-[20px] 2xl:text-[22px]"
                   >
                     How long does it take to complete a web development project?
                   </p>
@@ -1458,9 +1563,9 @@
                   id="btn2"
                   class="hidden"
                 />
-                <div class="flex justify-between">
+                <div class="flex justify-between gap-5">
                   <p
-                    class="text-[#F9EFEC] font-medium text-[18px] leading-[100%] tracking-[0%] uppercase self-center lg:text-[20px] 2xl:text-[22px]"
+                    class="text-[#F9EFEC] font-medium text-[18px] leading-[100%] tracking-[0%] self-center lg:text-[20px] 2xl:text-[22px]"
                   >
                     Can you handle large-scale mobile app development projects?
                   </p>
@@ -1503,9 +1608,9 @@
                   id="btn3"
                   class="hidden"
                 />
-                <div class="flex justify-between">
+                <div class="flex justify-between gap-5">
                   <p
-                    class="text-[#F9EFEC] font-medium text-[18px] leading-[100%] tracking-[0%] uppercase self-center lg:text-[20px] 2xl:text-[22px]"
+                    class="text-[#F9EFEC] font-medium text-[18px] leading-[100%] tracking-[0%] self-center lg:text-[20px] 2xl:text-[22px]"
                   >
                     Can you integrate third-party APIs into our mobile app?
                   </p>
@@ -1548,9 +1653,9 @@
                   id="btn5"
                   class="hidden"
                 />
-                <div class="flex justify-between">
+                <div class="flex justify-between gap-5">
                   <p
-                    class="text-[#F9EFEC] font-medium text-[18px] leading-[100%] tracking-[0%] uppercase self-center lg:text-[20px] 2xl:text-[22px]"
+                    class="text-[#F9EFEC] font-medium text-[18px] leading-[100%] tracking-[0%] self-center lg:text-[20px] 2xl:text-[22px]"
                   >
                     How do you ensure cross-platform compatibility for mobile
                     apps?
@@ -1594,9 +1699,9 @@
                   id="btn4"
                   class="hidden"
                 />
-                <div class="flex justify-between">
+                <div class="flex justify-between gap-5">
                   <p
-                    class="text-[#F9EFEC] font-medium text-[18px] leading-[100%] tracking-[0%] uppercase self-center lg:text-[20px] 2xl:text-[22px]"
+                    class="text-[#F9EFEC] font-medium text-[18px] leading-[100%] tracking-[0%] self-center lg:text-[20px] 2xl:text-[22px]"
                   >
                     What is your approach to user experience (UX) design?
                   </p>
@@ -1635,7 +1740,7 @@
             <form
               action=""
               method="post"
-              class="flex flex-col lg:h-[743px] 2xl:h-[900px] p-[30px] gap-5 rounded-xl bg-[#1A1A1A] lg:col-span-3 lg:gap-[30px] 2xl:gap-[50px]"
+              class="flex flex-col lg:h-[785px] 2xl:h-[945px] p-[30px] gap-5 rounded-xl bg-[#1A1A1A] lg:col-span-3 lg:gap-[30px] 2xl:gap-[50px]"
             >
               <!-- Title form -->
               <p
@@ -1745,23 +1850,6 @@
                 <span class="w-2 h-2 rounded-full bg-[#CE7D63]"></span>
               </div>
 
-              <div class="flex items-center space-x-10 px-5">
-                <span
-                  class="text-[#81807E] font-medium text-xl uppercase whitespace-nowrap"
-                  >Follow us on social media</span
-                >
-                <span class="w-2 h-2 rounded-full bg-[#CE7D63]"></span>
-                <span
-                  class="text-[#81807E] font-medium text-xl uppercase whitespace-nowrap"
-                  >Follow us on social media</span
-                >
-                <span class="w-2 h-2 rounded-full bg-[#CE7D63]"></span>
-                <span
-                  class="text-[#81807E] font-medium text-xl uppercase whitespace-nowrap"
-                  >Follow us on social media</span
-                >
-                <span class="w-2 h-2 rounded-full bg-[#CE7D63]"></span>
-              </div>
               <div class="flex items-center space-x-10 px-5">
                 <span
                   class="text-[#81807E] font-medium text-xl uppercase whitespace-nowrap"

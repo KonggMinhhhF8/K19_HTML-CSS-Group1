@@ -29,20 +29,24 @@
             width: max-content;
             animation: marquee 20s linear infinite;
         }
+        /* Dùng để pause chữ khi hover */
+        .animate-marquee:hover {
+            animation-play-state: paused;
+        }
     </style>
 
 </head>
 <body>
 
 <!-- Page Wrapper -->
-<div class=" flex flex-col mx-auto pt-10.25 px-4 pb-5 lg:pt-7.5 lg:px-10 lg:pb-10  2xl:px-12.5 2xl:pb-12.5 bg-[#0F0F0F] leading-[150%] tracking-[0%]">
+<div class=" flex flex-col mx-auto pt-[41px] px-4 pb-5 lg:pt-[30px] lg:px-10 lg:pb-10  2xl:px-[50px] 2xl:pb-[50px] bg-[#0F0F0F] leading-[150%] tracking-[0%]">
 
 <!--   HEADER SECTION -->
 <!--    Checkbox hack ẩn hiện navigation -->
     <input type="checkbox" id="menu-toggle" class="peer hidden">
 
 <!--    Header dính khi cuộn trang -->
-    <header class=" sticky top-0 z-[1001] flex items-center justify-between mb-5 lg:mb-12.5 p-3.5 lg:pr-5 lg:pl-10 lg:py-5 2xl:pr-6 2xl:pl-12.5 2xl:py-6 border border-[#1C1C21] rounded-[10px]  lg:rounded-[14px] 2xl:rounded-2xl bg-[#1A1A1A]">
+    <header class=" sticky top-0 z-[1001] flex items-center justify-between mb-5 lg:mb-[50px] p-3.5 lg:pr-5 lg:pl-10 lg:py-5 2xl:pr-6 2xl:pl-[50px] 2xl:py-6 border border-[#1C1C21] rounded-[10px]  lg:rounded-[14px] 2xl:rounded-2xl bg-[#1A1A1A]">
 
 <!--        Logo -->
         <a href="#" class="cursor-pointer">
@@ -58,12 +62,12 @@
         <nav class="hidden lg:flex ">
             <ul class=" flex lg:gap-3.5 2xl:gap-4 lg:text-sm  2xl:text-lg text-[#81807E] font-['Roboto_Mono'] font-medium uppercase">
                 <li class="flex items-center justify-center lg:rounded-[10px]   2xl:rounded-xl bg-[#0F0F0F] ">
-                    <a href="../index.html" target="_blank" rel="noopener noreferrer" class=" lg:px-5 lg:py-3.5 2xl:px-6 2xl:py-4.5 hover:text-[#E7BEB1]">
+                    <a href="../index.html" class=" lg:px-5 lg:py-3.5 2xl:px-6 2xl:py-4.5 hover:text-[#E7BEB1]">
                         Home
                     </a>
                 </li>
                 <li class="flex items-center justify-center lg:rounded-[10px] 2xl:rounded-xl bg-[#0F0F0F]">
-                    <a href="../services/index.html" target="_blank" rel="noopener noreferrer" class=" lg:px-5 lg:py-3.5 2xl:px-6 2xl:py-4.5 hover:text-[#E7BEB1]">
+                    <a href="../services/index.html" class=" lg:px-5 lg:py-3.5 2xl:px-6 2xl:py-4.5 hover:text-[#E7BEB1] text-[#E7BEB1]">
                         SERVICES
                     </a>
                 </li>
@@ -73,12 +77,12 @@
                     </a>
                 </li>
                 <li class=" flex items-center justify-center lg:rounded-[10px]   2xl:rounded-xl bg-[#0F0F0F] ">
-                    <a href="../about/index.html" target="_blank" rel="noopener noreferrer" class=" lg:px-5 lg:py-3.5 2xl:px-6 2xl:py-4.5 hover:text-[#E7BEB1] ">
+                    <a href="../about/index.html" class=" lg:px-5 lg:py-3.5 2xl:px-6 2xl:py-4.5 hover:text-[#E7BEB1] ">
                         About
                     </a>
                 </li>
                 <li class=" flex items-center justify-center lg:rounded-[10px]   2xl:rounded-xl bg-[#0F0F0F] ">
-                    <a href="../careers/index.html" target="_blank" rel="noopener noreferrer" class=" lg:px-5 lg:py-3.5 2xl:px-6 2xl:py-4.5 hover:text-[#E7BEB1] ">
+                    <a href="../careers/index.html" class=" lg:px-5 lg:py-3.5 2xl:px-6 2xl:py-4.5 hover:text-[#E7BEB1] ">
                         Careers
                     </a>
                 </li>
@@ -96,15 +100,15 @@
         </nav>
     </header>
     <!-- Mobile navigation -->
-    <nav class=" fixed top-10.25 z-[1000] w-[280px] h-screen right-[-280px] px-6 font-['Roboto_Mono'] bg-[#1A1A1A] peer-checked:right-4 transition-[right] duration-300 ease-in-out">
+    <nav class=" fixed top-[41px] z-[1000] w-[280px] h-screen right-[-280px] px-6 font-['Roboto_Mono'] bg-[#1A1A1A] peer-checked:right-4 transition-[right] duration-300 ease-in-out">
         <ul class=" flex flex-col mt-30 gap-5 text-[#81807E] uppercase ">
            <li class=" flex items-center justify-center bg-[#0F0F0F] rounded-xl ">
-                <a href="../index.html" target="_blank" rel="noopener noreferrer" class="px-20 py-3 hover:text-[#E7BEB1]">
+                <a href="../index.html" class="px-20 py-3 hover:text-[#E7BEB1]">
                     Home
                 </a>
             </li>
             <li class=" flex items-center justify-center bg-[#0F0F0F] rounded-xl">
-                <a href="../services/index.html" target="_blank" rel="noopener noreferrer" class="px-20 py-3 hover:text-[#E7BEB1]">
+                <a href="../services/index.html" class="px-20 py-3 hover:text-[#E7BEB1] text-[#E7BEB1]">
                     Services
                 </a>
             </li>
@@ -114,12 +118,12 @@
                 </a>
             </li>
             <li class=" flex items-center justify-center bg-[#0F0F0F] rounded-xl ">
-                <a href="../about/index.html" target="_blank" rel="noopener noreferrer" class="px-20 py-3 hover:text-[#E7BEB1]">
+                <a href="../about/index.html" class="px-20 py-3 hover:text-[#E7BEB1]">
                     About
                 </a>
             </li>
             <li class=" flex items-center justify-center bg-[#0F0F0F] rounded-xl ">
-                <a href="../careers/index.html" target="_blank" rel="noopener noreferrer" class="px-20 py-3 hover:text-[#E7BEB1]">
+                <a href="../careers/index.html" class="px-20 py-3 hover:text-[#E7BEB1]">
                     Careers
                 </a>
             </li>
@@ -141,9 +145,9 @@
 <!--    MAIN CONTAINER -->
     <main>
         <!--    1.Hero section    -->
-        <section class="lg:flex lg:h-124.5   lg:gap-4  2xl:h-148  2xl:gap-5 mb-12.5  lg:mb-20 2xl:mb-30">
+        <section class="lg:flex lg:h-124.5   lg:gap-4  2xl:h-148  2xl:gap-5 mb-[50px]  lg:mb-20 2xl:mb-30">
 <!--     1-1.Hero content -->
-            <article class=" pt-7.5 pb-4 pr-4 pl-4.25 lg:px-0 lg:py-0 mb-4 lg:mb-0 lg:w-[66%]  lg:h-full rounded-xl lg:rounded-2xl 2xl:rounded-[20px] bg-[#1A1A1A] ">
+            <article class=" pt-[30px] pb-4 pr-4 pl-4.25 lg:px-0 lg:py-0 mb-4 lg:mb-0 lg:w-[66%]  lg:h-full rounded-xl lg:rounded-2xl 2xl:rounded-[20px] bg-[#1A1A1A] ">
                 <!--            Mobile    Hero title-->
                 <h1 class=" flex flex-col lg:hidden mx-2 mb-3 text-[#F9EFEC] font-semibold text-[28px] uppercase ">
                     <span>Our Comprehensive</span> <br>
@@ -155,7 +159,7 @@
                     <img src="assets/icons/hero-icon-mobile.svg" alt="hero-icon">
                 </div>
                 <!--  Desktop Hero title-->
-                <div class=" hidden lg:block lg:mb-8 lg:mx-15 lg:mt-20 lg:mb-15 2xl:mx-20 2xl:mt-25 2xl:mt-30 2xl:mb-18 ">
+                <div class=" hidden lg:block lg:mb-8 lg:mx-15 lg:mt-20 lg:mb-15 2xl:mx-20 2xl:mt-30 2xl:mb-18 ">
                     <div class="lg:flex lg:items-center lg:gap-3.25 2xl:gap-4.5 lg:mb-15 2xl:mb-18 ">
                          <span class="block text-[#F9EFEC] font-semibold lg:text-[58px] 2xl:text-[78px] whitespace-nowrap uppercase ">
                                  Our Comprehensive
@@ -178,7 +182,7 @@
                 </p>
                 <div class="overflow-hidden bg-[#1A1A1A] py-4 border-y border-dashed border-[#262626] rounded-[10px] ">
                     <div class="animate-marquee">
-                        <div class="flex items-center space-x-10 px-5">
+                        <div class="flex items-center space-x-4 px-2">
                             <span class="text-[#81807E] font-medium text-[14px] uppercase whitespace-nowrap lg:text-[16px] 2xl:text-[20px]">
                                 Digital Marketing
                             </span>
@@ -192,7 +196,7 @@
                             </span>
                             <span class="w-2 h-2 rounded-full bg-[#CE7D63]"></span>
                         </div>
-                        <div class="flex items-center space-x-10 px-5">
+                        <div class="flex items-center space-x-4 px-2">
                            <span class="text-[#81807E] font-medium text-[14px] uppercase whitespace-nowrap lg:text-[16px] 2xl:text-[20px]">
                                Website Development
                            </span>
@@ -206,7 +210,7 @@
                             </span>
                             <span class="w-2 h-2 rounded-full bg-[#CE7D63]"></span>
                         </div>
-                        <div class="flex items-center space-x-10 px-5">
+                        <div class="flex items-center space-x-4 px-2">
                             <span class="text-[#81807E] font-medium text-[14px] uppercase whitespace-nowrap lg:text-[16px] 2xl:text-[20px]">
                                Website Design
                              </span>
@@ -230,16 +234,16 @@
             </article>
         </section>
         <!--   2.Our Services   -->
-        <section class="flex flex-col gap-2.5 2xl:gap-5 mb-12.5 lg:mb-20 2xl:mb-30 p-2.5 2xl:p-5 bg-[#0F0F0F] border-[2px] border-[#1F1F1F] rounded-2xl lg:rounded-[20px] 2xl:rounded-3xl">
+        <section class="flex flex-col gap-2.5 2xl:gap-5 mb-[50px] lg:mb-20 2xl:mb-30 p-2.5 2xl:p-5 bg-[#0F0F0F] border-[2px] border-[#1F1F1F] rounded-2xl lg:rounded-[20px] 2xl:rounded-3xl">
 <!--           Title -->
-            <h2 class=" p-6 lg:p-10 2xl:p-12.5 text-[28px] lg:text-[38px] 2xl:text-5xl text-[#F9EFEC] font-semibold rounded-[14px] lg:rounded-2xl bg-[#1A1A1A] leading-[100%] uppercase">
+            <h2 class=" p-6 lg:p-10 2xl:p-[50px] text-[28px] lg:text-[38px] 2xl:text-5xl text-[#F9EFEC] font-semibold rounded-[14px] lg:rounded-2xl bg-[#1A1A1A] leading-[100%] uppercase">
                 Our Services
             </h2>
 <!--         Grid Cards -->
             <article class=" flex flex-col gap-2.5 lg:grid lg:grid-cols-2  lg:gap-2.5 2xl:gap-5">
 <!--                Card row 1 -->
 <!--                Card left-->
-                <div class="flex flex-col gap-5 lg:gap-10 2xl:gap-12.5 p-6 lg:px-15 lg:py-[81.5px] 2xl:px-15 2xl:py-23.5 rounded-[14px] lg:rounded-xl 2xl: rounded-[14px] bg-[#1A1A1A] ">
+                <div class="flex flex-col gap-5 lg:gap-10 2xl:gap-[50px] p-6 lg:px-15 lg:py-[81.5px] 2xl:px-15 2xl:py-23.5 rounded-[14px] lg:rounded-xl 2xl:rounded-[14px] bg-[#1A1A1A] ">
                     <!--                Card header -->
                     <div class="flex items-start justify-between ">
                         <!--                   Card header left-->
@@ -269,7 +273,7 @@
                     <h4 class="hidden lg:block  font-medium text-[22px] 2xl:text-3xl text-[#F9EFEC] text-end uppercase">Starts From $1,500</h4>
                 </div>
 <!--                Card right -->
-                <div class="hidden lg:flex flex-col gap-5 2xl:gap-6 rounded-xl 2xl:rounded-[14px] p-7.5 2xl:p-10 bg-[#1A1A1A]">
+                <div class="hidden lg:flex flex-col gap-5 2xl:gap-6 rounded-xl 2xl:rounded-[14px] p-[30px] 2xl:p-10 bg-[#1A1A1A]">
 <!--                    Card title-->
                     <div class="flex items-center justify-between ">
                         <h4 class="font-medium text-xl 2xl:text-2xl uppercase text-[#F9EFEC]">Web Design Projects</h4>
@@ -289,7 +293,7 @@
                 </div>
                 <!--                Card row 2 -->
                 <!--                Card left -->
-                <div class="flex flex-col gap-5 lg:gap-10 2xl:gap-12.5 p-6 lg:px-15 lg:py-[81.5px] 2xl:px-15 2xl:py-23.5 rounded-[14px] lg:rounded-xl 2xl: rounded-[14px] bg-[#1A1A1A] ">
+                <div class="flex flex-col gap-5 lg:gap-10 2xl:gap-[50px] p-6 lg:px-15 lg:py-[81.5px] 2xl:px-15 2xl:py-23.5 rounded-[14px] lg:rounded-xl 2xl:rounded-[14px] bg-[#1A1A1A] ">
                     <!--                Card header -->
                     <div class="flex items-start justify-between ">
                         <!--                   Card header left-->
@@ -320,7 +324,7 @@
                     <h4 class="hidden lg:block  font-medium text-[22px] 2xl:text-3xl text-[#F9EFEC] text-end uppercase">Starts From $2,500</h4>
                 </div>
                 <!--                Card right -->
-                <div class="hidden lg:flex flex-col gap-5 2xl:gap-6 rounded-xl 2xl:rounded-[14px] p-7.5 2xl:p-10 bg-[#1A1A1A]">
+                <div class="hidden lg:flex flex-col gap-5 2xl:gap-6 rounded-xl 2xl:rounded-[14px] p-[30px] 2xl:p-10 bg-[#1A1A1A]">
                     <!--                    Card title-->
                     <div class="flex items-center justify-between ">
                         <h4 class="font-medium text-xl 2xl:text-2xl uppercase text-[#F9EFEC]">Mobile App Development Projects</h4>
@@ -340,7 +344,7 @@
                 </div>
                 <!--                Card row 3 -->
                 <!--                Card left -->
-                <div class="flex flex-col gap-5 lg:gap-10 2xl:gap-12.5 p-6 lg:px-15 lg:py-[81.5px] 2xl:px-15 2xl:py-23.5 rounded-[14px] lg:rounded-xl 2xl: rounded-[14px] bg-[#1A1A1A] ">
+                <div class="flex flex-col gap-5 lg:gap-10 2xl:gap-[50px] p-6 lg:px-15 lg:py-[81.5px] 2xl:px-15 2xl:py-23.5 rounded-[14px] lg:rounded-xl 2xl:rounded-[14px] bg-[#1A1A1A] ">
                     <!--                Card header -->
                     <div class="flex items-start justify-between ">
                         <!--                   Card header left-->
@@ -370,7 +374,7 @@
                     <h4 class="hidden lg:block  font-medium text-[22px] 2xl:text-3xl text-[#F9EFEC] text-end uppercase">Starts From $1,800</h4>
                 </div>
                 <!--                Card right -->
-                <div class="hidden lg:flex flex-col gap-5 2xl:gap-6 rounded-xl 2xl:rounded-[14px] p-7.5 2xl:p-10 bg-[#1A1A1A]">
+                <div class="hidden lg:flex flex-col gap-5 2xl:gap-6 rounded-xl 2xl:rounded-[14px] p-[30px] 2xl:p-10 bg-[#1A1A1A]">
                     <!--                    Card title-->
                     <div class="flex items-center justify-between ">
                         <h4 class="font-medium text-xl 2xl:text-2xl uppercase text-[#F9EFEC]">Web Development Projects</h4>
@@ -390,7 +394,7 @@
                 </div>
                 <!--                Card row 4 -->
                 <!--                Card left -->
-                <div class="flex flex-col gap-5 lg:gap-10 2xl:gap-12.5 p-6 lg:px-15 lg:py-[81.5px] 2xl:px-15 2xl:py-23.5 rounded-[14px] lg:rounded-xl 2xl: rounded-[14px] bg-[#1A1A1A] ">
+                <div class="flex flex-col gap-5 lg:gap-10 2xl:gap-[50px] p-6 lg:px-15 lg:py-[81.5px] 2xl:px-15 2xl:py-23.5 rounded-[14px] lg:rounded-xl 2xl: rounded-[14px] bg-[#1A1A1A] ">
                     <!--                Card header -->
                     <div class="flex items-start justify-between ">
                         <!--                   Card header left-->
@@ -420,7 +424,7 @@
                     <h4 class="hidden lg:block  font-medium text-[22px] 2xl:text-3xl text-[#F9EFEC] text-end uppercase">Starts From $1,200</h4>
                 </div>
                 <!--                Card right -->
-                <div class="hidden lg:flex flex-col gap-5 2xl:gap-6 rounded-xl 2xl:rounded-[14px] p-7.5 2xl:p-10 bg-[#1A1A1A]">
+                <div class="hidden lg:flex flex-col gap-5 2xl:gap-6 rounded-xl 2xl:rounded-[14px] p-[30px] 2xl:p-10 bg-[#1A1A1A]">
                     <!--                    Card title-->
                     <div class="flex items-center justify-between ">
                         <h4 class="font-medium text-xl 2xl:text-2xl uppercase text-[#F9EFEC]">Digital Marketing Projects</h4>
@@ -441,13 +445,13 @@
             </article>
         </section>
         <!--    3.Success Stories    -->
-        <section class="flex flex-col gap-2.5 2xl:gap-5 mb-12.5 lg:mb-20 2xl:mb-30 ">
+        <section class="flex flex-col gap-2.5 2xl:gap-5 mb-[50px] lg:mb-20 2xl:mb-30 ">
 <!--       Mobile     Title -->
-            <h2 class=" lg:hidden rounded-[14px] 2xl:rounded-2xl p-6 lg:p-10 2xl:p-12.5 bg-[#1A1A1A] font-semibold text-[28px] lg:text-[38px] 2xl:text-5xl leading-[100%] uppercase text-[#F9EFEC] ">
+            <h2 class=" lg:hidden rounded-[14px] 2xl:rounded-2xl p-6 lg:p-10 2xl:p-[50px] bg-[#1A1A1A] font-semibold text-[28px] lg:text-[38px] 2xl:text-5xl leading-[100%] uppercase text-[#F9EFEC] ">
                 Success Stories
             </h2>
 <!--            Desktop title-->
-           <div class="rounded-[14px] 2xl:rounded-2xl hidden lg:flex items-center justify-between p-6 lg:p-10 2xl:p-12.5 bg-[#1A1A1A] ">
+           <div class="rounded-[14px] 2xl:rounded-2xl hidden lg:flex items-center justify-between p-6 lg:p-10 2xl:p-[50px] bg-[#1A1A1A] ">
                <h2 class=" font-semibold text-[28px] lg:text-[38px] 2xl:text-5xl leading-[100%] uppercase text-[#F9EFEC] ">
                    Success Stories
                </h2>
@@ -461,10 +465,10 @@
            </div>
 <!--            Content -->
 <!--            Klothink Desc-->
-            <article class=" grid grid-cols-1 lg:grid-cols-2 gap-2.5 2xl:gap-5 rounded-2xl 2xl:rounded-[20px] border-[2px] border-[#1F1F1F] bg-[#0F0F0F] p-2.5 lg:p-7.5 2xl:p-12.5">
+            <article class=" grid grid-cols-1 lg:grid-cols-2 gap-2.5 2xl:gap-5 rounded-2xl 2xl:rounded-[20px] border-[2px] border-[#1F1F1F] bg-[#0F0F0F] p-2.5 lg:p-[30px] 2xl:p-[50px]">
 <!--                Row 1 -->
 <!--                Col 1-->
-                <div class="flex flex-col gap-5 lg:gap-10 2xl:gap-12.5 rounded-[10px] lg:rounded-xl 2xl:rounded-[14px] p-5 lg:p-10 2xl:p-15 bg-[#1A1A1A] ">
+                <div class="flex flex-col gap-5 lg:gap-10 2xl:gap-[50px] rounded-[10px] lg:rounded-xl 2xl:rounded-[14px] p-5 lg:p-10 2xl:p-15 bg-[#1A1A1A] ">
 <!--                    Group 1-->
                     <div class="flex flex-col gap-5 lg:flex-row justify-between">
                         <div class="flex items-center gap-2 lg:gap-2.5 2xl:gap-3.5">
@@ -519,7 +523,7 @@
                         </label>
                     </div>
 <!--                    Description-->
-                    <div class="bg-[#1A1A1A] hidden group-has-[#challenge:checked]:block rounded-xl 2xl:rounded-[14px] p-6 lg:p-7.5 2xl:p-10 ">
+                    <div class="bg-[#1A1A1A] hidden group-has-[#challenge:checked]:block rounded-xl 2xl:rounded-[14px] p-6 lg:p-[30px] 2xl:p-10 ">
                         <h4 class=" font-['Roboto_Mono'] uppercase text-[#F9EFEC] text-2xl lg:text-[32px] 2xl:text-5xl mb-2 lg:mb-2.5 2xl:mb-3.5 ">
                             Challenge
                         </h4>
@@ -527,7 +531,7 @@
                             Leveraging our expertise in app development, we built an interactive mobile app with user-friendly features. The app allowed users to set personalized fitness goals, track their progress, and share achievements on social media platforms. Real-time data synchronization enabled users to access their data on multiple devices.
                         </p>
                     </div>
-                    <div class="bg-[#1A1A1A] hidden group-has-[#solution:checked]:block rounded-xl 2xl:rounded-[14px] p-6 lg:p-7.5 2xl:p-10 ">
+                    <div class="bg-[#1A1A1A] hidden group-has-[#solution:checked]:block rounded-xl 2xl:rounded-[14px] p-6 lg:p-[30px] 2xl:p-10 ">
                         <h4 class=" font-['Roboto_Mono'] uppercase text-[#F9EFEC] text-2xl lg:text-[32px] 2xl:text-5xl mb-2 lg:mb-2.5 2xl:mb-3.5 ">
                             Solution
                         </h4>
@@ -535,7 +539,7 @@
                             Our team conducted a thorough analysis of their target audience and business objectives. We designed a modern and intuitive website with seamless navigation and a mobile-responsive layout. Additionally, we integrated an efficient checkout process and optimized the site for search engines.
                         </p>
                     </div>
-                    <div class="bg-[#1A1A1A] hidden group-has-[#results:checked]:block rounded-xl 2xl:rounded-[14px] p-6 lg:p-7.5 2xl:p-10 ">
+                    <div class="bg-[#1A1A1A] hidden group-has-[#results:checked]:block rounded-xl 2xl:rounded-[14px] p-6 lg:p-[30px] 2xl:p-10 ">
                         <h4 class=" font-['Roboto_Mono'] uppercase text-[#F9EFEC] text-2xl lg:text-[32px] 2xl:text-5xl mb-2 lg:mb-2.5 2xl:mb-3.5 ">
                             Results
                         </h4>
@@ -546,10 +550,10 @@
                 </div>
             </article>
 <!--            Fitness Desc-->
-            <article class=" grid grid-cols-1 lg:grid-cols-2 gap-2.5 2xl:gap-5 rounded-2xl 2xl:rounded-[20px] border-[2px] border-[#1F1F1F] bg-[#0F0F0F] p-2.5 lg:p-7.5 2xl:p-12.5 ">
+            <article class=" grid grid-cols-1 lg:grid-cols-2 gap-2.5 2xl:gap-5 rounded-2xl 2xl:rounded-[20px] border-[2px] border-[#1F1F1F] bg-[#0F0F0F] p-2.5 lg:p-[30px] 2xl:p-[50px] ">
                 <!--                Row 1 -->
                 <!--                Col 1-->
-                <div class="flex flex-col gap-5 lg:gap-10 2xl:gap-12.5 rounded-[10px] lg:rounded-xl 2xl:rounded-[14px] p-5 lg:p-10 2xl:p-15 bg-[#1A1A1A] ">
+                <div class="flex flex-col gap-5 lg:gap-10 2xl:gap-[50px] rounded-[10px] lg:rounded-xl 2xl:rounded-[14px] p-5 lg:p-10 2xl:p-15 bg-[#1A1A1A] ">
                     <!--                    Group 1-->
                     <div class="flex flex-col gap-5 lg:flex-row justify-between">
                         <div class="flex items-center gap-2 lg:gap-2.5 2xl:gap-3.5">
@@ -603,7 +607,7 @@
                         </label>
                     </div>
                     <!--                Challenge description-->
-                    <div class="bg-[#1A1A1A] hidden group-has-[#challenge2:checked]:block rounded-xl 2xl:rounded-[14px] p-6 lg:p-7.5 2xl:p-10 ">
+                    <div class="bg-[#1A1A1A] hidden group-has-[#challenge2:checked]:block rounded-xl 2xl:rounded-[14px] p-6 lg:p-[30px] 2xl:p-10 ">
                         <h4 class="font-['Roboto_Mono'] uppercase text-[#F9EFEC] text-2xl lg:text-[32px] 2xl:text-5xl mb-2 lg:mb-2.5 2xl:mb-3.5">
                             Challenge
                         </h4>
@@ -612,7 +616,7 @@
                         </p>
                     </div>
                     <!--               Solution description-->
-                    <div class="bg-[#1A1A1A] hidden group-has-[#solution2:checked]:block rounded-xl 2xl:rounded-[14px] p-6 lg:p-7.5 2xl:p-10 ">
+                    <div class="bg-[#1A1A1A] hidden group-has-[#solution2:checked]:block rounded-xl 2xl:rounded-[14px] p-6 lg:p-[30px] 2xl:p-10 ">
                         <h4 class=" font-['Roboto_Mono'] uppercase text-[#F9EFEC] text-2xl lg:text-[32px] 2xl:text-5xl mb-2 lg:mb-2.5 2xl:mb-3.5 ">
                             Solution
                         </h4>
@@ -621,7 +625,7 @@
                         </p>
                     </div>
                     <!--                 Results description-->
-                    <div class="bg-[#1A1A1A] hidden group-has-[#results2:checked]:block rounded-xl 2xl:rounded-[14px] p-6 lg:p-7.5 2xl:p-10 ">
+                    <div class="bg-[#1A1A1A] hidden group-has-[#results2:checked]:block rounded-xl 2xl:rounded-[14px] p-6 lg:p-[30px] 2xl:p-10 ">
                         <h4 class=" font-['Roboto_Mono'] uppercase text-[#F9EFEC] text-2xl lg:text-[32px] 2xl:text-5xl mb-2 lg:mb-2.5 2xl:mb-3.5 ">
                             Results
                         </h4>
@@ -644,13 +648,13 @@
             </a>
         </section>
         <!--    4.Testimonials    -->
-        <section class=" rounded-[14px] lg:rounded-[20px] 2xl:rounded-3xl p-2.5 2xl:p-5 mb-12.5 lg:mb-20 2xl:mb-30 border-[2px] border-[#1F1F1F] ">
+        <section class=" rounded-[14px] lg:rounded-[20px] 2xl:rounded-3xl p-2.5 2xl:p-5 mb-[50px] lg:mb-20 2xl:mb-30 border-[2px] border-[#1F1F1F] ">
 <!--            Mobile title -->
-            <h2 class=" lg:hidden rounded-[14px] 2xl:rounded-2xl p-6 lg:p-10 2xl:p-12.5 bg-[#1A1A1A] font-semibold text-[28px] lg:text-[38px] 2xl:text-5xl uppercase text-[#F9EFEC] mb-2.5 2xl:mb-5 ">
+            <h2 class=" lg:hidden rounded-[14px] 2xl:rounded-2xl p-6 lg:p-10 2xl:p-[50px] bg-[#1A1A1A] font-semibold text-[28px] lg:text-[38px] 2xl:text-5xl uppercase text-[#F9EFEC] mb-2.5 2xl:mb-5 ">
                 Testimonials
             </h2>
 <!--            Desktop title -->
-           <div class=" hidden lg:flex items-center justify-between rounded-[14px] 2xl:rounded-2xl p-6 lg:p-10 2xl:p-12.5 mb-2.5 2xl:mb-5 bg-[#1A1A1A] ">
+           <div class=" hidden lg:flex items-center justify-between rounded-[14px] 2xl:rounded-2xl p-6 lg:p-10 2xl:p-[50px] mb-2.5 2xl:mb-5 bg-[#1A1A1A] ">
                <h2 class="font-semibold text-[28px] lg:text-[38px] 2xl:text-5xl uppercase text-[#F9EFEC] ">
                    Testimonials
                </h2>
@@ -667,7 +671,7 @@
 <!--                item 1-->
                 <div class="overflow-hidden flex flex-col justify-between rounded-[10px] lg:rounded-[14px] 2xl:rounded-2xl bg-[#1A1A1A] " >
 <!--                    Review content-->
-                    <div class=" p-6 lg:p-7.5 2xl:p-10 ">
+                    <div class=" p-6 lg:p-[30px] 2xl:p-10 ">
                         <h3 class="font-medium uppercase text-[#F9EFEC] text-lg lg:text-[22px] 2xl:text-2xl mb-4 lg:mb-5 2xl:mb-6 ">
                             NexGen turned our business around!
                         </h3>
@@ -676,10 +680,10 @@
                         </p>
                     </div>
 <!--                    User info -->
-                    <div class="bg-[#1F1F1F] flex justify-between items-center px-5 py-4 lg:px-7.5 lg:py-5 2xl:px-10 2xl:py-7.5 ">
+                    <div class="bg-[#1F1F1F] flex justify-between items-center px-5 py-4 lg:px-[30px] lg:py-5 2xl:px-10 2xl:py-[30px] ">
                         <div class="flex gap-2 lg:gap-2.5 2xl:gap-3.75">
 <!--                            User image -->
-                            <div class="w-10 h-10 lg:w-12.5 lg:h-12.5 2xl:w-15 2xl:h-15 rounded-full">
+                            <div class="w-10 h-10 lg:w-[50px] lg:h-[50px] 2xl:w-15 2xl:h-15 rounded-full">
                                 <img src="assets/images/user-1.png" alt="user-1">
                             </div>
 <!--                            User name-->
@@ -699,7 +703,7 @@
                 <!--                item 2 -->
                 <div class="overflow-hidden flex flex-col justify-between rounded-[10px] lg:rounded-[14px] 2xl:rounded-2xl bg-[#1A1A1A] " >
                     <!--                    Review content-->
-                    <div class=" p-6 lg:p-7.5 2xl:p-10 ">
+                    <div class=" p-6 lg:p-[30px] 2xl:p-10 ">
                         <h3 class="font-medium uppercase text-[#F9EFEC] text-lg lg:text-[22px] 2xl:text-2xl mb-4 lg:mb-5 2xl:mb-6 ">
                             NexGen turned our business around!
                         </h3>
@@ -708,10 +712,10 @@
                         </p>
                     </div>
                     <!--                    User info -->
-                    <div class="bg-[#1F1F1F] flex justify-between items-center px-5 py-4 lg:px-7.5 lg:py-5 2xl:px-10 2xl:py-7.5 ">
+                    <div class="bg-[#1F1F1F] flex justify-between items-center px-5 py-4 lg:px-[30px] lg:py-5 2xl:px-10 2xl:py-[30px] ">
                         <div class="flex gap-2 lg:gap-2.5 2xl:gap-3.75">
                             <!--                            User image -->
-                            <div class="w-10 h-10 lg:w-12.5 lg:h-12.5 2xl:w-15 2xl:h-15 rounded-full">
+                            <div class="w-10 h-10 lg:w-[50px] lg:h-12.5 2xl:w-15 2xl:h-15 rounded-full">
                                 <img src="assets/images/user-2.png" alt="user-2">
                             </div>
                             <!--                            User name-->
@@ -731,7 +735,7 @@
                 <!--                item 3 -->
                 <div class="overflow-hidden flex flex-col justify-between rounded-[10px] lg:rounded-[14px] 2xl:rounded-2xl bg-[#1A1A1A] " >
                     <!--                    Review content-->
-                    <div class=" p-6 lg:p-7.5 2xl:p-10 ">
+                    <div class=" p-6 lg:p-[30px] 2xl:p-10 ">
                         <h3 class="font-medium uppercase text-[#F9EFEC] text-lg lg:text-[22px] 2xl:text-2xl mb-4 lg:mb-5 2xl:mb-6">
                             Working with NexGen was a pleasure.
                         </h3>
@@ -741,7 +745,7 @@
                     </div>
 
                     <!--                    User info -->
-                    <div class="bg-[#1F1F1F] flex justify-between items-center px-5 py-4 lg:px-7.5 lg:py-5 2xl:px-10 2xl:py-7.5 ">
+                    <div class="bg-[#1F1F1F] flex justify-between items-center px-5 py-4 lg:px-[30px] lg:py-5 2xl:px-10 2xl:py-[30px] ">
                         <div class="flex gap-2 lg:gap-2.5 2xl:gap-3.75">
                             <!--                            User image -->
                             <div class="w-10 h-10 lg:w-12.5 lg:h-12.5 2xl:w-15 2xl:h-15 rounded-full">
@@ -764,7 +768,7 @@
                 <!--                item 4 -->
                 <div class="overflow-hidden hidden lg:flex flex-col justify-between rounded-[10px] lg:rounded-[14px] 2xl:rounded-2xl bg-[#1A1A1A]" >
                     <!--                    Review content-->
-                    <div class=" p-6 lg:p-7.5 2xl:p-10 ">
+                    <div class=" p-6 lg:p-[30px] 2xl:p-10 ">
                         <h3 class="font-medium uppercase text-[#F9EFEC] text-lg lg:text-[22px] 2xl:text-2xl mb-4 lg:mb-5 2xl:mb-6 ">
                             NexGen's web design brought our vision
                         </h3>
@@ -773,7 +777,7 @@
                         </p>
                     </div>
                     <!--                    User info -->
-                    <div class="bg-[#1F1F1F] flex justify-between items-center px-5 py-4 lg:px-7.5 lg:py-5 2xl:px-10 2xl:py-7.5 ">
+                    <div class="bg-[#1F1F1F] flex justify-between items-center px-5 py-4 lg:px-[30px] lg:py-5 2xl:px-10 2xl:py-[30px] ">
                         <div class="flex gap-2 lg:gap-2.5 2xl:gap-3.75">
                             <!--                            User image -->
                             <div class="w-10 h-10 lg:w-12.5 lg:h-12.5 2xl:w-15 2xl:h-15 rounded-full">
@@ -830,18 +834,18 @@
 <!--            FAQs -->
                 <article class="flex flex-col gap-2.5 2xl:gap-5 lg:w-[59%]">
 <!--                    FAQ 1-->
-                    <div class="group flex rounded-[14px] lg:rounded-2xl px-7.5 py-4 lg:px-10 lg:py-7.5 2xl:px-15 2xl:py-10 bg-[#1A1A1A] ">
+                    <div class="group flex rounded-[14px] lg:rounded-2xl px-[30px] py-4 lg:px-10 lg:py-[30px] 2xl:px-15 2xl:py-10 bg-[#1A1A1A] ">
 <!--                        CHeckbox hack -->
                         <input id="faq1" name="faq1" type="checkbox" value="faq1" class="peer hidden " checked >
 <!--                        Question-->
-                        <div class="flex flex-col gap-5 lg:gap-6 2xl:gap-7.5 ">
+                        <div class="flex flex-col gap-5 lg:gap-6 2xl:gap-[30px] ">
                                 <h3 class=" font-medium text-[#F9EFEC] text-lg lg:text-xl 2xl:text-[22px] mt-5 ">
                                     How long does it take to complete a web development project?
                                 </h3>
 <!--  Answer -->
-                                 <div class="max-h-0 overflow-hidden opacity-0 group-has-[:checked]:max-h-40 group-has-[:checked]:opacity-100 transition-height duration-600 ease in out ">
+                                 <div class="max-h-0 overflow-hidden opacity-0 group-has-[:checked]:max-h-40 group-has-[:checked]:opacity-100 transition-height duration-600 ease-in-out ">
                                 <!--                        Boder -->
-                                    <div class="h-0 border border-[#1F1F1F] mb-5 lg:mb-6 2xl:mb-7.5"></div>
+                                    <div class="h-0 border border-[#1F1F1F] mb-5 lg:mb-6 2xl:mb-[30px]"></div>
                                 <!--                        Description-->
                                     <p class="text-sm lg:text-base 2xl:text-lg text-[#B3B3B2]">
                                         The timeline varies depending on the project's complexity and requirements. Our team strives to deliver projects on time while maintaining the highest quality standards.
@@ -858,18 +862,18 @@
                         </label>
                     </div>
                     <!--                    FAQ 2-->
-                    <div class="group flex rounded-[14px] lg:rounded-2xl px-7.5 py-4 lg:px-10 lg:py-7.5 2xl:px-15 2xl:py-10 bg-[#1A1A1A] ">
+                    <div class="group flex rounded-[14px] lg:rounded-2xl px-[30px] py-4 lg:px-10 lg:py-[30px] 2xl:px-15 2xl:py-10 bg-[#1A1A1A] ">
                         <!--                        CHeckbox hack -->
                         <input id="faq2" name="faq2" type="checkbox" value="faq2" class="peer hidden "  >
                         <!--                       Question-->
-                        <div class="flex flex-col gap-5 lg:gap-6 2xl:gap-7.5 ">
+                        <div class="flex flex-col gap-5 lg:gap-6 2xl:gap-[30px] ">
                             <h3 class=" font-medium text-[#F9EFEC] text-lg lg:text-xl 2xl:text-[22px] mt-5 ">
                                 Can you handle large-scale mobile app development projects?
                             </h3>
                             <!--  Answer -->
-                            <div class="max-h-0 overflow-hidden opacity-0 group-has-[:checked]:max-h-40 group-has-[:checked]:opacity-100 transition-height duration-600 ease in out ">
+                            <div class="max-h-0 overflow-hidden opacity-0 group-has-[:checked]:max-h-40 group-has-[:checked]:opacity-100 transition-height duration-600 ease-in-out ">
                                 <!--                        Boder -->
-                                <div class="h-0 border border-[#1F1F1F] mb-5 lg:mb-6 2xl:mb-7.5">
+                                <div class="h-0 border border-[#1F1F1F] mb-5 lg:mb-6 2xl:mb-[30px]">
                                 </div>
                                 <!--                        Description-->
                                 <p class="text-sm lg:text-base 2xl:text-lg text-[#B3B3B2]">
@@ -887,18 +891,18 @@
                         </label>
                     </div>
                     <!--                    FAQ 3-->
-                    <div class="group flex rounded-[14px] lg:rounded-2xl px-7.5 py-4 lg:px-10 lg:py-7.5 2xl:px-15 2xl:py-10 bg-[#1A1A1A] ">
+                    <div class="group flex rounded-[14px] lg:rounded-2xl px-[30px] py-4 lg:px-10 lg:py-[30px] 2xl:px-15 2xl:py-10 bg-[#1A1A1A] ">
                         <!--                        CHeckbox hack -->
                         <input id="faq3" name="faq3" type="checkbox" value="faq3" class="peer hidden "  >
                         <!--                        Question-->
-                        <div class="flex flex-col gap-5 lg:gap-6 2xl:gap-7.5 ">
+                        <div class="flex flex-col gap-5 lg:gap-6 2xl:gap-[30px] ">
                             <h3 class=" font-medium text-[#F9EFEC] text-lg lg:text-xl 2xl:text-[22px] mt-5 ">
                                 Can you integrate third-party APIs into our mobile app?
                             </h3>
                             <!--  Answer -->
-                            <div class="max-h-0 overflow-hidden opacity-0 group-has-[:checked]:max-h-40 group-has-[:checked]:opacity-100 transition-height duration-600 ease in out ">
+                            <div class="max-h-0 overflow-hidden opacity-0 group-has-[:checked]:max-h-40 group-has-[:checked]:opacity-100 transition-height duration-600 ease-in-out ">
                                 <!--                        Boder -->
-                                <div class="h-0 border border-[#1F1F1F] mb-5 lg:mb-6 2xl:mb-7.5 ">
+                                <div class="h-0 border border-[#1F1F1F] mb-5 lg:mb-6 2xl:mb-[30px] ">
                                 </div>
                                 <!--                        Description-->
                                 <p class="text-sm lg:text-base 2xl:text-lg text-[#B3B3B2]">
@@ -916,18 +920,18 @@
                         </label>
                     </div>
                     <!--                    FAQ 4-->
-                    <div class="group flex rounded-[14px] lg:rounded-2xl px-7.5 py-4 lg:px-10 lg:py-7.5 2xl:px-15 2xl:py-10 bg-[#1A1A1A]  ">
+                    <div class="group flex rounded-[14px] lg:rounded-2xl px-[30px] py-4 lg:px-10 lg:py-[30px] 2xl:px-15 2xl:py-10 bg-[#1A1A1A]  ">
                         <!--                        CHeckbox hack -->
                         <input id="faq4" name="faq4" type="checkbox" value="faq4" class="peer hidden "  >
                         <!--                        Question-->
-                        <div class="flex flex-col gap-5 lg:gap-6 2xl:gap-7.5 ">
+                        <div class="flex flex-col gap-5 lg:gap-6 2xl:gap-[30px] ">
                             <h3 class=" font-medium text-[#F9EFEC] text-lg lg:text-xl 2xl:text-[22px]  mt-5 ">
                                 How do you ensure cross-platform compatibility for mobile apps?
                             </h3>
                             <!--  Answer -->
-                            <div class="max-h-0 overflow-hidden opacity-0 group-has-[:checked]:max-h-40 group-has-[:checked]:opacity-100 transition-height duration-600 ease in out ">
+                            <div class="max-h-0 overflow-hidden opacity-0 group-has-[:checked]:max-h-40 group-has-[:checked]:opacity-100 transition-height duration-600 ease-in-out ">
                                 <!--                        Boder -->
-                                <div class="h-0 border border-[#1F1F1F] mb-5 lg:mb-6 2xl:mb-7.5 ">
+                                <div class="h-0 border border-[#1F1F1F] mb-5 lg:mb-6 2xl:mb-[30px] ">
                                 </div>
                                 <!--                        Description-->
                                 <p class="text-sm lg:text-base 2xl:text-lg text-[#B3B3B2]">
@@ -945,18 +949,18 @@
                         </label>
                     </div>
                     <!--                    FAQ 5-->
-                    <div class="group flex rounded-[14px] lg:rounded-2xl px-7.5 py-4 lg:px-10 lg:py-7.5 2xl:px-15 2xl:py-10 bg-[#1A1A1A]">
+                    <div class="group flex rounded-[14px] lg:rounded-2xl px-[30px] py-4 lg:px-10 lg:py-[30px] 2xl:px-15 2xl:py-10 bg-[#1A1A1A]">
                         <!--                        CHeckbox hack -->
                         <input id="faq5" name="faq5" type="checkbox" value="faq5" class="peer hidden "  >
                         <!--                        Question-->
-                        <div class="flex flex-col gap-5 lg:gap-6 2xl:gap-7.5 ">
+                        <div class="flex flex-col gap-5 lg:gap-6 2xl:gap-[30px] ">
                             <h3 class=" font-medium text-[#F9EFEC] text-lg lg:text-xl 2xl:text-[22px] mt-5">
                                 What is your approach to user experience (UX) design?
                             </h3>
                             <!--  Answer -->
-                            <div class="max-h-0 overflow-hidden opacity-0 group-has-[:checked]:max-h-40 group-has-[:checked]:opacity-100 transition-height duration-600 ease in out ">
+                            <div class="max-h-0 overflow-hidden opacity-0 group-has-[:checked]:max-h-40 group-has-[:checked]:opacity-100 transition-height duration-600 ease-in-out ">
                                 <!--                        Boder -->
-                                <div class="h-0 border border-[#1F1F1F] mb-5 lg:mb-6 2xl:mb-7.5 ">
+                                <div class="h-0 border border-[#1F1F1F] mb-5 lg:mb-6 2xl:mb-[30px] ">
                                 </div>
                                 <!--                        Description-->
                                 <p class="text-sm lg:text-base 2xl:text-lg text-[#B3B3B2]">
@@ -975,7 +979,7 @@
                     </div>
                 </article>
 <!--             Form -->
-                <article class="flex flex-col gap-5 lg:gap-7.5 2xl:gap-12.5 bg-[#1A1A1A] rounded-xl lg:rounded-[14px] p-7.5 lg:p-12.5 2xl:p-15 shadow-[10px_10px_50px_rgba(0,98,255,0.03)] lg:w-[40%] ">
+                <article class="flex flex-col gap-5 lg:gap-[30px] 2xl:gap-12.5 bg-[#1A1A1A] rounded-xl lg:rounded-[14px] p-[30px] lg:p-12.5 2xl:p-15 shadow-[10px_10px_50px_rgba(0,98,255,0.03)] lg:w-[40%] ">
 <!--                    Title -->
                         <h3 class="font-medium text-[#F9EFEC] uppercase text-lg lg:text-xl 2xl:text-2xl shadow-[10px_10px_50px_rgba(0,98,255,0.03)] ">
                             Ask your question
@@ -1017,7 +1021,7 @@
     <footer>
         <!-- Call To Action banner -->
         <div
-                class="flex flex-col  lg:flex-row lg:justify-between gap-4 lg:gap-6 2xl:8 p-7.5 lg:p-15 2xl:p-20 bg-[#CE7D63] rounded-[14px] lg:rounded-2xl 2xl:rounded-[20px] mb-2.5 2xl:mb-5 ">
+                class="flex flex-col  lg:flex-row lg:justify-between gap-4 lg:gap-6 2xl:8 p-[30px] lg:p-15 2xl:p-20 bg-[#CE7D63] rounded-[14px] lg:rounded-2xl 2xl:rounded-[20px] mb-2.5 2xl:mb-5 ">
             <!--                CTA content -->
             <div>
                 <!--                    Title -->
@@ -1040,7 +1044,7 @@
         <!-- CTA text animation  -->
         <div class="overflow-hidden bg-[#1A1A1A] py-4 border-y border-dashed border-[#262626] rounded-[10px]  mb-2.5 2xl:mb-5">
             <div class="animate-marquee">
-                <div class="flex items-center space-x-10 px-5">
+                <div class="flex items-center space-x-4 px-2">
                     <span class="text-[#81807E] font-medium text-[14px] uppercase whitespace-nowrap lg:text-[16px] 2xl:text-[20px]">Follow us on social media</span>
                     <span class="w-2 h-2 rounded-full bg-[#CE7D63]"></span>
                     <span class="text-[#81807E] font-medium text-[14px] uppercase whitespace-nowrap lg:text-[16px] 2xl:text-[20px]">Follow us on social media</span>
@@ -1048,7 +1052,7 @@
                     <span class="text-[#81807E] font-medium text-[14px] uppercase whitespace-nowrap lg:text-[16px] 2xl:text-[20px]">Follow us on social media</span>
                     <span class="w-2 h-2 rounded-full bg-[#CE7D63]"></span>
                 </div>
-                <div class="flex items-center space-x-10 px-5">
+                <div class="flex items-center space-x-4 px-2">
                     <span class="text-[#81807E] font-medium text-[14px] uppercase whitespace-nowrap lg:text-[16px] 2xl:text-[20px]">Follow us on social media</span>
                     <span class="w-2 h-2 rounded-full bg-[#CE7D63]"></span>
                     <span class="text-[#81807E] font-medium text-[14px] uppercase whitespace-nowrap lg:text-[16px] 2xl:text-[20px]">Follow us on social media</span>
@@ -1056,7 +1060,7 @@
                     <span class="text-[#81807E] font-medium text-[14px] uppercase whitespace-nowrap lg:text-[16px] 2xl:text-[20px]">Follow us on social media</span>
                     <span class="w-2 h-2 rounded-full bg-[#CE7D63]"></span>
                 </div>
-                <div class="flex items-center space-x-10 px-5">
+                <div class="flex items-center space-x-4 px-2">
                     <span class="text-[#81807E] font-medium text-[14px] uppercase whitespace-nowrap lg:text-[16px] 2xl:text-[20px]">Follow us on social media</span>
                     <span class="w-2 h-2 rounded-full bg-[#CE7D63]"></span>
                     <span class="text-[#81807E] font-medium text-[14px] uppercase whitespace-nowrap lg:text-[16px] 2xl:text-[20px]">Follow us on social media</span>
@@ -1117,7 +1121,7 @@
                                 <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg" class="block 2xl:hidden">
                                     <path fill-rule="evenodd" clip-rule="evenodd" d="M3.75 4.09782e-07L13.125 0C13.2908 0 13.4497 0.065848 13.5669 0.183058C13.6842 0.300269 13.75 0.45924 13.75 0.625V10C13.75 10.3452 13.4702 10.625 13.125 10.625C12.7798 10.625 12.5 10.3452 12.5 10V2.13388L1.06694 13.5669C0.822864 13.811 0.427136 13.811 0.183058 13.5669C-0.0610194 13.3229 -0.0610194 12.9271 0.183058 12.6831L11.6161 1.25L3.75 1.25C3.40482 1.25 3.125 0.970178 3.125 0.625C3.125 0.279822 3.40482 4.09782e-07 3.75 4.09782e-07Z" fill="#E7BEB1"/>
                                 </svg>
-                                <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg" class="hidden 2xl:block">/>
+                                <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg" class="hidden 2xl:block">
                                 </svg>
                             </div>
                         </div>

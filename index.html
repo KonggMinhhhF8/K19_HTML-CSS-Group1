@@ -5,7 +5,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Home Page</title>
 
-        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
         <link
             href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap"
             rel="stylesheet"
@@ -125,7 +124,7 @@
                         class="flex items-center justify-center lg:rounded-[10px] 2xl:rounded-xl bg-[#0F0F0F]"
                     >
                         <a
-                            href="../services/index.html"
+                            href="./services/index.html"
                             class="lg:px-5 lg:py-[14px] 2xl:px-6 2xl:py-4.5 hover:text-[#E7BEB1]"
                             >SERVICES</a
                         >
@@ -144,7 +143,7 @@
                         class="flex items-center justify-center lg:rounded-[10px] 2xl:rounded-xl bg-[#0F0F0F]"
                     >
                         <a
-                            href="../about/index.html"
+                            href="./about/index.html"
                             class="lg:px-5 lg:py-[14px] 2xl:px-6 2xl:py-4.5 hover:text-[#E7BEB1]"
                             >About</a
                         >
@@ -153,7 +152,7 @@
                         class="flex items-center justify-center lg:rounded-[10px] 2xl:rounded-xl bg-[#0F0F0F]"
                     >
                         <a
-                            href="../career/index.html"
+                            href="./careers/index.html"
                             class="lg:px-5 lg:py-[14px] 2xl:px-6 2xl:py-4.5 hover:text-[#E7BEB1]"
                             >Careers</a
                         >
@@ -195,7 +194,10 @@
                 <li
                     class="flex items-center justify-center bg-[#0F0F0F] rounded-xl"
                 >
-                    <a href="#" class="px-20 py-3 hover:text-[#E7BEB1]">
+                    <a
+                        href="./services/index.html"
+                        class="px-20 py-3 hover:text-[#E7BEB1]"
+                    >
                         Services
                     </a>
                 </li>
@@ -209,14 +211,20 @@
                 <li
                     class="flex items-center justify-center bg-[#0F0F0F] rounded-xl"
                 >
-                    <a href="#" class="px-20 py-3 hover:text-[#E7BEB1]">
+                    <a
+                        href="./about/index.html"
+                        class="px-20 py-3 hover:text-[#E7BEB1]"
+                    >
                         About
                     </a>
                 </li>
                 <li
                     class="flex items-center justify-center bg-[#0F0F0F] rounded-xl"
                 >
-                    <a href="#" class="px-20 py-3 hover:text-[#E7BEB1]">
+                    <a
+                        href="./careers/index.html"
+                        class="px-20 py-3 hover:text-[#E7BEB1]"
+                    >
                         Careers
                     </a>
                 </li>
@@ -1162,7 +1170,7 @@
         </section>
 
         <!-- ─── Our Works ─── -->
-        <section class="mb-[50px]">
+        <section class="mb-[50px] lg:mb-20 2xl:mb-30">
             <div
                 class="max-w-[calc(100%-32px)] mx-auto lg:max-w-[calc(100%-80px)] 2xl:max-w-[calc(100%-100px)]"
             >
@@ -1381,7 +1389,7 @@
                                     <div class="flex lg:gap-2 2xl:gap-[10px]">
                                         <img
                                             class="w-[40px] h-[40px]"
-                                            src="./home/assets/img/Ava 1.png"
+                                            src="./home/assets/img/team ava 1.png"
                                             alt="Team avatar"
                                         />
                                         <img
@@ -1407,7 +1415,7 @@
                                     </div>
                                 </div>
                                 <button
-                                    class="w-full py-4 bg-[#CE7D63] text-black font-bold rounded-[10px] uppercase text-sm hover:bg-[#b36a52] transition-colors"
+                                    class="w-full py-4 bg-[#CE7D63] text-black font-bold rounded-[10px] uppercase text-sm hover:bg-[#b36a52] transition-colors cursor-pointer"
                                 >
                                     Book a call
                                 </button>
@@ -1626,7 +1634,7 @@
                                     </div>
                                 </div>
                                 <button
-                                    class="w-full py-4 bg-[#CE7D63] text-black font-bold rounded-[10px] uppercase text-sm hover:bg-[#b36a52] transition-colors"
+                                    class="w-full py-4 bg-[#CE7D63] text-black font-bold rounded-[10px] uppercase text-sm hover:bg-[#b36a52] transition-colors cursor-pointer"
                                 >
                                     Book a call
                                 </button>
@@ -1652,9 +1660,10 @@
                                                 height="20"
                                                 viewBox="0 0 20 20"
                                                 fill="none"
+                                                xmlns="http://www.w3.org/2000/svg"
                                             >
                                                 <path
-                                                    d="M11.0356 1.6516L..."
+                                                    d="M11.0356 1.6516L10.4625 1.99097C9.83309 2.36373 9.51837 2.55011 9.17167 2.59353C8.82496 2.63696 8.48553 2.53251 7.80666 2.3236L7.18861 2.13342C4.79965 1.39828 3.60517 1.03072 2.88716 1.68788C2.16916 2.34505 2.40313 3.59173 2.87109 6.08509L2.99216 6.73015C3.12513 7.43868 3.19162 7.79295 3.11275 8.13904C3.03388 8.48513 2.81858 8.78387 2.38797 9.38133L1.99594 9.92527C0.480625 12.0278 -0.277034 13.079 0.0925984 13.9505C0.46223 14.8221 1.71435 14.9367 4.2186 15.1659L4.8665 15.2252C5.57812 15.2903 5.93394 15.3229 6.2319 15.4934C6.52986 15.6638 6.73623 15.9529 7.14897 16.5311L7.52473 17.0574C8.97717 19.092 9.70339 20.1092 10.6498 19.9907C11.5963 19.8722 12.1362 18.6963 13.2159 16.3446L13.4953 15.7362C13.6521 15.3947 13.7688 15.1404 13.8806 14.9413L18.4697 19.5303C18.7626 19.8232 19.2374 19.8232 19.5303 19.5303C19.8232 19.2374 19.8232 18.7626 19.5303 18.4697L15.0986 14.0379C15.2206 13.9935 15.3568 13.9458 15.5101 13.8921L16.1344 13.6735C18.5474 12.8284 19.7538 12.4059 19.9691 11.4611C20.1845 10.5163 19.266 9.67498 17.4291 7.99234L16.9538 7.55701C16.4318 7.07887 16.1708 6.83978 16.0354 6.52053C15.9 6.20128 15.9055 5.838 15.9166 5.11145L15.9266 4.44993C15.9655 1.8931 15.9849 0.614678 15.1715 0.149312C14.3582 -0.316052 13.2506 0.339834 11.0356 1.6516Z"
                                                     fill="#CE7D63"
                                                 />
                                             </svg>
@@ -1838,7 +1847,7 @@
                                     </div>
                                 </div>
                                 <button
-                                    class="w-full py-4 bg-[#CE7D63] text-black font-bold rounded-[10px] uppercase text-sm hover:bg-[#b36a52] transition-colors"
+                                    class="w-full py-4 bg-[#CE7D63] text-black font-bold rounded-[10px] uppercase text-sm hover:bg-[#b36a52] transition-colors cursor-pointer"
                                 >
                                     Book a call
                                 </button>
@@ -1864,9 +1873,10 @@
                                                 height="20"
                                                 viewBox="0 0 20 20"
                                                 fill="none"
+                                                xmlns="http://www.w3.org/2000/svg"
                                             >
                                                 <path
-                                                    d="M11.0356 1.6516L..."
+                                                    d="M11.0356 1.6516L10.4625 1.99097C9.83309 2.36373 9.51837 2.55011 9.17167 2.59353C8.82496 2.63696 8.48553 2.53251 7.80666 2.3236L7.18861 2.13342C4.79965 1.39828 3.60517 1.03072 2.88716 1.68788C2.16916 2.34505 2.40313 3.59173 2.87109 6.08509L2.99216 6.73015C3.12513 7.43868 3.19162 7.79295 3.11275 8.13904C3.03388 8.48513 2.81858 8.78387 2.38797 9.38133L1.99594 9.92527C0.480625 12.0278 -0.277034 13.079 0.0925984 13.9505C0.46223 14.8221 1.71435 14.9367 4.2186 15.1659L4.8665 15.2252C5.57812 15.2903 5.93394 15.3229 6.2319 15.4934C6.52986 15.6638 6.73623 15.9529 7.14897 16.5311L7.52473 17.0574C8.97717 19.092 9.70339 20.1092 10.6498 19.9907C11.5963 19.8722 12.1362 18.6963 13.2159 16.3446L13.4953 15.7362C13.6521 15.3947 13.7688 15.1404 13.8806 14.9413L18.4697 19.5303C18.7626 19.8232 19.2374 19.8232 19.5303 19.5303C19.8232 19.2374 19.8232 18.7626 19.5303 18.4697L15.0986 14.0379C15.2206 13.9935 15.3568 13.9458 15.5101 13.8921L16.1344 13.6735C18.5474 12.8284 19.7538 12.4059 19.9691 11.4611C20.1845 10.5163 19.266 9.67498 17.4291 7.99234L16.9538 7.55701C16.4318 7.07887 16.1708 6.83978 16.0354 6.52053C15.9 6.20128 15.9055 5.838 15.9166 5.11145L15.9266 4.44993C15.9655 1.8931 15.9849 0.614678 15.1715 0.149312C14.3582 -0.316052 13.2506 0.339834 11.0356 1.6516Z"
                                                     fill="#CE7D63"
                                                 />
                                             </svg>
@@ -1876,7 +1886,7 @@
                                         >
                                             Zenith Fitness App
                                         </h3>
-                                        <<!-- Button desktop -->
+                                        <!-- Button desktop -->
 
                                         <button
                                             class="hidden ml-auto lg:flex items-center px-4 py-1 gap-2 group cursor-pointer transition-opacity hover:opacity-80"
@@ -2049,7 +2059,7 @@
                                     </div>
                                 </div>
                                 <button
-                                    class="w-full py-4 bg-[#CE7D63] text-black font-bold rounded-[10px] uppercase text-sm hover:bg-[#b36a52] transition-colors"
+                                    class="w-full py-4 bg-[#CE7D63] text-black font-bold rounded-[10px] uppercase text-sm hover:bg-[#b36a52] transition-colors cursor-pointer"
                                 >
                                     Book a call
                                 </button>
@@ -2094,8 +2104,7 @@
 
         <!-- Testimonials -->
 
-        <section class="mb-[50px]">
-            <!-- Input nằm ngoài cùng -->
+        <section class="mb-[50px] lg:mb-20 2xl:mb-30">
             <input type="checkbox" id="toggle-testimonals" class="hidden" />
             <div
                 class="max-w-[calc(100%-32px)] mx-auto lg:max-w-[calc(100%-80px)] 2xl:max-w-[calc(100%-100px)]"
@@ -2115,9 +2124,6 @@
                             >
                                 Testimonials
                             </h2>
-
-                            <!-- ALL TESTIMONIALS — CHỈ NHÌN THẤY TRÊN TABLET/ desktop -->
-
                             <button
                                 class="hidden lg:flex flex-row items-center gap-2 group cursor-pointer transition-opacity hover:opacity-80"
                             >
@@ -2127,7 +2133,6 @@
                                         alt="Arrow Icon"
                                     />
                                 </div>
-
                                 <span
                                     class="font-['Roboto_Mono'] font-normal text-base text-[#B3B3B2] leading-[150%]"
                                 >
@@ -2138,10 +2143,10 @@
 
                         <!-- CARD 2 -->
                         <div
-                            class="testimonial-card rounded-[14px] bg-[#1A1A1A] overflow-hidden flex flex-col"
+                            class="testimonial-card rounded-[14px] bg-[#1A1A1A] overflow-hidden grid grid-rows-[1fr_auto]"
                         >
                             <div
-                                class="flex flex-col items-start justify-center p-6 flex-1"
+                                class="flex flex-col items-start justify-center p-6"
                             >
                                 <h3
                                     class="font-['Roboto_Flex'] font-medium text-lg text-[#F9EFEC] pb-2 leading-[150%] uppercase"
@@ -2161,35 +2166,31 @@
                             <div
                                 class="flex items-center justify-between px-5 py-4 bg-[#1F1F1F]"
                             >
-                                <!-- Left: Avatar + Info -->
-
-                                <div class="flex items-center gap-2">
+                                <div
+                                    class="flex items-center gap-2 min-w-0 flex-1"
+                                >
                                     <img
                                         src="./home/assets/img/Ava 1.png"
                                         alt="Avatar"
-                                        class="w-10 h-10 rounded-full object-contain"
+                                        class="w-10 h-10 rounded-full object-contain flex-shrink-0"
                                     />
-
-                                    <div>
+                                    <div class="min-w-0">
                                         <p
-                                            class="font-['Roboto_Flex'] text-base font-medium text-[#F3DFD8] leading-[150%]"
+                                            class="font-['Roboto_Flex'] text-base font-medium text-[#F3DFD8] leading-[150%] truncate"
                                         >
                                             Sarah Thompson
                                         </p>
                                         <p
-                                            class="font-['Roboto_Flex'] text-sm font-normal text-[#81807E] leading-[150%]"
+                                            class="font-['Roboto_Flex'] text-sm font-normal text-[#81807E] leading-[150%] truncate"
                                         >
                                             CEO of BlueBloom
                                         </p>
                                     </div>
                                 </div>
-
-                                <!-- Right: Arrow button -->
-
                                 <button
                                     type="button"
                                     aria-label="View testimonial"
-                                    class="w-10 h-10 border border-[#333333] rounded-full flex items-center justify-center cursor-pointer hover:bg-[#333333] transition-colors"
+                                    class="w-10 h-10 border border-[#333333] rounded-full flex items-center justify-center cursor-pointer hover:bg-[#333333] transition-colors flex-shrink-0 ml-2"
                                 >
                                     <img
                                         src="./home/assets/icon/arrow right.svg"
@@ -2203,10 +2204,10 @@
 
                         <!-- CARD 3 -->
                         <div
-                            class="testimonial-card rounded-[14px] bg-[#1A1A1A] overflow-hidden flex flex-col"
+                            class="testimonial-card rounded-[14px] bg-[#1A1A1A] overflow-hidden grid grid-rows-[1fr_auto]"
                         >
                             <div
-                                class="flex flex-col items-start justify-center p-6 flex-1"
+                                class="flex flex-col items-start justify-center p-6"
                             >
                                 <h3
                                     class="font-['Roboto_Flex'] font-medium text-lg text-[#F9EFEC] pb-2 leading-[150%] uppercase"
@@ -2226,35 +2227,31 @@
                             <div
                                 class="flex items-center justify-between px-5 py-4 bg-[#1F1F1F]"
                             >
-                                <!-- Left: Avatar + Info -->
-
-                                <div class="flex items-center gap-2">
+                                <div
+                                    class="flex items-center gap-2 min-w-0 flex-1"
+                                >
                                     <img
                                         src="./home/assets/img/Ava 2.png"
                                         alt="Avatar"
-                                        class="w-10 h-10 rounded-full object-contain"
+                                        class="w-10 h-10 rounded-full object-contain flex-shrink-0"
                                     />
-
-                                    <div>
+                                    <div class="min-w-0">
                                         <p
-                                            class="font-['Roboto_Flex'] text-base font-medium text-[#F3DFD8] leading-[150%]"
+                                            class="font-['Roboto_Flex'] text-base font-medium text-[#F3DFD8] leading-[150%] truncate"
                                         >
                                             Wade Warren
                                         </p>
                                         <p
-                                            class="font-['Roboto_Flex'] text-sm font-normal text-[#81807E] leading-[150%]"
+                                            class="font-['Roboto_Flex'] text-sm font-normal text-[#81807E] leading-[150%] truncate"
                                         >
                                             Art Director
                                         </p>
                                     </div>
                                 </div>
-
-                                <!-- Right: Arrow button -->
-
                                 <button
                                     type="button"
                                     aria-label="View testimonial"
-                                    class="w-10 h-10 border border-[#333333] rounded-full flex items-center justify-center cursor-pointer hover:bg-[#333333] transition-colors"
+                                    class="w-10 h-10 border border-[#333333] rounded-full flex items-center justify-center cursor-pointer hover:bg-[#333333] transition-colors flex-shrink-0 ml-2"
                                 >
                                     <img
                                         src="./home/assets/icon/arrow right.svg"
@@ -2266,12 +2263,12 @@
                             </div>
                         </div>
 
-                        <!-- CARD 4: card hidden -->
+                        <!-- CARD 4 -->
                         <div
-                            class="hidden lg:block testimonial-card hidden rounded-[14px] bg-[#1A1A1A] overflow-hidden flex flex-col"
+                            class="hidden lg:grid testimonial-card rounded-[14px] bg-[#1A1A1A] overflow-hidden grid-rows-[1fr_auto]"
                         >
                             <div
-                                class="flex flex-col items-start justify-center p-6 flex-1"
+                                class="flex flex-col items-start justify-center p-6"
                             >
                                 <h3
                                     class="font-['Roboto_Flex'] font-medium text-lg text-[#F9EFEC] pb-2 leading-[150%] uppercase"
@@ -2291,35 +2288,31 @@
                             <div
                                 class="flex items-center justify-between px-5 py-4 bg-[#1F1F1F]"
                             >
-                                <!-- Left: Avatar + Info -->
-
-                                <div class="flex items-center gap-2">
+                                <div
+                                    class="flex items-center gap-2 min-w-0 flex-1"
+                                >
                                     <img
                                         src="./home/assets/img/Ava 3.png"
                                         alt="Avatar"
-                                        class="w-10 h-10 rounded-full object-contain"
+                                        class="w-10 h-10 rounded-full object-contain flex-shrink-0"
                                     />
-
-                                    <div>
+                                    <div class="min-w-0">
                                         <p
-                                            class="font-['Roboto_Flex'] text-base font-medium text-[#F3DFD8] leading-[150%]"
+                                            class="font-['Roboto_Flex'] text-base font-medium text-[#F3DFD8] leading-[150%] truncate"
                                         >
                                             Lisa Williams
                                         </p>
                                         <p
-                                            class="font-['Roboto_Flex'] text-sm font-normal text-[#81807E] leading-[150%]"
+                                            class="font-['Roboto_Flex'] text-sm font-normal text-[#81807E] leading-[150%] truncate"
                                         >
                                             CEO Of HealthTech
                                         </p>
                                     </div>
                                 </div>
-
-                                <!-- Right: Arrow button -->
-
                                 <button
                                     type="button"
                                     aria-label="View testimonial"
-                                    class="w-10 h-10 border border-[#333333] rounded-full flex items-center justify-center cursor-pointer hover:bg-[#333333] transition-colors"
+                                    class="w-10 h-10 border border-[#333333] rounded-full flex items-center justify-center cursor-pointer hover:bg-[#333333] transition-colors flex-shrink-0 ml-2"
                                 >
                                     <img
                                         src="./home/assets/icon/arrow right.svg"
@@ -2331,12 +2324,12 @@
                             </div>
                         </div>
 
-                        <!-- CARD 5: card hidden -->
+                        <!-- CARD 5 -->
                         <div
-                            class="hidden lg:block testimonial-card hidden rounded-[14px] bg-[#1A1A1A] overflow-hidden flex flex-col"
+                            class="hidden lg:grid testimonial-card rounded-[14px] bg-[#1A1A1A] overflow-hidden grid-rows-[1fr_auto]"
                         >
                             <div
-                                class="flex flex-col items-start justify-center p-6 flex-1"
+                                class="flex flex-col items-start justify-center p-6"
                             >
                                 <h3
                                     class="font-['Roboto_Flex'] font-medium text-lg text-[#F9EFEC] pb-2 leading-[150%] uppercase"
@@ -2356,35 +2349,31 @@
                             <div
                                 class="flex items-center justify-between px-5 py-4 bg-[#1F1F1F]"
                             >
-                                <!-- Left: Avatar + Info -->
-
-                                <div class="flex items-center gap-2">
+                                <div
+                                    class="flex items-center gap-2 min-w-0 flex-1"
+                                >
                                     <img
                                         src="./home/assets/img/Ava 4.png"
                                         alt="Avatar"
-                                        class="w-10 h-10 rounded-full object-contain"
+                                        class="w-10 h-10 rounded-full object-contain flex-shrink-0"
                                     />
-
-                                    <div>
+                                    <div class="min-w-0">
                                         <p
-                                            class="font-['Roboto_Flex'] text-base font-medium text-[#F3DFD8] leading-[150%]"
+                                            class="font-['Roboto_Flex'] text-base font-medium text-[#F3DFD8] leading-[150%] truncate"
                                         >
                                             Jennifer Lee
                                         </p>
                                         <p
-                                            class="font-['Roboto_Flex'] text-sm font-normal text-[#81807E] leading-[150%]"
+                                            class="font-['Roboto_Flex'] text-sm font-normal text-[#81807E] leading-[150%] truncate"
                                         >
                                             COO of Foodie Haven
                                         </p>
                                     </div>
                                 </div>
-
-                                <!-- Right: Arrow button -->
-
                                 <button
                                     type="button"
                                     aria-label="View testimonial"
-                                    class="w-10 h-10 border border-[#333333] rounded-full flex items-center justify-center cursor-pointer hover:bg-[#333333] transition-colors"
+                                    class="w-10 h-10 border border-[#333333] rounded-full flex items-center justify-center cursor-pointer hover:bg-[#333333] transition-colors flex-shrink-0 ml-2"
                                 >
                                     <img
                                         src="./home/assets/icon/arrow right.svg"
@@ -2396,7 +2385,7 @@
                             </div>
                         </div>
 
-                        <!-- CARD 6 : ALL Testimonials - btn chuẩn-->
+                        <!-- CARD 6: ALL Testimonials btn -->
                         <label
                             for="toggle-testimonals"
                             class="lg:hidden w-full flex flex-row gap-[6px] items-center justify-center rounded-xl px-[14px] py-4 bg-[#1A1A1A] cursor-pointer hover:bg-[#252525] transition-colors active:scale-[0.98]"
@@ -2420,19 +2409,14 @@
                                     />
                                 </svg>
                             </div>
-
-                            <!-- TEXT -->
                             <span
                                 class="label-open font-['Roboto_Mono'] font-medium text-base text-[#B3B3B2] uppercase"
+                                >ALL Testimonials</span
                             >
-                                ALL Testimonials
-                            </span>
-
                             <span
                                 class="label-close hidden font-['Roboto_Mono'] font-medium text-base text-[#B3B3B2] uppercase"
+                                >Show Less</span
                             >
-                                Show Less
-                            </span>
                         </label>
                     </div>
                 </div>
@@ -2440,7 +2424,7 @@
         </section>
 
         <!-- ─── FAQ + FORM ─── -->
-        <section class="mb-[10px]">
+        <section class="mb-[10px] lg:mb-20 2xl:mb-30">
             <div
                 class="max-w-[calc(100%-32px)] mx-auto lg:max-w-[calc(100%-80px)] 2xl:max-w-[calc(100%-100px)]"
             >
@@ -2815,7 +2799,7 @@
         </section>
 
         <!-- CTA CARD -->
-        <section class="mb-[10px]">
+        <section class="mb-[10px] 2xl:mb-5">
             <div
                 class="max-w-[calc(100%-32px)] mx-auto lg:max-w-[calc(100%-80px)] 2xl:max-w-[calc(100%-100px)]"
             >
@@ -2860,7 +2844,7 @@
         </section>
 
         <!-- TAG -->
-        <div class="mb-[10px]">
+        <div class="mb-[10px] 2xl:mb-5">
             <!-- LAYER 1: border + bg + clip -->
             <div
                 class="max-w-[calc(100%-32px)] lg:max-w-[calc(100%-80px)] mx-auto rounded-lg bg-[#1A1A1A] overflow-hidden"
